@@ -100,7 +100,9 @@
             "result": "통과",
             "date": "2026-10-13",
             "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
-          }
+          },
+          "native_precheck_id": "ai-native-pre-1",
+          "native_precheck_note": "통과: The same desk is reserved for you 자연스러움"
         },
         {
           "item_id": "RC-P6-000018",
@@ -172,7 +174,9 @@
             "result": "통과",
             "date": "2026-10-13",
             "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
-          }
+          },
+          "native_precheck_id": "ai-native-pre-1",
+          "native_precheck_note": "통과: They come furnished with 자연스러움"
         },
         {
           "item_id": "RC-P6-000019",
@@ -252,7 +256,9 @@
             "result": "통과",
             "date": "2026-10-13",
             "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
-          }
+          },
+          "native_precheck_id": "ai-native-pre-1",
+          "native_precheck_note": "통과: Each is equipped with a video screen and can seat up to ten people 자연스러움. B는 every day of the year와 충돌"
         },
         {
           "item_id": "RC-P6-000020",
@@ -332,7 +338,9 @@
             "result": "통과",
             "date": "2026-10-13",
             "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
-          }
+          },
+          "native_precheck_id": "ai-native-pre-1",
+          "native_precheck_note": "사람 원어민 확인 필요: By contrast 정답 분명, Similarly·As a result는 논리상 불가. QA 지정 항목이라 확인만 권장(낮음)"
         }
       ]
     }

@@ -25,10 +25,6 @@
         {
           "pos": "v",
           "form": "admit"
-        },
-        {
-          "pos": "adj",
-          "form": "admissible"
         }
       ],
       "confusables": [
@@ -49,50 +45,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
-    },
-    {
-      "word_id": "VC-4-0002",
-      "lemma": "agenda",
-      "pos": "n",
-      "meaning_ko": "(회의) 안건, 의제",
-      "meaning_ko_sub": "",
-      "examples": [
-        {
-          "en": "Ms. Okafor added the budget review to the agenda for Friday's meeting.",
-          "ko": "오카포 씨는 금요일 회의 안건에 예산 검토를 추가했다."
-        }
-      ],
-      "collocations": [
-        "meeting agenda",
-        "on the agenda",
-        "set the agenda"
-      ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "agendas"
-        }
-      ],
-      "confusables": [
-        {
-          "word": "agency",
-          "note_ko": "agency는 대행사·기관, agenda는 회의 안건"
-        }
-      ],
-      "paraphrases": [],
-      "type_tags": [
-        "P5-VOC.N",
-        "P5-POS.N"
-      ],
-      "level": "400",
-      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
-      "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The security guard will not ------- anyone without a valid ticket.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0003",
@@ -119,10 +82,6 @@
         {
           "pos": "adv",
           "form": "alternatively"
-        },
-        {
-          "pos": "v",
-          "form": "alternate"
         }
       ],
       "confusables": [
@@ -143,9 +102,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "-------, customers may pick up their orders at our Main Street branch.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0004",
@@ -164,12 +131,8 @@
         "modern amenities",
         "on-site amenities"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "amenities"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "facilities"
@@ -182,9 +145,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0005",
@@ -207,10 +177,6 @@
         {
           "pos": "v",
           "form": "assemble"
-        },
-        {
-          "pos": "n",
-          "form": "assembler"
         }
       ],
       "confusables": [
@@ -227,9 +193,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Two workers can ------- the display shelves in less than an hour.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0006",
@@ -243,8 +217,8 @@
           "ko": "연례 영업 회의 참석자 수가 올해 20퍼센트 증가했다."
         },
         {
-          "en": "Attendance at the safety training session is mandatory for all staff.",
-          "ko": "안전 교육 참석은 전 직원에게 의무 사항이다."
+          "en": "The trainer took attendance before the safety session for new hires began.",
+          "ko": "강사는 신입 직원 안전 교육이 시작되기 전에 출석을 확인했다."
         }
       ],
       "collocations": [
@@ -260,18 +234,9 @@
         {
           "pos": "n",
           "form": "attendee"
-        },
-        {
-          "pos": "n",
-          "form": "attendant"
         }
       ],
-      "confusables": [
-        {
-          "word": "attendee",
-          "note_ko": "attendee는 참석자(사람), attendance는 참석·참석자 수(행위/수치)"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
@@ -280,9 +245,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All department heads are required to ------- the budget meeting on Monday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0007",
@@ -301,12 +274,8 @@
         "formal attire",
         "appropriate attire"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "attire"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "dress code",
@@ -320,9 +289,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0008",
@@ -355,12 +331,7 @@
           "form": "beneficiary"
         }
       ],
-      "confusables": [
-        {
-          "word": "beneficial",
-          "note_ko": "beneficial은 형용사(유익한), benefit은 명사·동사"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [
         "advantage"
       ],
@@ -372,9 +343,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Regular breaks are ------- to both physical and mental health.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0009",
@@ -397,20 +376,12 @@
         "production capacity",
         "be filled to capacity"
       ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "capable"
-        },
-        {
-          "pos": "n",
-          "form": "capability"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "capability",
-          "note_ko": "capability는 (사람·조직의) 역량, capacity는 수용량·생산 능력"
+          "note_ko": "capability는 (사람·조직의) 역량, capacity는 수용 인원·생산 능력"
         }
       ],
       "paraphrases": [],
@@ -421,9 +392,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0010",
@@ -451,12 +429,7 @@
           "form": "catering"
         }
       ],
-      "confusables": [
-        {
-          "word": "catering",
-          "note_ko": "catering은 출장 요리 서비스(업무), caterer는 그 업체·사람"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
@@ -465,9 +438,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Lorne Bistro will ------- the company's anniversary party next month.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0011",
@@ -500,15 +481,8 @@
           "form": "certified"
         }
       ],
-      "confusables": [
-        {
-          "word": "certification",
-          "note_ko": "certification은 인증(절차·자격), certificate는 그것을 증명하는 문서"
-        }
-      ],
-      "paraphrases": [
-        "voucher"
-      ],
+      "confusables": [],
+      "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
         "P5-POS.N",
@@ -517,9 +491,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All of our electricians are ------- by the state licensing board.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0012",
@@ -558,9 +540,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customers who wish to ------- about a product should call the service desk.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0013",
@@ -579,12 +569,8 @@
         "a key component",
         "component parts"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "components"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "part",
@@ -598,9 +584,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0014",
@@ -633,12 +626,7 @@
           "form": "contractual"
         }
       ],
-      "confusables": [
-        {
-          "word": "contract",
-          "note_ko": "contract는 계약(서), contractor는 계약을 맡은 업체·사람"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
@@ -647,9 +635,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The city plans to ------- with a local firm to clean the public parks.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0015",
@@ -699,9 +695,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Staff members are asked to ------- fully with the safety inspectors.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0016",
@@ -739,9 +743,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Kim will ------- the schedules of all three conference speakers.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0017",
@@ -784,9 +796,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customers may exchange any ------- item within 14 days of purchase.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0018",
@@ -796,8 +816,8 @@
       "meaning_ko_sub": "요구",
       "examples": [
         {
-          "en": "Demand for electric bicycles has grown steadily over the past two years.",
-          "ko": "전기 자전거에 대한 수요가 지난 2년간 꾸준히 증가했다."
+          "en": "Demand for electric bicycles has risen sharply in coastal cities this year.",
+          "ko": "올해 해안 도시에서 전기 자전거 수요가 급격히 증가했다."
         }
       ],
       "collocations": [
@@ -809,10 +829,6 @@
         {
           "pos": "v",
           "form": "demand"
-        },
-        {
-          "pos": "adj",
-          "form": "demanding"
         }
       ],
       "confusables": [
@@ -829,9 +845,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0019",
@@ -870,9 +893,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0020",
@@ -891,17 +921,14 @@
         "final destination",
         "a popular destination"
       ],
-      "derivatives": [
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
         {
-          "pos": "adj",
-          "form": "destined"
-        },
-        {
-          "pos": "v",
-          "form": "destine"
+          "word": "destiny",
+          "note_ko": "destiny는 운명, destination은 목적지·여행지"
         }
       ],
-      "confusables": [],
       "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
@@ -910,9 +937,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0021",
@@ -931,12 +965,8 @@
         "shopping district",
         "district manager"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "districts"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "area",
@@ -950,9 +980,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0022",
@@ -981,12 +1018,7 @@
           "form": "donor"
         }
       ],
-      "confusables": [
-        {
-          "word": "donor",
-          "note_ko": "donor는 기부자(사람), donation은 기부금"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [
         "contribution"
       ],
@@ -998,16 +1030,24 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Local businesses ------- food and supplies to the shelter every winter.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0023",
       "lemma": "entry",
       "pos": "n",
       "meaning_ko": "출품작, 응모작",
-      "meaning_ko_sub": "입장",
+      "meaning_ko_sub": "",
       "examples": [
         {
           "en": "Entries for the photography contest must be submitted by May 31.",
@@ -1026,7 +1066,7 @@
         },
         {
           "pos": "n",
-          "form": "entrance"
+          "form": "entrant"
         }
       ],
       "confusables": [
@@ -1043,9 +1083,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Photographers who wish to ------- the contest must register by May 1.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0024",
@@ -1078,14 +1126,8 @@
           "form": "exhibitor"
         }
       ],
-      "confusables": [
-        {
-          "word": "exhibitor",
-          "note_ko": "exhibitor는 전시 참가업체(사람), exhibition은 전시회"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [
-        "exhibit",
         "show"
       ],
       "type_tags": [
@@ -1096,9 +1138,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Over 200 companies will ------- their latest products at the trade fair.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0025",
@@ -1127,12 +1177,7 @@
           "form": "expert"
         }
       ],
-      "confusables": [
-        {
-          "word": "expert",
-          "note_ko": "expert는 전문가(사람), expertise는 전문 지식"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [
         "know-how",
         "skill"
@@ -1145,9 +1190,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The firm offers ------- advice on international tax law.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0026",
@@ -1166,16 +1219,8 @@
         "state-of-the-art facility",
         "fitness facilities"
       ],
-      "derivatives": [
-        {
-          "pos": "v",
-          "form": "facilitate"
-        },
-        {
-          "pos": "n",
-          "form": "facilitator"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "plant",
@@ -1189,9 +1234,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0027",
@@ -1210,12 +1262,8 @@
         "provide feedback on",
         "positive feedback"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "feedback"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "comments",
@@ -1229,9 +1277,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0028",
@@ -1241,13 +1296,13 @@
       "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "Marston Pharmaceuticals has its headquarters in Chicago.",
-          "ko": "마스턴 제약은 시카고에 본사를 두고 있다."
+          "en": "Marston Pharmaceuticals has its headquarters in Chicago and a research center in Denver.",
+          "ko": "마스턴 제약은 시카고에 본사를, 덴버에 연구 센터를 두고 있다."
         }
       ],
       "collocations": [
         "corporate headquarters",
-        "be headquartered in",
+        "company headquarters",
         "relocate the headquarters"
       ],
       "derivatives": [
@@ -1273,9 +1328,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Brevik Logistics is ------- in Oslo, with branch offices in five countries.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0029",
@@ -1317,9 +1380,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The road closure may be ------- for commuters during rush hour.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0030",
@@ -1338,12 +1409,8 @@
         "a key ingredient",
         "natural ingredients"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "ingredients"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "component"
@@ -1356,9 +1423,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0031",
@@ -1377,16 +1451,8 @@
         "pay in installments",
         "the first installment"
       ],
-      "derivatives": [
-        {
-          "pos": "v",
-          "form": "install"
-        },
-        {
-          "pos": "n",
-          "form": "installation"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "installation",
@@ -1401,9 +1467,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0032",
@@ -1422,12 +1495,8 @@
         "inventory control",
         "reduce inventory"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "inventories"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "stock"
@@ -1440,9 +1509,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0033",
@@ -1461,12 +1537,8 @@
         "a detailed itinerary",
         "revise the itinerary"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "itineraries"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "schedule",
@@ -1480,9 +1552,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0034",
@@ -1500,12 +1579,8 @@
         "contact the landlord",
         "landlord and tenant"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "landlady"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "tenant",
@@ -1523,16 +1598,23 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0035",
       "lemma": "coverage",
       "pos": "n",
       "meaning_ko": "(보험의) 보장 범위",
-      "meaning_ko_sub": "(언론) 보도",
+      "meaning_ko_sub": "",
       "examples": [
         {
           "en": "The new insurance plan provides coverage for dental care.",
@@ -1542,7 +1624,7 @@
       "collocations": [
         "insurance coverage",
         "full coverage",
-        "media coverage"
+        "dental coverage"
       ],
       "derivatives": [
         {
@@ -1559,9 +1641,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      },
+      "deriv_stem": "The policy will ------- the cost of repairs caused by storms."
     },
     {
       "word_id": "VC-4-0036",
@@ -1598,9 +1688,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0037",
@@ -1629,12 +1726,7 @@
           "form": "inspector"
         }
       ],
-      "confusables": [
-        {
-          "word": "inspector",
-          "note_ko": "inspector는 점검관(사람), inspection은 점검 행위"
-        }
-      ],
+      "confusables": [],
       "paraphrases": [
         "check",
         "examination"
@@ -1647,9 +1739,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Health officials will ------- the restaurant's kitchen next Tuesday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0038",
@@ -1668,13 +1768,14 @@
         "anniversary sale",
         "celebrate an anniversary"
       ],
-      "derivatives": [
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
         {
-          "pos": "n",
-          "form": "anniversaries"
+          "word": "annual",
+          "note_ko": "annual은 형용사(매년의), anniversary는 명사(기념일)"
         }
       ],
-      "confusables": [],
       "paraphrases": [],
       "type_tags": [
         "P5-VOC.N",
@@ -1683,9 +1784,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0039",
@@ -1704,12 +1812,8 @@
         "awards banquet",
         "host a banquet"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "banqueting"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "formal dinner"
@@ -1722,9 +1826,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0040",
@@ -1743,16 +1854,8 @@
         "the duration of the contract",
         "short duration"
       ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "durable"
-        },
-        {
-          "pos": "n",
-          "form": "durability"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "durability",
@@ -1771,9 +1874,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0041",
@@ -1800,10 +1910,6 @@
         {
           "pos": "n",
           "form": "accommodation"
-        },
-        {
-          "pos": "adj",
-          "form": "accommodating"
         }
       ],
       "confusables": [],
@@ -1818,9 +1924,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The conference package includes ------- for two nights at the Harbor Inn.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0042",
@@ -1866,9 +1980,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of Patel Software by Orion Group was completed in June.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0043",
@@ -1909,9 +2031,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The chairs in the new training room are fully ------- to suit users of any height.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0044",
@@ -1928,7 +2058,7 @@
       "collocations": [
         "anticipate demand",
         "than anticipated",
-        "anticipate + -ing"
+        "anticipate delays"
       ],
       "derivatives": [
         {
@@ -1952,9 +2082,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- opening of the Lakeside branch has been moved to May.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0045",
@@ -1994,9 +2132,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please accept this gift as a token of our ------- for your years of service.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0046",
@@ -2012,7 +2158,7 @@
       ],
       "collocations": [
         "approve a budget",
-        "approve of",
+        "approve a request",
         "be approved by"
       ],
       "derivatives": [
@@ -2042,9 +2188,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All travel expenses require the ------- of a department manager.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0047",
@@ -2081,9 +2235,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Cole accepted a new ------- in the company's Tokyo office.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0048",
@@ -2125,9 +2287,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please open the ------- to view the updated floor plan.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0049",
@@ -2172,9 +2342,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The resort offers ------- discounts for groups of ten or more.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0050",
@@ -2219,9 +2397,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Purchases over $1,000 require written ------- from the finance director.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0051",
@@ -2267,9 +2453,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The bakery's ------- pastries attract visitors from across the region.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0052",
@@ -2291,10 +2485,6 @@
       "derivatives": [
         {
           "pos": "n",
-          "form": "browser"
-        },
-        {
-          "pos": "n",
           "form": "browse"
         }
       ],
@@ -2309,9 +2499,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0053",
@@ -2356,9 +2553,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new app was designed in close ------- with local teachers.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0054",
@@ -2398,9 +2603,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Each ------- who buys a monthly pass receives a 10 percent discount.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0055",
@@ -2419,16 +2632,8 @@
         "conduct an inspection",
         "conduct business"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "conduct"
-        },
-        {
-          "pos": "n",
-          "form": "conductor"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "conductor",
@@ -2446,51 +2651,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
-    },
-    {
-      "word_id": "VC-4-0056",
-      "lemma": "confirm",
-      "pos": "v",
-      "meaning_ko": "확인하다, 확정하다",
-      "meaning_ko_sub": "",
-      "examples": [
-        {
-          "en": "Please call us at least 24 hours in advance to confirm your reservation.",
-          "ko": "예약을 확정하시려면 최소 24시간 전에 전화 주십시오."
-        }
-      ],
-      "collocations": [
-        "confirm a reservation",
-        "confirm that",
-        "confirmation number"
-      ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "confirmation"
-        },
-        {
-          "pos": "adj",
-          "form": "confirmed"
-        }
-      ],
-      "confusables": [],
-      "paraphrases": [
-        "verify"
-      ],
-      "type_tags": [
-        "P5-VOC.V",
-        "P7-VOC.SYN"
-      ],
-      "level": "400",
-      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
-      "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0057",
@@ -2535,9 +2705,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please schedule a free ------- with one of our financial advisors.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0058",
@@ -2583,41 +2761,46 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Thank you for your generous ------- to the library building fund.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0059",
       "lemma": "decline",
       "pos": "v",
-      "meaning_ko": "거절하다",
-      "meaning_ko_sub": "감소하다",
+      "meaning_ko": "거절하다, 사양하다",
+      "meaning_ko_sub": "",
       "examples": [
         {
           "en": "Mr. Petrov declined the job offer because of the long commute.",
           "ko": "페트로프 씨는 긴 통근 거리 때문에 그 일자리 제안을 거절했다."
         },
         {
-          "en": "Sales of printed maps have declined in recent years.",
-          "ko": "종이 지도의 판매량이 최근 몇 년간 감소했다."
+          "en": "Ms. Tran politely declined the invitation to speak at the trade fair.",
+          "ko": "트란 씨는 무역 박람회 연설 초청을 정중히 거절했다."
         }
       ],
       "collocations": [
         "decline an invitation",
+        "decline an offer",
         "decline to comment",
-        "decline sharply"
+        "politely decline"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "decline"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "turn down",
-        "decrease"
+        "refuse"
       ],
       "type_tags": [
         "P5-VOC.V",
@@ -2626,9 +2809,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0060",
@@ -2651,10 +2841,6 @@
         {
           "pos": "n",
           "form": "demonstration"
-        },
-        {
-          "pos": "n",
-          "form": "demonstrator"
         }
       ],
       "confusables": [],
@@ -2669,9 +2855,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the new software will begin at 10 A.M. in Room B.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0061",
@@ -2717,9 +2911,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Nelson Foods handles the ------- of its products to over 200 stores.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0062",
@@ -2764,9 +2966,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please review the ------- brochure for details about our services.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0063",
@@ -2807,9 +3017,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The early sales figures for the new model are very -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0064",
@@ -2850,9 +3068,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The software update includes a major ------- to the search function.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0065",
@@ -2871,12 +3097,8 @@
         "ensure safety",
         "ensure accuracy"
       ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "sure"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "insure",
@@ -2898,9 +3120,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0066",
@@ -2923,10 +3152,6 @@
         {
           "pos": "n",
           "form": "enrollment"
-        },
-        {
-          "pos": "n",
-          "form": "enrollee"
         }
       ],
       "confusables": [],
@@ -2941,9 +3166,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "------- in the leadership program is limited to 25 participants.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0067",
@@ -2984,9 +3217,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Brennan's is a family-owned ------- that has served the town since 1952.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0068",
@@ -3031,9 +3272,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- cost of the renovation is about $40,000.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0069",
@@ -3074,9 +3323,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Employees receive a performance ------- every six months.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0070",
@@ -3103,10 +3360,6 @@
         {
           "pos": "n",
           "form": "excess"
-        },
-        {
-          "pos": "adv",
-          "form": "exceedingly"
         }
       ],
       "confusables": [],
@@ -3121,9 +3374,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Residents complained about the ------- noise from the construction site.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0071",
@@ -3146,10 +3407,6 @@
         {
           "pos": "n",
           "form": "expansion"
-        },
-        {
-          "pos": "adj",
-          "form": "expansive"
         }
       ],
       "confusables": [
@@ -3169,9 +3426,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the warehouse will create 40 new jobs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0072",
@@ -3187,7 +3452,7 @@
       ],
       "collocations": [
         "expire on",
-        "expiration date",
+        "expire at the end of",
         "expired membership"
       ],
       "derivatives": [
@@ -3212,29 +3477,37 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Members will receive a reminder two weeks before the ------- of their contracts.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0073",
       "lemma": "extend",
       "pos": "v",
       "meaning_ko": "연장하다",
-      "meaning_ko_sub": "(초대·감사 등을) 전하다",
+      "meaning_ko_sub": "",
       "examples": [
         {
           "en": "The library has extended its opening hours until 9 P.M. on weekdays.",
           "ko": "도서관은 평일 개관 시간을 오후 9시까지 연장했다."
         },
         {
-          "en": "We would like to extend our thanks to all the volunteers.",
-          "ko": "모든 자원봉사자분들께 감사를 전하고 싶습니다."
+          "en": "The landlord agreed to extend our lease for another two years.",
+          "ko": "임대인은 우리 임대 계약을 2년 더 연장하는 데 동의했다."
         }
       ],
       "collocations": [
         "extend a deadline",
-        "extend an invitation",
+        "extend the lease",
         "extended warranty"
       ],
       "derivatives": [
@@ -3244,11 +3517,7 @@
         },
         {
           "pos": "adj",
-          "form": "extensive"
-        },
-        {
-          "pos": "adv",
-          "form": "extensively"
+          "form": "extended"
         }
       ],
       "confusables": [],
@@ -3263,9 +3532,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Ward requested an ------- of the deadline to finish her report.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0074",
@@ -3284,16 +3561,8 @@
         "forward an e-mail",
         "forwarding address"
       ],
-      "derivatives": [
-        {
-          "pos": "adv",
-          "form": "forward"
-        },
-        {
-          "pos": "adj",
-          "form": "forward"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "send on",
@@ -3306,9 +3575,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0075",
@@ -3349,9 +3625,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All repairs come with a one-year ------- on parts and labor.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0076",
@@ -3396,9 +3680,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "There is no ------- that the shipment will arrive late.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0077",
@@ -3415,7 +3707,7 @@
       "collocations": [
         "inquire about",
         "inquire whether",
-        "inquire into"
+        "inquire at the front desk"
       ],
       "derivatives": [
         {
@@ -3439,9 +3731,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customer service representatives respond to every ------- within one business day.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0078",
@@ -3478,9 +3778,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0079",
@@ -3503,10 +3810,6 @@
         {
           "pos": "n",
           "form": "lease"
-        },
-        {
-          "pos": "n",
-          "form": "leasing"
         }
       ],
       "confusables": [
@@ -3515,9 +3818,7 @@
           "note_ko": "rent는 일반적 임대·임차, lease는 장기 계약 임대"
         }
       ],
-      "paraphrases": [
-        "rent"
-      ],
+      "paraphrases": [],
       "type_tags": [
         "P5-VOC.V",
         "P7-VOC.SYN"
@@ -3525,15 +3826,22 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0080",
       "lemma": "accompany",
       "pos": "v",
-      "meaning_ko": "동반하다, 동봉되다",
+      "meaning_ko": "동반하다, 함께 가다",
       "meaning_ko_sub": "",
       "examples": [
         {
@@ -3541,8 +3849,8 @@
           "ko": "10세 미만 어린이는 반드시 성인을 동반해야 한다."
         },
         {
-          "en": "The new tablet comes with an accompanying user guide.",
-          "ko": "새 태블릿에는 사용 설명서가 함께 들어 있다."
+          "en": "Mr. Lim will accompany the visiting clients on a tour of the factory.",
+          "ko": "임 씨가 방문 고객들과 함께 공장을 둘러볼 것이다."
         }
       ],
       "collocations": [
@@ -3551,10 +3859,6 @@
         "accompany a guest"
       ],
       "derivatives": [
-        {
-          "pos": "n",
-          "form": "accompaniment"
-        },
         {
           "pos": "adj",
           "form": "accompanying"
@@ -3572,9 +3876,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please read the ------- instructions before installing the shelf.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0081",
@@ -3584,12 +3896,12 @@
       "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "The museum is easily accessible by subway.",
-          "ko": "그 박물관은 지하철로 쉽게 갈 수 있다."
+          "en": "The Harlow Museum is easily accessible by subway from the city center.",
+          "ko": "할로 박물관은 시내 중심가에서 지하철로 쉽게 갈 수 있다."
         },
         {
-          "en": "All of our branches are wheelchair accessible.",
-          "ko": "저희 모든 지점은 휠체어로 이용 가능합니다."
+          "en": "All of our branches are wheelchair accessible and offer free parking for visitors.",
+          "ko": "저희 모든 지점은 휠체어로 이용할 수 있으며 방문객 무료 주차를 제공합니다."
         }
       ],
       "collocations": [
@@ -3613,8 +3925,7 @@
       ],
       "confusables": [],
       "paraphrases": [
-        "reachable",
-        "available"
+        "reachable"
       ],
       "type_tags": [
         "P5-VOC.ADJ",
@@ -3624,9 +3935,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Employees can ------- the database from any company laptop.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0082",
@@ -3668,9 +3987,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new scale measures weight more ------- than the old one.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0083",
@@ -3712,53 +4039,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
-    },
-    {
-      "word_id": "VC-4-0084",
-      "lemma": "annual",
-      "pos": "adj",
-      "meaning_ko": "연례의, 연간의",
-      "meaning_ko_sub": "",
-      "examples": [
-        {
-          "en": "The annual shareholders' meeting will take place on June 4.",
-          "ko": "연례 주주 총회는 6월 4일에 열린다."
-        }
-      ],
-      "collocations": [
-        "annual report",
-        "annual fee",
-        "annual conference"
-      ],
-      "derivatives": [
-        {
-          "pos": "adv",
-          "form": "annually"
-        }
-      ],
-      "confusables": [
-        {
-          "word": "anniversary",
-          "note_ko": "anniversary는 명사(기념일), annual은 형용사(매년의)"
-        }
-      ],
-      "paraphrases": [
-        "yearly"
-      ],
-      "type_tags": [
-        "P5-VOC.ADJ",
-        "P5-POS.ADJ",
-        "P7-VOC.SYN"
-      ],
-      "level": "400",
-      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
-      "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Many small businesses cannot ------- to rent offices downtown.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0085",
@@ -3804,9 +4095,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new partnership will ------- both companies.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0086",
@@ -3821,7 +4120,7 @@
         }
       ],
       "collocations": [
-        "be capable of + -ing",
+        "be capable of handling",
         "highly capable",
         "a capable manager"
       ],
@@ -3829,10 +4128,6 @@
         {
           "pos": "n",
           "form": "capability"
-        },
-        {
-          "pos": "n",
-          "form": "capacity"
         },
         {
           "pos": "adv",
@@ -3846,7 +4141,7 @@
         }
       ],
       "paraphrases": [
-        "able"
+        "competent"
       ],
       "type_tags": [
         "P5-VOC.ADJ",
@@ -3856,9 +4151,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new server has the ------- to process thousands of orders per hour.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0087",
@@ -3913,20 +4216,28 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Over 40 local restaurants will ------- for the Best Dish award.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0088",
       "lemma": "complimentary",
       "pos": "adj",
       "meaning_ko": "무료의",
-      "meaning_ko_sub": "칭찬하는",
+      "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "Hotel guests receive complimentary breakfast every morning.",
-          "ko": "호텔 투숙객은 매일 아침 무료 조식을 제공받는다."
+          "en": "Hotel guests receive a complimentary breakfast in the lobby café every morning.",
+          "ko": "호텔 투숙객은 매일 아침 로비 카페에서 무료 조식을 제공받는다."
         }
       ],
       "collocations": [
@@ -3934,16 +4245,8 @@
         "complimentary tickets",
         "complimentary shuttle"
       ],
-      "derivatives": [
-        {
-          "pos": "n",
-          "form": "compliment"
-        },
-        {
-          "pos": "v",
-          "form": "compliment"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [
         {
           "word": "complementary",
@@ -3962,9 +4265,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0089",
@@ -3987,14 +4297,6 @@
         {
           "pos": "adv",
           "form": "comprehensively"
-        },
-        {
-          "pos": "v",
-          "form": "comprehend"
-        },
-        {
-          "pos": "n",
-          "form": "comprehension"
         }
       ],
       "confusables": [
@@ -4015,9 +4317,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The guide ------- covers every step of the hiring process.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0090",
@@ -4064,9 +4374,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Our firm takes client ------- very seriously.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0091",
@@ -4089,14 +4407,6 @@
         {
           "pos": "adv",
           "form": "considerably"
-        },
-        {
-          "pos": "v",
-          "form": "consider"
-        },
-        {
-          "pos": "n",
-          "form": "consideration"
         }
       ],
       "confusables": [
@@ -4117,26 +4427,34 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Production costs have risen ------- since last year.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0092",
       "lemma": "dedicated",
       "pos": "adj",
       "meaning_ko": "헌신적인, 전념하는",
-      "meaning_ko_sub": "전용의",
+      "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "Our dedicated support team is available 24 hours a day.",
-          "ko": "저희 헌신적인 지원팀은 24시간 이용 가능합니다."
+          "en": "Our most dedicated employees often stay late to help new colleagues finish their projects.",
+          "ko": "가장 헌신적인 직원들은 신입 동료들이 프로젝트를 마치도록 돕기 위해 종종 늦게까지 남는다."
         }
       ],
       "collocations": [
-        "be dedicated to + -ing",
+        "be dedicated to serving",
         "dedicated staff",
-        "a dedicated line"
+        "a dedicated volunteer"
       ],
       "derivatives": [
         {
@@ -4161,9 +4479,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The award recognizes Mr. Ruiz's ------- to customer service.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0093",
@@ -4186,10 +4512,6 @@
         {
           "pos": "n",
           "form": "durability"
-        },
-        {
-          "pos": "n",
-          "form": "duration"
         }
       ],
       "confusables": [],
@@ -4205,9 +4527,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customers praise the ------- of our steel water bottles.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0094",
@@ -4253,9 +4583,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new layout lets warehouse staff work more -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0095",
@@ -4293,9 +4631,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "------- for the scholarship is limited to full-time students.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0096",
@@ -4316,16 +4662,8 @@
       ],
       "derivatives": [
         {
-          "pos": "n",
-          "form": "essence"
-        },
-        {
           "pos": "adv",
           "form": "essentially"
-        },
-        {
-          "pos": "n",
-          "form": "essentials"
         }
       ],
       "confusables": [],
@@ -4341,9 +4679,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The updated software is ------- the same as the previous version.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0097",
@@ -4360,7 +4706,7 @@
       "collocations": [
         "existing customers",
         "existing equipment",
-        "replace the existing"
+        "replace the existing system"
       ],
       "derivatives": [
         {
@@ -4384,9 +4730,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The museum's oldest building has been in ------- since 1870.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0098",
@@ -4428,9 +4782,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Applicants should have some ------- in customer service.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0099",
@@ -4451,14 +4813,6 @@
       ],
       "derivatives": [
         {
-          "pos": "v",
-          "form": "extend"
-        },
-        {
-          "pos": "n",
-          "form": "extension"
-        },
-        {
           "pos": "adv",
           "form": "extensively"
         }
@@ -4476,9 +4830,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Dr. Kwan has traveled ------- throughout Asia for her research.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0100",
@@ -4519,9 +4881,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the new schedule allows parents to pick up their children.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0101",
@@ -4548,10 +4918,6 @@
         {
           "pos": "n",
           "form": "information"
-        },
-        {
-          "pos": "adv",
-          "form": "informatively"
         }
       ],
       "confusables": [
@@ -4572,9 +4938,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please ------- your manager if you will be absent from work.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0102",
@@ -4597,14 +4971,6 @@
         {
           "pos": "adv",
           "form": "initially"
-        },
-        {
-          "pos": "v",
-          "form": "initiate"
-        },
-        {
-          "pos": "n",
-          "form": "initiative"
         }
       ],
       "confusables": [],
@@ -4620,9 +4986,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The project was ------- scheduled to finish in May.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0103",
@@ -4668,9 +5042,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The company won an award for its latest ------- in battery design.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0104",
@@ -4712,9 +5094,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Grant has extensive ------- of local real estate law.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0105",
@@ -4759,9 +5149,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Seating is -------, so please register early.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0106",
@@ -4771,12 +5169,12 @@
       "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "You can register online. Alternatively, you may call our office.",
-          "ko": "온라인으로 등록하실 수 있습니다. 아니면 저희 사무실로 전화하셔도 됩니다."
+          "en": "You may register online or, alternatively, call our office during business hours.",
+          "ko": "온라인으로 등록하시거나, 아니면 업무 시간 중에 저희 사무실로 전화하셔도 됩니다."
         }
       ],
       "collocations": [
-        "Alternatively, you can",
+        "alternatively, you can",
         "or alternatively"
       ],
       "derivatives": [
@@ -4791,8 +5189,7 @@
       ],
       "confusables": [],
       "paraphrases": [
-        "instead",
-        "otherwise"
+        "instead"
       ],
       "type_tags": [
         "P5-VOC.ADV",
@@ -4803,9 +5200,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "We can offer you a full refund or an ------- product of equal value.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0107",
@@ -4820,7 +5225,7 @@
         }
       ],
       "collocations": [
-        "approximately + 숫자",
+        "approximately 30 minutes",
         "approximately half"
       ],
       "derivatives": [
@@ -4850,53 +5255,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
-    },
-    {
-      "word_id": "VC-4-0108",
-      "lemma": "currently",
-      "pos": "adv",
-      "meaning_ko": "현재",
-      "meaning_ko_sub": "",
-      "examples": [
-        {
-          "en": "The position is currently open to internal applicants only.",
-          "ko": "그 직책은 현재 내부 지원자에게만 열려 있다."
-        }
-      ],
-      "collocations": [
-        "be currently + -ing",
-        "currently available",
-        "currently under review"
-      ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "current"
-        },
-        {
-          "pos": "n",
-          "form": "currency"
-        }
-      ],
-      "confusables": [],
-      "paraphrases": [
-        "now",
-        "at present"
-      ],
-      "type_tags": [
-        "P5-VOC.ADV",
-        "P5-POS.ADV",
-        "P7-VOC.SYN"
-      ],
-      "level": "400",
-      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
-      "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- cost of the repairs is $3,000.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0109",
@@ -4919,10 +5288,6 @@
         {
           "pos": "adj",
           "form": "dramatic"
-        },
-        {
-          "pos": "n",
-          "form": "drama"
         }
       ],
       "confusables": [],
@@ -4938,9 +5303,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The company saw a ------- increase in sales after the ad campaign.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0110",
@@ -4963,14 +5336,6 @@
         {
           "pos": "adj",
           "form": "exclusive"
-        },
-        {
-          "pos": "v",
-          "form": "exclude"
-        },
-        {
-          "pos": "n",
-          "form": "exclusion"
         }
       ],
       "confusables": [],
@@ -4986,49 +5351,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
-    },
-    {
-      "word_id": "VC-4-0111",
-      "lemma": "immediately",
-      "pos": "adv",
-      "meaning_ko": "즉시",
-      "meaning_ko_sub": "",
-      "examples": [
-        {
-          "en": "Please report any equipment malfunction to the supervisor immediately.",
-          "ko": "장비 고장은 즉시 감독관에게 보고해 주십시오."
-        }
-      ],
-      "collocations": [
-        "immediately after",
-        "effective immediately",
-        "immediately following"
-      ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "immediate"
-        }
-      ],
-      "confusables": [],
-      "paraphrases": [
-        "at once",
-        "right away"
-      ],
-      "type_tags": [
-        "P5-VOC.ADV",
-        "P5-POS.ADV",
-        "P7-VOC.SYN"
-      ],
-      "level": "400",
-      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
-      "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Members receive ------- access to the new rooftop lounge.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0112",
@@ -5065,9 +5398,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The store has seen a ------- rise in weekend visitors.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0113",
@@ -5113,9 +5454,17 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of bus service will increase during the festival.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0114",
@@ -5134,16 +5483,8 @@
         "carry out repairs",
         "carry out a plan"
       ],
-      "derivatives": [
-        {
-          "pos": "v",
-          "form": "carry"
-        },
-        {
-          "pos": "n",
-          "form": "carrier"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "conduct",
@@ -5157,9 +5498,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) + 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     },
     {
       "word_id": "VC-4-0115",
@@ -5169,24 +5517,16 @@
       "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "Members can borrow e-books free of charge.",
-          "ko": "회원은 전자책을 무료로 대출할 수 있다."
+          "en": "Members of the Westbrook Library can borrow e-books free of charge through its app.",
+          "ko": "웨스트브룩 도서관 회원은 앱을 통해 전자책을 무료로 대출할 수 있다."
         }
       ],
       "collocations": [
         "be provided free of charge",
         "replace free of charge"
       ],
-      "derivatives": [
-        {
-          "pos": "adj",
-          "form": "free"
-        },
-        {
-          "pos": "adv",
-          "form": "freely"
-        }
-      ],
+      "derivatives": [],
+      "no_word_family": true,
       "confusables": [],
       "paraphrases": [
         "at no cost",
@@ -5199,9 +5539,16 @@
       "level": "400",
       "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, RC 300→400 핵심어) / 자체 문항 은행 미등장(코퍼스 확장 시 재확인). 공개·상업 단어장 목록·순서·예문 복사 없음, 예문·뜻풀이 자체 작성",
       "author_id": "ai-writer-vocab-4a",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
     }
   ]
 }

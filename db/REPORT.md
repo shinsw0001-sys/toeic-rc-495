@@ -95,12 +95,13 @@ DB: `db/toeic_rc.db` (SQLite). 다시 만들기: `python3 db/build_db.py`
 |---|---|---|---|---|---|---|
 | 기초 | 56 | 49 | 30 | 10 | 5 | 150 |
 | 400 | 87 | 79 | 48 | 14 | 5 | 233 |
+| 450 | 2 | 4 | 3 | 1 | 0 | 10 |
 
-- 문항 은행 어휘와 연결된 카드: 134개
+- 문항 은행 어휘와 연결된 카드: 135개
 
 ## 폼
 
-- PL-A (placement): basic 14문항 (Part 5,7), mid 14문항 (Part 5,7), stage1 12문항 (Part 5,6), upper 14문항 (Part 5,7)
+- PL-A (placement): basic 14문항 (Part 5,7), mid 14문항 (Part 5,7), stage1 12문항 (Part 5,6), upper 14문항 (Part 5,7), 어휘 체크 20문항
 
 ## 내부 유사도 (5-gram Jaccard ≥ 0.3)
 

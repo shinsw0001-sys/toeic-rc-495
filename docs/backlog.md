@@ -19,12 +19,14 @@
 | S1-15 | 배치고사·어휘 콘텐츠 검수 기준 | qa-tester | docs/qa/content-standard.md 보강 | S1-12 | S2-04로 이관 |
 | S1-16 | 창작 문항 1차 묶음 (P5 40, P6 16, P7 22) | content writers | content/items/ | - | 완료 |
 | S1-17 | 문항 DB 적재와 Part·유형별 현황 | chief-of-staff | db/toeic_rc.db, db/REPORT.md | S1-16 | 완료 |
-| S2-01 | 배치고사 A폼 Part 5·6 (24문항) | content writer | content/items/p5, p6 | - | 진행 |
-| S2-02 | 배치고사 A폼 Part 7 (9세트 30문항) | content writer | content/items/p7 | - | 진행 |
-| S2-03 | 어휘 카드 1차 380개 (기초 150, 400 레벨 230) | content writers | content/vocab/ | - | 작성 완료, 검수 중 |
+| S2-01 | 배치고사 A폼 Part 5·6 (24문항) | content writer | content/items/p5, p6 | - | 완료 (교차 검수·원어민 사전 검수) |
+| S2-02 | 배치고사 A폼 Part 7 (9세트 30문항) | content writer | content/items/p7 | - | 완료 (교차 검수·원어민 사전 검수) |
+| S2-03 | 어휘 카드 1차 380개 (기초 150, 400 레벨 230) | content writers | content/vocab/ | - | 완료: 기초 150·400 233·450 10장 교차 검수 |
 | S2-04 | 어휘 카드·어휘 체크 검수 기준 (S1-15 흡수) | qa-tester | docs/qa/vocab-standard.md | - | 완료 |
-| S2-05 | PRD v1 (비전·로드맵·배치·어휘·디자인 수정안 통합) | product-planner | docs/specs/prd-v1.md | - | 진행 |
+| S2-05 | PRD v1 (비전·로드맵·배치·어휘·디자인 수정안 통합) | product-planner | docs/specs/prd-v1.md | - | 완료 |
 | S2-06 | 대기자 랜딩 초안 (게시 안 함) | marketer | prototypes/landing.html | - | 완료 |
-| S2-07 | 배치고사 폼 구성 파일과 DB 적재 | chief-of-staff | content/forms/, db/ | S2-01, S2-02 | 대기 |
-| S2-08 | 어휘 체크 A폼 20문항 | content writer | content/forms/ | S2-03 | 대기 |
-| S2-09 | 배치고사 문항·어휘 카드 교차 검수 | qa-tester | docs/qa/ | S2-01~03 | 대기 |
+| S2-07 | 배치고사 폼 구성 파일과 DB 적재 | chief-of-staff | content/forms/, db/ | S2-01, S2-02 | 완료 |
+| S2-08 | 어휘 체크 A폼 20문항 | content writer | content/forms/ | S2-03 | 완료 (495 구간은 450 상위 카드로 대체) |
+| S2-09 | 배치고사 문항·어휘 카드 교차 검수 | qa-tester | docs/qa/ | S2-01~03 | 완료 |
+| S2-10 | 원어민 사전 검수 에이전트 추가 | chief-of-staff | .claude/agents/native-reviewer.md | - | 완료 |
+| S2-11 | 환불정책 초안 (산타 비교, 법률 검토 전) | cs-manager | docs/cs/refund-policy-draft.md | - | 완료, 사용자 결정·법률 검토 대기 |
