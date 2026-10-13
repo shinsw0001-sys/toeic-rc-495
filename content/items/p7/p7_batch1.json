@@ -1,0 +1,1726 @@
+{
+  "sets": [
+    {
+      "set_id": "RC-P7-S-0001",
+      "part": 7,
+      "passage_type": "text_message_chain",
+      "passage_count": 1,
+      "business_context": "주문·배송",
+      "fictional_entities": [
+        "Marisol Quenby",
+        "Tobiah Wrenfield",
+        "Pellicott Furnishings",
+        "Dalia"
+      ],
+      "passages": [
+        {
+          "title": "Text message chain",
+          "type": "text_message_chain",
+          "text": "Marisol Quenby [9:12 A.M.]\nTobiah, the driver from Pellicott Furnishings just called. They're bringing the new conference chairs this morning instead of Thursday.\n\nTobiah Wrenfield [9:14 A.M.]\nToday? The conference room is still being painted. The crew won't finish until noon.\n\nMarisol Quenby [9:15 A.M.]\nI know. The driver said he could leave them in the storage room on the second floor for now.\n\nTobiah Wrenfield [9:17 A.M.]\nThat works for me. Just make sure someone signs for them and checks that all twelve are there.\n\nMarisol Quenby [9:18 A.M.]\nWill do. I'll ask Dalia at the front desk to count them when they arrive."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000001",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "Why did Ms. Quenby send the first message?",
+          "options": {
+            "A": "To ask Mr. Wrenfield to sign for a delivery",
+            "B": "To report that an order will arrive sooner than expected",
+            "C": "To complain about the progress of a painting crew",
+            "D": "To request that some furniture be returned"
+          },
+          "answer": "B",
+          "type_tag": "P7-MAIN.PURPOSE",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B)예요. Ms. Quenby의 첫 메시지(9:12)에 \"They're bringing the new conference chairs this morning instead of Thursday.\"(목요일 대신 오늘 아침에 새 회의실 의자를 가져온대요)라고 나와요. 원래 목요일 예정이던 배송이 앞당겨졌다는 소식을 알리려는 것이니 '주문품이 예상보다 일찍 도착한다'는 (B)가 맞아요. (A)의 sign은 9:17 메시지에 나오지만 Mr. Wrenfield가 '누군가 서명하게 하라'고 한 말이에요. (C)의 페인트 작업은 Mr. Wrenfield가 꺼낸 이야기이고 불평도 아니에요. (D) 반품 이야기는 없어요.",
+          "evidence_quote": "They're bringing the new conference chairs this morning instead of Thursday.",
+          "distractor_rationale": {
+            "A": "오답: sign은 9:17 메시지에서 Mr. Wrenfield가 한 말이에요. 첫 메시지의 목적이 아니에요 (지문 단어 반복 함정).",
+            "B": "정답: 목요일 예정이던 의자 배송이 오늘 아침으로 앞당겨졌다고 알리고 있어요.",
+            "C": "오답: 페인트 작업은 Mr. Wrenfield가 언급했고, 불평하는 내용도 없어요 (대상 혼동).",
+            "D": "오답: 가구를 돌려보내자는 내용은 지문에 없어요 (언급 없음)."
+          },
+          "trap_code": {
+            "A": "WORD_REPEAT_TRAP",
+            "B": null,
+            "C": "WRONG_REFERENT",
+            "D": "NOT_MENTIONED"
+          },
+          "key_point": "문자 대화의 목적 문제는 첫 메시지를 보면 돼요. 'A instead of B'는 '원래 B였는데 A로 바뀌었다'는 일정 변경 신호예요.",
+          "vocab": [
+            {
+              "word": "instead of",
+              "pos": "prep.",
+              "meaning_ko": "~ 대신에",
+              "level": "기초"
+            },
+            {
+              "word": "conference",
+              "pos": "n.",
+              "meaning_ko": "회의",
+              "level": "기초"
+            },
+            {
+              "word": "sooner than expected",
+              "pos": "phr.",
+              "meaning_ko": "예상보다 일찍",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 사무용 가구 배송 일정이 당겨진 상황의 사내 문자 대화. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000002",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "At 9:17 A.M., what does Mr. Wrenfield most likely mean when he writes, \"That works for me\"?",
+          "options": {
+            "A": "He approves of keeping the chairs in another room for the time being.",
+            "B": "He would prefer to have the chairs delivered on Thursday.",
+            "C": "He will be available to count the chairs himself.",
+            "D": "He expects the painting to be finished early."
+          },
+          "answer": "A",
+          "type_tag": "P7-INTENT.CHAT",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A)예요. 바로 앞 9:15 메시지에서 Ms. Quenby가 \"The driver said he could leave them in the storage room on the second floor for now.\"(기사님이 일단 2층 창고에 두고 갈 수 있대요)라고 했어요. 여기에 \"That works for me\"(저는 괜찮아요)라고 답했으니 의자를 당분간 다른 방에 두는 데 동의한다는 뜻이에요. (B) Thursday는 원래 배송일로 지문에 나오는 단어지만, 그날로 미루자는 말은 없어요. (C) 오히려 '누군가 서명하고 12개가 다 왔는지 확인하게 하라'고 했고, Ms. Quenby가 Dalia에게 맡기겠다고 해요. (D) 작업은 정오까지 끝나지 않는다고 했어요.",
+          "evidence_quote": "The driver said he could leave them in the storage room on the second floor for now. / That works for me. Just make sure someone signs for them and checks that all twelve are there.",
+          "distractor_rationale": {
+            "A": "정답: 의자를 일단 2층 창고에 두자는 제안에 동의하는 말이에요.",
+            "B": "오답: Thursday는 원래 배송일로 지문에 나오지만 그날로 받자는 말은 없어요 (지문 단어 반복 함정).",
+            "C": "오답: 그는 '누군가(someone)'에게 확인하게 하라고 했고, 실제로 세는 사람은 Ms. Quenby가 맡기려는 Dalia예요. 본인이 센다는 말은 없어요 (대상 혼동).",
+            "D": "오답: 9:14 메시지에서 작업이 정오까지 끝나지 않는다고 했어요 (반대 정보)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "WORD_REPEAT_TRAP",
+            "C": "WRONG_REFERENT",
+            "D": "OPPOSITE_INFO"
+          },
+          "key_point": "의도 파악 문제는 인용문 바로 앞 메시지가 무엇을 제안했는지 확인해요. 'That works for me'는 상대 제안을 받아들이는 표현이에요.",
+          "vocab": [
+            {
+              "word": "storage room",
+              "pos": "n.",
+              "meaning_ko": "창고",
+              "level": "기초"
+            },
+            {
+              "word": "for now",
+              "pos": "phr.",
+              "meaning_ko": "당분간, 일단",
+              "level": "기초"
+            },
+            {
+              "word": "sign for",
+              "pos": "phr. v.",
+              "meaning_ko": "~을 받고 서명하다",
+              "level": "중급"
+            },
+            {
+              "word": "for the time being",
+              "pos": "phr.",
+              "meaning_ko": "당분간",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 배송품 임시 보관 장소를 정하는 사내 문자 대화. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P7-S-0002",
+      "part": 7,
+      "passage_type": "notice",
+      "passage_count": 1,
+      "business_context": "시설·행사",
+      "fictional_entities": [
+        "Brindlemoor Tower",
+        "Ostrander Avenue",
+        "Yusuf Albrecht-Tanaka",
+        "brindlemoor-example.com"
+      ],
+      "passages": [
+        {
+          "title": "Notice to All Tenants",
+          "type": "notice",
+          "text": "NOTICE TO ALL TENANTS\nBrindlemoor Tower, 418 Ostrander Avenue\n\nThe building's two passenger elevators will be upgraded between Monday, November 9, and Friday, November 20. During this period, only one passenger elevator will be in service at a time. The freight elevator at the rear of the building will remain available for deliveries, but it may not be used by passengers.\n\nWork will take place from 7:00 A.M. to 4:00 P.M. on weekdays. Tenants who expect large deliveries during these hours are asked to schedule them through the management office at least two business days in advance so that the freight elevator can be reserved.\n\nWe apologize for any inconvenience. Questions may be directed to Yusuf Albrecht-Tanaka, building manager, at 555-0148 or y.albrecht@brindlemoor-example.com."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000003",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "What is the purpose of the notice?",
+          "options": {
+            "A": "To announce the opening of a new management office",
+            "B": "To ask tenants to report problems with the elevators",
+            "C": "To inform tenants of temporary changes to elevator service",
+            "D": "To explain new rules about who may receive deliveries"
+          },
+          "answer": "C",
+          "type_tag": "P7-MAIN.PURPOSE",
+          "sub_tags": [],
+          "difficulty_expert": 1,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (C)예요. 공지 첫 문단에 \"The building's two passenger elevators will be upgraded between Monday, November 9, and Friday, November 20.\"(승객용 엘리베이터 2대를 11월 9일부터 20일까지 개선 공사해요)와 \"only one passenger elevator will be in service at a time\"(한 번에 한 대만 운행해요)이라고 나와요. 공사 기간 동안 엘리베이터 운행이 바뀐다는 걸 알리는 공지예요. (A) management office는 나오지만 새로 연다는 말은 없어요. (B) 고장 신고를 요청하지 않아요. (D) 배송 이야기는 일부일 뿐이고, 누가 받을 수 있는지에 대한 규칙도 아니에요.",
+          "evidence_quote": "The building's two passenger elevators will be upgraded between Monday, November 9, and Friday, November 20. / During this period, only one passenger elevator will be in service at a time.",
+          "distractor_rationale": {
+            "A": "오답: management office는 지문에 나오지만 새로 연다는 내용은 없어요 (지문 단어 반복 함정).",
+            "B": "오답: 엘리베이터 문제를 신고하라는 요청은 없어요 (언급 없음).",
+            "C": "정답: 공사 기간(11월 9~20일) 동안 엘리베이터 운행 방식이 바뀐다고 알려요.",
+            "D": "오답: 대형 배송 예약 안내는 공지의 일부일 뿐 전체 목적이 아니에요 (부분 정보)."
+          },
+          "trap_code": {
+            "A": "WORD_REPEAT_TRAP",
+            "B": "NOT_MENTIONED",
+            "C": null,
+            "D": "PARTIAL_INFO"
+          },
+          "key_point": "공지의 목적은 보통 첫 문단 첫 문장에 있어요. 뒤에 나오는 세부 안내(배송 예약)는 부분 정보예요.",
+          "vocab": [
+            {
+              "word": "tenant",
+              "pos": "n.",
+              "meaning_ko": "세입자, 입주자",
+              "level": "중급"
+            },
+            {
+              "word": "upgrade",
+              "pos": "v.",
+              "meaning_ko": "개선하다, 개량하다",
+              "level": "기초"
+            },
+            {
+              "word": "in service",
+              "pos": "phr.",
+              "meaning_ko": "운행 중인, 사용 중인",
+              "level": "중급"
+            },
+            {
+              "word": "freight elevator",
+              "pos": "n.",
+              "meaning_ko": "화물용 엘리베이터",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 공사 안내 공지. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000004",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "What are tenants who expect large deliveries asked to do?",
+          "options": {
+            "A": "Have the items brought in through the front entrance",
+            "B": "Contact the management office ahead of time",
+            "C": "Arrange for the deliveries to arrive after 4:00 P.M.",
+            "D": "Pay a fee to reserve the freight elevator"
+          },
+          "answer": "B",
+          "type_tag": "P7-DET.FACT",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B)예요. 둘째 문단에 \"Tenants who expect large deliveries during these hours are asked to schedule them through the management office at least two business days in advance so that the freight elevator can be reserved.\"(이 시간에 대형 배송이 있는 입주자는 화물용 엘리베이터를 예약할 수 있도록 최소 영업일 2일 전에 관리사무소를 통해 일정을 잡아 주세요)라고 해요. in advance가 보기에서 ahead of time으로 바뀌었어요. (A) 정문 이야기는 없어요. 오히려 화물용 엘리베이터는 건물 뒤쪽에 있어요. (C) 4:00 P.M.은 공사 종료 시각일 뿐 그 뒤로 배송하라는 말은 없어요. (D) 요금 이야기는 없어요.",
+          "evidence_quote": "Tenants who expect large deliveries during these hours are asked to schedule them through the management office at least two business days in advance so that the freight elevator can be reserved.",
+          "distractor_rationale": {
+            "A": "오답: 정문으로 들이라는 안내는 없어요 (언급 없음).",
+            "B": "정답: 최소 영업일 2일 전에 관리사무소를 통해 일정을 잡으라고 했어요 (in advance = ahead of time).",
+            "C": "오답: 4:00 P.M.은 공사 종료 시각이에요. 그 뒤에 배송하라는 말은 없어요 (지문 단어 반복 함정).",
+            "D": "오답: 예약 비용에 대한 언급은 없어요 (언급 없음)."
+          },
+          "trap_code": {
+            "A": "NOT_MENTIONED",
+            "B": null,
+            "C": "WORD_REPEAT_TRAP",
+            "D": "NOT_MENTIONED"
+          },
+          "key_point": "'be asked to + 동사'는 요청 사항을 알려 주는 표현이에요. 보기에서는 in advance가 ahead of time처럼 다른 말로 바뀌어 나와요.",
+          "vocab": [
+            {
+              "word": "in advance",
+              "pos": "phr.",
+              "meaning_ko": "미리",
+              "level": "기초"
+            },
+            {
+              "word": "business day",
+              "pos": "n.",
+              "meaning_ko": "영업일",
+              "level": "중급"
+            },
+            {
+              "word": "reserve",
+              "pos": "v.",
+              "meaning_ko": "예약하다",
+              "level": "기초"
+            },
+            {
+              "word": "ahead of time",
+              "pos": "phr.",
+              "meaning_ko": "미리",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 공사 중 배송 예약 안내. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000005",
+          "part": 7,
+          "position_in_set": 3,
+          "stem": "What is suggested about the elevator work?",
+          "options": {
+            "A": "It will be completed within one week.",
+            "B": "It will close both passenger elevators at the same time.",
+            "C": "It was requested by a group of tenants.",
+            "D": "It will not be carried out on weekends."
+          },
+          "answer": "D",
+          "type_tag": "P7-INF.IMPLY",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. 둘째 문단 첫 문장이 \"Work will take place from 7:00 A.M. to 4:00 P.M. on weekdays.\"(공사는 평일 오전 7시부터 오후 4시까지 진행돼요)예요. 평일에만 작업한다고 했으니 주말에는 작업하지 않는다고 추론할 수 있어요. (A) 기간은 11월 9일(월)부터 20일(금)까지 2주예요. (B) \"only one passenger elevator will be in service at a time\"이라고 했으니 한 대씩만 멈춰요. 두 대가 동시에 멈추는 게 아니에요. (C) 누가 공사를 요청했는지는 나오지 않아요.",
+          "evidence_quote": "Work will take place from 7:00 A.M. to 4:00 P.M. on weekdays.",
+          "distractor_rationale": {
+            "A": "오답: 공사 기간은 11월 9일부터 20일까지 약 2주예요 (반대 정보).",
+            "B": "오답: 한 번에 한 대씩만 운행한다고 했으니 두 대를 동시에 멈추지 않아요 (반대 정보).",
+            "C": "오답: 공사를 누가 요청했는지는 지문에 없어요 (언급 없음).",
+            "D": "정답: 평일(weekdays)에만 작업한다고 했으니 주말에는 작업하지 않아요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "OPPOSITE_INFO",
+            "C": "NOT_MENTIONED",
+            "D": null
+          },
+          "key_point": "suggested 문제는 지문에 직접 쓰인 말을 한 단계 바꿔 말한 보기를 골라요. 'on weekdays'만 작업한다는 말은 '주말에는 하지 않는다'로 바꿀 수 있어요.",
+          "vocab": [
+            {
+              "word": "weekday",
+              "pos": "n.",
+              "meaning_ko": "평일",
+              "level": "기초"
+            },
+            {
+              "word": "carry out",
+              "pos": "phr. v.",
+              "meaning_ko": "실행하다, 수행하다",
+              "level": "중급"
+            },
+            {
+              "word": "at a time",
+              "pos": "phr.",
+              "meaning_ko": "한 번에",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 공사 일정 안내. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P7-S-0003",
+      "part": 7,
+      "passage_type": "email",
+      "passage_count": 1,
+      "business_context": "주문·배송",
+      "fictional_entities": [
+        "Hamish Oyelaran",
+        "Priyanka Vosloo",
+        "Quillstead Printing",
+        "Fenwick Lane Bakery",
+        "fenwicklane-example.com",
+        "quillstead-example.com"
+      ],
+      "passages": [
+        {
+          "title": "E-mail",
+          "type": "email",
+          "text": "To: Hamish Oyelaran <h.oyelaran@fenwicklane-example.com>\nFrom: Priyanka Vosloo <p.vosloo@quillstead-example.com>\nDate: October 21\nSubject: Your order #QP-20817\n\nDear Mr. Oyelaran,\n\nThank you for your recent order of 500 full-color brochures for Fenwick Lane Bakery. I am writing about the delivery date we gave you when you placed the order. [1]\n\nUnfortunately, one of our large-format presses broke down on Monday, and the replacement part will not arrive until later this week. As a result, your brochures will be ready on October 30 rather than October 26. [2] We understand that you plan to hand them out at your shop's anniversary event on November 1, so we wanted to tell you as soon as possible.\n\nTo make up for the delay, we will ship the order by overnight courier at no charge. [3] We would also like to offer you 15 percent off your next order with us. Simply enter the code THANKYOU15 when you order through our Web site.\n\nIf the new date does not work for you, please call me directly at 555-0193. [4] We can also arrange for a partner print shop to complete the job, though the paper stock may differ slightly from the sample you approved.\n\nSincerely,\n\nPriyanka Vosloo\nCustomer Relations, Quillstead Printing"
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000006",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "Why did Ms. Vosloo write the e-mail?",
+          "options": {
+            "A": "To inform a customer that an order will be delayed",
+            "B": "To confirm that a payment has been received",
+            "C": "To request approval of a brochure design",
+            "D": "To announce the opening of a new print shop"
+          },
+          "answer": "A",
+          "type_tag": "P7-MAIN.PURPOSE",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (A)예요. 첫 문단에서 \"I am writing about the delivery date we gave you\"(안내해 드린 배송일에 관해 연락드려요)라고 하고, 둘째 문단에서 \"As a result, your brochures will be ready on October 30 rather than October 26.\"(그래서 브로슈어가 10월 26일이 아니라 10월 30일에 준비돼요)라고 해요. 주문이 늦어진다는 걸 고객에게 알리는 이메일이에요. (B) 결제 확인 이야기는 없어요. (C) approved는 고객이 '이미 승인한' 샘플을 말할 뿐 새로 승인을 요청하지 않아요. (D) partner print shop은 대안으로 나온 협력 인쇄소이지 새로 연다는 말이 아니에요.",
+          "evidence_quote": "I am writing about the delivery date we gave you when you placed the order. / As a result, your brochures will be ready on October 30 rather than October 26.",
+          "distractor_rationale": {
+            "A": "정답: 인쇄기 고장으로 브로슈어 완성일이 10월 26일에서 30일로 늦어진다고 알려요.",
+            "B": "오답: 결제 관련 내용은 지문에 없어요 (언급 없음).",
+            "C": "오답: approved는 이미 승인한 샘플을 가리켜요. 새 승인 요청이 아니에요 (지문 단어 반복 함정).",
+            "D": "오답: partner print shop은 작업을 맡길 수 있는 협력 업체일 뿐, 개업 소식이 아니에요 (지문 단어 반복 함정)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "NOT_MENTIONED",
+            "C": "WORD_REPEAT_TRAP",
+            "D": "WORD_REPEAT_TRAP"
+          },
+          "key_point": "'I am writing about/to ~'는 이메일 목적을 직접 밝히는 표현이에요. 'A rather than B'는 B에서 A로 바뀌었다는 뜻이에요.",
+          "vocab": [
+            {
+              "word": "brochure",
+              "pos": "n.",
+              "meaning_ko": "안내 책자",
+              "level": "기초"
+            },
+            {
+              "word": "break down",
+              "pos": "phr. v.",
+              "meaning_ko": "고장 나다",
+              "level": "기초"
+            },
+            {
+              "word": "replacement part",
+              "pos": "n.",
+              "meaning_ko": "교체 부품",
+              "level": "중급"
+            },
+            {
+              "word": "rather than",
+              "pos": "conj.",
+              "meaning_ko": "~가 아니라, ~ 대신",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 인쇄 주문 납기 지연을 알리는 고객 이메일. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000007",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "What does Ms. Vosloo offer to do if Mr. Oyelaran cannot accept the new date?",
+          "options": {
+            "A": "Refund the full cost of the order",
+            "B": "Provide a discount on a future order",
+            "C": "Have another business complete the printing",
+            "D": "Bring the brochures to the event in person"
+          },
+          "answer": "C",
+          "type_tag": "P7-DET.FACT",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (C)예요. 넷째 문단에 \"If the new date does not work for you, please call me directly at 555-0193.\"(새 날짜가 맞지 않으면 직접 전화 주세요)와 \"We can also arrange for a partner print shop to complete the job\"(협력 인쇄소가 작업을 마치도록 할 수도 있어요)이 이어져요. 새 날짜가 안 될 때의 대안은 다른 업체가 인쇄를 끝내는 것이에요. (B) 15% 할인은 셋째 문단에서 '지연에 대한 보상'으로 모든 경우에 주는 것이지 날짜를 거절할 때의 조건이 아니에요. 질문의 조건(if ~ cannot accept)을 꼭 확인하세요. (A) 전액 환불은 없어요. (D) 무료 익일 택배로 보낸다고 했지 직접 가져간다는 말은 없어요.",
+          "evidence_quote": "If the new date does not work for you, please call me directly at 555-0193. / We can also arrange for a partner print shop to complete the job, though the paper stock may differ slightly from the sample you approved.",
+          "distractor_rationale": {
+            "A": "오답: 전액 환불은 지문에 없어요 (언급 없음).",
+            "B": "오답: 할인은 지연 보상으로 이미 제공하는 것이지 새 날짜를 받아들이지 못할 때의 조건부 제안이 아니에요 (부분 정보).",
+            "C": "정답: 새 날짜가 맞지 않으면 협력 인쇄소(partner print shop)가 작업을 마치게 할 수 있다고 했어요.",
+            "D": "오답: 배송은 익일 택배(overnight courier)로 한다고 했어요. 직접 가져간다는 말은 없어요 (언급 없음)."
+          },
+          "trap_code": {
+            "A": "NOT_MENTIONED",
+            "B": "PARTIAL_INFO",
+            "C": null,
+            "D": "NOT_MENTIONED"
+          },
+          "key_point": "질문에 조건(if ~)이 붙으면 그 조건이 나오는 문장 주변에서 답을 찾아요. 다른 상황에 대한 제안은 매력적인 오답이 돼요.",
+          "vocab": [
+            {
+              "word": "arrange for",
+              "pos": "phr. v.",
+              "meaning_ko": "~하도록 준비하다, 주선하다",
+              "level": "중급"
+            },
+            {
+              "word": "partner",
+              "pos": "n.",
+              "meaning_ko": "협력 업체",
+              "level": "기초"
+            },
+            {
+              "word": "paper stock",
+              "pos": "n.",
+              "meaning_ko": "인쇄 용지",
+              "level": "고급"
+            },
+            {
+              "word": "make up for",
+              "pos": "phr. v.",
+              "meaning_ko": "~을 보상하다, 만회하다",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 인쇄 주문 납기 지연 시 고객에게 제시하는 대안. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000008",
+          "part": 7,
+          "position_in_set": 3,
+          "stem": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?\n\"With this service, the package should reach you on October 31, one day before your event.\"",
+          "options": {
+            "A": "[1]",
+            "B": "[2]",
+            "C": "[3]",
+            "D": "[4]"
+          },
+          "answer": "C",
+          "type_tag": "P7-INS.POS",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (C) [3]이에요. 주어진 문장은 \"이 서비스를 이용하면 소포가 행사 하루 전인 10월 31일에 도착할 거예요\"라는 뜻이에요. 'this service'가 가리킬 서비스가 바로 앞에 있어야 해요. [3] 앞 문장이 \"To make up for the delay, we will ship the order by overnight courier at no charge.\"(지연에 대한 보상으로 익일 택배로 무료 배송해 드릴게요)이므로 this service = overnight courier가 돼요. 10월 30일 완성 → 익일 도착 10월 31일 → 11월 1일 행사로 날짜도 맞아요. [1]은 아직 서비스도 행사도 나오기 전이에요. [2]는 완성일 바로 뒤라 날짜는 그럴듯하지만 this service가 가리킬 대상이 없고, 행사 이야기도 아직 안 나왔어요. [4]는 전화 안내 뒤라 배송 서비스와 연결되지 않아요.",
+          "evidence_quote": "To make up for the delay, we will ship the order by overnight courier at no charge.",
+          "distractor_rationale": {
+            "A": "오답: [1] 앞에는 배송일 이야기만 있고, this service와 your event가 가리킬 내용이 아직 나오지 않았어요 (대상 혼동).",
+            "B": "오답: [2]는 완성일(10월 30일) 뒤라 날짜는 그럴듯해 보이지만 this service가 가리킬 서비스가 없어요 (부분 정보).",
+            "C": "정답: [3] 앞의 overnight courier가 this service가 되고, 10월 31일 도착이 11월 1일 행사와 맞아요.",
+            "D": "오답: [4] 앞은 전화 연락 안내라 배송 서비스와 이어지지 않아요 (대상 혼동)."
+          },
+          "trap_code": {
+            "A": "WRONG_REFERENT",
+            "B": "PARTIAL_INFO",
+            "C": null,
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "문장 위치 문제는 주어진 문장의 지시어(this, these, such)가 가리킬 대상이 바로 앞에 있는 자리를 찾아요. 날짜·숫자가 앞뒤와 맞는지도 확인해요.",
+          "vocab": [
+            {
+              "word": "overnight courier",
+              "pos": "n.",
+              "meaning_ko": "익일 배송 택배",
+              "level": "중급"
+            },
+            {
+              "word": "at no charge",
+              "pos": "phr.",
+              "meaning_ko": "무료로",
+              "level": "중급"
+            },
+            {
+              "word": "reach",
+              "pos": "v.",
+              "meaning_ko": "~에 도착하다",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 인쇄 주문 납기 지연과 보상 배송 안내. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P7-S-0004",
+      "part": 7,
+      "passage_type": "article",
+      "passage_count": 1,
+      "business_context": "채용",
+      "fictional_entities": [
+        "Orvanne Textiles",
+        "Calderby",
+        "Wexmoor",
+        "Pellsworth Road",
+        "Ingrid Mahlangu",
+        "Wexmoor Community Library",
+        "Teodor Bakshi"
+      ],
+      "passages": [
+        {
+          "title": "Local business news",
+          "type": "article",
+          "text": "CALDERBY (November 3) — Orvanne Textiles, a maker of upholstery fabric based in Calderby for more than forty years, announced on Monday that it will open a second production facility in the nearby town of Wexmoor next spring.\n\nThe new plant, which will occupy a former warehouse on Pellsworth Road, is expected to employ about 120 people when it is fully operational. According to company president Ingrid Mahlangu, the expansion became necessary after demand from hotel and restaurant clients rose sharply over the past two years. \"Our current site is running at capacity six days a week,\" Ms. Mahlangu said. \"We simply cannot accept more large contracts without additional space.\"\n\nOrvanne will begin hiring machine operators and quality inspectors in January. Applicants with no previous factory experience are encouraged to apply, as the company plans to provide a paid eight-week training program. Hiring events will be held at the Wexmoor Community Library, and a schedule will be posted on the company's Web site in December.\n\nLocal officials welcomed the news. Wexmoor's town council had been looking for a tenant for the Pellsworth Road building since the previous occupant, a furniture distributor, relocated in 2024. Council member Teodor Bakshi noted that the plant's location near the rail line would make it easy for the company to ship goods across the region.\n\nOrvanne's Calderby facility will continue to operate as usual, and none of its current 210 employees will be transferred."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000009",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "What is the article mainly about?",
+          "options": {
+            "A": "A company's decision to move its headquarters",
+            "B": "The closing of a furniture distributor",
+            "C": "A new training program at a community library",
+            "D": "A manufacturer's plan to open an additional facility"
+          },
+          "answer": "D",
+          "type_tag": "P7-MAIN.TOPIC",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. 첫 문단에 Orvanne Textiles가 \"announced on Monday that it will open a second production facility in the nearby town of Wexmoor next spring\"(내년 봄 인근 Wexmoor에 두 번째 생산 시설을 연다고 월요일에 발표했어요)이라고 나오고, 나머지 문단도 새 공장의 고용·위치·지역 반응을 다뤄요. second가 보기에서 additional로 바뀌었어요. (A) 마지막 문단에서 Calderby 시설은 그대로 운영된다고 했으니 이전(move)이 아니에요. (B) 가구 유통업체는 건물의 예전 입주자로 잠깐 나올 뿐이에요. (C) 교육 프로그램은 회사가 제공하고, 도서관은 채용 행사 장소일 뿐이에요.",
+          "evidence_quote": "Orvanne Textiles, a maker of upholstery fabric based in Calderby for more than forty years, announced on Monday that it will open a second production facility in the nearby town of Wexmoor next spring.",
+          "distractor_rationale": {
+            "A": "오답: 마지막 문단에서 Calderby 시설은 평소대로 운영된다고 했어요. 본사 이전이 아니라 시설 추가예요 (반대 정보).",
+            "B": "오답: furniture distributor는 건물의 예전 입주자로만 나와요 (지문 단어 반복 함정).",
+            "C": "오답: 교육 프로그램과 도서관은 셋째 문단의 세부 정보일 뿐이고, 둘을 엮은 내용도 틀려요 (부분 정보).",
+            "D": "정답: 직물 제조사가 Wexmoor에 두 번째 생산 시설을 여는 계획이 기사 전체의 주제예요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "WORD_REPEAT_TRAP",
+            "C": "PARTIAL_INFO",
+            "D": null
+          },
+          "key_point": "기사의 주제는 첫 문단(리드)에 있어요. 뒤 문단에 잠깐 나오는 단어로 만든 보기는 부분 정보 함정이에요.",
+          "vocab": [
+            {
+              "word": "upholstery",
+              "pos": "n.",
+              "meaning_ko": "(가구용) 덮개 천",
+              "level": "고급"
+            },
+            {
+              "word": "production facility",
+              "pos": "n.",
+              "meaning_ko": "생산 시설",
+              "level": "중급"
+            },
+            {
+              "word": "additional",
+              "pos": "adj.",
+              "meaning_ko": "추가의",
+              "level": "기초"
+            },
+            {
+              "word": "headquarters",
+              "pos": "n.",
+              "meaning_ko": "본사",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 지역 제조업체의 생산 시설 확장 기사. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000010",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "According to Ms. Mahlangu, why is the company expanding?",
+          "options": {
+            "A": "It wants to be closer to its suppliers.",
+            "B": "Its current building is going to be sold.",
+            "C": "It cannot take on more big orders at its present site.",
+            "D": "It plans to start making furniture for hotels."
+          },
+          "answer": "C",
+          "type_tag": "P7-DET.FACT",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (C)예요. 둘째 문단에서 Ms. Mahlangu는 \"Our current site is running at capacity six days a week,\"(현재 공장은 일주일에 6일 최대로 가동 중이에요)와 \"We simply cannot accept more large contracts without additional space.\"(공간을 늘리지 않으면 대형 계약을 더 받을 수 없어요)라고 말해요. accept more large contracts가 보기에서 take on more big orders로 바뀌었어요. (A) 공급업체 이야기는 없어요. 철도는 상품을 '배송'하기 좋다는 의원의 말이에요. (B) 현재 건물을 판다는 말은 없고 오히려 계속 운영해요. (D) hotel과 furniture는 지문에 나오지만, 이 회사는 직물 회사이고 가구는 예전 입주자 이야기예요.",
+          "evidence_quote": "\"Our current site is running at capacity six days a week,\" Ms. Mahlangu said. / \"We simply cannot accept more large contracts without additional space.\"",
+          "distractor_rationale": {
+            "A": "오답: 공급업체와 가까워지려 한다는 말은 없어요. 철도 이야기는 배송 편의에 관한 것이에요 (언급 없음).",
+            "B": "오답: 현재 시설은 평소대로 계속 운영된다고 했어요 (반대 정보).",
+            "C": "정답: 현재 공장이 최대 가동 중이라 대형 계약을 더 받을 수 없다고 했어요.",
+            "D": "오답: hotel(고객)과 furniture(예전 입주자)를 엮은 함정이에요. 이 회사는 직물을 만들어요 (지문 단어 반복 함정)."
+          },
+          "trap_code": {
+            "A": "NOT_MENTIONED",
+            "B": "OPPOSITE_INFO",
+            "C": null,
+            "D": "WORD_REPEAT_TRAP"
+          },
+          "key_point": "인용문 속 이유를 묻는 문제는 따옴표 안 말을 그대로 찾되, 보기는 동의어로 바뀌어요 (contract → order, accept → take on).",
+          "vocab": [
+            {
+              "word": "at capacity",
+              "pos": "phr.",
+              "meaning_ko": "최대 용량으로, 꽉 찬",
+              "level": "고급"
+            },
+            {
+              "word": "contract",
+              "pos": "n.",
+              "meaning_ko": "계약",
+              "level": "기초"
+            },
+            {
+              "word": "take on",
+              "pos": "phr. v.",
+              "meaning_ko": "(일을) 맡다, 받다",
+              "level": "중급"
+            },
+            {
+              "word": "demand",
+              "pos": "n.",
+              "meaning_ko": "수요",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 지역 제조업체의 생산 시설 확장 이유. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000011",
+          "part": 7,
+          "position_in_set": 3,
+          "stem": "In paragraph 3, the word \"posted\" is closest in meaning to",
+          "options": {
+            "A": "mailed",
+            "B": "stationed",
+            "C": "postponed",
+            "D": "published"
+          },
+          "answer": "D",
+          "type_tag": "P7-VOC.SYN",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. 해당 문장은 \"Hiring events will be held at the Wexmoor Community Library, and a schedule will be posted on the company's Web site in December.\"(채용 행사는 Wexmoor 지역 도서관에서 열리고, 일정은 12월에 회사 웹사이트에 게시돼요)예요. 웹사이트에 일정을 '올리다, 게시하다'라는 뜻이므로 published가 가장 가까워요. post는 뜻이 여러 개라 문맥으로 골라야 해요. (A) mailed는 '우편으로 보내다'라는 뜻의 post예요. (B) stationed는 '(사람을) 배치하다'라는 뜻의 post예요. 둘 다 웹사이트와 어울리지 않아요. (C) postponed는 형태만 비슷하고 '연기하다'라는 뜻이에요.",
+          "evidence_quote": "Hiring events will be held at the Wexmoor Community Library, and a schedule will be posted on the company's Web site in December.",
+          "distractor_rationale": {
+            "A": "오답: post의 '우편으로 보내다' 뜻이에요. 웹사이트에 우편을 보낼 수는 없어요 (뜻 혼동).",
+            "B": "오답: post의 '(사람을) 배치하다' 뜻이에요. 주어가 일정표라 맞지 않아요 (뜻 혼동).",
+            "C": "오답: post-로 시작해 형태만 비슷할 뿐 '연기하다'라는 뜻이에요 (형태 유사 함정).",
+            "D": "정답: 웹사이트에 일정을 '게시하다'는 뜻이라 published와 같아요."
+          },
+          "trap_code": {
+            "A": "MEANING_NEAR_MISS",
+            "B": "MEANING_NEAR_MISS",
+            "C": "SIMILAR_FORM",
+            "D": null
+          },
+          "key_point": "동의어 문제는 단어 뜻을 외운 대로 고르지 말고, 보기를 문장에 넣어 봐요. 'post on a Web site'는 '게시하다(publish)'예요.",
+          "vocab": [
+            {
+              "word": "post",
+              "pos": "v.",
+              "meaning_ko": "게시하다; 우편으로 보내다; 배치하다",
+              "level": "중급"
+            },
+            {
+              "word": "publish",
+              "pos": "v.",
+              "meaning_ko": "공개하다, 게시하다",
+              "level": "중급"
+            },
+            {
+              "word": "station",
+              "pos": "v.",
+              "meaning_ko": "배치하다",
+              "level": "고급"
+            },
+            {
+              "word": "hiring event",
+              "pos": "n.",
+              "meaning_ko": "채용 행사",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 지역 제조업체의 채용 일정 안내. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000012",
+          "part": 7,
+          "position_in_set": 4,
+          "stem": "What is NOT mentioned about the new facility?",
+          "options": {
+            "A": "It will make furniture for restaurants.",
+            "B": "It will be in a building that another company once used.",
+            "C": "It will be close to a rail line.",
+            "D": "It is expected to have about 120 workers."
+          },
+          "answer": "A",
+          "type_tag": "P7-TF.NOT",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A)예요. 지문에 없는 것을 고르는 문제라 보기 셋의 근거를 하나씩 지워요. (B)는 넷째 문단 \"since the previous occupant, a furniture distributor, relocated in 2024\"(예전 입주자인 가구 유통업체가 2024년에 이전한 뒤로)와 둘째 문단 \"which will occupy a former warehouse on Pellsworth Road\"에 나와요. (C)는 넷째 문단 \"the plant's location near the rail line\"에 나와요. (D)는 둘째 문단 \"is expected to employ about 120 people\"에 나와요. 이 회사는 upholstery fabric(덮개 천)을 만들고, restaurant는 고객으로만 나와요. furniture도 예전 입주자 이야기라 (A)는 언급되지 않았어요.",
+          "evidence_quote": "The new plant, which will occupy a former warehouse on Pellsworth Road, is expected to employ about 120 people when it is fully operational. / Wexmoor's town council had been looking for a tenant for the Pellsworth Road building since the previous occupant, a furniture distributor, relocated in 2024. / Council member Teodor Bakshi noted that the plant's location near the rail line would make it easy for the company to ship goods across the region.",
+          "distractor_rationale": {
+            "A": "정답: 회사는 덮개 천을 만들어요. furniture(예전 입주자)와 restaurant(고객)를 엮은 내용은 지문에 없어요.",
+            "B": "오답: 둘째 문단 'a former warehouse'와 넷째 문단 'the previous occupant, a furniture distributor'에 나와요 (지문 내용과 일치).",
+            "C": "오답: 넷째 문단 'the plant's location near the rail line'에 나와요 (지문 내용과 일치).",
+            "D": "오답: 둘째 문단 'is expected to employ about 120 people'에 나와요 (지문 내용과 일치)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "STATED_IN_PASSAGE",
+            "C": "STATED_IN_PASSAGE",
+            "D": "STATED_IN_PASSAGE"
+          },
+          "key_point": "NOT 문제는 보기마다 지문 근거를 찾아 지워 나가요. 지문 단어 두 개를 엮어 만든 보기는 '언급 안 됨'인 경우가 많아요.",
+          "vocab": [
+            {
+              "word": "occupy",
+              "pos": "v.",
+              "meaning_ko": "(공간을) 차지하다, 사용하다",
+              "level": "중급"
+            },
+            {
+              "word": "occupant",
+              "pos": "n.",
+              "meaning_ko": "입주자",
+              "level": "고급"
+            },
+            {
+              "word": "relocate",
+              "pos": "v.",
+              "meaning_ko": "이전하다",
+              "level": "중급"
+            },
+            {
+              "word": "fully operational",
+              "pos": "phr.",
+              "meaning_ko": "완전 가동되는",
+              "level": "고급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 지역 제조업체의 새 공장 관련 세부 사항. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P7-D-0001",
+      "part": 7,
+      "passage_type": "web_page",
+      "passage_count": 2,
+      "business_context": "회의·출장",
+      "fictional_entities": [
+        "Stellmark Conference Center",
+        "Ambrose Table",
+        "Keiko Lindqvist",
+        "Halvorsen Analytics",
+        "Dunmore",
+        "stellmark-example.com",
+        "halvorsen-example.com"
+      ],
+      "passages": [
+        {
+          "title": "Web page",
+          "type": "web_page",
+          "text": "Stellmark Conference Center\nwww.stellmark-example.com/rooms\n\nMeeting Room Rentals\n\nRoom | Capacity | Half Day | Full Day | Features\nBirch Room | Up to 20 | $180 | $320 | Built-in projector, whiteboard\nCedar Room | Up to 40 | $260 | $470 | Projector, video-conferencing system\nJuniper Hall | Up to 120 | $640 | $1,150 | Stage, sound system, two projectors\n\nA half-day rental covers four hours, either 8:00 A.M.–12:00 P.M. or 1:00 P.M.–5:00 P.M. A full-day rental covers 8:00 A.M.–5:00 P.M.\n\nLunch and snacks can be ordered from our on-site caterer, Ambrose Table, for an additional charge. Groups that book any room for a full day receive complimentary coffee and tea service.\n\nBookings canceled at least seven days before the event date receive a full refund. Bookings canceled with less notice are charged 50 percent of the rental fee.\n\nTo reserve a room, e-mail events@stellmark-example.com."
+        },
+        {
+          "title": "E-mail",
+          "type": "email",
+          "text": "To: events@stellmark-example.com\nFrom: Keiko Lindqvist <k.lindqvist@halvorsen-example.com>\nDate: February 9\nSubject: Room for March training\n\nHello,\n\nI am organizing a one-day training workshop for our sales team on Thursday, March 4, and I would like to know whether one of your rooms is available. There will be 32 participants in the room. In addition, six colleagues from our branch office in Dunmore will take part from their location, so we will need equipment that allows them to see and hear the presenters.\n\nWe plan to begin at 8:30 A.M. and finish at about 4:30 P.M. Could you also send me a menu from your caterer? We would like to provide lunch for everyone attending in person.\n\nFinally, if the workshop goes well, we may hold a similar session in May. Would it be possible to reserve a second date now and confirm it later?\n\nThank you,\n\nKeiko Lindqvist\nTraining Coordinator, Halvorsen Analytics"
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000013",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "According to the Web page, what happens when a booking is canceled three days before an event?",
+          "options": {
+            "A": "No fee is charged.",
+            "B": "Half of the rental fee is charged.",
+            "C": "The booking is moved to another date.",
+            "D": "The full-day rate is applied."
+          },
+          "answer": "B",
+          "type_tag": "P7-DET.NUM",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B)예요. 웹페이지 넷째 문단에 \"Bookings canceled at least seven days before the event date receive a full refund.\"(행사일 최소 7일 전에 취소하면 전액 환불)와 \"Bookings canceled with less notice are charged 50 percent of the rental fee.\"(그보다 늦게 취소하면 대여료의 50%를 청구)가 나와요. 3일 전 취소는 7일보다 늦으니 50%, 즉 절반을 내요. (A) 수수료가 없는 건 7일 전까지 취소했을 때예요. (C) 날짜 변경 이야기는 없어요. (D) full-day는 대여 요금 종류일 뿐 취소 규정과 관계없어요.",
+          "evidence_quote": "Bookings canceled at least seven days before the event date receive a full refund. / Bookings canceled with less notice are charged 50 percent of the rental fee.",
+          "distractor_rationale": {
+            "A": "오답: 전액 환불은 7일 전까지 취소한 경우예요. 3일 전은 해당하지 않아요 (반대 정보).",
+            "B": "정답: 7일보다 늦게 취소하면 대여료의 50%(절반)를 청구해요.",
+            "C": "오답: 예약을 다른 날짜로 옮긴다는 규정은 없어요 (언급 없음).",
+            "D": "오답: full-day는 요금 종류로 나온 말이고, 취소 규정과 관계없어요 (지문 단어 반복 함정)."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": null,
+            "C": "NOT_MENTIONED",
+            "D": "WORD_REPEAT_TRAP"
+          },
+          "key_point": "'at least ~ before'와 'with less notice'처럼 기준이 둘로 나뉘면, 질문의 숫자(3일)가 어느 쪽에 속하는지 먼저 판단해요. 50 percent = half.",
+          "vocab": [
+            {
+              "word": "cancel",
+              "pos": "v.",
+              "meaning_ko": "취소하다",
+              "level": "기초"
+            },
+            {
+              "word": "notice",
+              "pos": "n.",
+              "meaning_ko": "(사전) 통지",
+              "level": "중급"
+            },
+            {
+              "word": "rental fee",
+              "pos": "n.",
+              "meaning_ko": "대여료",
+              "level": "기초"
+            },
+            {
+              "word": "refund",
+              "pos": "n.",
+              "meaning_ko": "환불",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 회의실 대여 요금과 취소 규정 웹페이지. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000014",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "Why did Ms. Lindqvist write the e-mail?",
+          "options": {
+            "A": "To cancel a reservation she made earlier",
+            "B": "To ask about holding an event at the center",
+            "C": "To complain about a catering order",
+            "D": "To invite her colleagues to a training session"
+          },
+          "answer": "B",
+          "type_tag": "P7-MAIN.PURPOSE",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B)예요. 이메일 첫 문장이 \"I am organizing a one-day training workshop for our sales team on Thursday, March 4, and I would like to know whether one of your rooms is available.\"(3월 4일 목요일에 영업팀 하루 교육을 준비하고 있는데, 회의실이 비어 있는지 알고 싶어요)예요. 센터에서 행사를 열 수 있는지 문의하는 이메일이에요. (A) 아직 예약 전이고 취소 이야기도 없어요. (C) 출장 요리 업체 메뉴를 요청할 뿐 불만은 없어요. (D) 이메일 수신자는 동료가 아니라 컨퍼런스 센터예요.",
+          "evidence_quote": "I am organizing a one-day training workshop for our sales team on Thursday, March 4, and I would like to know whether one of your rooms is available.",
+          "distractor_rationale": {
+            "A": "오답: 아직 예약하지 않았고 취소 이야기도 없어요 (반대 정보).",
+            "B": "정답: 3월 4일 교육 행사에 쓸 회의실이 있는지 문의하고 있어요.",
+            "C": "오답: caterer는 나오지만 메뉴를 요청할 뿐 불만이 아니에요 (지문 단어 반복 함정).",
+            "D": "오답: 이메일은 컨퍼런스 센터에 보낸 것이지 동료를 초대하는 글이 아니에요 (대상 혼동)."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": null,
+            "C": "WORD_REPEAT_TRAP",
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "'I would like to know whether ~'는 문의 목적을 나타내요. 수신자(To:)를 확인하면 누구에게 무엇을 원하는지 빨리 알 수 있어요.",
+          "vocab": [
+            {
+              "word": "organize",
+              "pos": "v.",
+              "meaning_ko": "준비하다, 조직하다",
+              "level": "기초"
+            },
+            {
+              "word": "available",
+              "pos": "adj.",
+              "meaning_ko": "이용 가능한",
+              "level": "기초"
+            },
+            {
+              "word": "caterer",
+              "pos": "n.",
+              "meaning_ko": "출장 요리 업체",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 회의실 대여 문의 이메일. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000015",
+          "part": 7,
+          "position_in_set": 3,
+          "stem": "How much will Ms. Lindqvist's company most likely pay to rent a room?",
+          "options": {
+            "A": "$260",
+            "B": "$320",
+            "C": "$470",
+            "D": "$1,150"
+          },
+          "answer": "C",
+          "type_tag": "P7-LINK.2P",
+          "sub_tags": [],
+          "difficulty_expert": 5,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (C)예요. 두 지문을 합쳐야 풀려요. ① 방 고르기: 이메일에 \"There will be 32 participants in the room.\"이라 20명까지인 Birch Room은 안 돼요. 또 원격 참가자가 있어 \"we will need equipment that allows them to see and hear the presenters\"라고 했으니 웹페이지에서 video-conferencing system이 있는 Cedar Room(최대 40명)이 맞아요. ② 시간: 이메일에 \"We plan to begin at 8:30 A.M. and finish at about 4:30 P.M.\"이라 4시간짜리 반일(half day)로는 부족하고 종일(full day) 대여가 필요해요. Cedar Room 종일 요금은 $470이에요. (A) $260은 Cedar Room 반일 요금이에요. (B) $320은 Birch Room 종일 요금인데 인원이 초과돼요. (D) $1,150은 Juniper Hall 종일 요금인데 화상회의 장비가 없어요.",
+          "evidence_quote": "There will be 32 participants in the room. / In addition, six colleagues from our branch office in Dunmore will take part from their location, so we will need equipment that allows them to see and hear the presenters. / We plan to begin at 8:30 A.M. and finish at about 4:30 P.M. / Cedar Room | Up to 40 | $260 | $470 | Projector, video-conferencing system / A half-day rental covers four hours, either 8:00 A.M.–12:00 P.M. or 1:00 P.M.–5:00 P.M.",
+          "distractor_rationale": {
+            "A": "오답: Cedar Room은 맞지만 반일 요금이에요. 8:30~4:30은 4시간을 넘어요 (부분 정보).",
+            "B": "오답: 종일 요금은 맞지만 Birch Room은 20명까지라 32명이 들어갈 수 없어요 (부분 정보).",
+            "C": "정답: 32명 + 화상회의 → Cedar Room, 8:30~4:30 → 종일 대여이므로 $470이에요.",
+            "D": "오답: Juniper Hall은 인원은 충분하지만 화상회의 장비가 없어요 (부분 정보)."
+          },
+          "trap_code": {
+            "A": "PARTIAL_INFO",
+            "B": "PARTIAL_INFO",
+            "C": null,
+            "D": "PARTIAL_INFO"
+          },
+          "key_point": "표가 나오는 연계 문제는 다른 지문의 조건(인원, 장비, 시간)을 하나씩 표에 대입해 지워 나가요. 조건 하나만 맞는 보기가 함정이에요.",
+          "vocab": [
+            {
+              "word": "capacity",
+              "pos": "n.",
+              "meaning_ko": "수용 인원",
+              "level": "중급"
+            },
+            {
+              "word": "participant",
+              "pos": "n.",
+              "meaning_ko": "참가자",
+              "level": "기초"
+            },
+            {
+              "word": "video-conferencing",
+              "pos": "n.",
+              "meaning_ko": "화상회의",
+              "level": "중급"
+            },
+            {
+              "word": "take part",
+              "pos": "phr. v.",
+              "meaning_ko": "참가하다",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 회의실 조건 비교와 요금 계산. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000016",
+          "part": 7,
+          "position_in_set": 4,
+          "stem": "What will Ms. Lindqvist's group most likely receive at no extra cost?",
+          "options": {
+            "A": "Coffee and tea service",
+            "B": "Lunch from Ambrose Table",
+            "C": "An additional projector",
+            "D": "A reservation for a date in May"
+          },
+          "answer": "A",
+          "type_tag": "P7-LINK.2P",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A)예요. 웹페이지에 \"Groups that book any room for a full day receive complimentary coffee and tea service.\"(종일 예약한 단체는 커피·차 서비스를 무료로 받아요)라고 나와요. 이메일에서 \"We plan to begin at 8:30 A.M. and finish at about 4:30 P.M.\"이라고 했으니 반일(4시간)이 아닌 종일 예약이 필요해요. 그래서 커피·차 서비스를 무료로 받을 거예요. complimentary가 질문에서 at no extra cost로 바뀌었어요. (B) 점심은 \"for an additional charge\"(추가 요금)라고 했어요. (C) 프로젝터를 추가로 준다는 말은 없어요. (D) 5월 날짜는 Ms. Lindqvist가 가능한지 물어본 것일 뿐 무료 혜택이 아니에요.",
+          "evidence_quote": "Groups that book any room for a full day receive complimentary coffee and tea service. / We plan to begin at 8:30 A.M. and finish at about 4:30 P.M.",
+          "distractor_rationale": {
+            "A": "정답: 8:30~4:30 일정이라 종일 예약이 필요하고, 종일 예약 단체는 커피·차를 무료로 받아요.",
+            "B": "오답: 점심은 추가 요금(for an additional charge)이 있어요 (반대 정보).",
+            "C": "오답: projector는 표에 나오지만 추가로 제공한다는 말은 없어요 (지문 단어 반복 함정).",
+            "D": "오답: 5월 예약은 가능 여부를 물어본 것일 뿐 무료 혜택으로 언급되지 않았어요 (언급 없음)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "OPPOSITE_INFO",
+            "C": "WORD_REPEAT_TRAP",
+            "D": "NOT_MENTIONED"
+          },
+          "key_point": "혜택의 '조건'(full day)은 한 지문에, 그 조건을 만족하는지(8:30~4:30)는 다른 지문에 있는 경우가 많아요. complimentary = free = at no extra cost.",
+          "vocab": [
+            {
+              "word": "complimentary",
+              "pos": "adj.",
+              "meaning_ko": "무료의",
+              "level": "중급"
+            },
+            {
+              "word": "additional charge",
+              "pos": "n.",
+              "meaning_ko": "추가 요금",
+              "level": "중급"
+            },
+            {
+              "word": "on-site",
+              "pos": "adj.",
+              "meaning_ko": "현장의, 구내의",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 회의실 종일 대여 시 무료 혜택. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000017",
+          "part": 7,
+          "position_in_set": 5,
+          "stem": "What is suggested about Halvorsen Analytics?",
+          "options": {
+            "A": "It has rented rooms at Stellmark Conference Center before.",
+            "B": "It is planning to hire more sales staff.",
+            "C": "It holds a training workshop every month.",
+            "D": "It has employees working in more than one location."
+          },
+          "answer": "D",
+          "type_tag": "P7-INF.IMPLY",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. 이메일 첫 문단에 \"six colleagues from our branch office in Dunmore will take part from their location\"(Dunmore 지사의 동료 6명이 그곳에서 참여해요)이라고 나와요. 지사(branch office)가 있으니 직원들이 두 곳 이상에서 일한다고 추론할 수 있어요. (A) 전에 이용한 적이 있다는 말은 없어요. 오히려 방이 있는지부터 묻고 있어요. (B) sales team은 교육 대상일 뿐 채용 계획은 없어요. (C) 5월에 비슷한 교육을 '할 수도 있다'고 했지 매달 한다는 말은 없어요.",
+          "evidence_quote": "In addition, six colleagues from our branch office in Dunmore will take part from their location, so we will need equipment that allows them to see and hear the presenters.",
+          "distractor_rationale": {
+            "A": "오답: 예전에 이용했다는 내용은 없어요 (언급 없음).",
+            "B": "오답: sales team은 교육받을 직원들이지 채용 계획이 아니에요 (지문 단어 반복 함정).",
+            "C": "오답: 5월에 비슷한 교육을 '할 수도 있다(may)'고 했을 뿐 매달 한다는 건 지나친 일반화예요 (범위 과장).",
+            "D": "정답: Dunmore에 지사가 있으니 직원들이 여러 곳에서 일해요."
+          },
+          "trap_code": {
+            "A": "NOT_MENTIONED",
+            "B": "WORD_REPEAT_TRAP",
+            "C": "OVERGENERALIZATION",
+            "D": null
+          },
+          "key_point": "branch office(지사)처럼 회사 구조를 알려 주는 단어는 '여러 지역에 사무실이 있다'는 추론 문제의 단서가 돼요. may(~할 수도 있다)를 '항상'으로 넓히면 범위 과장 함정이에요.",
+          "vocab": [
+            {
+              "word": "branch office",
+              "pos": "n.",
+              "meaning_ko": "지사, 지점",
+              "level": "중급"
+            },
+            {
+              "word": "colleague",
+              "pos": "n.",
+              "meaning_ko": "동료",
+              "level": "기초"
+            },
+            {
+              "word": "in person",
+              "pos": "phr.",
+              "meaning_ko": "직접, 대면으로",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 회사 교육 행사 준비 이메일. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P7-T-0001",
+      "part": 7,
+      "passage_type": "schedule",
+      "passage_count": 3,
+      "business_context": "시설·행사",
+      "fictional_entities": [
+        "Glenhaven Culinary Studio",
+        "Larkspur Lane",
+        "Glenhaven",
+        "Rafael Okonkwo-Brandt",
+        "Anneliese Murakami",
+        "Sunniva Adeyemi",
+        "Cormac Ferreira-Holm",
+        "Mirela Dunsworth",
+        "Brackenford Regional Cooking Competition",
+        "glenhaven-example.com",
+        "mailbox-example.com",
+        "tablereviews-example.com"
+      ],
+      "passages": [
+        {
+          "title": "Class schedule",
+          "type": "schedule",
+          "text": "Glenhaven Culinary Studio\n24 Larkspur Lane, Glenhaven\n\nMay Class Schedule\n\nDate | Time | Class | Instructor | Fee\nTuesday, May 4 | 6:30–8:30 P.M. | Weeknight Noodle Dishes | Rafael Okonkwo-Brandt | $45\nThursday, May 6 | 6:30–8:30 P.M. | Baking with Whole Grains | Anneliese Murakami | $50\nSaturday, May 8 | 10:00 A.M.–1:00 P.M. | Knife Skills for Beginners | Rafael Okonkwo-Brandt | $60\nThursday, May 13 | 6:30–8:30 P.M. | Sauces from Scratch | Anneliese Murakami | $50\nSaturday, May 15 | 10:00 A.M.–1:00 P.M. | Seasonal Vegetable Soups | Sunniva Adeyemi | $55\n\nAll ingredients and equipment are provided. Each class is limited to 12 participants. Studio members receive 10 percent off all class fees. Register at www.glenhaven-example.com/classes."
+        },
+        {
+          "title": "E-mail",
+          "type": "email",
+          "text": "From: Glenhaven Culinary Studio <classes@glenhaven-example.com>\nTo: Cormac Ferreira-Holm <cferreiraholm@mailbox-example.com>\nDate: April 26\nSubject: Change to your class\n\nDear Mr. Ferreira-Holm,\n\nThank you for registering for our class on Saturday, May 8. We regret to inform you that the instructor for this session has been invited to serve as a judge at the Brackenford Regional Cooking Competition that weekend. The class has therefore been moved to Saturday, May 22, at the same time.\n\nYour spot in the class on the new date is reserved automatically. If you are unable to attend, you may transfer to any other class on our May schedule. If the class you choose costs less than the one you originally paid for, we will refund the difference. Simply reply to this e-mail by May 3 to let us know your choice.\n\nWe apologize for the inconvenience.\n\nMirela Dunsworth\nProgram Coordinator"
+        },
+        {
+          "title": "Online review",
+          "type": "review",
+          "text": "www.tablereviews-example.com\nGlenhaven Culinary Studio ★★★★☆\nPosted by Cormac Ferreira-Holm, May 17\n\nLast month I signed up for my first class at Glenhaven. When the date was changed, I couldn't make the new one because of a family trip, so I switched to the only other Saturday morning class on the schedule. I'm glad I did. The instructor explained every step clearly and gave each of us plenty of time at the stove. By the end of the class, we had made three different dishes, and we each took home a container to share with our families.\n\nMy only complaint is about parking. The studio's small lot was full when I arrived, and I had to park several blocks away. Next time I'll take the bus.\n\nI still hope to learn the skills taught in the class I originally chose, so I plan to register when it is offered again next month."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P7-000018",
+          "part": 7,
+          "position_in_set": 1,
+          "stem": "Why was the e-mail sent?",
+          "options": {
+            "A": "To notify a participant that a class date has changed",
+            "B": "To announce the results of a cooking competition",
+            "C": "To remind a participant to pay a class fee",
+            "D": "To promote the studio's membership program"
+          },
+          "answer": "A",
+          "type_tag": "P7-MAIN.PURPOSE",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (A)예요. 이메일 첫 문단 마지막 문장이 \"The class has therefore been moved to Saturday, May 22, at the same time.\"(그래서 수업이 5월 22일 토요일 같은 시간으로 옮겨졌어요)예요. 수업을 신청한 사람에게 날짜 변경을 알리는 이메일이에요. 제목 \"Change to your class\"도 단서예요. (B) 요리 대회는 강사가 심사위원으로 가는 이유로만 나와요. (C) 수강료를 내라는 말은 없어요. (D) 회원 할인은 일정표(첫째 지문)에 있는 내용이고 이메일의 목적과 관계없어요.",
+          "evidence_quote": "The class has therefore been moved to Saturday, May 22, at the same time.",
+          "distractor_rationale": {
+            "A": "정답: 5월 8일 수업이 5월 22일로 옮겨졌다고 수강 신청자에게 알려요.",
+            "B": "오답: 대회는 일정 변경 이유로만 나오고, 결과 발표는 없어요 (지문 단어 반복 함정).",
+            "C": "오답: 수강료 납부 안내는 없어요. 오히려 차액 환불을 이야기해요 (언급 없음).",
+            "D": "오답: 회원 할인은 일정표에 있는 내용이라 이메일 목적과 관계없어요 (대상 혼동)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "WORD_REPEAT_TRAP",
+            "C": "NOT_MENTIONED",
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "이메일 목적 문제는 제목(Subject)과 첫 문단을 함께 보면 빨라요. therefore 뒤에는 결론(핵심 소식)이 와요.",
+          "vocab": [
+            {
+              "word": "register for",
+              "pos": "phr. v.",
+              "meaning_ko": "~에 등록하다",
+              "level": "기초"
+            },
+            {
+              "word": "regret to inform",
+              "pos": "phr.",
+              "meaning_ko": "~을 알리게 되어 유감이다",
+              "level": "중급"
+            },
+            {
+              "word": "serve as",
+              "pos": "phr. v.",
+              "meaning_ko": "~로 일하다, ~ 역할을 하다",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 요리 강좌 일정 변경 안내 이메일. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000019",
+          "part": 7,
+          "position_in_set": 2,
+          "stem": "What is suggested about Mr. Okonkwo-Brandt?",
+          "options": {
+            "A": "He teaches only evening classes.",
+            "B": "He recently joined the studio's staff.",
+            "C": "He organized the Brackenford Regional Cooking Competition.",
+            "D": "He has been asked to evaluate entries in a contest."
+          },
+          "answer": "D",
+          "type_tag": "P7-LINK.2P",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. 이메일에 \"Thank you for registering for our class on Saturday, May 8.\"과 \"the instructor for this session has been invited to serve as a judge at the Brackenford Regional Cooking Competition that weekend\"(이 수업 강사가 그 주말 Brackenford 지역 요리 대회 심사위원으로 초청받았어요)라고 나와요. 이메일에는 강사 이름이 없지만, 일정표에서 5월 8일 수업(Knife Skills for Beginners) 강사가 Rafael Okonkwo-Brandt예요. 두 지문을 합치면 그가 대회 심사를 맡는다는 걸 알 수 있어요. serve as a judge가 evaluate entries로 바뀌었어요. (A) 그는 토요일 오전 수업도 가르쳐요. (B) 최근 입사 이야기는 없어요. (C) 대회를 '조직'한 것이 아니라 '심사'하러 초청받았어요.",
+          "evidence_quote": "Saturday, May 8 | 10:00 A.M.–1:00 P.M. | Knife Skills for Beginners | Rafael Okonkwo-Brandt | $60 / We regret to inform you that the instructor for this session has been invited to serve as a judge at the Brackenford Regional Cooking Competition that weekend.",
+          "distractor_rationale": {
+            "A": "오답: 일정표에서 그는 토요일 오전 10시 수업도 맡아요 (반대 정보).",
+            "B": "오답: 최근에 합류했다는 정보는 없어요 (언급 없음).",
+            "C": "오답: 대회를 조직한 게 아니라 심사위원으로 초청받았어요 (뜻 혼동).",
+            "D": "정답: 5월 8일 수업 강사(일정표) = 대회 심사위원으로 초청받은 사람(이메일)이에요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "NOT_MENTIONED",
+            "C": "MEANING_NEAR_MISS",
+            "D": null
+          },
+          "key_point": "이메일에서 '이 수업 강사'처럼 이름 없이 가리키면, 날짜를 단서로 일정표에서 이름을 찾아 연결해요. judge = evaluate entries.",
+          "vocab": [
+            {
+              "word": "judge",
+              "pos": "n.",
+              "meaning_ko": "심사위원",
+              "level": "기초"
+            },
+            {
+              "word": "evaluate",
+              "pos": "v.",
+              "meaning_ko": "평가하다",
+              "level": "중급"
+            },
+            {
+              "word": "entry",
+              "pos": "n.",
+              "meaning_ko": "출품작, 참가작",
+              "level": "중급"
+            },
+            {
+              "word": "instructor",
+              "pos": "n.",
+              "meaning_ko": "강사",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 요리 강좌 강사의 대회 심사 일정. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000020",
+          "part": 7,
+          "position_in_set": 3,
+          "stem": "Who most likely taught the class that Mr. Ferreira-Holm attended?",
+          "options": {
+            "A": "Rafael Okonkwo-Brandt",
+            "B": "Sunniva Adeyemi",
+            "C": "Anneliese Murakami",
+            "D": "Mirela Dunsworth"
+          },
+          "answer": "B",
+          "type_tag": "P7-LINK.3P",
+          "sub_tags": [],
+          "difficulty_expert": 5,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (B)예요. 세 지문이 모두 필요해요. ① 이메일: 그가 처음 신청한 수업은 \"our class on Saturday, May 8\"이에요. ② 후기: 날짜가 바뀌자 \"I couldn't make the new one because of a family trip, so I switched to the only other Saturday morning class on the schedule.\"(새 날짜엔 갈 수 없어서 일정표의 유일한 다른 토요일 오전 수업으로 바꿨어요)라고 해요. ③ 일정표: 토요일 오전 수업은 5월 8일과 5월 15일 두 개이고, 5월 8일이 아닌 다른 하나는 5월 15일 Seasonal Vegetable Soups예요. 강사는 Sunniva Adeyemi예요. (A)는 원래 신청한 수업 강사예요. (C)는 목요일 저녁 수업 강사예요. (D)는 이메일을 보낸 프로그램 담당자예요.",
+          "evidence_quote": "Thank you for registering for our class on Saturday, May 8. / When the date was changed, I couldn't make the new one because of a family trip, so I switched to the only other Saturday morning class on the schedule. / Saturday, May 15 | 10:00 A.M.–1:00 P.M. | Seasonal Vegetable Soups | Sunniva Adeyemi | $55",
+          "distractor_rationale": {
+            "A": "오답: 원래 신청한 5월 8일 수업 강사예요. 그는 그 수업을 듣지 않았어요 (부분 정보).",
+            "B": "정답: 다른 토요일 오전 수업은 5월 15일 수업뿐이고, 강사는 Sunniva Adeyemi예요.",
+            "C": "오답: Anneliese Murakami는 목요일 저녁 수업만 맡아요 (부분 정보).",
+            "D": "오답: Mirela Dunsworth는 이메일을 쓴 프로그램 담당자이지 강사가 아니에요 (대상 혼동)."
+          },
+          "trap_code": {
+            "A": "PARTIAL_INFO",
+            "B": null,
+            "C": "PARTIAL_INFO",
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "삼중 지문 연계는 '처음 신청한 것(이메일) → 바꾼 조건(후기) → 실제 항목(일정표)'처럼 단서를 차례로 이어요. 'the only other ~'는 기준이 되는 하나를 빼고 남은 것을 가리켜요.",
+          "vocab": [
+            {
+              "word": "switch to",
+              "pos": "phr. v.",
+              "meaning_ko": "~로 바꾸다",
+              "level": "기초"
+            },
+            {
+              "word": "make",
+              "pos": "v.",
+              "meaning_ko": "(약속·모임에) 가다, 참석하다",
+              "level": "중급"
+            },
+            {
+              "word": "transfer",
+              "pos": "v.",
+              "meaning_ko": "옮기다, 이동하다",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 요리 강좌 일정 변경 후 다른 수업으로 옮긴 수강생 후기. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000021",
+          "part": 7,
+          "position_in_set": 4,
+          "stem": "What does Mr. Ferreira-Holm indicate about the class he took?",
+          "options": {
+            "A": "It was held in the evening.",
+            "B": "It had more participants than expected.",
+            "C": "Participants brought food home with them.",
+            "D": "The instructor arrived late."
+          },
+          "answer": "C",
+          "type_tag": "P7-TF.TRUE",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (C)예요. 후기 첫 문단에 \"By the end of the class, we had made three different dishes, and we each took home a container to share with our families.\"(수업이 끝날 때 요리 세 가지를 만들었고, 각자 가족과 나눠 먹을 용기를 하나씩 가져갔어요)라고 나와요. took home a container가 보기에서 brought food home으로 바뀌었어요. (A) 그가 들은 수업은 'Saturday morning class'예요. (B) 참가자 수에 대한 불만은 없어요. 불만은 주차 문제뿐이에요. (D) 강사는 모든 단계를 분명히 설명했다고 칭찬했고 지각 이야기는 없어요.",
+          "evidence_quote": "By the end of the class, we had made three different dishes, and we each took home a container to share with our families.",
+          "distractor_rationale": {
+            "A": "오답: 그는 토요일 오전(Saturday morning) 수업으로 바꿨어요 (반대 정보).",
+            "B": "오답: 인원에 대한 언급은 없고, 유일한 불만은 주차예요 (언급 없음).",
+            "C": "정답: 각자 음식 용기를 집에 가져갔다고 했어요.",
+            "D": "오답: 강사를 칭찬했을 뿐 늦게 왔다는 말은 없어요 (언급 없음)."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "NOT_MENTIONED",
+            "C": null,
+            "D": "NOT_MENTIONED"
+          },
+          "key_point": "TRUE 문제는 보기를 지문 문장과 하나씩 맞춰 봐요. take home a container는 '음식을 가져가다'로 바꿔 말할 수 있어요.",
+          "vocab": [
+            {
+              "word": "container",
+              "pos": "n.",
+              "meaning_ko": "용기, 그릇",
+              "level": "기초"
+            },
+            {
+              "word": "indicate",
+              "pos": "v.",
+              "meaning_ko": "나타내다, 언급하다",
+              "level": "중급"
+            },
+            {
+              "word": "plenty of",
+              "pos": "phr.",
+              "meaning_ko": "많은, 충분한",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 요리 강좌 수강 후기. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        },
+        {
+          "item_id": "RC-P7-000022",
+          "part": 7,
+          "position_in_set": 5,
+          "stem": "What does Mr. Ferreira-Holm most likely plan to do next month?",
+          "options": {
+            "A": "Take a class on using knives",
+            "B": "Become a member of the studio",
+            "C": "Travel to the studio by car",
+            "D": "Attend a cooking competition in Brackenford"
+          },
+          "answer": "A",
+          "type_tag": "P7-INF.NEXT",
+          "sub_tags": [
+            "P7-LINK.3P"
+          ],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A)예요. 후기 마지막 문장에서 \"I still hope to learn the skills taught in the class I originally chose, so I plan to register when it is offered again next month.\"(처음 고른 수업에서 가르치는 기술을 여전히 배우고 싶어서 다음 달에 다시 열리면 등록할 계획이에요)라고 해요. 처음 고른 수업은 이메일의 5월 8일 수업이고, 일정표에서 그 수업은 Knife Skills for Beginners예요. 그래서 칼 다루는 수업을 들을 계획이라고 볼 수 있어요. (B) 회원 할인은 일정표에 나오지만 그가 가입한다는 말은 없어요. (C) \"Next time I'll take the bus.\"라고 했으니 차를 타고 가지 않아요. (D) 대회는 강사가 심사하러 가는 행사예요.",
+          "evidence_quote": "I still hope to learn the skills taught in the class I originally chose, so I plan to register when it is offered again next month. / Thank you for registering for our class on Saturday, May 8. / Saturday, May 8 | 10:00 A.M.–1:00 P.M. | Knife Skills for Beginners | Rafael Okonkwo-Brandt | $60",
+          "distractor_rationale": {
+            "A": "정답: 처음 고른 5월 8일 수업(Knife Skills)이 다음 달에 열리면 등록하려고 해요.",
+            "B": "오답: 회원 제도는 일정표에 나오지만 가입 계획은 없어요 (지문 단어 반복 함정).",
+            "C": "오답: 다음엔 버스를 타겠다고 했어요 (반대 정보).",
+            "D": "오답: 대회는 강사가 심사하는 행사로만 나와요 (지문 단어 반복 함정)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "WORD_REPEAT_TRAP",
+            "C": "OPPOSITE_INFO",
+            "D": "WORD_REPEAT_TRAP"
+          },
+          "key_point": "'the class I originally chose'처럼 다른 지문에서 정해진 대상을 가리키는 표현이 나오면, 앞 지문으로 돌아가 구체적인 이름을 확인해요.",
+          "vocab": [
+            {
+              "word": "originally",
+              "pos": "adv.",
+              "meaning_ko": "원래, 처음에",
+              "level": "중급"
+            },
+            {
+              "word": "offer",
+              "pos": "v.",
+              "meaning_ko": "(강좌 등을) 제공하다, 열다",
+              "level": "기초"
+            },
+            {
+              "word": "register",
+              "pos": "v.",
+              "meaning_ko": "등록하다",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p7",
+          "source_note": "자체 창작. 착상: 요리 강좌 수강생의 다음 계획. 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건"
+          },
+          "native_check_id": ""
+        }
+      ]
+    }
+  ]
+}

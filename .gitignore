@@ -1,0 +1,4 @@
+__pycache__/
+# 빌드 산출물: python3 -B db/build_db.py && python3 -B db/export_xlsx.py 로 다시 생성
+db/toeic_rc.db
+db/toeic_rc_items.xlsx

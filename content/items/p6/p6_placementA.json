@@ -1,0 +1,308 @@
+{
+  "sets": [
+    {
+      "set_id": "RC-P6-S-0005",
+      "part": 6,
+      "form_slot": "PL-A/stage1",
+      "passage_type": "web_page",
+      "passage_count": 1,
+      "business_context": "고객 문의·서비스 안내",
+      "fictional_entities": [
+        "Quarrington Workspace",
+        "Dunleigh",
+        "Brackmoor Avenue",
+        "quarringtonworkspace.example.com",
+        "555-0148"
+      ],
+      "passages": [
+        {
+          "title": "Membership Plans | Quarrington Workspace",
+          "type": "web_page",
+          "text": "Quarrington Workspace offers a comfortable place to work in the center of Dunleigh. Our building on Brackmoor Avenue is open from 7 A.M. to 10 P.M. every day of the year. All members enjoy high-speed Internet, free coffee, and access to our printing station.\n\nFlex Desk ($95 per month): Use any open desk in the main hall. This plan is ideal for freelancers who come in only a few times a week.\n\nFixed Desk ($180 per month): The same desk is [1] for you every day, and you also get a lockable storage cabinet.\n\nPrivate Office (from $520 per month): Our private offices hold teams of two to six people. [2] come furnished with desks, chairs, and a large whiteboard.\n\nMeeting Rooms: Members can book either of our two meeting rooms by the hour. [3] Reservations can be made through the member portal at quarringtonworkspace.example.com.\n\nMonthly plans can be canceled at any time with 30 days' notice. [4], annual plans cannot be canceled before the end of the twelve-month term.\n\nTo schedule a free tour, call 555-0148."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P6-000017",
+          "part": 6,
+          "position_in_set": 1,
+          "form_slot": "PL-A/stage1",
+          "stem": "[1]",
+          "options": {
+            "A": "preserved",
+            "B": "reserved",
+            "C": "deserved",
+            "D": "conserved"
+          },
+          "answer": "B",
+          "type_tag": "P6-VOC.WORD",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (B) reserved예요. \"The same desk is reserved for you every day\"(매일 같은 책상이 회원님을 위해 예약되어 있어요.) 바로 위 Flex Desk 설명 \"Use any open desk in the main hall.\"은 빈자리 아무 곳이나 쓰는 요금제예요. Fixed Desk는 이와 달리 '같은 책상'을 한 사람에게 맡겨 두는 요금제이므로 '(자리를) 따로 잡아 두다'라는 reserved가 맞아요. preserved(보존된), deserved(받을 만한), conserved(아껴 쓴)는 철자가 비슷하지만 자리 배정과 관계가 없어요.",
+          "evidence_quote": "Use any open desk in the main hall.",
+          "distractor_rationale": {
+            "A": "'(원래 상태로) 보존된'이라 책상을 한 사람에게 배정한다는 뜻이 아니에요. 형태가 비슷한 단어 함정이에요.",
+            "B": "정답: 같은 책상을 매일 한 사람을 위해 '따로 잡아 둔다'는 뜻이에요.",
+            "C": "'받을 만한'이라 책상 배정과 관계없어요.",
+            "D": "'(자원을) 아껴 쓴, 보존된'이라 자리 배정 뜻이 아니에요."
+          },
+          "trap_code": {
+            "A": "SIMILAR_FORM",
+            "B": null,
+            "C": "SIMILAR_FORM",
+            "D": "SIMILAR_FORM"
+          },
+          "key_point": "be reserved for + 사람 = ~을 위해 따로 잡아 두다. -served로 끝나는 비슷한 단어(preserve, deserve, conserve)를 뜻으로 구별해요.",
+          "vocab": [
+            {
+              "word": "reserve",
+              "pos": "v.",
+              "meaning_ko": "(자리를) 예약하다, 따로 잡아 두다",
+              "level": "중급",
+              "option": "B"
+            },
+            {
+              "word": "lockable",
+              "pos": "adj.",
+              "meaning_ko": "잠글 수 있는",
+              "level": "중급",
+              "option": null
+            },
+            {
+              "word": "storage cabinet",
+              "pos": "n.",
+              "meaning_ko": "수납장",
+              "level": "기초",
+              "option": null
+            },
+            {
+              "word": "preserve",
+              "pos": "v.",
+              "meaning_ko": "보존하다",
+              "level": "중급",
+              "option": "A"
+            }
+          ],
+          "author_id": "ai-writer-pl-p56",
+          "status": "draft",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+        },
+        {
+          "item_id": "RC-P6-000018",
+          "part": 6,
+          "position_in_set": 2,
+          "form_slot": "PL-A/stage1",
+          "stem": "[2]",
+          "options": {
+            "A": "It",
+            "B": "We",
+            "C": "Them",
+            "D": "They"
+          },
+          "answer": "D",
+          "type_tag": "P6-CTX.PRON",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (D) They예요. \"They come furnished with desks, chairs, and a large whiteboard.\"(그 사무실들에는 책상, 의자, 큰 화이트보드가 갖춰져 있어요.) 앞 문장 \"Our private offices hold teams of two to six people.\"에서 private offices(복수)를 소개했어요. 가구가 갖춰진 것은 사무실이므로 복수 주격 They가 맞아요. It은 단수라 동사 come과 맞지 않고, We(우리 회사)는 가구가 갖춰지는 대상이 아니에요. Them은 목적격이라 주어 자리에 올 수 없어요.",
+          "evidence_quote": "Our private offices hold teams of two to six people.",
+          "distractor_rationale": {
+            "A": "단수 대명사라 복수 offices를 받지 못하고, 동사 come과도 수가 맞지 않아요.",
+            "B": "We는 회사(글쓴이)를 가리켜요. 가구가 갖춰지는 대상은 사무실이에요. 지시 대상 함정이에요.",
+            "C": "목적격이라 문장의 주어 자리에 올 수 없어요.",
+            "D": "정답: 앞 문장의 private offices(복수)를 받는 주격 대명사예요."
+          },
+          "trap_code": {
+            "A": "NUMBER_AGREEMENT",
+            "B": "WRONG_REFERENT",
+            "C": "POS_CONFUSION",
+            "D": null
+          },
+          "key_point": "대명사 빈칸은 앞 문장에서 가리키는 명사를 찾고, 그 명사의 수(단수/복수)와 빈칸의 격(주어/목적어)을 함께 확인해요.",
+          "vocab": [
+            {
+              "word": "furnished",
+              "pos": "adj.",
+              "meaning_ko": "가구가 갖춰진",
+              "level": "중급",
+              "option": null
+            },
+            {
+              "word": "private office",
+              "pos": "n.",
+              "meaning_ko": "개인 사무실",
+              "level": "기초",
+              "option": null
+            },
+            {
+              "word": "hold",
+              "pos": "v.",
+              "meaning_ko": "수용하다, 담다",
+              "level": "기초",
+              "option": null
+            }
+          ],
+          "author_id": "ai-writer-pl-p56",
+          "status": "draft",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+        },
+        {
+          "item_id": "RC-P6-000019",
+          "part": 6,
+          "position_in_set": 3,
+          "form_slot": "PL-A/stage1",
+          "stem": "[3]",
+          "options": {
+            "A": "These desks are given out on a first-come, first-served basis.",
+            "B": "However, the building is closed on national holidays.",
+            "C": "Each is equipped with a video screen and can seat up to ten people.",
+            "D": "This plan also includes a lockable storage cabinet."
+          },
+          "answer": "C",
+          "type_tag": "P6-INS.SENT",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450",
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (C)예요. \"Each is equipped with a video screen and can seat up to ten people.\"(각 회의실에는 영상 화면이 있고 최대 10명이 앉을 수 있어요.) 앞 문장 \"Members can book either of our two meeting rooms by the hour.\"에서 회의실 두 개를 소개했으므로 Each가 '두 회의실 각각'을 받아 설비를 설명해요. (A)의 These desks는 회의실 단락에 가리킬 책상이 없어요. (B)는 1문단의 \"open ... every day of the year\"와 충돌해요. (D)의 This plan은 요금제를 가리키는데 회의실은 요금제가 아니고, 수납장은 Fixed Desk의 혜택이에요.",
+          "evidence_quote": "Members can book either of our two meeting rooms by the hour. / Our building on Brackmoor Avenue is open from 7 A.M. to 10 P.M. every day of the year.",
+          "distractor_rationale": {
+            "A": "These desks가 가리킬 책상이 회의실 단락에 없어요. 지시 대상이 맞지 않는 함정이에요.",
+            "B": "1문단에서 '1년 내내 매일 연다'고 했으므로 국경일 휴관과 정면으로 충돌해요.",
+            "C": "정답: Each가 앞 문장의 '회의실 두 개'를 받아 설비를 설명하고, 뒤의 예약 안내로 자연스럽게 이어져요.",
+            "D": "This plan은 요금제를 가리키는데 회의실은 요금제가 아니고, 잠금 수납장은 Fixed Desk 단락에 이미 나온 혜택이에요."
+          },
+          "trap_code": {
+            "A": "WRONG_REFERENT",
+            "B": "OPPOSITE_INFO",
+            "C": null,
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "문장 삽입은 보기 속 지시어(these, each, this plan)가 앞 문장의 어떤 명사를 받는지 확인하고, 지문 다른 곳과 충돌하지 않는지 봐요.",
+          "vocab": [
+            {
+              "word": "be equipped with",
+              "pos": "phr.",
+              "meaning_ko": "~을 갖추다",
+              "level": "중급",
+              "option": "C"
+            },
+            {
+              "word": "seat",
+              "pos": "v.",
+              "meaning_ko": "(좌석 수만큼) 앉히다, 수용하다",
+              "level": "중급",
+              "option": "C"
+            },
+            {
+              "word": "first-come, first-served",
+              "pos": "phr.",
+              "meaning_ko": "선착순",
+              "level": "중급",
+              "option": "A"
+            },
+            {
+              "word": "by the hour",
+              "pos": "phr.",
+              "meaning_ko": "시간 단위로",
+              "level": "기초",
+              "option": null
+            }
+          ],
+          "author_id": "ai-writer-pl-p56",
+          "status": "draft",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+        },
+        {
+          "item_id": "RC-P6-000020",
+          "part": 6,
+          "position_in_set": 4,
+          "form_slot": "PL-A/stage1",
+          "stem": "[4]",
+          "options": {
+            "A": "By contrast",
+            "B": "Similarly",
+            "C": "As a result",
+            "D": "For example"
+          },
+          "answer": "A",
+          "type_tag": "P6-CTX.TRANS",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "300-400",
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A) By contrast예요. \"By contrast, annual plans cannot be canceled before the end of the twelve-month term.\"(반면 연간 요금제는 12개월 기간이 끝나기 전에 해지할 수 없어요.) 앞 문장 \"Monthly plans can be canceled at any time with 30 days' notice.\"는 월간 요금제는 언제든 해지할 수 있다고 해요. 빈칸 문장은 연간 요금제는 해지할 수 없다고 하므로 두 요금제를 대조해요. Similarly는 같은 내용을 나란히 말할 때, As a result는 앞 문장이 원인일 때, For example은 앞 내용의 예를 들 때 써요.",
+          "evidence_quote": "Monthly plans can be canceled at any time with 30 days' notice.",
+          "distractor_rationale": {
+            "A": "정답: 월간(해지 가능)과 연간(해지 불가)을 대조하므로 '반면에'예요.",
+            "B": "'마찬가지로'는 같은 종류의 내용을 이어 말할 때 써요. 두 문장의 내용이 반대예요.",
+            "C": "월간 요금제가 해지 가능하다는 것이 연간 요금제 해지 불가의 원인이 아니에요. 인과 오해 함정이에요.",
+            "D": "연간 요금제는 월간 요금제의 예가 아니에요."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "OPPOSITE_INFO",
+            "C": "MEANING_NEAR_MISS",
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "접속부사는 앞 문장과 빈칸 문장의 관계를 먼저 정해요. 두 대상이 반대 성질이면 By contrast/However/In contrast를 써요.",
+          "vocab": [
+            {
+              "word": "cancel",
+              "pos": "v.",
+              "meaning_ko": "취소하다, 해지하다",
+              "level": "기초",
+              "option": null
+            },
+            {
+              "word": "notice",
+              "pos": "n.",
+              "meaning_ko": "(사전) 통지",
+              "level": "중급",
+              "option": null
+            },
+            {
+              "word": "term",
+              "pos": "n.",
+              "meaning_ko": "(계약) 기간",
+              "level": "중급",
+              "option": null
+            },
+            {
+              "word": "by contrast",
+              "pos": "phr.",
+              "meaning_ko": "반면에, 대조적으로",
+              "level": "중급",
+              "option": "A"
+            }
+          ],
+          "author_id": "ai-writer-pl-p56",
+          "status": "draft",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+        }
+      ]
+    }
+  ]
+}

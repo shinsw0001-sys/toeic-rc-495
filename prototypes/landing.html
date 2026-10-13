@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>리드컷 대기자 랜딩</title>
+<!--
+  S2-06 대기자 모집 랜딩 프로토타입 · Marketer (+UX) · 2026-10-13
+  - 구조: docs/marketing/positioning.md 6.3 (8개 섹션), 히어로 기본안 7장 H1.
+  - 리드 마그넷: 무료 RC 배치고사 "우선 이용권" (docs/specs/placement-and-vocab.md 0장: 현재 수준 범위 + 필수 학습 범위 + 어휘 추천).
+  - 서비스명 "리드컷"은 가칭(positioning.md 5장 N1, 상표 검색 전). 확정 전 게시 금지.
+  - 화면 목업의 숫자는 명세 2.5 가상 사용자 예시다. 실제 사용자·실제 점수·후기가 아니다.
+  - 폼은 아무 데도 보내지 않는다. 제출하면 이 화면에서만 감사 상태를 보여 준다.
+  - A/B(S2 테스트 1): 숨은 개발용 토글. URL에 ?dev=1 을 붙이거나 Shift+D. ?v=a(토익 800) / ?v=b(RC만, 시험일까지, 기본).
+  - 외부 의존성 없음. 디자인 토큰은 prototypes/placement-result.html 과 같다.
+-->
+<style>
+:root{
+  --color-bg:#F7F8FA; --color-surface:#FFFFFF; --color-surface-sunken:#EEF0F4; --color-border:#D5D9E0;
+  --color-text:#1B1F24; --color-text-muted:#5A6270;
+  --color-primary:#2F5BEA; --color-primary-weak:#E6ECFE; --color-on-primary:#FFFFFF;
+  --color-correct:#1E7F4F; --color-correct-weak:#E3F4EA;
+  --color-wrong:#C2362F; --color-wrong-weak:#FCE8E6;
+  --color-warning:#9A6700; --color-warning-weak:#FFF4D6; --color-focus:#1A73E8;
+  --color-weak:#C2362F; --color-weak-bg:#FCE8E6;
+  --color-strong:#1E7F4F; --color-strong-bg:#E3F4EA;
+  --color-beta:#6B4FD8; --color-beta-weak:#EEEAFE;
+  --color-range:rgba(47,91,234,.25);
+  --font-ui:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:16px;--radius-pill:999px;
+  --shadow-1:0 1px 2px rgba(0,0,0,.06); --shadow-2:0 8px 24px rgba(0,0,0,.18);
+  --touch-min:44px; --bar-height:56px; --motion-base:200ms;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+    --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+    --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+    --color-correct:#5FD39A; --color-correct-weak:#15301F;
+    --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+    --color-warning:#E3B341; --color-warning-weak:#33280C; --color-focus:#8AB4F8;
+    --color-weak:#FF8A80; --color-weak-bg:#3A1A18;
+    --color-strong:#5FD39A; --color-strong-bg:#15301F;
+    --color-beta:#B9A6FF; --color-beta-weak:#262040;
+    --color-range:rgba(122,155,255,.30);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+  --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+  --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+  --color-correct:#5FD39A; --color-correct-weak:#15301F;
+  --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+  --color-warning:#E3B341; --color-warning-weak:#33280C; --color-focus:#8AB4F8;
+  --color-weak:#FF8A80; --color-weak-bg:#3A1A18;
+  --color-strong:#5FD39A; --color-strong-bg:#15301F;
+  --color-beta:#B9A6FF; --color-beta-weak:#262040;
+  --color-range:rgba(122,155,255,.30);
+  color-scheme:dark;
+}
+@media (prefers-reduced-motion:reduce){ :root{ --motion-base:0ms } html{scroll-behavior:auto!important} }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-ui);font-size:16px;line-height:1.6;
+  -webkit-text-size-adjust:100%;overflow-wrap:break-word;word-break:keep-all}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;border-radius:var(--radius-sm)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--color-text-muted)}
+h1,h2,h3{margin:0;line-height:1.3;letter-spacing:-.02em}
+p{margin:0}
+a{color:var(--color-primary)}
+
+/* 상단 바 */
+.topbar{position:sticky;top:0;z-index:20;height:var(--bar-height);display:flex;align-items:center;gap:var(--space-3);
+  padding:0 var(--space-4);background:var(--color-surface);border-bottom:1px solid var(--color-border)}
+.logo{font-weight:800;letter-spacing:-.02em;font-size:18px;white-space:nowrap}
+.logo small{font-weight:600;font-size:11px;color:var(--color-text-muted);margin-left:4px}
+.topbar nav{display:flex;gap:var(--space-1);margin-left:var(--space-4)}
+.topbar nav a{white-space:nowrap;text-decoration:none;color:var(--color-text-muted);padding:8px 10px;border-radius:var(--radius-md);font-size:14px}
+.topbar nav a:hover{background:var(--color-surface-sunken);color:var(--color-text)}
+.spacer{flex:1}
+.icon-btn{min-width:var(--touch-min);height:var(--touch-min);display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:0 var(--space-3);border:1px solid var(--color-border);background:var(--color-surface);border-radius:var(--radius-md);cursor:pointer;font-size:14px;white-space:nowrap}
+.icon-btn:hover{background:var(--color-surface-sunken)}
+
+/* 레이아웃 */
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--space-4)}
+section.sec{padding:var(--space-7) 0;scroll-margin-top:var(--bar-height)}
+section.sec + section.sec{border-top:1px solid var(--color-border)}
+.sec-head{margin-bottom:var(--space-5);max-width:720px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;color:var(--color-primary);background:var(--color-primary-weak);
+  border-radius:var(--radius-pill);padding:2px 10px;margin-bottom:var(--space-2)}
+.sec-head h2{font-size:28px}
+.sec-head p{color:var(--color-text-muted);margin-top:var(--space-2)}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-1);min-width:0}
+.card h3{font-size:18px;margin-bottom:var(--space-2)}
+.grid{display:grid;gap:var(--space-4)}
+.g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chip{display:inline-flex;align-items:center;gap:4px;border-radius:var(--radius-pill);padding:2px 10px;font-size:12px;font-weight:600;
+  border:1px solid var(--color-border);background:var(--color-surface);white-space:nowrap}
+.chip.beta{background:var(--color-beta-weak);color:var(--color-beta);border-color:transparent}
+.chip.primary{background:var(--color-primary-weak);color:var(--color-primary);border-color:transparent}
+.chip.warn{background:var(--color-warning-weak);color:var(--color-warning);border-color:transparent}
+.mock-tag{font-size:11px;font-weight:700;color:var(--color-text-muted);border:1px dashed var(--color-border);border-radius:var(--radius-pill);padding:1px 8px;white-space:nowrap}
+
+/* 버튼 */
+.btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 var(--space-5);border-radius:var(--radius-md);
+  border:1.5px solid var(--color-border);background:var(--color-surface);cursor:pointer;font-weight:700;text-decoration:none;color:var(--color-text);font-size:16px}
+.btn:hover{border-color:var(--color-primary)}
+.btn.primary{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-on-primary)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.small{min-height:var(--touch-min);font-size:14px;padding:0 var(--space-4)}
+
+/* 1. 히어로 */
+.hero{padding:var(--space-7) 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:var(--space-6);align-items:center}
+.hero h1{font-size:44px;line-height:1.2;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--color-primary)}
+.hero .sub{font-size:18px;color:var(--color-text-muted);margin-top:var(--space-4);max-width:560px}
+.hero .cta-row{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-5);align-items:center}
+.fine{font-size:14px;color:var(--color-text-muted);margin-top:var(--space-3);max-width:560px}
+.fine b{color:var(--color-text);font-weight:600}
+.pass{margin-top:var(--space-5);display:flex;gap:var(--space-3);flex-wrap:wrap}
+.pass li{list-style:none;display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;background:var(--color-surface);
+  border:1px solid var(--color-border);border-radius:var(--radius-pill);padding:6px 12px}
+.pass{padding:0;margin-bottom:0}
+.pass li i{font-style:normal;color:var(--color-primary);font-weight:800}
+
+/* 목업 공통 */
+.mock{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4);box-shadow:var(--shadow-2)}
+.mock-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:var(--space-3);font-size:14px;font-weight:700;color:var(--color-text-muted)}
+.mock-head .spacer{flex:1}
+.rc-big{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap}
+.rc-big .range{font-size:28px;font-weight:800;letter-spacing:-.02em}
+.rc-big .mid{font-size:14px;color:var(--color-text-muted)}
+.rangebar{position:relative;height:60px;margin:var(--space-4) 8px var(--space-2)}
+.rangebar .axis{position:absolute;left:0;right:0;top:22px;height:8px;border-radius:4px;background:var(--color-surface-sunken);border:1px solid var(--color-border)}
+.rangebar .band{position:absolute;top:14px;height:24px;border-radius:6px;background:var(--color-range);border:2px solid var(--color-primary)}
+.rangebar .dot{position:absolute;top:17px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--color-primary);border:3px solid var(--color-surface)}
+.rangebar .goal{position:absolute;top:2px;height:44px;border-left:2px dashed var(--color-text-muted)}
+.rangebar .goal span{position:absolute;top:-4px;left:6px;font-size:12px;color:var(--color-text-muted);white-space:nowrap}
+.rangebar .lab{position:absolute;top:44px;font-size:12px;font-weight:700;transform:translateX(-50%)}
+.evid{display:flex;flex-wrap:wrap;gap:4px var(--space-4);font-size:13px;color:var(--color-text-muted)}
+.evid b{color:var(--color-text)}
+.mini-list{list-style:none;margin:var(--space-3) 0 0;padding:0;display:grid;gap:6px}
+.mini-list li{display:flex;align-items:center;gap:8px;font-size:14px;padding:8px 10px;border-radius:var(--radius-md);background:var(--color-surface-sunken);min-width:0}
+.mini-list li span.t{flex:1;min-width:0}
+.tag{font-size:11px;font-weight:800;border-radius:var(--radius-pill);padding:1px 8px;white-space:nowrap}
+.tag.must{background:var(--color-weak-bg);color:var(--color-weak)}
+.tag.rec{background:var(--color-primary-weak);color:var(--color-primary)}
+.tag.later{background:var(--color-surface);color:var(--color-text-muted);border:1px solid var(--color-border)}
+
+/* 2. 누구를 위한가 */
+.seg-pick{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.seg-pick button{min-height:var(--touch-min);padding:0 var(--space-4);border:1.5px solid var(--color-border);border-radius:var(--radius-pill);
+  background:var(--color-surface);cursor:pointer;font-weight:600}
+.seg-pick button:hover{border-color:var(--color-primary)}
+.seg-pick button[aria-pressed="true"]{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-on-primary)}
+.persona{margin-top:var(--space-4);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--space-4)}
+.persona .msg{font-size:22px;font-weight:800;line-height:1.4;letter-spacing:-.02em}
+.persona ul{margin:var(--space-3) 0 0;padding-left:1.2em;color:var(--color-text-muted)}
+.persona ul li{margin:4px 0}
+.persona .note{font-size:13px;color:var(--color-text-muted);margin-top:var(--space-3)}
+
+/* 3. 어떻게 */
+.step-n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--color-primary);color:var(--color-on-primary);font-weight:800;font-size:14px;margin-right:8px}
+.lm-card p.desc{color:var(--color-text-muted);font-size:15px}
+.lm-card .mock{box-shadow:none;margin-top:var(--space-4);background:var(--color-bg)}
+.vcard{text-align:center;padding:var(--space-3) 0}
+.vcard .w{font-size:26px;font-weight:800;letter-spacing:-.01em}
+.vcard .pos{font-size:13px;color:var(--color-text-muted)}
+.vcard .ex{font-size:14px;margin-top:var(--space-2);background:var(--color-surface);border-radius:var(--radius-md);padding:8px 10px;text-align:left}
+.vcard .ex u{text-decoration-color:var(--color-primary);text-decoration-thickness:2px;text-underline-offset:3px}
+.vrow{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:var(--space-2)}
+.flow-sub{margin-top:var(--space-6)}
+.flow-sub h3{font-size:20px;margin-bottom:var(--space-3)}
+.expl .q{font-size:15px;background:var(--color-surface-sunken);border-radius:var(--radius-md);padding:10px 12px}
+.expl .q mark{background:var(--color-warning-weak);color:inherit;border-bottom:2px solid var(--color-warning);padding:0 2px}
+.opt{display:flex;gap:8px;align-items:flex-start;font-size:14px;padding:6px 0;border-bottom:1px solid var(--color-border)}
+.opt:last-child{border-bottom:none}
+.opt b{width:22px;flex:none}
+.opt.ok b{color:var(--color-correct)}
+.opt.no b{color:var(--color-wrong)}
+.opt .why{color:var(--color-text-muted)}
+.opt .trap{font-size:11px;font-weight:800;background:var(--color-wrong-weak);color:var(--color-wrong);border-radius:var(--radius-pill);padding:1px 8px;white-space:nowrap}
+
+/* 4. 트랙 */
+.track .from{font-size:13px;font-weight:700;color:var(--color-primary)}
+.track .goal-line{font-size:13px;color:var(--color-text-muted);margin-top:var(--space-3);padding-top:var(--space-3);border-top:1px solid var(--color-border)}
+.track.soon{border-style:dashed;background:transparent;box-shadow:none}
+
+/* 5. 하지 않는 것 */
+.nots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-3)}
+.nots .card{padding:var(--space-4)}
+.nots .x{font-size:20px;font-weight:800;color:var(--color-text-muted)}
+.nots h3{font-size:16px}
+.nots p{font-size:14px;color:var(--color-text-muted)}
+
+/* 6. 품질 원칙 */
+.pipeline{display:flex;flex-wrap:wrap;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4)}
+.pipeline span{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:8px 12px;font-size:14px;font-weight:600}
+.pipeline i{font-style:normal;color:var(--color-text-muted)}
+table.sla{width:100%;border-collapse:collapse;font-size:14px}
+table.sla th,table.sla td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--color-border);vertical-align:top}
+table.sla th{color:var(--color-text-muted);font-weight:600;font-size:13px}
+
+/* 7. FAQ */
+details.faq{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:0 var(--space-4);margin-bottom:var(--space-2)}
+details.faq summary{cursor:pointer;min-height:52px;display:flex;align-items:center;font-weight:700;list-style:none;gap:8px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";margin-left:auto;font-size:20px;color:var(--color-text-muted)}
+details.faq[open] summary::after{content:"−"}
+details.faq .a{padding-bottom:var(--space-4);color:var(--color-text-muted);font-size:15px}
+
+/* 8. 등록 폼 */
+.signup{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--space-6);align-items:start}
+.field{margin-bottom:var(--space-4)}
+.field label,.field .lbl{display:block;font-weight:700;margin-bottom:6px;font-size:15px}
+.field .help{font-size:13px;color:var(--color-text-muted);margin-top:4px}
+.field input[type=email],.field select{width:100%;min-height:48px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);padding:0 12px;background:var(--color-surface)}
+.field.err input[type=email]{border-color:var(--color-wrong)}
+.errmsg{display:none;color:var(--color-wrong);font-size:13px;margin-top:4px}
+.field.err .errmsg{display:block}
+.consent{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-4);background:var(--color-bg)}
+.consent label{display:flex;gap:10px;align-items:flex-start;min-height:var(--touch-min);padding:6px 0;cursor:pointer;font-size:14px}
+.consent input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--color-primary)}
+.consent .req{color:var(--color-wrong);font-weight:700}
+.consent .opt-l{color:var(--color-text-muted);font-weight:700}
+.consent details{font-size:13px;color:var(--color-text-muted);margin:0 0 6px 30px}
+.consent details summary{cursor:pointer;color:var(--color-primary);min-height:32px;display:flex;align-items:center}
+.consent table{border-collapse:collapse;width:100%;margin:4px 0 8px}
+.consent td{border:1px solid var(--color-border);padding:4px 6px;vertical-align:top}
+.consent.err{border-color:var(--color-wrong)}
+.thanks{display:none;text-align:left}
+.thanks.on{display:block}
+.thanks .big{font-size:24px;font-weight:800;margin-bottom:var(--space-2)}
+.thanks ul{padding-left:1.2em;color:var(--color-text-muted);font-size:15px}
+.legal{font-size:13px;color:var(--color-text-muted);padding:var(--space-6) 0 calc(var(--space-7) + 40px);border-top:1px solid var(--color-border)}
+.legal p{margin-bottom:var(--space-2)}
+.legal .na{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);background:var(--color-surface);margin-bottom:var(--space-3)}
+
+.draft-banner{max-width:1120px;margin:var(--space-3) auto 0;padding:8px var(--space-4);font-size:13px;color:var(--color-text-muted)}
+.draft-banner span{border:1px dashed var(--color-border);border-radius:var(--radius-md);padding:6px 10px;display:inline-block}
+
+/* 모바일 하단 고정 CTA */
+.sticky-cta{display:none}
+
+/* 숨은 개발용 A/B 패널 */
+.devpanel{position:fixed;right:12px;bottom:12px;z-index:50;background:var(--color-surface);border:2px solid var(--color-warning);border-radius:var(--radius-md);
+  padding:10px 12px;box-shadow:var(--shadow-2);font-size:13px;width:260px;max-width:calc(100vw - 24px)}
+.devpanel[hidden]{display:none}
+.devpanel b{display:block;margin-bottom:6px;color:var(--color-warning)}
+.devpanel .row{display:flex;gap:6px}
+.devpanel button{flex:1;min-height:40px;border:1.5px solid var(--color-border);border-radius:var(--radius-sm);background:var(--color-surface);cursor:pointer;font-size:13px}
+.devpanel button[aria-pressed="true"]{background:var(--color-warning-weak);border-color:var(--color-warning);font-weight:700}
+.devpanel p{margin-top:6px;color:var(--color-text-muted);font-size:12px}
+
+@media (max-width:900px){
+  .hero-grid,.persona,.signup{grid-template-columns:minmax(0,1fr)}
+  .g-3{grid-template-columns:minmax(0,1fr)}
+  .nots{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .topbar nav{display:none}
+}
+@media (max-width:560px){
+  body{font-size:15px}
+  .hero{padding:var(--space-5) 0 var(--space-6)}
+  .hero h1{font-size:30px}
+  .hero .sub{font-size:16px}
+  .hero .cta-row .btn{width:100%}
+  section.sec{padding:var(--space-6) 0}
+  .sec-head h2{font-size:23px}
+  .persona .msg{font-size:19px}
+  .g-2,.nots{grid-template-columns:minmax(0,1fr)}
+  .card{padding:var(--space-4)}
+  .hdr-cta{display:none}
+  .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px var(--space-4) calc(10px + env(safe-area-inset-bottom));
+    background:var(--color-surface);border-top:1px solid var(--color-border)}
+  .sticky-cta .btn{width:100%;min-height:48px}
+  .sticky-cta.hide{display:none}
+  .devpanel{bottom:80px}
+  table.sla th:nth-child(3),table.sla td:nth-child(3){display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <span class="logo">리드컷<small>(가칭)</small></span>
+  <nav aria-label="페이지 안내">
+    <a href="#who">누구를 위한가</a>
+    <a href="#how">받는 것</a>
+    <a href="#tracks">트랙</a>
+    <a href="#faq">자주 묻는 질문</a>
+  </nav>
+  <span class="spacer"></span>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label="화면 테마 바꾸기">◐ <span id="themeLbl">시스템</span></button>
+  <a class="btn primary small hdr-cta" href="#signup">우선 이용권 신청</a>
+</header>
+
+<p class="draft-banner" role="note"><span>ⓘ 내부 프로토타입(S2-06). 서비스명은 가칭, 화면 속 숫자는 가상 예시, 폼은 어디에도 전송되지 않아요.</span></p>
+
+<main>
+<!-- ───────── 1. 히어로 (A/B 변수는 여기만) ───────── -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">RC 전용 · 웹 학습 · 출시 준비 중</span>
+      <h1 id="hero-h" data-ab="headline"><span data-variant="b">LC는 괜찮은데<br><em>RC가 문제라면.</em></span><span data-variant="a" hidden>토익 800,<br><em>시험일까지 계획부터</em> 세우세요.</span></h1>
+      <p class="sub">시험일과 하루 공부 시간만 알려 주세요. 먼저 배치고사로 지금 RC 범위를 확인하고, 목표 점수에 꼭 필요한 범위와 단어만 주차별 플랜으로 보여 드릴게요.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#signup" data-cta="hero" id="heroCta">무료 RC 배치고사 우선 이용권 신청</a>
+      </div>
+      <p class="fine"><b>배치고사 무료</b> · 약 24분 · 회원가입 없이 이메일만 · <b>○월 오픈 예정</b>(아직 응시할 수 없어요) · 플랜의 졸업 조건은 학습 목표이며 점수를 보장하지 않습니다</p>
+      <ul class="pass" aria-label="우선 이용권으로 받는 것">
+        <li><i>1</i> 현재 RC 수준 (범위)</li>
+        <li><i>2</i> 목표까지 필수 학습 범위</li>
+        <li><i>3</i> 내 수준 어휘 추천</li>
+      </ul>
+    </div>
+
+    <figure class="mock" style="margin:0" aria-label="배치고사 결과 화면 예시">
+      <div class="mock-head">배치고사 결과 <span class="chip beta">베타</span><span class="spacer"></span><span class="mock-tag">개발 중 화면 · 가상 예시</span></div>
+      <div class="rc-big"><span class="range num">RC 270~370</span><span class="mid num">중앙 320</span></div>
+      <div class="rangebar" role="img" aria-label="예시: 예측 RC 270점에서 370점, 목표 400점">
+        <div class="axis"></div>
+        <div class="goal" style="left:calc(400/495*100%)"><span>목표 400</span></div>
+        <div class="band" style="left:calc(270/495*100%);width:calc(100/495*100%)"></div>
+        <div class="dot" style="left:calc(320/495*100%)"></div>
+        <span class="lab num" style="left:calc(270/495*100%)">270</span>
+        <span class="lab num" style="left:calc(370/495*100%)">370</span>
+      </div>
+      <div class="evid"><span>근거 <b class="num">26문항</b></span><span>신뢰도 <b>낮음</b>(문항 수가 적어요)</span><span>어휘 <b>기초→400 레벨</b></span></div>
+      <ul class="mini-list" aria-label="필수 학습 범위 예시">
+        <li><span class="tag must">필수</span><span class="t">Part 5 품사 자리</span><span class="muted num">1~2주</span></li>
+        <li><span class="tag must">필수</span><span class="t">Part 7 단일 지문 근거 찾기</span><span class="muted num">2~4주</span></li>
+        <li><span class="tag later">나중에</span><span class="t">Part 7 삼중 지문</span><span class="muted">목표 400엔 후순위</span></li>
+      </ul>
+    </figure>
+  </div>
+</section>
+
+<!-- ───────── 2. 누구를 위한가 ───────── -->
+<section class="sec" id="who" aria-labelledby="who-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">누구를 위한가</span>
+      <h2 id="who-h">점수가 필요한 이유를 골라 보세요</h2>
+      <p>고른 이유는 아래 신청서에 미리 채워져요. 신청 후 플랜의 기본값을 정하는 데만 써요.</p>
+    </div>
+    <div class="seg-pick" role="group" aria-label="점수가 필요한 이유">
+      <button type="button" data-seg="gov" aria-pressed="true">공무원·공기업</button>
+      <button type="button" data-seg="promo" aria-pressed="false">승진·사내 요건</button>
+      <button type="button" data-seg="corp" aria-pressed="false">기업 지원·졸업 인증</button>
+      <button type="button" data-seg="high" aria-pressed="false">고득점 (RC 450 이상)</button>
+    </div>
+    <div class="persona card" aria-live="polite">
+      <div>
+        <p class="msg" id="pMsg"></p>
+        <ul id="pList"></ul>
+      </div>
+      <div>
+        <p class="muted" style="font-size:14px">추천 트랙</p>
+        <p style="font-size:20px;font-weight:800" id="pTrack"></p>
+        <p class="note" id="pNote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 3. 어떻게 (우선 이용권 → V1·V2·V3) ───────── -->
+<section class="sec" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">우선 이용권으로 받는 것</span>
+      <h2 id="how-h">배치고사 한 번으로 세 가지를 알려 드려요</h2>
+      <p>공통 12문항 → 수준별 14문항 → 어휘 체크 20문항(건너뛰기 가능). 오픈하면 대기자에게 먼저 열어요. 아래는 개발 중인 화면이에요.</p>
+    </div>
+    <div class="grid g-3">
+      <article class="card lm-card">
+        <h3><span class="step-n">1</span>지금 내 RC, 범위로</h3>
+        <p class="desc">"RC 320" 같은 한 숫자 대신 범위와 근거 문항 수, 신뢰도를 함께 보여 드려요. 판단이 어려우면 "판단 보류"라고 말해요.</p>
+        <div class="mock" aria-label="현재 수준 예시">
+          <div class="mock-head">현재 수준<span class="spacer"></span><span class="mock-tag">가상 예시</span></div>
+          <div class="rc-big"><span class="range num" style="font-size:22px">RC 270~370</span></div>
+          <div class="evid" style="margin-top:6px"><span>강점 <b>Part 6 문맥</b></span><span>약점 <b>품사·시제</b></span></div>
+        </div>
+      </article>
+      <article class="card lm-card">
+        <h3><span class="step-n">2</span>목표까지 꼭 할 범위</h3>
+        <p class="desc">목표 RC를 넣으면 출제 비중, 목표 구간에서의 중요도, 내 약점을 곱해 필수·권장·나중에로 나눠요. 안 해도 되는 범위도 이유와 함께 알려 드려요.</p>
+        <div class="mock" aria-label="필수 학습 범위 예시">
+          <div class="mock-head">목표 RC 400 · 6주<span class="spacer"></span><span class="mock-tag">가상 예시</span></div>
+          <ul class="mini-list" style="margin-top:0">
+            <li><span class="tag must">필수</span><span class="t">품사 자리</span></li>
+            <li><span class="tag rec">권장</span><span class="t">접속사 vs 전치사</span></li>
+            <li><span class="tag later">나중에</span><span class="t">삼중 지문</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="card lm-card">
+        <h3><span class="step-n">3</span>내 수준 어휘 추천</h3>
+        <p class="desc">어휘 체크 결과에서 시작해 하루 8~15개씩. 1·3·7·14일 간격으로 다시 보고, 틀린 문제에서 나온 단어는 자동으로 추가돼요.</p>
+        <div class="mock" aria-label="단어 카드 예시">
+          <div class="mock-head">오늘의 단어 <span class="num">3/12</span><span class="spacer"></span><span class="mock-tag">검수 전 예시</span></div>
+          <div class="vcard">
+            <div class="w">postpone</div>
+            <div class="pos">동사 · 미루다, 연기하다</div>
+            <div class="vrow"><span class="chip">postponement 명사</span><span class="chip warn">혼동: cancel</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="flow-sub">
+      <h3>그다음 학습은 이렇게 해요</h3>
+      <div class="grid g-2">
+        <article class="card expl">
+          <div class="mock-head" style="margin-bottom:8px">몇 문제 풀었는지보다, 왜 틀렸는지<span class="spacer"></span><span class="mock-tag">개발 중 화면 · 자체 작성 예시</span></div>
+          <p class="q">The board meeting has been ______ until next Friday <mark>due to</mark> the director's travel schedule.</p>
+          <div class="opt ok"><b>A</b><span><b style="width:auto">postponed</b> <span class="why">— "until + 날짜"와 함께 쓰여 '미뤄졌다'가 자연스러워요.</span></span></div>
+          <div class="opt no"><b>B</b><span>canceled <span class="trap">함정: 뜻 비슷한 단어</span> <span class="why">취소되면 "until"과 어울리지 않아요.</span></span></div>
+          <div class="opt no"><b>C</b><span>postponing <span class="trap">함정: 형태</span> <span class="why">has been 뒤 수동 자리예요.</span></span></div>
+          <p class="muted" style="font-size:13px;margin-top:8px">같은 함정으로 틀릴 문제를 골라 다시 풀게 해요.</p>
+        </article>
+        <article class="card">
+          <div class="mock-head" style="margin-bottom:8px">예상 점수, 범위와 근거로 <span class="chip beta">베타</span><span class="spacer"></span><span class="mock-tag">가상 예시</span></div>
+          <div class="rc-big"><span class="range num">RC 340~400</span><span class="mid">3주차</span></div>
+          <ul class="mini-list">
+            <li><span class="t">근거 문항</span><b class="num">142개</b></li>
+            <li><span class="t">범위를 좁히려면</span><span class="muted num">Part 7 문항 30개 더</span></li>
+            <li><span class="t">예측 방식</span><span class="muted">규칙 기반 데이터 예측(베타)</span></li>
+          </ul>
+          <p class="muted" style="font-size:13px;margin-top:8px">예측은 베타 기능이며 실제 점수와 다를 수 있어요.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 4. 트랙 카드 ───────── -->
+<section class="sec" id="tracks" aria-labelledby="tracks-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">트랙</span>
+      <h2 id="tracks-h">총점 패키지가 아니라 RC 구간으로 시작해요</h2>
+      <p>배치고사 결과로 트랙이 정해져요. 총점 환산은 대략치예요(RC 400 ≈ 총점 750~800대, 개인차 있음).</p>
+    </div>
+    <div class="grid g-3">
+      <article class="card track">
+        <p class="from num">RC 300 → 400</p>
+        <h3>기초 메우기</h3>
+        <p class="muted">Part 5·6 문법 빈칸부터. 총점 700~800대 지원 요건을 겨냥해요.</p>
+        <p class="goal-line">졸업 조건(목표): Part 5 정답률 85% · Part 7 단일 지문 70% · 예측 하한 400</p>
+      </article>
+      <article class="card track">
+        <p class="from num">RC 400 → 450</p>
+        <h3>시간 줄이기</h3>
+        <p class="muted">Part 7 이중·삼중 지문을 시간 안에. 틀린 이유를 유형으로 모아 다시 풀어요.</p>
+        <p class="goal-line">졸업 조건(목표): Part 5 90% · Part 6 80% · Part 7 지문당 시간 기준 · 예측 하한 450</p>
+      </article>
+      <article class="card track soon">
+        <p class="from num">RC 450 → 495 <span class="chip">준비 중</span></p>
+        <h3>함정 없애기</h3>
+        <p class="muted">오답 보기가 왜 매력적이었는지까지. 트랙이 열리면 알려 드릴게요.</p>
+        <p class="goal-line">졸업 조건: 미정</p>
+      </article>
+    </div>
+    <p class="muted" style="font-size:13px;margin-top:var(--space-3)">졸업 조건은 학습 목표예요. 달성해도 실제 시험 점수는 개인차가 있어요.</p>
+  </div>
+</section>
+
+<!-- ───────── 5. 우리가 하지 않는 것 ───────── -->
+<section class="sec" aria-labelledby="not-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">우리가 하지 않는 것</span>
+      <h2 id="not-h">한계부터 말씀드릴게요</h2>
+    </div>
+    <div class="nots">
+      <div class="card"><div class="x" aria-hidden="true">✕</div><h3>LC는 다루지 않아요</h3><p>지금은 RC만 준비하고 있어요.</p></div>
+      <div class="card"><div class="x" aria-hidden="true">✕</div><h3>강의 영상이 없어요</h3><p>문제·해설·복습으로 짧게 끝내요.</p></div>
+      <div class="card"><div class="x" aria-hidden="true">✕</div><h3>복잡한 환급 조건 없어요</h3><p>출석·인증샷 같은 조건형 상품을 만들지 않아요.</p></div>
+      <div class="card"><div class="x" aria-hidden="true">✕</div><h3>점수를 보장하지 않아요</h3><p>대신 목표와 근거를 숫자로 보여 드려요.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 6. 문항 품질 원칙 ───────── -->
+<section class="sec" aria-labelledby="q-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">문항 품질 원칙</span>
+      <h2 id="q-h">검수한 문항만 내보내요</h2>
+      <p>모든 문항과 단어 예문은 자체 제작이에요. ETS 기출 문항이 아니며, 실제 시험과 같은 것은 형식(파트·문항 수·시간)이에요.</p>
+    </div>
+    <div class="pipeline" aria-label="문항 공개 절차">
+      <span>작성</span><i>→</i><span>자체 검수</span><i>→</i><span>다른 작성자 교차 검수</span><i>→</i><span>파일럿</span><i>→</i><span>공개</span>
+    </div>
+    <div class="card">
+      <h3>오류를 발견하면</h3>
+      <table class="sla">
+        <thead><tr><th>단계</th><th>기준</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>신고 접수 알림</td><td>1영업일 안</td><td>문항 화면의 "오류 신고" 버튼</td></tr>
+          <tr><td>정답 오류 등 치명 결함</td><td>확인 후 24시간 안에 공개 중단, 3영업일 안에 수정 또는 폐기</td><td>이미 푼 기록은 다시 채점</td></tr>
+          <tr><td>해설 근거 오류 등</td><td>5영업일 안 수정</td><td>결과를 신고자에게 회신</td></tr>
+          <tr><td>표본 재검수</td><td>교차 검수를 마친 문항 중 20% 이상 무작위</td><td>QA 담당</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="font-size:13px;margin-top:8px">운영 기준이에요. 오류가 없다고 약속하는 것은 아니에요.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 7. FAQ ───────── -->
+<section class="sec" id="faq" aria-labelledby="faq-h">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head">
+      <span class="eyebrow">자주 묻는 질문</span>
+      <h2 id="faq-h">신청 전에 궁금한 것</h2>
+    </div>
+    <details class="faq"><summary>우선 이용권이 뭔가요?</summary><div class="a">배치고사가 열리면 대기자에게 먼저 응시 링크를 보내 드리는 거예요. 배치고사는 무료이고 회원가입 없이 볼 수 있어요. 결과를 저장하려면 그때 가입하시면 돼요.</div></details>
+    <details class="faq"><summary>지금 바로 볼 수 있나요?</summary><div class="a">아직은 아니에요. ○월 오픈 예정이고, 일정이 바뀌면 신청하신 이메일로 먼저 알려 드려요.</div></details>
+    <details class="faq"><summary>가격은 얼마인가요?</summary><div class="a">베타는 무료예요. 출시 가격은 아직 정하지 않았고, 출시 전에 공지해요. 결제 정보는 받지 않아요.</div></details>
+    <details class="faq"><summary>휴대폰에서도 되나요?</summary><div class="a">웹 서비스라 휴대폰 브라우저에서도 열려요. Part 7처럼 긴 지문은 PC에서 지문과 문제를 한 화면에 나눠 보기 편하게 만들고 있어요.</div></details>
+    <details class="faq"><summary>배치고사 결과가 실제 점수인가요?</summary><div class="a">아니에요. 배치고사는 자체 제작 문항으로 RC 수준을 범위로 추정하는 베타 기능이라 실제 시험 점수와 다를 수 있어요.</div></details>
+    <details class="faq"><summary>어떤 개인정보를 받나요?</summary><div class="a">이메일, 점수가 필요한 이유, 시험 예정 월만 받아요. 휴대폰 번호는 받지 않아요. 수신 거부나 삭제는 메일 하단 링크로 언제든 할 수 있어요.</div></details>
+  </div>
+</section>
+
+<!-- ───────── 8. 하단 CTA + 고지 ───────── -->
+<section class="sec" id="signup" aria-labelledby="su-h">
+  <div class="wrap signup">
+    <div>
+      <span class="eyebrow">우선 이용권 신청</span>
+      <h2 id="su-h" style="font-size:28px">배치고사가 열리면<br>먼저 알려 드릴게요</h2>
+      <p class="muted" style="margin-top:var(--space-3)">현재 RC 범위, 목표까지 필수 학습 범위, 내 수준 어휘 추천을 받아 보세요.</p>
+      <p class="fine"><b>배치고사 무료</b> · 회원가입 없이 이메일만 · ○월 오픈 예정 · 점수를 보장하지 않습니다</p>
+    </div>
+    <div class="card">
+      <form id="waitForm" novalidate>
+        <div class="field" id="fEmail">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" placeholder="name@example.com" aria-describedby="emailErr">
+          <p class="errmsg" id="emailErr">이메일 형식을 확인해 주세요.</p>
+        </div>
+        <div class="field">
+          <label for="reason">점수가 필요한 이유</label>
+          <select id="reason" name="reason">
+            <option value="gov">공무원·공기업</option>
+            <option value="promo">승진·사내 요건</option>
+            <option value="corp">기업 지원·졸업 인증</option>
+            <option value="high">고득점 (RC 450 이상)</option>
+            <option value="etc">기타</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="month">시험 예정 월 <span class="muted" style="font-weight:400">(선택)</span></label>
+          <select id="month" name="month">
+            <option value="">아직 몰라요</option>
+          </select>
+        </div>
+        <div class="consent" id="consentBox">
+          <label><input type="checkbox" id="cPriv" name="consent_privacy" aria-describedby="consentErr"><span><span class="req">[필수]</span> 개인정보 수집·이용에 동의합니다</span></label>
+          <details><summary>내용 보기</summary>
+            <table><tbody>
+              <tr><td>항목</td><td>이메일, 점수가 필요한 이유, 시험 예정 월</td></tr>
+              <tr><td>목적</td><td>배치고사 오픈·베타 안내(서비스 알림)</td></tr>
+              <tr><td>보유 기간</td><td>정식 출시 후 ○개월 또는 삭제 요청 시까지 [법률 검토]</td></tr>
+            </tbody></table>
+            동의하지 않으실 수 있으며, 이 경우 우선 이용권을 신청할 수 없어요.
+          </details>
+          <label><input type="checkbox" id="cAd" name="consent_marketing"><span><span class="opt-l">[선택]</span> 광고성 정보(RC 학습 팁·이벤트) 이메일 수신에 동의합니다</span></label>
+          <p class="errmsg" id="consentErr" style="margin-left:30px">필수 동의에 체크해 주세요.</p>
+        </div>
+        <button class="btn primary" type="submit" style="width:100%">우선 이용권 신청하기</button>
+        <p class="muted" style="font-size:12px;margin-top:8px;text-align:center">프로토타입이에요. 입력한 내용은 어디에도 보내지 않아요.</p>
+      </form>
+      <div class="thanks" id="thanks" role="status" tabindex="-1">
+        <p class="big">신청이 접수됐어요</p>
+        <p class="muted">배치고사가 열리면 <b id="tEmail"></b>로 먼저 알려 드릴게요.</p>
+        <ul>
+          <li>지금 결제하거나 가입할 것은 없어요.</li>
+          <li>광고성 정보 수신: <span id="tAd"></span></li>
+          <li>신청 취소는 메일 하단 링크로 언제든 할 수 있어요.</li>
+        </ul>
+        <button class="btn small" type="button" id="resetBtn">다른 이메일로 신청</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap legal">
+  <div class="na" role="note">
+    <p><b>비제휴 고지</b> [법률 검토 전 초안] TOEIC은 ETS(Educational Testing Service)의 등록 상표입니다. 리드컷(가칭)은 ETS 및 국내 TOEIC 시행 기관과 제휴·후원·승인 관계가 없는 독립 학습 서비스이며, 모든 문항은 자체 제작한 것으로 ETS 기출 문항이 아닙니다.</p>
+  </div>
+  <p>배치고사·예상 점수는 베타 기능이며 실제 시험 점수와 다를 수 있습니다. 졸업 조건은 학습 목표이며 점수 향상을 보장하지 않습니다.</p>
+  <p>상호 ○○○ · 대표 ○○○ · 사업자등록번호 ○○○-○○-○○○○○ · 통신판매업 신고 ○○○ · 주소 ○○○ · 문의 ○○○@○○○ · <a href="#signup">개인정보 처리방침(준비 중)</a></p>
+  <p>© 2026 리드컷(가칭)</p>
+</footer>
+</main>
+
+<div class="sticky-cta hide" id="stickyCta"><a class="btn primary" href="#signup">배치고사 우선 이용권 신청</a></div>
+
+<!-- 숨은 개발용 A/B 토글: ?dev=1 또는 Shift+D -->
+<div class="devpanel" id="devPanel" hidden role="region" aria-label="개발용 A/B 토글">
+  <b>DEV · S2 테스트 1 히어로 A/B</b>
+  <div class="row">
+    <button type="button" data-set="a" aria-pressed="false">A 토익 800</button>
+    <button type="button" data-set="b" aria-pressed="true">B RC만, 시험일까지</button>
+  </div>
+  <p>헤드라인만 바뀌고 나머지는 고정. 현재: <span id="devCur">b</span> · Shift+D로 숨김</p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var root=document.documentElement;
+
+  /* 테마 */
+  var themes=["system","light","dark"], labels={system:"시스템",light:"라이트",dark:"다크"}, ti=0;
+  try{ var saved=localStorage.getItem("landing-theme"); if(saved && themes.indexOf(saved)>=0) ti=themes.indexOf(saved); }catch(e){}
+  function applyTheme(){ var t=themes[ti]; if(t==="system") root.removeAttribute("data-theme"); else root.setAttribute("data-theme",t);
+    document.getElementById("themeLbl").textContent=labels[t]; try{localStorage.setItem("landing-theme",t);}catch(e){} }
+  document.getElementById("themeBtn").addEventListener("click",function(){ ti=(ti+1)%3; applyTheme(); });
+  applyTheme();
+
+  /* A/B 히어로 (실서비스에선 서버 무작위 배분, 여기선 미리보기만) */
+  var params=new URLSearchParams(location.search);
+  var variant=params.get("v")==="a"?"a":"b";
+  try{ var sv=sessionStorage.getItem("landing-ab"); if(!params.get("v") && (sv==="a"||sv==="b")) variant=sv; }catch(e){}
+  var panel=document.getElementById("devPanel");
+  function setVariant(v){
+    variant=v; root.setAttribute("data-ab",v);
+    document.querySelectorAll("[data-variant]").forEach(function(el){ el.hidden=el.getAttribute("data-variant")!==v; });
+    panel.querySelectorAll("[data-set]").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-set")===v)); });
+    document.getElementById("devCur").textContent=v;
+    try{ sessionStorage.setItem("landing-ab",v); }catch(e){}
+  }
+  panel.addEventListener("click",function(e){ var b=e.target.closest("[data-set]"); if(b) setVariant(b.getAttribute("data-set")); });
+  if(params.get("dev")==="1") panel.hidden=false;
+  document.addEventListener("keydown",function(e){
+    if(e.shiftKey && (e.key==="D"||e.key==="d") && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) panel.hidden=!panel.hidden;
+  });
+  setVariant(variant);
+
+  /* 2. 누구를 위한가 */
+  var P={
+    gov:{msg:"토익은 자격 요건일 뿐. RC만 짧게 끝내고 본 시험으로 돌아가세요.",
+      list:["배치고사에서 약한 유형만 골라 필수 범위로 묶어요.","하루 15·25·40분 중에서 고를 수 있어요.","지역별 토익 응시료 지원 제도도 출처와 함께 안내할 예정이에요."],
+      track:"RC 300 → 400 · 기초 메우기", note:"요건 점수는 기관·연도마다 달라요. 지원하실 곳의 공고를 꼭 확인해 주세요."},
+    promo:{msg:"출퇴근 25분이면 되는 RC 플랜. 예상 점수는 범위와 근거로 보여 드려요.",
+      list:["PC에선 지문과 문제를 한 화면에, 글자 크기도 키울 수 있어요.","목표 점수에 필요 없는 범위는 '나중에'로 빼 드려요.","요금제는 하나로 준비하고 있어요."],
+      track:"RC 300 → 400 또는 400 → 450", note:"트랙은 배치고사 결과로 정해져요."},
+    corp:{msg:"마감까지 남은 주 수로 짜는 RC 플랜. 틀린 이유부터 고칩니다.",
+      list:["Part 7은 정답 근거 문장을 표시해서 보여 줘요.","같은 함정으로 틀린 문제를 모아 다시 풀어요.","토익은 빨리 끝내고 다른 준비에 시간을 쓰세요."],
+      track:"RC 400 → 450 · 시간 줄이기", note:"졸업 조건은 학습 목표이며 서류 결과와는 관계없어요."},
+    high:{msg:"RC 450 이상이라면, 이제는 함정 이름을 알아야 할 때.",
+      list:["450 → 495 트랙은 준비 중이에요.","배치고사 결과가 450 이상이면 트랙 오픈 알림을 신청할 수 있어요."],
+      track:"RC 450 → 495 · 준비 중", note:"트랙이 열리면 대기자에게 먼저 알려 드릴게요."}
+  };
+  var reasonSel=document.getElementById("reason");
+  function pick(k){
+    var p=P[k];
+    document.getElementById("pMsg").textContent=p.msg;
+    var ul=document.getElementById("pList"); ul.innerHTML="";
+    p.list.forEach(function(t){ var li=document.createElement("li"); li.textContent=t; ul.appendChild(li); });
+    document.getElementById("pTrack").textContent=p.track;
+    document.getElementById("pNote").textContent=p.note;
+    document.querySelectorAll("[data-seg]").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-seg")===k)); });
+    reasonSel.value=k;
+  }
+  document.querySelector(".seg-pick").addEventListener("click",function(e){ var b=e.target.closest("[data-seg]"); if(b) pick(b.getAttribute("data-seg")); });
+  pick("gov");
+
+  /* 시험 예정 월 */
+  var m=document.getElementById("month"), d=new Date(2026,10,1);
+  for(var i=0;i<8;i++){ var dt=new Date(d.getFullYear(),d.getMonth()+i,1); var o=document.createElement("option");
+    o.value=dt.getFullYear()+"-"+(dt.getMonth()+1); o.textContent=dt.getFullYear()+"년 "+(dt.getMonth()+1)+"월"; m.appendChild(o); }
+
+  /* 폼: 전송하지 않고 로컬 감사 상태만 */
+  var form=document.getElementById("waitForm"), thanks=document.getElementById("thanks");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var email=document.getElementById("email"), ok=true;
+    var fE=document.getElementById("fEmail"), cb=document.getElementById("consentBox");
+    var emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+    fE.classList.toggle("err",!emailOk); email.setAttribute("aria-invalid",String(!emailOk));
+    var cOk=document.getElementById("cPriv").checked;
+    cb.classList.toggle("err",!cOk); document.getElementById("consentErr").style.display=cOk?"none":"block";
+    if(!emailOk){ email.focus(); ok=false; } else if(!cOk){ document.getElementById("cPriv").focus(); ok=false; }
+    if(!ok) return;
+    document.getElementById("tEmail").textContent=email.value.trim();
+    document.getElementById("tAd").textContent=document.getElementById("cAd").checked?"동의함":"동의하지 않음 (서비스 알림만 받아요)";
+    form.hidden=true; thanks.classList.add("on"); thanks.focus();
+  });
+  document.getElementById("resetBtn").addEventListener("click",function(){ form.reset(); pick("gov"); thanks.classList.remove("on"); form.hidden=false; document.getElementById("email").focus(); });
+
+  /* 모바일 고정 CTA: 신청 영역이 보이면 숨김 */
+  var sticky=document.getElementById("stickyCta");
+  if("IntersectionObserver" in window){
+    var seen={};
+    var io=new IntersectionObserver(function(es){ es.forEach(function(en){ seen[en.target.id]=en.isIntersecting; });
+      sticky.classList.toggle("hide", !!(seen.heroCta||seen.signup)); },{threshold:0.05});
+    io.observe(document.getElementById("signup")); io.observe(document.getElementById("heroCta"));
+  }
+})();
+</script>
+</body>
+</html>
