@@ -89,10 +89,18 @@
             }
           ],
           "author_id": "ai-writer-pl-p56",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
           "created_at": "2026-10-13",
-          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음",
+          "reviewer_1_id": "ai-qa-pl-p56",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+          }
         },
         {
           "item_id": "RC-P6-000018",
@@ -153,10 +161,18 @@
             }
           ],
           "author_id": "ai-writer-pl-p56",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
           "created_at": "2026-10-13",
-          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음",
+          "reviewer_1_id": "ai-qa-pl-p56",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+          }
         },
         {
           "item_id": "RC-P6-000019",
@@ -225,10 +241,18 @@
             }
           ],
           "author_id": "ai-writer-pl-p56",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
           "created_at": "2026-10-13",
-          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음",
+          "reviewer_1_id": "ai-qa-pl-p56",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+          }
         },
         {
           "item_id": "RC-P6-000020",
@@ -297,10 +321,18 @@
             }
           ],
           "author_id": "ai-writer-pl-p56",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
           "created_at": "2026-10-13",
-          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음"
+          "source_note": "자체 창작. 착상: 공유 오피스 요금제 안내 웹페이지(일반 서비스 안내 주제). 참고 자료 문장 복사 없음",
+          "reviewer_1_id": "ai-qa-pl-p56",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+          }
         }
       ]
     }

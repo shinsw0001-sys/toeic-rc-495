@@ -6,7 +6,7 @@
 
 ## 에이전트 팀
 
-`.claude/agents/`에 8개 역할 에이전트가 있고, **Chief of Staff가 전체를 총괄**합니다.
+`.claude/agents/`에 9개 역할 에이전트가 있고, **Chief of Staff가 전체를 총괄**합니다.
 
 | # | 에이전트 | 역할 |
 |---|---|---|
@@ -18,6 +18,7 @@
 | 6 | `qa-tester` | 기능·회귀·콘텐츠 검수, 출시 판정 |
 | 7 | `marketer` | 포지셔닝, 런칭, 채널, 카피, 그로스 |
 | 8 | `cs-manager` | FAQ, 응대 템플릿, 정책 초안, 피드백 루프 |
+| 9 | `native-reviewer` | 문항·지문·어휘 예문의 원어민 관점 사전 검수 (사람 원어민 검수를 대신하지 않음) |
 
 ## 사용법
 - `.claude/settings.json`의 `"agent": "chief-of-staff"` 설정으로, 이 저장소에서 Claude Code를 열면 Chief of Staff가 메인 에이전트로 시작합니다. 요청은 그냥 말하면 Chief of Staff가 팀원에게 나눠 맡깁니다.

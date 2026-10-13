@@ -81,9 +81,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 중 기차 지연으로 동료에게 고객 회의 시작을 부탁하는 문자 대화. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000024",
@@ -145,9 +152,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 중 기차 지연으로 동료에게 고객 회의 시작을 부탁하는 문자 대화. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000025",
@@ -209,9 +223,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 중 기차 지연으로 동료에게 고객 회의 시작을 부탁하는 문자 대화. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -298,9 +319,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 업무 단지 조경 관리 업체의 월별 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000027",
@@ -362,9 +390,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 업무 단지 조경 관리 업체의 월별 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000028",
@@ -426,9 +461,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 업무 단지 조경 관리 업체의 월별 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -511,9 +553,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 공공 도서관의 운영 시간 연장과 노트북 대여 등 새 서비스 안내. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000030",
@@ -582,9 +631,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 공공 도서관의 운영 시간 연장과 노트북 대여 등 새 서비스 안내. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000031",
@@ -646,9 +702,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 공공 도서관의 운영 시간 연장과 노트북 대여 등 새 서비스 안내. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000032",
@@ -710,9 +773,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 공공 도서관의 운영 시간 연장과 노트북 대여 등 새 서비스 안내. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -804,9 +874,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 사무실 대상 도시락 배달 서비스 웹페이지. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000034",
@@ -869,9 +946,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 사무실 대상 도시락 배달 서비스 웹페이지. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000035",
@@ -934,9 +1018,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 사무실 대상 도시락 배달 서비스 웹페이지. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -1022,9 +1113,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 전시회 부스 현수막 인쇄 상태 확인을 두고 나누는 사내 채팅. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000037",
@@ -1087,9 +1185,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 전시회 부스 현수막 인쇄 상태 확인을 두고 나누는 사내 채팅. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -1182,9 +1287,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 소상공인 지원 센터 워크숍 신청서와 일정 변경 요청 이메일. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000039",
@@ -1212,13 +1324,13 @@
           "distractor_rationale": {
             "A": "오답: 화요일 배송 때문에 빠지려는 워크숍이에요 (대상 혼동).",
             "B": "오답: 이미 신청했고 계속 참석할 워크숍이에요 (대상 혼동).",
-            "C": "오답: 토요일 워크숍이라 '목요일'과 맞지 않아요 (언급 없음).",
+            "C": "오답: 신청서에 있는 토요일(3월 20일) 워크숍이라 '같은 주 목요일'과 맞지 않아요 (대상 혼동).",
             "D": "정답: 3월 9일과 같은 주 목요일(3월 11일) 워크숍이에요."
           },
           "trap_code": {
             "A": "WRONG_REFERENT",
             "B": "WRONG_REFERENT",
-            "C": "NOT_MENTIONED",
+            "C": "WRONG_REFERENT",
             "D": null
           },
           "key_point": "연계 문제는 이메일의 요일·순서 표현(the first, Thursday, same week)을 다른 지문의 표에서 날짜·이름으로 바꿔 찾아요.",
@@ -1247,9 +1359,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 소상공인 지원 센터 워크숍 신청서와 일정 변경 요청 이메일. 참고 자료 문장 복사 없음",
-          "status": "draft",
-          "version": 1,
-          "created_at": "2026-10-13"
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000040",
@@ -1312,9 +1431,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 소상공인 지원 센터 워크숍 신청서와 일정 변경 요청 이메일. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000041",
@@ -1377,9 +1503,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 소상공인 지원 센터 워크숍 신청서와 일정 변경 요청 이메일. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000042",
@@ -1442,9 +1575,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 소상공인 지원 센터 워크숍 신청서와 일정 변경 요청 이메일. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -1469,7 +1609,7 @@
         {
           "title": "Article",
           "type": "article",
-          "text": "STOKESBURY (August 12) — Harlow & Pine Markets, a grocery chain with 26 stores in the region, will expand a program that lets shoppers refill their own containers with dry goods such as rice, oats, and coffee beans.\n\nThe chain began testing refill stations last spring at its stores in Stokesbury, Danforth Hill, and Ostley. According to Kemal Varga, the company's director of store operations, sales of bulk goods at those three locations rose by 18 percent during the six-month trial. \"Customers told us they liked buying exactly the amount they needed,\" Mr. Varga said. \"Many also appreciated taking home less packaging.\"\n\nStarting in October, refill stations will be added to nine more stores. Each station will have a scale near the store entrance so that shoppers can weigh their empty containers before filling them. The company says it will choose the stores based on whether they have enough space for a station, not on their sales figures.\n\nNot every part of the trial went smoothly. Staff at the Ostley store found that the stations needed frequent cleaning, especially on busy weekends. To address this, the company will assign one employee per shift to look after the stations at each participating store.\n\nHarlow & Pine has not yet said which stores will receive the stations. A list is expected next month."
+          "text": "STOKESBURY (August 12) — Harlow & Pine Markets, a grocery chain with 26 stores in the region, will expand a program that lets shoppers refill their own containers with dry goods such as rice, oats, and coffee beans.\n\nThe chain began testing refill stations last winter at its stores in Stokesbury, Danforth Hill, and Ostley. According to Kemal Varga, the company's director of store operations, sales of bulk goods at those three locations rose by 18 percent during the six-month trial. \"Customers told us they liked buying exactly the amount they needed,\" Mr. Varga said. \"Many also appreciated taking home less packaging.\"\n\nStarting in October, refill stations will be added to nine more stores. Each station will have a scale near the store entrance so that shoppers can weigh their empty containers before filling them. The company says it will choose the stores based on whether they have enough space for a station, not on their sales figures.\n\nNot every part of the trial went smoothly. Staff at the Ostley store found that the stations needed frequent cleaning, especially on busy weekends. To address this, the company will assign one employee per shift to look after the stations at each participating store.\n\nHarlow & Pine has not yet said which stores will receive the stations. A list is expected next month."
         },
         {
           "title": "Memo",
@@ -1546,9 +1686,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 식료품 체인의 리필 스테이션 확대 기사와 지점 직원 대상 메모. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000044",
@@ -1572,7 +1719,7 @@
           ],
           "vocab_level": "중급",
           "explanation_ko": "정답은 (C)예요. 기사 둘째 문단에 \"at its stores in Stokesbury, Danforth Hill, and Ostley\"(세 지점)와 \"sales of bulk goods at those three locations rose by 18 percent during the six-month trial\"(6개월 시범 기간에 세 곳의 벌크 상품 매출이 18% 늘었어요)이 나와요. (A) 세 지점, (B) 6개월, (D) 매출 증가는 모두 확인돼요. 외부 자금으로 비용을 댔다는 말은 어디에도 없어요.",
-          "evidence_quote": "The chain began testing refill stations last spring at its stores in Stokesbury, Danforth Hill, and Ostley. / According to Kemal Varga, the company's director of store operations, sales of bulk goods at those three locations rose by 18 percent during the six-month trial.",
+          "evidence_quote": "The chain began testing refill stations last winter at its stores in Stokesbury, Danforth Hill, and Ostley. / According to Kemal Varga, the company's director of store operations, sales of bulk goods at those three locations rose by 18 percent during the six-month trial.",
           "distractor_rationale": {
             "A": "오답: 기사 둘째 문단 첫 문장에 세 지점이 나와요 (지문에 나온 내용).",
             "B": "오답: 둘째 문단에 six-month trial이 나와요 (지문에 나온 내용).",
@@ -1611,9 +1758,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 식료품 체인의 리필 스테이션 확대 기사와 지점 직원 대상 메모. 참고 자료 문장 복사 없음",
-          "status": "draft",
-          "version": 1,
-          "created_at": "2026-10-13"
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000045",
@@ -1624,7 +1778,7 @@
           "options": {
             "A": "It sold more bulk goods than any other store in the chain.",
             "B": "It was judged to have enough space for a refill station.",
-            "C": "It was one of the stores in last spring's trial.",
+            "C": "It was one of the stores in last winter's trial.",
             "D": "It will close early on October 3."
           },
           "answer": "B",
@@ -1638,13 +1792,13 @@
           "explanation_ko": "정답은 (B)예요. 메모에서 \"our store has been selected for the next stage of the refill station program\"(우리 지점이 다음 단계에 선정됐어요)이라고 했어요. 기사에는 \"it will choose the stores based on whether they have enough space for a station, not on their sales figures\"(매출이 아니라 공간이 충분한지로 지점을 고른다)고 나와요. 두 지문을 합치면 Wrexley Road 지점은 공간이 충분하다고 판단된 거예요. (A) 매출은 선정 기준이 아니에요. (C) 다음 단계에 새로 선정됐어요. (D) 설치는 폐점 후라 영업시간에 영향이 없어요.",
           "evidence_quote": "The company says it will choose the stores based on whether they have enough space for a station, not on their sales figures. / I'm pleased to announce that our store has been selected for the next stage of the refill station program.",
           "distractor_rationale": {
-            "A": "오답: 기사에서 매출은 선정 기준이 아니라고 했어요 (반대 정보).",
+            "A": "오답: 이 지점의 매출 순위는 나오지 않아요. 기사는 매출이 선정 기준이 아니라고 했으니 선정 사실로 매출을 추론할 수도 없어요 (언급 없음).",
             "B": "정답: 공간 기준으로 고른다는 기사 + 선정됐다는 메모를 합친 추론이에요.",
-            "C": "오답: 시범 지점은 Stokesbury, Danforth Hill, Ostley이고, 이 지점은 다음 단계에 선정됐어요 (대상 혼동).",
+            "C": "오답: 시범 지점은 Stokesbury, Danforth Hill, Ostley예요. 기사는 10월부터 nine more stores(9개 지점 추가)에 설치한다고 했고, 이 지점은 10월 3일에 장비를 새로 설치하니 시범 지점이 아니에요 (대상 혼동).",
             "D": "오답: 설치는 폐점 후라 정규 영업시간에 영향이 없다고 했어요 (반대 정보)."
           },
           "trap_code": {
-            "A": "OPPOSITE_INFO",
+            "A": "NOT_MENTIONED",
             "B": null,
             "C": "WRONG_REFERENT",
             "D": "OPPOSITE_INFO"
@@ -1675,9 +1829,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 식료품 체인의 리필 스테이션 확대 기사와 지점 직원 대상 메모. 참고 자료 문장 복사 없음",
-          "status": "draft",
-          "version": 1,
-          "created_at": "2026-10-13"
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000046",
@@ -1700,8 +1861,8 @@
             "450-495"
           ],
           "vocab_level": "중급",
-          "explanation_ko": "정답은 (A)예요. 메모에 \"Paolo Brennan, who transferred to our store from Ostley this summer\"(올여름 Ostley 지점에서 전근 온 Paolo Brennan)라고 나와요. 기사 둘째 문단에 따르면 Ostley는 지난봄 리필 스테이션을 시험한 세 지점 중 하나예요. 그래서 그는 시범 운영 지점에서 일한 적이 있어요. (B) 운영 이사는 Kemal Varga예요. (C) 그는 교육을 맡아요. (D) 지점장은 Annika Solberg예요.",
-          "evidence_quote": "The chain began testing refill stations last spring at its stores in Stokesbury, Danforth Hill, and Ostley. / Paolo Brennan, who transferred to our store from Ostley this summer, has agreed to lead a short training session for everyone who signs up.",
+          "explanation_ko": "정답은 (A)예요. 메모에 \"Paolo Brennan, who transferred to our store from Ostley this summer\"(올여름 Ostley 지점에서 전근 온 Paolo Brennan)라고 나와요. 기사 둘째 문단에 따르면 Ostley는 지난겨울 리필 스테이션을 시험한 세 지점 중 하나예요. 그래서 그는 시범 운영 지점에서 일한 적이 있어요. (B) 운영 이사는 Kemal Varga예요. (C) 그는 교육을 맡아요. (D) 지점장은 Annika Solberg예요.",
+          "evidence_quote": "The chain began testing refill stations last winter at its stores in Stokesbury, Danforth Hill, and Ostley. / Paolo Brennan, who transferred to our store from Ostley this summer, has agreed to lead a short training session for everyone who signs up.",
           "distractor_rationale": {
             "A": "정답: 시범 지점인 Ostley에서 전근 왔어요 (기사 + 메모).",
             "B": "오답: 매장 운영 이사는 Kemal Varga예요 (대상 혼동).",
@@ -1740,9 +1901,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 식료품 체인의 리필 스테이션 확대 기사와 지점 직원 대상 메모. 참고 자료 문장 복사 없음",
-          "status": "draft",
-          "version": 1,
-          "created_at": "2026-10-13"
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000047",
@@ -1805,9 +1973,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 식료품 체인의 리필 스테이션 확대 기사와 지점 직원 대상 메모. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     },
@@ -1914,9 +2089,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 기업 프로필 사진 촬영 서비스의 요금 안내, 예약 문의 이메일, 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000049",
@@ -1979,9 +2161,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 기업 프로필 사진 촬영 서비스의 요금 안내, 예약 문의 이메일, 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000050",
@@ -2043,9 +2232,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 기업 프로필 사진 촬영 서비스의 요금 안내, 예약 문의 이메일, 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000051",
@@ -2108,16 +2304,23 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 기업 프로필 사진 촬영 서비스의 요금 안내, 예약 문의 이메일, 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
+          "status": "cross_reviewed",
           "version": 1,
-          "created_at": "2026-10-13"
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         },
         {
           "item_id": "RC-P7-000052",
           "part": 7,
           "position_in_set": 5,
           "form_slot": "PL-A/upper",
-          "stem": "How many edited photos will each Caldwell & Rook employee most likely receive?",
+          "stem": "How many edited photos per person are included in the package that Caldwell & Rook was billed for?",
           "options": {
             "A": "One",
             "B": "Two",
@@ -2133,13 +2336,13 @@
             "450-495"
           ],
           "vocab_level": "중급",
-          "explanation_ko": "정답은 (C)예요. 이메일에서는 Standard 패키지 쪽으로 기울었다고만 했지만, 청구서에 \"Standard package (28 employees) | $1,050.00\"이 있어 Standard로 확정된 것을 알 수 있어요. 웹페이지 표에서 Standard는 \"Edited photos per person\"이 3장이에요. (A) 1은 Essential의 배경색 수예요. (B) 2는 Standard의 배경색 수, 또는 Essential의 사진 수예요. (D) 4는 3장에 단체 사진을 더한 숫자인데, 단체 사진은 개인 보정 사진이 아니에요.",
+          "explanation_ko": "정답은 (C)예요. 이메일에서는 Standard 패키지 쪽으로 기울었다고만 했지만, 청구서에 \"Standard package (28 employees) | $1,050.00\"이 있어 Standard로 확정된 것을 알 수 있어요. 웹페이지 표에서 Standard는 \"Edited photos per person\"이 3장이에요. (A) 1은 Essential의 배경색 수예요. (B) 2는 Standard의 배경색 수, 또는 Essential의 사진 수예요. (D) 4는 3장에 단체 사진을 더한 숫자인데, 단체 사진은 패키지에 들어 있지 않고 120달러로 따로 청구된 추가 항목이에요.",
           "evidence_quote": "Standard package (28 employees) | $1,050.00 / Standard | Up to 30 | 2 | 3 | $1,050",
           "distractor_rationale": {
             "A": "오답: 1은 Essential 패키지의 배경색 수예요 (대상 혼동).",
             "B": "오답: 2는 Standard의 배경색 수(옆 칸)예요 (대상 혼동).",
             "C": "정답: 청구서로 Standard 확정 → 표에서 1인당 보정 사진 3장이에요.",
-            "D": "오답: 단체 사진을 더한 숫자예요. 단체 사진은 1인당 보정 사진이 아니에요 (범위 과장)."
+            "D": "오답: 3장에 단체 사진을 더한 숫자예요. 단체 사진은 Standard 패키지 밖의 추가 항목(Group photo $120)이에요 (범위 과장)."
           },
           "trap_code": {
             "A": "WRONG_REFERENT",
@@ -2173,9 +2376,16 @@
           ],
           "author_id": "ai-writer-pl-p7",
           "source_note": "자체 창작. 착상: 출장 기업 프로필 사진 촬영 서비스의 요금 안내, 예약 문의 이메일, 청구서. 참고 자료 문장 복사 없음",
-          "status": "draft",
-          "version": 1,
-          "created_at": "2026-10-13"
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-pl-p7",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 (세트당 1~2건, 총 10건) + 고유명사 검색"
+          },
+          "native_check_id": ""
         }
       ]
     }

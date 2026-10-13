@@ -59,9 +59,17 @@
       ],
       "source_note": "자체 창작. 착상: 출장 음식 업체의 첫 행사 후기. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000042",
@@ -123,9 +131,17 @@
       ],
       "source_note": "자체 창작. 착상: 피트니스 센터 야간 출입 규정. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000043",
@@ -187,9 +203,17 @@
       ],
       "source_note": "자체 창작. 착상: 쇼핑센터 개장 이후 방문객 수. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000044",
@@ -251,9 +275,17 @@
       ],
       "source_note": "자체 창작. 착상: 공장 연례 안전 점검 일정. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000045",
@@ -321,9 +353,17 @@
       ],
       "source_note": "자체 창작. 착상: 제품 수요 증가로 인한 창고 추가. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000046",
@@ -385,9 +425,17 @@
       ],
       "source_note": "자체 창작. 착상: 엔지니어링 회사 신규 채용 인력 소개. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000047",
@@ -456,9 +504,17 @@
       ],
       "source_note": "자체 창작. 착상: 호텔 연회장 수용 인원 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000048",
@@ -527,9 +583,17 @@
       ],
       "source_note": "자체 창작. 착상: 급여 소프트웨어 도입 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000049",
@@ -590,9 +654,17 @@
       ],
       "source_note": "자체 창작. 착상: 빵집 매장 이전. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000050",
@@ -653,9 +725,17 @@
       ],
       "source_note": "자체 창작. 착상: 사내 교육실 설비. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000051",
@@ -716,9 +796,17 @@
       ],
       "source_note": "자체 창작. 착상: 도서관 휴관일 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000052",
@@ -786,9 +874,17 @@
       ],
       "source_note": "자체 창작. 착상: 매장 반품·교환 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000053",
@@ -850,9 +946,17 @@
       ],
       "source_note": "자체 창작. 착상: 회사 합병 관련 사내 공유. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000054",
@@ -914,9 +1018,17 @@
       ],
       "source_note": "자체 창작. 착상: 사내 워크숍 신청 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000055",
@@ -985,9 +1097,17 @@
       ],
       "source_note": "자체 창작. 착상: 전 직원 안전 교육 의무. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000056",
@@ -996,7 +1116,7 @@
       "stem": "Ms. Ferrante asked the interns to ------- the customer feedback forms and summarize the most common complaints.",
       "options": {
         "A": "put off",
-        "B": "take over",
+        "B": "turn down",
         "C": "go through",
         "D": "come across"
       },
@@ -1009,11 +1129,11 @@
         "400-450"
       ],
       "vocab_level": "중급",
-      "explanation_ko": "정답은 (C) go through예요. 해석: Ferrante 씨는 인턴들에게 고객 의견서를 살펴보고 가장 흔한 불만을 요약하라고 했어요. 불만을 요약하려면 먼저 의견서를 하나하나 '검토해야' 해요. go through는 '(자료를) 꼼꼼히 살펴보다'라는 뜻이에요. (A) put off는 '미루다', (B) take over는 '(일·회사를) 넘겨받다', (D) come across는 '우연히 발견하다'라서 지시한 업무와 맞지 않아요.",
+      "explanation_ko": "정답은 (C) go through예요. 해석: Ferrante 씨는 인턴들에게 고객 의견서를 살펴보고 가장 흔한 불만을 요약하라고 했어요. 불만을 요약하려면 먼저 의견서를 하나하나 '검토해야' 해요. go through는 '(자료를) 꼼꼼히 살펴보다'라는 뜻이에요. (A) put off는 '미루다', (B) turn down은 '거절하다', (D) come across는 '우연히 발견하다'라서 지시한 업무와 맞지 않아요.",
       "evidence_quote": "",
       "distractor_rationale": {
         "A": "'미루다'라서 의견서를 요약하라는 업무 지시와 맞지 않아요.",
-        "B": "'(업무·회사를) 인수하다'라서 서류 검토 뜻이 아니에요.",
+        "B": "'거절하다'라서 의견서를 살펴보고 요약하라는 지시와 맞지 않아요. 의견서는 거절하는 대상이 아니에요.",
         "C": "정답: '자료를 꼼꼼히 살펴보다'라서 요약 작업 전에 하는 일과 맞아요.",
         "D": "'우연히 발견하다'라서 지시를 받아 하는 일이 될 수 없어요."
       },
@@ -1023,7 +1143,7 @@
         "C": null,
         "D": "MEANING_NEAR_MISS"
       },
-      "key_point": "go through(검토하다), put off(미루다), take over(인수하다), come across(우연히 발견하다)를 묶어서 외워요.",
+      "key_point": "go through(검토하다), put off(미루다), turn down(거절하다), come across(우연히 발견하다)를 묶어서 외워요.",
       "vocab": [
         {
           "word": "go through",
@@ -1056,9 +1176,18 @@
       ],
       "source_note": "자체 창작. 착상: 인턴의 고객 의견 분석 업무. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000057",
@@ -1120,9 +1249,17 @@
       ],
       "source_note": "자체 창작. 착상: 온라인 주문 고객 지원 안내. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000058",
@@ -1190,9 +1327,17 @@
       ],
       "source_note": "자체 창작. 착상: 전근 제안과 지점 관리자. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000059",
@@ -1261,9 +1406,17 @@
       ],
       "source_note": "자체 창작. 착상: 박물관 보수 공사 완료. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
-      "created_at": "2026-10-13"
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     },
     {
       "item_id": "RC-P5-000060",
@@ -1274,7 +1427,7 @@
         "A": "approval",
         "B": "discretion",
         "C": "permission",
-        "D": "judgment"
+        "D": "opinion"
       },
       "answer": "B",
       "type_tag": "P5-VOC.COLL",
@@ -1285,13 +1438,13 @@
         "450-495"
       ],
       "vocab_level": "고급",
-      "explanation_ko": "정답은 (B) discretion이에요. 해석: Brightholm 롯지에서는 늦은 취소에 대한 환불이 프런트 매니저의 재량에 따라서만 이루어져요. 'at the discretion of + 사람'은 '~의 재량으로, ~의 판단에 따라'라는 고정 표현이에요. approval, permission, judgment는 뜻은 비슷해 보여도 at the ~ of 틀과 결합하지 않아요. 각각 with the approval of, with the permission of, in the judgment of처럼 다른 전치사를 써요.",
+      "explanation_ko": "정답은 (B) discretion이에요. 해석: Brightholm 롯지에서는 늦은 취소에 대한 환불이 프런트 매니저의 재량에 따라서만 이루어져요. 'at the discretion of + 사람'은 '~의 재량으로, ~의 판단에 따라'라는 고정 표현이에요. approval, permission, opinion은 뜻은 비슷해 보여도 at the ~ of 틀과 결합하지 않아요. 각각 with the approval of, with the permission of, in the opinion of처럼 다른 전치사를 써요.",
       "evidence_quote": "",
       "distractor_rationale": {
         "A": "승인은 with the approval of로 써요. 'at the approval of'라는 결합은 쓰지 않아요. 콜로케이션 함정이에요.",
         "B": "정답: at the discretion of(~의 재량으로)는 고정 표현이에요.",
         "C": "허락은 with the permission of로 써요. at과 결합하지 않아요.",
-        "D": "판단은 in the judgment of로 써요. at the judgment of는 쓰지 않아요."
+        "D": "의견은 in the opinion of(~의 생각으로는)로 써요. at the opinion of라는 결합은 쓰지 않아요. 콜로케이션 함정이에요."
       },
       "trap_code": {
         "A": "COLLOCATION_MISMATCH",
@@ -1299,7 +1452,7 @@
         "C": "COLLOCATION_MISMATCH",
         "D": "COLLOCATION_MISMATCH"
       },
-      "key_point": "at the discretion of(~의 재량으로) / with the approval·permission of(~의 허락을 받아) / in the judgment of(~의 판단으로): 전치사로 구별해요.",
+      "key_point": "at the discretion of(~의 재량으로) / with the approval·permission of(~의 허락을 받아) / in the opinion of(~의 생각으로는): 전치사로 구별해요.",
       "vocab": [
         {
           "word": "discretion",
@@ -1332,9 +1485,18 @@
       ],
       "source_note": "자체 창작. 착상: 숙박 시설 취소·환불 규정. 참고 자료 문장 복사 없음",
       "author_id": "ai-writer-pl-p56",
-      "status": "draft",
-      "version": 1,
-      "created_at": "2026-10-13"
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-pl-p56",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 3건 (일치 없음, 검색 도구가 제목·URL만 제공)"
+      }
     }
   ]
 }

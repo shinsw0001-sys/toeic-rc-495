@@ -77,3 +77,23 @@
 - 다른 교차 검수자: VC-B-0151~0154를 검수한 뒤 `cross_reviewed`로 올린다.
 - 원어민(또는 MVP 예외 기준의 영어 전문가): 4장 목록부터 확인하고 `native_check_id`를 채운다.
 - 웹 검색 기반 독창성 점검(9.4-1, 7단어 이상 구절)은 이번 검수에서 하지 않았다. 표본 20% 재검수 때 같이 한다.
+
+## 6. 신규 카드 4장 교차 검수
+
+- 검수: qa-tester (`ai-qa-vocab-b2`, 2차 교차 검수자 · 작성자 `ai-qa-vocab` 아님) / 검수일: 2026-10-13 / 기준: `docs/qa/vocab-standard.md` v0.1, `content/SCHEMA.md`
+- 대상: VC-B-0151 visitor (n), VC-B-0152 invite (v), VC-B-0153 price (n), VC-B-0154 prepare (v)
+- 결론: **4장 모두 통과.** `cross_reviewed`, `reviewer_1_id: "ai-qa-vocab-b2"`, `qa_note` 삭제, `native_check_id`는 빈 값으로 둠.
+
+| ID | 표제어 | 결함 → 조치 | 결과 |
+|---|---|---|---|
+| VC-B-0151 | visitor (n) | 낮음: 파생어에 같은 형태 *visit*가 v·n 두 번 들어 있음(Q2 보기 중복, VR29) → *visit* (v) 하나만 남김 | 수정 후 통과, version 2 |
+| VC-B-0152 | invite (v) | 결함 없음 | 통과, version 1 |
+| VC-B-0153 | price (n) | 높음: 파생어 *price* (v)가 표제어와 같은 형태(VR14 오류) → *pricing* (n)으로 바꿈. 보통: 예문 지명 *Dunmore*는 실존 지명(E2) → 가상 이름 *Brayfield Plaza*로 바꾸고 번역도 맞춤 | 수정 후 통과, version 2 |
+| VC-B-0154 | prepare (v) | 높음: 콜로케이션 *be prepared to do*는 형용사 prepared(~할 용의가 있는)로 다른 뜻·품사 → *prepare a presentation*으로 교체 | 수정 후 통과, version 2 |
+
+- 뜻·품사: 네 카드 모두 대표 뜻, 예문 속 쓰임, 콜로케이션이 같은 뜻·품사다. 콜로케이션은 모두 표제어(굴절형 포함)를 포함한다.
+- 파생어: 복수형·억지 연관어 없음. visitor→visit, invite→invitation, price→pricing, prepare→preparation 모두 같은 어족이다. *pricing*은 원어민 확인 때 사전 2종 표기를 함께 확인한다.
+- 독창성: 예문 4개 전체 구절을 웹 검색했고 같거나 가까운 문장은 없었다. *sign in at the front desk*는 방문객 안내문에 흔한 일반 표현이며 문장 전체 일치는 아니다. `content/items/**` 문항과 다른 어휘 카드 예문의 5-gram 겹침은 0건이다.
+- 인명·회사·건물: Hollins Tower, Ms. Ortega, Brayfield Plaza는 가상 이름이다.
+- 참고: *Dunmore*는 P6·P7 문항(`p6_batch1.json` Dunmore Road, `p7_batch1.json` 지점명)에도 쓰였다. 실존 지명이므로 문항 담당이 확인할 필요가 있다(이번 검수 범위 밖이라 고치지 않음).
+- 남은 일: 원어민 확인(10장 4단계)은 4장 모두 아직 남아 있다.

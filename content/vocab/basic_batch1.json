@@ -5972,10 +5972,6 @@
         {
           "pos": "v",
           "form": "visit"
-        },
-        {
-          "pos": "n",
-          "form": "visit"
         }
       ],
       "type_tags": [
@@ -5985,17 +5981,16 @@
       "level": "기초",
       "selection_note": "선정 근거: 전문가 판단(토익 비즈니스 일상 고빈도, 기초 레벨) / 자체 문항 은행 미등장(추후 item_vocab 대조). 공개·상업 단어장 목록·예문 복사 없음",
       "author_id": "ai-qa-vocab",
-      "status": "draft",
-      "version": 1,
+      "status": "cross_reviewed",
+      "version": 2,
       "created_at": "2026-10-13",
-      "reviewer_1_id": "",
+      "reviewer_1_id": "ai-qa-vocab-b2",
       "native_check_id": "",
       "originality_check": {
-        "result": "",
-        "date": "",
-        "method": ""
-      },
-      "qa_note": "대체 카드(400 소유 중복 headquarters·launch·expand 삭제분). 교차 검수자(ai-qa-vocab)가 작성했으므로 다른 검수자의 교차 검수 필요(작성자≠검수자)."
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(2차 검수자), 예문 자체 작성 확인, 예문 웹 검색 일치 없음, 문항·카드 5-gram 겹침 0건"
+      }
     },
     {
       "word_id": "VC-B-0152",
@@ -6027,17 +6022,16 @@
       "level": "기초",
       "selection_note": "선정 근거: 전문가 판단(토익 비즈니스 일상 고빈도, 기초 레벨) / 자체 문항 은행 미등장(추후 item_vocab 대조). 공개·상업 단어장 목록·예문 복사 없음",
       "author_id": "ai-qa-vocab",
-      "status": "draft",
+      "status": "cross_reviewed",
       "version": 1,
       "created_at": "2026-10-13",
-      "reviewer_1_id": "",
+      "reviewer_1_id": "ai-qa-vocab-b2",
       "native_check_id": "",
       "originality_check": {
-        "result": "",
-        "date": "",
-        "method": ""
-      },
-      "qa_note": "대체 카드(400 소유 중복 headquarters·launch·expand 삭제분). 교차 검수자(ai-qa-vocab)가 작성했으므로 다른 검수자의 교차 검수 필요(작성자≠검수자)."
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(2차 검수자), 예문 자체 작성 확인, 예문 웹 검색 일치 없음, 문항·카드 5-gram 겹침 0건"
+      }
     },
     {
       "word_id": "VC-B-0153",
@@ -6047,8 +6041,8 @@
       "meaning_ko_sub": "",
       "examples": [
         {
-          "en": "The price of a monthly parking pass at Dunmore Plaza will go up in January.",
-          "ko": "Dunmore Plaza의 월 주차권 가격은 1월에 오를 것이다."
+          "en": "The price of a monthly parking pass at Brayfield Plaza will go up in January.",
+          "ko": "Brayfield Plaza의 월 주차권 가격은 1월에 오를 것이다."
         }
       ],
       "collocations": [
@@ -6058,8 +6052,8 @@
       ],
       "derivatives": [
         {
-          "pos": "v",
-          "form": "price"
+          "pos": "n",
+          "form": "pricing"
         }
       ],
       "type_tags": [
@@ -6068,17 +6062,16 @@
       "level": "기초",
       "selection_note": "선정 근거: 전문가 판단(토익 비즈니스 일상 고빈도, 기초 레벨) / 자체 문항 은행 미등장(추후 item_vocab 대조). 공개·상업 단어장 목록·예문 복사 없음",
       "author_id": "ai-qa-vocab",
-      "status": "draft",
-      "version": 1,
+      "status": "cross_reviewed",
+      "version": 2,
       "created_at": "2026-10-13",
-      "reviewer_1_id": "",
+      "reviewer_1_id": "ai-qa-vocab-b2",
       "native_check_id": "",
       "originality_check": {
-        "result": "",
-        "date": "",
-        "method": ""
-      },
-      "qa_note": "대체 카드(400 소유 중복 headquarters·launch·expand 삭제분). 교차 검수자(ai-qa-vocab)가 작성했으므로 다른 검수자의 교차 검수 필요(작성자≠검수자)."
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(2차 검수자), 예문 자체 작성 확인, 예문 웹 검색 일치 없음, 문항·카드 5-gram 겹침 0건"
+      }
     },
     {
       "word_id": "VC-B-0154",
@@ -6095,7 +6088,7 @@
       "collocations": [
         "prepare for",
         "prepare a report",
-        "be prepared to do"
+        "prepare a presentation"
       ],
       "derivatives": [
         {
@@ -6110,17 +6103,16 @@
       "level": "기초",
       "selection_note": "선정 근거: 전문가 판단(토익 비즈니스 일상 고빈도, 기초 레벨) / 자체 문항 은행 미등장(추후 item_vocab 대조). 공개·상업 단어장 목록·예문 복사 없음",
       "author_id": "ai-qa-vocab",
-      "status": "draft",
-      "version": 1,
+      "status": "cross_reviewed",
+      "version": 2,
       "created_at": "2026-10-13",
-      "reviewer_1_id": "",
+      "reviewer_1_id": "ai-qa-vocab-b2",
       "native_check_id": "",
       "originality_check": {
-        "result": "",
-        "date": "",
-        "method": ""
-      },
-      "qa_note": "레벨 조정 대체 카드(inspect를 400으로 넘기며 추가). 교차 검수자(ai-qa-vocab)가 작성했으므로 다른 검수자의 교차 검수 필요(작성자≠검수자)."
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(2차 검수자), 예문 자체 작성 확인, 예문 웹 검색 일치 없음, 문항·카드 5-gram 겹침 0건"
+      }
     }
   ]
 }
