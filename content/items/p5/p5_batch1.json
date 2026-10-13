@@ -1,0 +1,2759 @@
+{
+  "items": [
+    {
+      "item_id": "RC-P5-000001",
+      "part": 5,
+      "stem": "The ------- of the new parking garage at Velloran Medical Plaza is expected to take eighteen months.",
+      "options": {
+        "A": "construct",
+        "B": "construction",
+        "C": "constructive",
+        "D": "constructively"
+      },
+      "answer": "B",
+      "type_tag": "P5-POS.N",
+      "sub_tags": [],
+      "difficulty_expert": 1,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) construction이에요. 해석: Velloran 메디컬 플라자의 새 주차 건물 공사는 18개월이 걸릴 것으로 예상돼요. 빈칸 앞에 관사 The가 있고 뒤에 전치사 of가 오니 빈칸은 명사 자리예요. 보기 중 명사는 construction(공사, 건설)뿐이에요. (A) construct는 동사, (C) constructive는 형용사, (D) constructively는 부사라서 관사 뒤 명사 자리에 들어갈 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "동사(건설하다)라서 관사 The 뒤 명사 자리에 올 수 없어요. 품사 혼동 함정이에요.",
+        "B": "정답: The와 of 사이 명사 자리에 들어가는 명사(공사)예요.",
+        "C": "형용사(건설적인)예요. 뒤에 꾸밀 명사가 없어 명사 자리에 맞지 않아요.",
+        "D": "부사(건설적으로)예요. 관사 뒤 명사 자리에 올 수 없어요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": null,
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "관사(a/an/the) + 빈칸 + 전치사(of) 구조에서 빈칸은 명사 자리예요. -tion은 대표적인 명사 어미예요.",
+      "vocab": [
+        {
+          "word": "construction",
+          "pos": "n.",
+          "meaning_ko": "공사, 건설",
+          "level": "기초"
+        },
+        {
+          "word": "parking garage",
+          "pos": "n.",
+          "meaning_ko": "주차 건물",
+          "level": "기초"
+        },
+        {
+          "word": "be expected to",
+          "pos": "phr.",
+          "meaning_ko": "~할 것으로 예상되다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 시설 공사 일정 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000002",
+      "part": 5,
+      "stem": "Ms. Okonkwo-Reyes ------- reviewed the shipping invoices before forwarding them to the accounting team.",
+      "options": {
+        "A": "careful",
+        "B": "carefulness",
+        "C": "more careful",
+        "D": "carefully"
+      },
+      "answer": "D",
+      "type_tag": "P5-POS.ADV",
+      "sub_tags": [],
+      "difficulty_expert": 1,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (D) carefully예요. 해석: Okonkwo-Reyes 씨는 배송 송장을 회계팀에 전달하기 전에 꼼꼼히 검토했어요. 주어(Ms. Okonkwo-Reyes)와 동사(reviewed) 사이는 동사를 꾸미는 부사 자리예요. -ly로 끝나는 carefully가 부사예요. (A) careful과 (C) more careful은 형용사라 동사를 꾸밀 수 없고, (B) carefulness는 명사라 주어 뒤에 또 들어가면 문장이 어색해져요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "형용사(신중한)예요. 형용사는 명사를 꾸미고 동사는 꾸미지 못해요.",
+        "B": "명사(신중함)예요. 주어와 동사 사이에 명사를 넣으면 비문이 돼요.",
+        "C": "형용사의 비교급이에요. 비교 대상도 없고 동사를 꾸밀 수도 없어요.",
+        "D": "정답: 주어와 동사 사이에서 동사 reviewed를 꾸미는 부사예요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": "POS_CONFUSION",
+        "D": null
+      },
+      "key_point": "주어와 동사 사이 빈칸은 동사를 꾸미는 부사 자리예요.",
+      "vocab": [
+        {
+          "word": "review",
+          "pos": "v.",
+          "meaning_ko": "검토하다",
+          "level": "기초"
+        },
+        {
+          "word": "invoice",
+          "pos": "n.",
+          "meaning_ko": "송장, 청구서",
+          "level": "중급"
+        },
+        {
+          "word": "forward",
+          "pos": "v.",
+          "meaning_ko": "전달하다, 회송하다",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 배송 서류 처리. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000003",
+      "part": 5,
+      "stem": "Brindlecove Textiles offers ------- discounts to customers who place orders of more than 500 units.",
+      "options": {
+        "A": "substantial",
+        "B": "substantially",
+        "C": "substance",
+        "D": "substantiate"
+      },
+      "answer": "A",
+      "type_tag": "P5-POS.ADJ",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (A) substantial이에요. 해석: Brindlecove 텍스타일은 500개가 넘는 주문을 하는 고객에게 상당한 할인을 제공해요. 빈칸 뒤에 명사 discounts가 있으니 빈칸은 명사를 꾸미는 형용사 자리예요. substantial(상당한)이 형용사예요. (B) substantially는 부사라 명사를 꾸밀 수 없고, (C) substance는 명사, (D) substantiate는 동사(입증하다)라 이 자리에 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 명사 discounts 앞에서 명사를 꾸미는 형용사예요.",
+        "B": "부사(상당히)예요. 부사는 명사를 직접 꾸미지 못해요. -ly 형태에 끌리게 하는 함정이에요.",
+        "C": "명사(물질, 실체)예요. 'substance discounts'는 의미가 통하지 않는 복합명사예요.",
+        "D": "동사(입증하다)예요. 동사 offers 뒤 목적어 자리에 동사원형이 올 수 없어요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "POS_CONFUSION",
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "동사 + 빈칸 + 명사 구조에서 빈칸은 뒤 명사를 꾸미는 형용사 자리예요.",
+      "vocab": [
+        {
+          "word": "substantial",
+          "pos": "adj.",
+          "meaning_ko": "상당한",
+          "level": "중급"
+        },
+        {
+          "word": "place an order",
+          "pos": "phr.",
+          "meaning_ko": "주문하다",
+          "level": "기초"
+        },
+        {
+          "word": "unit",
+          "pos": "n.",
+          "meaning_ko": "(상품) 개, 단위",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 대량 주문 할인 정책. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000004",
+      "part": 5,
+      "stem": "Applicants who wish to update ------- resumes should contact the Hallowmere Staffing office before Friday.",
+      "options": {
+        "A": "they",
+        "B": "them",
+        "C": "their",
+        "D": "theirs"
+      },
+      "answer": "C",
+      "type_tag": "P5-POS.PRON",
+      "sub_tags": [],
+      "difficulty_expert": 1,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) their예요. 해석: 이력서를 수정하고 싶은 지원자는 금요일 전에 Hallowmere 인력 사무소에 연락해야 해요. 빈칸 뒤에 명사 resumes가 있으니 명사 앞에 오는 소유격 자리예요. their(그들의)가 소유격이에요. (A) they는 주격, (B) them은 목적격이라 명사 앞에 올 수 없고, (D) theirs는 '그들의 것'이라는 소유대명사라 뒤에 명사를 두지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "주격 대명사예요. 명사 앞에 올 수 없어요.",
+        "B": "목적격 대명사예요. 동사 update의 목적어로 보이게 하는 함정이지만, 뒤에 명사 resumes가 있어 맞지 않아요.",
+        "C": "정답: 명사 resumes 앞의 소유격이에요.",
+        "D": "소유대명사(그들의 것)예요. 그 자체가 명사 역할이라 뒤에 다른 명사가 올 수 없어요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": null,
+        "D": "SIMILAR_FORM"
+      },
+      "key_point": "빈칸 바로 뒤에 명사가 있으면 대명사는 소유격(my, your, his, her, its, our, their)을 써요.",
+      "vocab": [
+        {
+          "word": "applicant",
+          "pos": "n.",
+          "meaning_ko": "지원자",
+          "level": "기초"
+        },
+        {
+          "word": "resume",
+          "pos": "n.",
+          "meaning_ko": "이력서",
+          "level": "기초"
+        },
+        {
+          "word": "staffing",
+          "pos": "n.",
+          "meaning_ko": "인력 배치, 인력 공급",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 채용 지원 서류 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000005",
+      "part": 5,
+      "stem": "Starting next month, the facilities team will ------- all fire extinguishers in the Quillfield building every ninety days.",
+      "options": {
+        "A": "inspection",
+        "B": "inspector",
+        "C": "inspect",
+        "D": "inspected"
+      },
+      "answer": "C",
+      "type_tag": "P5-POS.V",
+      "sub_tags": [],
+      "difficulty_expert": 1,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) inspect예요. 해석: 다음 달부터 시설팀은 Quillfield 건물의 모든 소화기를 90일마다 점검할 거예요. 조동사 will 뒤에는 동사원형이 와요. 그래서 inspect(점검하다)가 정답이에요. (A) inspection과 (B) inspector는 명사라 조동사 뒤에 올 수 없고, (D) inspected는 과거형·과거분사라 will 바로 뒤에 쓸 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "명사(점검)예요. 조동사 will 뒤 동사원형 자리에 올 수 없어요.",
+        "B": "사람 명사(점검관)예요. 조동사 뒤에 명사가 올 수 없어요.",
+        "C": "정답: 조동사 will 뒤의 동사원형이에요.",
+        "D": "과거형·과거분사예요. 'will inspected'는 비문이에요. 동사 형태 혼동 함정이에요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": null,
+        "D": "SIMILAR_FORM"
+      },
+      "key_point": "조동사(will, can, should, must 등) 뒤에는 항상 동사원형이 와요.",
+      "vocab": [
+        {
+          "word": "inspect",
+          "pos": "v.",
+          "meaning_ko": "점검하다",
+          "level": "기초"
+        },
+        {
+          "word": "fire extinguisher",
+          "pos": "n.",
+          "meaning_ko": "소화기",
+          "level": "중급"
+        },
+        {
+          "word": "facilities team",
+          "pos": "n.",
+          "meaning_ko": "시설팀",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 건물 안전 점검 일정. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000006",
+      "part": 5,
+      "stem": "All ------- for the regional sales manager position must hold a valid driver's license.",
+      "options": {
+        "A": "applicants",
+        "B": "applications",
+        "C": "apply",
+        "D": "applied"
+      },
+      "answer": "A",
+      "type_tag": "P5-POS.N",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (A) applicants예요. 해석: 지역 영업 관리자 직책에 지원하는 모든 사람은 유효한 운전면허증을 갖고 있어야 해요. All 뒤 주어 자리이니 명사가 필요해요. 그런데 명사 보기가 둘이에요. 운전면허증을 '갖고 있을' 수 있는 것은 사람이니 사람 명사 applicants(지원자들)가 맞아요. (B) applications(지원서)는 사물이라 면허증을 가질 수 없어요. (C) apply는 동사원형, (D) applied는 과거형·과거분사라 All 뒤 주어 자리에 올 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 운전면허증을 소지하는 주체인 사람 명사(지원자들)예요.",
+        "B": "사물 명사(지원서)예요. 명사 자리는 맞지만 '지원서가 면허증을 소지한다'는 뜻이 되어 틀려요. 사람/사물 명사 혼동 함정이에요.",
+        "C": "동사원형이에요. All 뒤 주어 자리에 동사가 올 수 없어요.",
+        "D": "과거분사예요. 꾸밀 명사가 없어 주어 자리에 올 수 없어요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "MEANING_NEAR_MISS",
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "명사 자리에 명사 보기가 둘이면 사람 명사(applicant)인지 사물·행위 명사(application)인지 동사와의 의미 관계로 골라요.",
+      "vocab": [
+        {
+          "word": "applicant",
+          "pos": "n.",
+          "meaning_ko": "지원자",
+          "level": "기초"
+        },
+        {
+          "word": "application",
+          "pos": "n.",
+          "meaning_ko": "지원서, 지원",
+          "level": "기초"
+        },
+        {
+          "word": "valid",
+          "pos": "adj.",
+          "meaning_ko": "유효한",
+          "level": "중급"
+        },
+        {
+          "word": "hold",
+          "pos": "v.",
+          "meaning_ko": "(자격 등을) 소지하다",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 영업직 채용 자격 요건. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000007",
+      "part": 5,
+      "stem": "The revised assembly procedure has made the production line at Tarrowby Fabrication ------- more efficient than before.",
+      "options": {
+        "A": "significant",
+        "B": "significance",
+        "C": "signify",
+        "D": "significantly"
+      },
+      "answer": "D",
+      "type_tag": "P5-POS.ADV",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) significantly예요. 해석: 수정된 조립 절차 덕분에 Tarrowby 패브리케이션의 생산 라인이 이전보다 훨씬 더 효율적이 되었어요. 빈칸 뒤 more efficient는 형용사 비교급이에요. 형용사(비교급 포함)를 꾸미는 것은 부사예요. made 뒤라 형용사 보어를 고르기 쉽지만, 보어는 이미 more efficient예요. (A) significant는 형용사라 다른 형용사를 꾸미지 못하고, (B)는 명사, (C)는 동사예요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "형용사예요. 'make + 목적어 + 형용사' 구조만 보고 고르게 하는 함정이에요. 보어는 이미 more efficient예요.",
+        "B": "명사(중요성)예요. 비교급 형용사 앞에 명사가 올 수 없어요.",
+        "C": "동사(의미하다)예요. 목적어 뒤 보어 자리에 동사원형이 올 수 없어요.",
+        "D": "정답: 비교급 more efficient를 꾸미는 부사예요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": "POS_CONFUSION",
+        "D": null
+      },
+      "key_point": "형용사·비교급 앞에서 정도를 나타내는 자리는 부사예요 (significantly/much/far + more ~).",
+      "vocab": [
+        {
+          "word": "revised",
+          "pos": "adj.",
+          "meaning_ko": "수정된",
+          "level": "중급"
+        },
+        {
+          "word": "assembly",
+          "pos": "n.",
+          "meaning_ko": "조립",
+          "level": "중급"
+        },
+        {
+          "word": "procedure",
+          "pos": "n.",
+          "meaning_ko": "절차",
+          "level": "중급"
+        },
+        {
+          "word": "efficient",
+          "pos": "adj.",
+          "meaning_ko": "효율적인",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 생산 공정 개선. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000008",
+      "part": 5,
+      "stem": "Customers have found the online booking system at Pemberlake Resort ------- to use, according to a recent survey.",
+      "options": {
+        "A": "easily",
+        "B": "easy",
+        "C": "ease",
+        "D": "easiness"
+      },
+      "answer": "B",
+      "type_tag": "P5-POS.ADJ",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) easy예요. 해석: 최근 설문에 따르면 고객들은 Pemberlake 리조트의 온라인 예약 시스템이 사용하기 쉽다고 느꼈어요. find는 'find + 목적어 + 형용사' 구조로 '~이 …하다고 느끼다'라는 뜻이에요. 목적어 the online booking system 뒤 빈칸은 목적격 보어인 형용사 자리예요. (A) easily는 부사라 보어가 될 수 없고, (C) ease와 (D) easiness는 명사라 '시스템 = 쉬움'이 되어 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "부사예요. 동사 found를 꾸미는 것처럼 보이게 하는 함정이지만, 목적격 보어 자리에는 부사가 올 수 없어요.",
+        "B": "정답: find + 목적어 + 형용사 구조의 목적격 보어예요.",
+        "C": "명사(쉬움, 용이함)예요. 시스템의 상태를 설명하는 보어로 쓸 수 없어요.",
+        "D": "명사예요. 목적어와 동격이 되지 않아 보어로 맞지 않아요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": null,
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "find/make/keep/consider + 목적어 + 빈칸에서 빈칸은 형용사(목적격 보어) 자리예요. 부사는 보어가 될 수 없어요.",
+      "vocab": [
+        {
+          "word": "booking",
+          "pos": "n.",
+          "meaning_ko": "예약",
+          "level": "기초"
+        },
+        {
+          "word": "according to",
+          "pos": "prep.",
+          "meaning_ko": "~에 따르면",
+          "level": "기초"
+        },
+        {
+          "word": "survey",
+          "pos": "n.",
+          "meaning_ko": "설문 조사",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 리조트 고객 만족도 조사. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000009",
+      "part": 5,
+      "stem": "Because the scheduling coordinator was out of the office, Mr. Adeyemi-Lund booked the conference room -------.",
+      "options": {
+        "A": "himself",
+        "B": "him",
+        "C": "his",
+        "D": "he"
+      },
+      "answer": "A",
+      "type_tag": "P5-POS.PRON",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (A) himself예요. 해석: 일정 담당자가 사무실에 없었기 때문에 Adeyemi-Lund 씨가 직접 회의실을 예약했어요. 문장은 이미 주어(Mr. Adeyemi-Lund), 동사(booked), 목적어(the conference room)를 다 갖췄어요. 이렇게 완전한 문장 끝에서 '직접, 스스로'라는 강조를 더할 때 재귀대명사를 써요. (B) him, (C) his, (D) he는 완전한 문장 뒤에 덧붙일 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 완전한 문장 뒤에서 '직접'이라는 뜻을 더하는 재귀대명사(강조 용법)예요.",
+        "B": "목적격이에요. 목적어 the conference room이 이미 있어 또 목적어를 둘 수 없어요.",
+        "C": "소유격이에요. 뒤에 꾸밀 명사가 없어요.",
+        "D": "주격이에요. 주어가 이미 있고 문장 끝에 주격이 올 수 없어요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "POS_CONFUSION",
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "주어·동사·목적어가 다 갖춰진 문장 끝 빈칸에는 '직접'을 뜻하는 재귀대명사(-self)가 올 수 있어요.",
+      "vocab": [
+        {
+          "word": "coordinator",
+          "pos": "n.",
+          "meaning_ko": "담당자, 조정자",
+          "level": "중급"
+        },
+        {
+          "word": "book",
+          "pos": "v.",
+          "meaning_ko": "예약하다",
+          "level": "기초"
+        },
+        {
+          "word": "out of the office",
+          "pos": "phr.",
+          "meaning_ko": "자리를 비운, 부재 중인",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 회의실 예약. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000010",
+      "part": 5,
+      "stem": "Fennimore Office Interiors now offers a ------- priced alternative to its premium line of ergonomic chairs.",
+      "options": {
+        "A": "reasonable",
+        "B": "reasoning",
+        "C": "reasons",
+        "D": "reasonably"
+      },
+      "answer": "D",
+      "type_tag": "P5-POS.ADV",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) reasonably예요. 해석: Fennimore 오피스 인테리어는 이제 고급 인체공학 의자 라인보다 합리적인 가격의 대안 제품을 내놓았어요. 'a ------- priced alternative'에서 priced(가격이 매겨진)는 명사 alternative를 꾸미는 분사형 형용사예요. 이 형용사를 꾸미는 것은 부사이니 reasonably가 맞아요. (A) reasonable은 '관사+형용사+명사' 순서로 보여 고르기 쉽지만, 형용사가 다른 형용사(priced)를 꾸밀 수는 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "형용사예요. a 뒤라 형용사 자리로 착각하게 하는 함정이에요. 바로 뒤의 분사 priced를 꾸며야 하니 부사가 필요해요.",
+        "B": "동명사·명사(추론)예요. 'reasoning priced'는 의미가 통하지 않아요.",
+        "C": "복수 명사·동사예요. 관사 a 뒤에 복수형이 올 수 없어요.",
+        "D": "정답: 분사형 형용사 priced를 꾸미는 부사예요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "SIMILAR_FORM",
+        "C": "NUMBER_AGREEMENT",
+        "D": null
+      },
+      "key_point": "관사 + 빈칸 + 분사(p.p./-ing) + 명사에서 빈칸은 분사를 꾸미는 부사예요 (reasonably priced, newly built).",
+      "vocab": [
+        {
+          "word": "reasonably priced",
+          "pos": "phr.",
+          "meaning_ko": "가격이 적당한",
+          "level": "중급"
+        },
+        {
+          "word": "alternative",
+          "pos": "n.",
+          "meaning_ko": "대안",
+          "level": "중급"
+        },
+        {
+          "word": "ergonomic",
+          "pos": "adj.",
+          "meaning_ko": "인체공학적인",
+          "level": "고급"
+        },
+        {
+          "word": "premium",
+          "pos": "adj.",
+          "meaning_ko": "고급의",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 사무용 가구 신제품 출시. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000011",
+      "part": 5,
+      "stem": "Ms. Vantongeren ------- the quarterly budget report to the directors yesterday afternoon.",
+      "options": {
+        "A": "submits",
+        "B": "submitted",
+        "C": "will submit",
+        "D": "has submitted"
+      },
+      "answer": "B",
+      "type_tag": "P5-VERB.TENSE",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) submitted예요. 해석: Vantongeren 씨는 어제 오후에 분기 예산 보고서를 이사들에게 제출했어요. 문장 끝 yesterday afternoon은 지난 시점을 나타내니 과거 시제가 필요해요. (A) submits는 현재, (C) will submit은 미래라 yesterday와 맞지 않아요. (D) has submitted는 현재완료인데, 현재완료는 yesterday처럼 분명한 과거 시점 표현과 함께 쓰지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "현재 시제예요. yesterday와 시제가 맞지 않아요.",
+        "B": "정답: 과거 시점 yesterday afternoon과 어울리는 과거 시제예요.",
+        "C": "미래 시제예요. 이미 지난 시점(yesterday)과 함께 쓸 수 없어요.",
+        "D": "현재완료예요. 명확한 과거 시점 표현(yesterday)과 함께 쓰지 않아요. '이미 끝난 일=완료'로 착각하게 하는 함정이에요."
+      },
+      "trap_code": {
+        "A": "TENSE_MISMATCH",
+        "B": null,
+        "C": "TENSE_MISMATCH",
+        "D": "TENSE_MISMATCH"
+      },
+      "key_point": "yesterday, last week, ago 같은 과거 시점 표현이 있으면 과거 시제를 써요. 현재완료는 이런 표현과 함께 쓰지 않아요.",
+      "vocab": [
+        {
+          "word": "quarterly",
+          "pos": "adj.",
+          "meaning_ko": "분기의",
+          "level": "중급"
+        },
+        {
+          "word": "submit",
+          "pos": "v.",
+          "meaning_ko": "제출하다",
+          "level": "기초"
+        },
+        {
+          "word": "director",
+          "pos": "n.",
+          "meaning_ko": "이사, 책임자",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 재무 보고서 제출. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000012",
+      "part": 5,
+      "stem": "The new employee handbook ------- to all staff members last week.",
+      "options": {
+        "A": "distributes",
+        "B": "distributing",
+        "C": "was distributed",
+        "D": "distributed"
+      },
+      "answer": "C",
+      "type_tag": "P5-VERB.VOICE",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (C) was distributed예요. 해석: 새 직원 안내서는 지난주에 전 직원에게 배포되었어요. 주어 handbook(안내서)은 스스로 배포하는 것이 아니라 배포'되는' 대상이에요. 또 빈칸 뒤에 목적어가 없어요. 그래서 수동태가 필요하고, last week가 있으니 과거 수동태 was distributed가 맞아요. (D) distributed는 능동 과거로 보면 목적어가 없고 뜻도 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "능동 현재형이에요. 안내서가 무언가를 배포한다는 뜻이 되고, last week와 시제도 맞지 않아요.",
+        "B": "-ing 형태라 문장의 동사 역할을 할 수 없어요. 문장에 동사가 없게 돼요.",
+        "C": "정답: 사물 주어 + 목적어 없음 → 과거 수동태예요.",
+        "D": "능동 과거형이에요. 시제는 맞지만 능동이라 '안내서가 배포했다'는 뜻이 되고 목적어도 없어요. 시제만 보고 고르게 하는 함정이에요."
+      },
+      "trap_code": {
+        "A": "VOICE_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": null,
+        "D": "VOICE_CONFUSION"
+      },
+      "key_point": "사물 주어 + 빈칸 + (목적어 없이) 전치사구가 오면 수동태(be + p.p.)를 먼저 의심해요.",
+      "vocab": [
+        {
+          "word": "handbook",
+          "pos": "n.",
+          "meaning_ko": "안내서, 편람",
+          "level": "기초"
+        },
+        {
+          "word": "distribute",
+          "pos": "v.",
+          "meaning_ko": "배포하다, 나눠 주다",
+          "level": "중급"
+        },
+        {
+          "word": "staff member",
+          "pos": "n.",
+          "meaning_ko": "직원",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 신입 직원 안내서 배포. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000013",
+      "part": 5,
+      "stem": "The list of approved vendors for the Glasswater Pavilion renovation ------- updated every quarter by the procurement office.",
+      "options": {
+        "A": "are",
+        "B": "being",
+        "C": "have been",
+        "D": "is"
+      },
+      "answer": "D",
+      "type_tag": "P5-VERB.AGR",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) is예요. 해석: Glasswater 파빌리온 개보수 공사의 승인 업체 목록은 구매부가 분기마다 갱신해요. 문장의 진짜 주어는 The list(단수)예요. of approved vendors for ~ renovation은 주어를 꾸미는 수식어일 뿐이에요. 단수 주어이고 every quarter(반복되는 일)가 있으니 현재 단수 is가 맞아요. 주어 뒤 수식어 속 복수 명사 vendors에 맞춰 (A)나 (C)를 고르면 함정에 걸려요. 빈칸 바로 앞 renovation도 수식어 속 명사라 수 일치 기준이 아니에요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "복수 동사예요. 주어를 꾸미는 수식어 속 복수 명사 vendors에 맞추게 하는 수 일치 함정이에요.",
+        "B": "-ing 형태라 문장의 동사가 될 수 없어요.",
+        "C": "복수형 현재완료예요. 주어 list는 단수라 수가 맞지 않아요.",
+        "D": "정답: 단수 주어 The list에 맞는 단수 동사예요."
+      },
+      "trap_code": {
+        "A": "NUMBER_AGREEMENT",
+        "B": "POS_CONFUSION",
+        "C": "NUMBER_AGREEMENT",
+        "D": null
+      },
+      "key_point": "주어 뒤에 전치사구(of ~, for ~)가 길게 붙으면, 수식어를 걷어내고 맨 앞 명사에 동사의 수를 맞춰요.",
+      "vocab": [
+        {
+          "word": "approved",
+          "pos": "adj.",
+          "meaning_ko": "승인된",
+          "level": "중급"
+        },
+        {
+          "word": "vendor",
+          "pos": "n.",
+          "meaning_ko": "판매업체, 납품업체",
+          "level": "중급"
+        },
+        {
+          "word": "renovation",
+          "pos": "n.",
+          "meaning_ko": "개보수",
+          "level": "중급"
+        },
+        {
+          "word": "procurement",
+          "pos": "n.",
+          "meaning_ko": "구매, 조달",
+          "level": "고급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 공사 협력업체 관리. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000014",
+      "part": 5,
+      "stem": "If the shipment had arrived on schedule, the Delmora Street store ------- last Saturday as planned.",
+      "options": {
+        "A": "would have opened",
+        "B": "will open",
+        "C": "had opened",
+        "D": "would open"
+      },
+      "answer": "A",
+      "type_tag": "P5-VERB.MOOD",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (A) would have opened예요. 해석: 배송품이 예정대로 도착했다면 Delmora 가 매장은 계획대로 지난 토요일에 문을 열었을 거예요. if절이 had arrived(과거완료)이고 결과도 last Saturday라는 과거의 일이니, 과거 사실의 반대를 말하는 가정법 과거완료예요. 주절은 'would have + p.p.'가 와요. (D) would open은 현재·미래 결과에 쓰는 형태라 last Saturday와 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 가정법 과거완료(If + had p.p., would have p.p.)의 주절이에요.",
+        "B": "직설법 미래예요. 과거 사실을 반대로 가정하는 문장과 맞지 않아요.",
+        "C": "과거완료예요. if절의 형태를 주절에 그대로 반복하게 하는 함정이에요. 주절에는 조동사(would)가 필요해요.",
+        "D": "가정법 과거의 주절 형태예요. 현재·미래 결과를 말할 때 쓰므로 last Saturday와 시제가 맞지 않아요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "TENSE_MISMATCH",
+        "C": "SIMILAR_FORM",
+        "D": "TENSE_MISMATCH"
+      },
+      "key_point": "If + 주어 + had p.p.(과거완료), 주어 + would/could/might + have p.p. 는 과거 사실의 반대를 가정해요.",
+      "vocab": [
+        {
+          "word": "shipment",
+          "pos": "n.",
+          "meaning_ko": "배송품, 선적",
+          "level": "기초"
+        },
+        {
+          "word": "on schedule",
+          "pos": "phr.",
+          "meaning_ko": "예정대로",
+          "level": "기초"
+        },
+        {
+          "word": "as planned",
+          "pos": "phr.",
+          "meaning_ko": "계획대로",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 매장 개점 지연. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000015",
+      "part": 5,
+      "stem": "Kestrelton Bank plans ------- three new branches in the northern district next year.",
+      "options": {
+        "A": "open",
+        "B": "to open",
+        "C": "opening",
+        "D": "opened"
+      },
+      "answer": "B",
+      "type_tag": "P5-VERB.NONFIN",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) to open이에요. 해석: Kestrelton 은행은 내년에 북부 지역에 새 지점 세 곳을 열 계획이에요. 동사 plan은 뒤에 to부정사를 목적어로 써서 'plan to do(~할 계획이다)'가 돼요. (A) open은 동사원형이라 plans 뒤에 바로 올 수 없고, (C) opening은 동명사인데 plan은 동명사를 목적어로 쓰지 않아요. (D) opened는 과거형이라 동사가 둘이 돼요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "동사원형이에요. 이미 동사 plans가 있어 동사가 연달아 올 수 없어요.",
+        "B": "정답: plan은 to부정사를 목적어로 취해요.",
+        "C": "동명사예요. plan은 동명사를 목적어로 쓰지 않아요. to부정사/동명사 혼동 함정이에요.",
+        "D": "과거형이에요. 한 절에 동사가 두 개가 되어 비문이에요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": null,
+        "C": "VERB_PATTERN",
+        "D": "TENSE_MISMATCH"
+      },
+      "key_point": "plan, decide, hope, expect, want, agree 등 앞으로 할 일을 나타내는 동사는 to부정사를 목적어로 써요.",
+      "vocab": [
+        {
+          "word": "branch",
+          "pos": "n.",
+          "meaning_ko": "지점",
+          "level": "기초"
+        },
+        {
+          "word": "district",
+          "pos": "n.",
+          "meaning_ko": "지역, 구역",
+          "level": "중급"
+        },
+        {
+          "word": "plan to do",
+          "pos": "phr.",
+          "meaning_ko": "~할 계획이다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 은행 지점 확장. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000016",
+      "part": 5,
+      "stem": "Orders ------- after 3 P.M. will be processed the following business day.",
+      "options": {
+        "A": "place",
+        "B": "placing",
+        "C": "placed",
+        "D": "are placed"
+      },
+      "answer": "C",
+      "type_tag": "P5-VERB.NONFIN",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (C) placed예요. 해석: 오후 3시 이후에 접수된 주문은 다음 영업일에 처리돼요. 이 문장의 동사는 will be processed예요. 그래서 빈칸은 동사가 아니라 주어 Orders를 뒤에서 꾸미는 분사 자리예요. 주문은 '하는' 것이 아니라 '되는' 대상이니 과거분사 placed가 맞아요. (B) placing은 능동이라 '주문이 무언가를 주문하는' 뜻이 돼요. (A)와 (D)는 동사라 한 절에 동사가 둘이 돼요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "동사원형·현재형이에요. 이미 동사 will be processed가 있어 동사가 둘이 돼요.",
+        "B": "현재분사예요. 능동의 뜻이라 '주문이 (무언가를) 하는'이 되고, 뒤에 목적어도 없어요. 능동/수동 분사 혼동 함정이에요.",
+        "C": "정답: 주어 Orders를 뒤에서 꾸미는 과거분사(수동, '접수된')예요.",
+        "D": "수동태 동사예요. 문장에 동사 will be processed가 이미 있어 동사가 겹쳐요."
+      },
+      "trap_code": {
+        "A": "POS_CONFUSION",
+        "B": "VOICE_CONFUSION",
+        "C": null,
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "문장에 동사가 이미 있으면 빈칸은 분사 자리예요. 꾸밈받는 명사가 행위를 '당하면' 과거분사, '하면' 현재분사를 써요.",
+      "vocab": [
+        {
+          "word": "place an order",
+          "pos": "phr.",
+          "meaning_ko": "주문하다",
+          "level": "기초"
+        },
+        {
+          "word": "process",
+          "pos": "v.",
+          "meaning_ko": "처리하다",
+          "level": "중급"
+        },
+        {
+          "word": "business day",
+          "pos": "n.",
+          "meaning_ko": "영업일",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 온라인 주문 처리 마감. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000017",
+      "part": 5,
+      "stem": "By the time the auditors arrive next Monday, the finance team ------- all of the supporting documents.",
+      "options": {
+        "A": "will have organized",
+        "B": "organized",
+        "C": "has organized",
+        "D": "had organized"
+      },
+      "answer": "A",
+      "type_tag": "P5-VERB.TENSE",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (A) will have organized예요. 해석: 감사관들이 다음 주 월요일에 도착할 무렵이면 재무팀은 모든 증빙 서류를 정리해 두었을 거예요. 'By the time + 현재 시제(arrive)'가 미래 시점(next Monday)을 가리키고, 그 시점까지 끝나 있을 일을 말하니 미래완료(will have p.p.)가 맞아요. 시간 부사절에서는 미래 대신 현재 시제(arrive)를 쓴다는 점도 함께 기억하세요. (D) had organized는 과거 기준이라 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 미래 시점(next Monday)까지 완료될 일을 나타내는 미래완료예요.",
+        "B": "단순 과거예요. 기준 시점이 미래(next Monday)라 맞지 않아요.",
+        "C": "현재완료예요. 지금을 기준으로 한 완료라 미래 기준 시점과 맞지 않아요.",
+        "D": "과거완료예요. 'By the time + 과거' 구조에 쓰는 형태로, arrive(현재)와 next Monday와 맞지 않아요. 완료 시제끼리 혼동시키는 함정이에요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "TENSE_MISMATCH",
+        "C": "TENSE_MISMATCH",
+        "D": "TENSE_MISMATCH"
+      },
+      "key_point": "By the time + 현재 시제(미래 의미)이면 주절은 미래완료(will have p.p.), By the time + 과거 시제이면 주절은 과거완료(had p.p.)예요.",
+      "vocab": [
+        {
+          "word": "auditor",
+          "pos": "n.",
+          "meaning_ko": "감사관",
+          "level": "중급"
+        },
+        {
+          "word": "supporting document",
+          "pos": "n.",
+          "meaning_ko": "증빙 서류",
+          "level": "중급"
+        },
+        {
+          "word": "organize",
+          "pos": "v.",
+          "meaning_ko": "정리하다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 회계 감사 준비. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000018",
+      "part": 5,
+      "stem": "Ms. Hrabowski ------- a cash bonus by the board of directors for her work on the Lindqvist account.",
+      "options": {
+        "A": "has awarded",
+        "B": "awarding",
+        "C": "to award",
+        "D": "was awarded"
+      },
+      "answer": "D",
+      "type_tag": "P5-VERB.VOICE",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) was awarded예요. 해석: Hrabowski 씨는 Lindqvist 고객사 업무에 대한 공로로 이사회로부터 현금 보너스를 받았어요. award는 'award + 사람 + 사물(~에게 …을 수여하다)'처럼 목적어를 두 개 쓰는 동사예요. 사람이 주어로 나가 수동태가 되어도 사물 목적어(a cash bonus)는 뒤에 남아요. 뒤에 'by the board'가 있으니 수동태가 확실해요. 빈칸 뒤에 명사가 있다고 능동(A)을 고르면 함정이에요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "능동 현재완료예요. 뒤에 명사 a cash bonus가 있어 능동처럼 보이지만, by the board가 있어 '그녀가 수여했다'는 뜻이 될 수 없어요. 목적어가 남는 수동태를 노린 함정이에요.",
+        "B": "-ing 형태라 문장의 동사가 될 수 없어요.",
+        "C": "to부정사라 문장의 동사가 될 수 없어요.",
+        "D": "정답: 4형식 동사 award의 수동태로, 사물 목적어가 뒤에 남아 있어요."
+      },
+      "trap_code": {
+        "A": "VOICE_CONFUSION",
+        "B": "POS_CONFUSION",
+        "C": "POS_CONFUSION",
+        "D": null
+      },
+      "key_point": "award, give, offer, grant 같은 4형식 동사는 수동태가 되어도 뒤에 목적어(명사)가 하나 남을 수 있어요. 명사가 있다고 무조건 능동은 아니에요.",
+      "vocab": [
+        {
+          "word": "award",
+          "pos": "v.",
+          "meaning_ko": "(상·돈을) 수여하다",
+          "level": "중급"
+        },
+        {
+          "word": "board of directors",
+          "pos": "n.",
+          "meaning_ko": "이사회",
+          "level": "중급"
+        },
+        {
+          "word": "account",
+          "pos": "n.",
+          "meaning_ko": "고객(사), 거래처",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 직원 성과 보상. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000019",
+      "part": 5,
+      "stem": "The customer service hotline is available ------- 8 A.M. and 6 P.M. on weekdays.",
+      "options": {
+        "A": "from",
+        "B": "during",
+        "C": "between",
+        "D": "within"
+      },
+      "answer": "C",
+      "type_tag": "P5-CONN.PREP",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) between이에요. 해석: 고객 서비스 전화는 평일 오전 8시에서 오후 6시 사이에 이용할 수 있어요. 빈칸 뒤가 '8 A.M. and 6 P.M.'처럼 and로 두 시점을 묶고 있어요. 'between A and B(A와 B 사이에)'가 짝이 맞아요. (A) from은 'from A to B'로 써야 해서 and와 함께 쓰지 않아요. (B) during과 (D) within은 기간을 나타내는 명사 하나를 받아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "from은 to와 짝을 이뤄요(from A to B). and와 쓰면 틀려요. 시간 범위의 짝 혼동 함정이에요.",
+        "B": "during은 기간 명사(the meeting, the holidays) 하나를 받아요. 'during A and B' 형태로 시각 범위를 나타내지 않아요.",
+        "C": "정답: between A and B (A와 B 사이에)예요.",
+        "D": "within은 '~ 이내에'라는 뜻으로 기간 하나(within two days)를 받아요."
+      },
+      "trap_code": {
+        "A": "COLLOCATION_MISMATCH",
+        "B": "MEANING_NEAR_MISS",
+        "C": null,
+        "D": "MEANING_NEAR_MISS"
+      },
+      "key_point": "between A and B, from A to B처럼 짝을 이루는 전치사는 뒤에 오는 짝(and/to)을 보고 골라요.",
+      "vocab": [
+        {
+          "word": "hotline",
+          "pos": "n.",
+          "meaning_ko": "상담 전화",
+          "level": "기초"
+        },
+        {
+          "word": "available",
+          "pos": "adj.",
+          "meaning_ko": "이용 가능한",
+          "level": "기초"
+        },
+        {
+          "word": "weekday",
+          "pos": "n.",
+          "meaning_ko": "평일",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 고객 상담 운영 시간. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000020",
+      "part": 5,
+      "stem": "------- the heavy snowfall, all deliveries from the Marrowgate distribution center were completed on time.",
+      "options": {
+        "A": "Although",
+        "B": "Despite",
+        "C": "However",
+        "D": "Because of"
+      },
+      "answer": "B",
+      "type_tag": "P5-CONN.PREP",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (B) Despite예요. 해석: 폭설에도 불구하고 Marrowgate 물류센터의 모든 배송이 제시간에 완료되었어요. 빈칸 뒤 the heavy snowfall은 명사구라 전치사가 필요해요. 의미도 '폭설'과 '제시간 완료'가 서로 반대되니 양보의 전치사 Despite가 맞아요. (A) Although는 접속사라 뒤에 주어+동사가 와야 해요. (D) Because of는 전치사지만 '폭설 때문에 제시간에 완료'는 논리가 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "접속사예요. 뜻은 맞지만 뒤에 절(주어+동사)이 와야 해요. 전치사/접속사 혼동 함정이에요.",
+        "B": "정답: 명사구 앞에서 '~에도 불구하고'를 뜻하는 전치사예요.",
+        "C": "접속부사예요. 명사구를 이끌 수 없고 보통 쉼표와 함께 두 문장을 이어요.",
+        "D": "전치사라 형태는 맞지만 '폭설 때문에 제시간에 완료되었다'는 인과 관계가 어색해요. 의미 함정이에요."
+      },
+      "trap_code": {
+        "A": "PREP_CONJ_CONFUSION",
+        "B": null,
+        "C": "PREP_CONJ_CONFUSION",
+        "D": "MEANING_NEAR_MISS"
+      },
+      "key_point": "빈칸 뒤가 명사(구)이면 전치사, 절이면 접속사예요. 그다음 앞뒤 내용이 반대인지(양보) 원인인지(이유) 의미로 걸러요.",
+      "vocab": [
+        {
+          "word": "snowfall",
+          "pos": "n.",
+          "meaning_ko": "강설, 눈",
+          "level": "기초"
+        },
+        {
+          "word": "distribution center",
+          "pos": "n.",
+          "meaning_ko": "물류센터",
+          "level": "중급"
+        },
+        {
+          "word": "on time",
+          "pos": "phr.",
+          "meaning_ko": "제시간에",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 악천후 속 배송. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000021",
+      "part": 5,
+      "stem": "The refund will be issued ------- the returned merchandise has been inspected by our quality team.",
+      "options": {
+        "A": "unless",
+        "B": "whereas",
+        "C": "so that",
+        "D": "once"
+      },
+      "answer": "D",
+      "type_tag": "P5-CONN.CONJ",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) once예요. 해석: 반품된 상품을 품질팀이 검사하고 나면 환불이 처리돼요. 빈칸 뒤에 절이 오니 접속사 자리이고, 보기는 모두 접속사예요. 그래서 의미로 골라야 해요. '검사가 끝나면 → 환불'이라는 순서 조건이니 once(일단 ~하면)가 맞아요. (A) unless는 '검사하지 않으면 환불'이 되어 반대 뜻이에요. (B) whereas는 대조, (C) so that은 목적이라 문맥과 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'~하지 않으면'이라는 뜻이에요. '검사하지 않으면 환불한다'가 되어 의미가 반대예요.",
+        "B": "'반면에'라는 대조 접속사예요. 두 절이 대조 관계가 아니에요.",
+        "C": "'~하도록'이라는 목적 접속사예요. 환불의 목적이 검사가 될 수 없고, 보통 뒤에 can/will이 와요.",
+        "D": "정답: '일단 ~하면, ~하자마자'라는 시간·조건 접속사예요."
+      },
+      "trap_code": {
+        "A": "OPPOSITE_INFO",
+        "B": "MEANING_NEAR_MISS",
+        "C": "MEANING_NEAR_MISS",
+        "D": null
+      },
+      "key_point": "보기가 모두 접속사이면 두 절의 관계(조건·시간·대조·목적)를 따져 의미로 골라요. once는 '일단 ~하면'이에요.",
+      "vocab": [
+        {
+          "word": "refund",
+          "pos": "n.",
+          "meaning_ko": "환불",
+          "level": "기초"
+        },
+        {
+          "word": "issue",
+          "pos": "v.",
+          "meaning_ko": "발급하다, 지급하다",
+          "level": "중급"
+        },
+        {
+          "word": "merchandise",
+          "pos": "n.",
+          "meaning_ko": "상품",
+          "level": "중급"
+        },
+        {
+          "word": "inspect",
+          "pos": "v.",
+          "meaning_ko": "검사하다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 반품·환불 절차 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000022",
+      "part": 5,
+      "stem": "------- the printer on the third floor is being repaired, employees should use the one in the lobby.",
+      "options": {
+        "A": "While",
+        "B": "During",
+        "C": "Despite",
+        "D": "Due to"
+      },
+      "answer": "A",
+      "type_tag": "P5-CONN.PREPvsCONJ",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (A) While이에요. 해석: 3층 프린터를 수리하는 동안 직원들은 로비에 있는 프린터를 사용해야 해요. 빈칸 뒤에 'the printer ~ is being repaired'라는 주어+동사(절)가 있어요. 절 앞에는 접속사가 와야 하니 While(~하는 동안)이 맞아요. (B) During, (C) Despite, (D) Due to는 모두 전치사라 뒤에 명사만 올 수 있어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 절(주어+동사) 앞에 오는 접속사(~하는 동안)예요.",
+        "B": "전치사예요. while과 뜻이 같아 고르기 쉽지만 뒤에 절이 올 수 없어요. 전치사/접속사 혼동 함정이에요.",
+        "C": "전치사예요. 뒤에 명사가 와야 하고 뜻(~에도 불구하고)도 맞지 않아요.",
+        "D": "전치사예요. 뒤에 명사가 와야 해요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "PREP_CONJ_CONFUSION",
+        "C": "PREP_CONJ_CONFUSION",
+        "D": "PREP_CONJ_CONFUSION"
+      },
+      "key_point": "빈칸 뒤에 주어+동사가 있으면 접속사(while), 명사만 있으면 전치사(during)예요.",
+      "vocab": [
+        {
+          "word": "repair",
+          "pos": "v.",
+          "meaning_ko": "수리하다",
+          "level": "기초"
+        },
+        {
+          "word": "lobby",
+          "pos": "n.",
+          "meaning_ko": "로비",
+          "level": "기초"
+        },
+        {
+          "word": "floor",
+          "pos": "n.",
+          "meaning_ko": "층",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 사무 기기 수리 공지. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000023",
+      "part": 5,
+      "stem": "------- its relatively small staff, Quenneville Architects has completed more than forty public projects.",
+      "options": {
+        "A": "Even though",
+        "B": "Whereas",
+        "C": "Notwithstanding",
+        "D": "Nevertheless"
+      },
+      "answer": "C",
+      "type_tag": "P5-CONN.PREPvsCONJ",
+      "sub_tags": [],
+      "difficulty_expert": 5,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "고급",
+      "explanation_ko": "정답은 (C) Notwithstanding이에요. 해석: 직원 수가 비교적 적은데도 Quenneville 건축사무소는 40건이 넘는 공공 프로젝트를 완수했어요. 빈칸 뒤 its relatively small staff는 명사구예요. 그래서 전치사가 필요하고, 의미는 양보(~에도 불구하고)예요. Notwithstanding은 despite와 같은 뜻의 전치사예요. (A) Even though와 (B) Whereas는 접속사라 뒤에 절이 와야 하고, (D) Nevertheless는 부사라 명사구를 이끌지 못해요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "접속사예요. 뜻(양보)은 맞지만 뒤에 절이 와야 해요. 의미만 보고 고르게 하는 함정이에요.",
+        "B": "대조 접속사예요. 절을 받아야 하고 뜻도 '반면에'라 맞지 않아요.",
+        "C": "정답: 명사구 앞에서 '~에도 불구하고'를 뜻하는 전치사예요 (= despite, in spite of).",
+        "D": "접속부사(그럼에도 불구하고)예요. 뜻은 비슷하지만 명사구를 이끌 수 없어요."
+      },
+      "trap_code": {
+        "A": "PREP_CONJ_CONFUSION",
+        "B": "PREP_CONJ_CONFUSION",
+        "C": null,
+        "D": "PREP_CONJ_CONFUSION"
+      },
+      "key_point": "양보 표현은 품사로 나눠 외워요. 전치사: despite, in spite of, notwithstanding / 접속사: although, even though / 부사: nevertheless, nonetheless.",
+      "vocab": [
+        {
+          "word": "notwithstanding",
+          "pos": "prep.",
+          "meaning_ko": "~에도 불구하고",
+          "level": "고급"
+        },
+        {
+          "word": "relatively",
+          "pos": "adv.",
+          "meaning_ko": "비교적",
+          "level": "중급"
+        },
+        {
+          "word": "nevertheless",
+          "pos": "adv.",
+          "meaning_ko": "그럼에도 불구하고",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 건축사무소 실적 소개. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000024",
+      "part": 5,
+      "stem": "Employees ------- travel expenses exceed $500 must obtain approval from a department head in advance.",
+      "options": {
+        "A": "who",
+        "B": "whose",
+        "C": "whom",
+        "D": "which"
+      },
+      "answer": "B",
+      "type_tag": "P5-CONN.REL",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (B) whose예요. 해석: 출장 경비가 500달러를 넘는 직원은 미리 부서장의 승인을 받아야 해요. 빈칸 뒤 'travel expenses exceed $500'은 주어(travel expenses)와 동사(exceed)를 갖춘 완전한 절이에요. 그리고 travel expenses는 '직원들의' 경비예요. 이렇게 뒤 명사가 앞 명사의 소유일 때 소유격 관계대명사 whose를 써요. (A) who와 (C) whom은 뒤 절에 주어나 목적어가 빠져 있어야 해요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "주격 관계대명사예요. 뒤에 주어가 빠진 절이 와야 하는데, 이미 주어 travel expenses가 있어요. 선행사가 사람이라 고르기 쉬운 함정이에요.",
+        "B": "정답: '직원들의 출장 경비'라는 소유 관계를 나타내는 소유격 관계대명사예요.",
+        "C": "목적격 관계대명사예요. 뒤 절에 목적어가 빠져 있어야 하는데 exceed $500으로 완전해요.",
+        "D": "사물 선행사용 관계대명사예요. 선행사 Employees는 사람이고, 뒤 절도 완전해요."
+      },
+      "trap_code": {
+        "A": "WRONG_REFERENT",
+        "B": null,
+        "C": "WRONG_REFERENT",
+        "D": "WRONG_REFERENT"
+      },
+      "key_point": "관계사 뒤에 '관사 없는 명사 + 동사'로 시작하는 완전한 절이 오고 그 명사가 선행사의 것이면 whose를 써요.",
+      "vocab": [
+        {
+          "word": "travel expense",
+          "pos": "n.",
+          "meaning_ko": "출장 경비",
+          "level": "중급"
+        },
+        {
+          "word": "exceed",
+          "pos": "v.",
+          "meaning_ko": "초과하다",
+          "level": "중급"
+        },
+        {
+          "word": "obtain approval",
+          "pos": "phr.",
+          "meaning_ko": "승인을 받다",
+          "level": "중급"
+        },
+        {
+          "word": "in advance",
+          "pos": "phr.",
+          "meaning_ko": "미리",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 출장비 승인 규정. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000025",
+      "part": 5,
+      "stem": "The Brenwick Room, ------- the awards ceremony will take place, can seat up to 300 guests.",
+      "options": {
+        "A": "where",
+        "B": "which",
+        "C": "what",
+        "D": "whose"
+      },
+      "answer": "A",
+      "type_tag": "P5-CONN.REL",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (A) where예요. 해석: 시상식이 열릴 Brenwick 룸은 최대 300명까지 앉을 수 있어요. 빈칸 뒤 'the awards ceremony will take place'는 주어와 동사를 갖춘 완전한 절이고, take place는 목적어를 쓰지 않아요. 선행사가 장소(The Brenwick Room)이고 뒤 절이 완전하니 관계부사 where(= in which)가 맞아요. (B) which는 뒤 절에 주어나 목적어가 빠져야 하고, 쓰려면 in which가 되어야 해요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 장소 선행사 + 완전한 절을 잇는 관계부사예요 (= in which).",
+        "B": "관계대명사예요. 뒤 절이 완전해서 which만으로는 안 되고 전치사를 붙인 in which여야 해요. 장소 선행사에 which를 고르게 하는 함정이에요.",
+        "C": "선행사를 포함하는 관계대명사(~하는 것)예요. 앞에 선행사 The Brenwick Room이 있어 쓸 수 없어요.",
+        "D": "소유격 관계대명사예요. 뒤 명사 앞에 관사 the가 있어 whose 다음 자리에 맞지 않아요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "PREP_CONJ_CONFUSION",
+        "C": "WRONG_REFERENT",
+        "D": "SIMILAR_FORM"
+      },
+      "key_point": "관계사 뒤 절이 완전하면 관계부사(where, when) 또는 '전치사+which', 불완전하면 관계대명사(which, who)예요.",
+      "vocab": [
+        {
+          "word": "awards ceremony",
+          "pos": "n.",
+          "meaning_ko": "시상식",
+          "level": "기초"
+        },
+        {
+          "word": "take place",
+          "pos": "phr.",
+          "meaning_ko": "열리다, 개최되다",
+          "level": "기초"
+        },
+        {
+          "word": "seat",
+          "pos": "v.",
+          "meaning_ko": "(인원을) 수용하다",
+          "level": "중급"
+        },
+        {
+          "word": "up to",
+          "pos": "phr.",
+          "meaning_ko": "최대 ~까지",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 행사장 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000026",
+      "part": 5,
+      "stem": "Participants in the time-management workshop may register ------- online or by phone.",
+      "options": {
+        "A": "both",
+        "B": "neither",
+        "C": "not only",
+        "D": "either"
+      },
+      "answer": "D",
+      "type_tag": "P5-CONN.CORR",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (D) either예요. 해석: 시간 관리 워크숍 참가자는 온라인이나 전화 중 하나로 등록할 수 있어요. 빈칸 뒤에 'online or by phone'처럼 or가 있어요. or와 짝을 이루는 상관접속사는 either예요. 'either A or B'는 'A나 B 둘 중 하나'라는 뜻이에요. (A) both는 and, (B) neither는 nor, (C) not only는 but (also)와 짝을 이뤄요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "both는 and와 짝이에요 (both A and B). or와 함께 쓸 수 없어요.",
+        "B": "neither는 nor와 짝이에요 (neither A nor B). 뜻도 '둘 다 아닌'이라 등록 방법 안내와 맞지 않아요.",
+        "C": "not only는 but (also)와 짝이에요 (not only A but also B).",
+        "D": "정답: or와 짝을 이루는 상관접속사예요 (either A or B)."
+      },
+      "trap_code": {
+        "A": "COLLOCATION_MISMATCH",
+        "B": "COLLOCATION_MISMATCH",
+        "C": "COLLOCATION_MISMATCH",
+        "D": null
+      },
+      "key_point": "상관접속사는 짝을 보고 풀어요: both-and, either-or, neither-nor, not only-but also.",
+      "vocab": [
+        {
+          "word": "participant",
+          "pos": "n.",
+          "meaning_ko": "참가자",
+          "level": "기초"
+        },
+        {
+          "word": "register",
+          "pos": "v.",
+          "meaning_ko": "등록하다",
+          "level": "기초"
+        },
+        {
+          "word": "workshop",
+          "pos": "n.",
+          "meaning_ko": "연수회, 워크숍",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 사내 교육 등록 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000027",
+      "part": 5,
+      "stem": "Of all the proposals submitted, the one from Tollrigg Engineering was the ------- expensive.",
+      "options": {
+        "A": "more",
+        "B": "most",
+        "C": "many",
+        "D": "much"
+      },
+      "answer": "B",
+      "type_tag": "P5-GRAM.COMP",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) most예요. 해석: 제출된 모든 제안서 중에서 Tollrigg 엔지니어링의 제안서가 가장 비쌌어요. 'Of all the proposals(모든 제안서 중에서)'는 셋 이상 가운데 하나를 고르는 범위를 나타내요. 그리고 빈칸 앞에 the가 있으니 최상급 'the most + 형용사'가 맞아요. (A) more는 둘을 비교하는 비교급이라 '모든 ~ 중에서'와 맞지 않아요. (C) many와 (D) much는 형용사 expensive를 꾸밀 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "비교급이에요. 'the more ~'는 두 개 중 하나를 말할 때 쓰는데, 여기는 '모든 제안서 중'이라 최상급이 필요해요. 비교급/최상급 혼동 함정이에요.",
+        "B": "정답: Of all ~ 범위 + the → 최상급 the most expensive예요.",
+        "C": "수량 형용사예요. 형용사 expensive를 꾸밀 수 없어요.",
+        "D": "양을 나타내는 한정사·부사예요. 'the much expensive'라는 형태는 없어요."
+      },
+      "trap_code": {
+        "A": "SIMILAR_FORM",
+        "B": null,
+        "C": "POS_CONFUSION",
+        "D": "POS_CONFUSION"
+      },
+      "key_point": "of all ~, in the company, ever 같은 범위·비교 대상이 셋 이상이면 'the + 최상급'을 써요.",
+      "vocab": [
+        {
+          "word": "proposal",
+          "pos": "n.",
+          "meaning_ko": "제안서",
+          "level": "기초"
+        },
+        {
+          "word": "submit",
+          "pos": "v.",
+          "meaning_ko": "제출하다",
+          "level": "기초"
+        },
+        {
+          "word": "expensive",
+          "pos": "adj.",
+          "meaning_ko": "비싼",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 공사 입찰 제안서 비교. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000028",
+      "part": 5,
+      "stem": "------- employee must complete the online safety course before the end of the month.",
+      "options": {
+        "A": "All",
+        "B": "Many",
+        "C": "Every",
+        "D": "Several"
+      },
+      "answer": "C",
+      "type_tag": "P5-GRAM.QUANT",
+      "sub_tags": [],
+      "difficulty_expert": 1,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) Every예요. 해석: 모든 직원은 이달 말 전에 온라인 안전 교육을 이수해야 해요. 빈칸 뒤 employee는 단수 명사예요. 단수 명사 앞에 오는 수량 표현은 Every(모든 ~)예요. (A) All, (B) Many, (D) Several은 모두 복수 명사(employees) 앞에 써요. '모든'이라는 뜻만 보고 All을 고르면 함정에 걸려요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "복수 명사와 함께 써요 (all employees). 뜻(모든)이 같아 고르기 쉬운 함정이에요.",
+        "B": "복수 명사와 함께 써요 (many employees).",
+        "C": "정답: 단수 명사 앞에 쓰는 한정사예요 (every employee).",
+        "D": "복수 명사와 함께 써요 (several employees)."
+      },
+      "trap_code": {
+        "A": "NUMBER_AGREEMENT",
+        "B": "NUMBER_AGREEMENT",
+        "C": null,
+        "D": "NUMBER_AGREEMENT"
+      },
+      "key_point": "every, each, another + 단수 명사 / all, many, several, few + 복수 명사로 짝을 외워요.",
+      "vocab": [
+        {
+          "word": "complete",
+          "pos": "v.",
+          "meaning_ko": "이수하다, 완료하다",
+          "level": "기초"
+        },
+        {
+          "word": "safety course",
+          "pos": "n.",
+          "meaning_ko": "안전 교육",
+          "level": "기초"
+        },
+        {
+          "word": "employee",
+          "pos": "n.",
+          "meaning_ko": "직원",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 사내 안전 교육 의무. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000029",
+      "part": 5,
+      "stem": "------- the shipment been delayed, the Fenwright Street store would have run out of stock before the holiday weekend.",
+      "options": {
+        "A": "Had",
+        "B": "If",
+        "C": "Should",
+        "D": "Were"
+      },
+      "answer": "A",
+      "type_tag": "P5-GRAM.INV",
+      "sub_tags": [],
+      "difficulty_expert": 5,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (A) Had예요. 해석: 배송이 지연되었다면 Fenwright 가 매장은 연휴 주말 전에 재고가 바닥났을 거예요. 주절이 'would have run out'이니 가정법 과거완료예요. 원래는 'If the shipment had been delayed'인데, if를 생략하면 Had가 주어 앞으로 나가 'Had the shipment been delayed'가 돼요. (B) If를 쓰려면 뒤에 had가 있어야 해요. (C) Should는 미래 가정 도치, (D) Were는 가정법 과거 도치라 been과 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: If가 생략된 가정법 과거완료 도치예요 (Had + 주어 + p.p.).",
+        "B": "If를 쓰면 'If the shipment had been delayed'가 되어야 해요. 'If the shipment been'은 동사가 없는 비문이에요. 가정법이라는 것만 보고 If를 고르게 하는 함정이에요.",
+        "C": "Should 도치는 'Should + 주어 + 동사원형'(미래의 가정)이라 뒤에 been이 올 수 없어요.",
+        "D": "Were 도치는 'Were + 주어 + 보어/to부정사'(가정법 과거)예요. 'Were the shipment been'은 비문이에요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "SIMILAR_FORM",
+        "C": "TENSE_MISMATCH",
+        "D": "TENSE_MISMATCH"
+      },
+      "key_point": "가정법에서 if를 생략하면 조동사가 주어 앞으로 나가요: Had + 주어 + p.p.(과거완료) / Were + 주어(과거) / Should + 주어 + 동사원형(미래).",
+      "vocab": [
+        {
+          "word": "delay",
+          "pos": "v.",
+          "meaning_ko": "지연시키다",
+          "level": "기초"
+        },
+        {
+          "word": "run out of",
+          "pos": "phr.",
+          "meaning_ko": "~이 바닥나다",
+          "level": "중급"
+        },
+        {
+          "word": "stock",
+          "pos": "n.",
+          "meaning_ko": "재고",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 명절 대비 매장 재고 관리. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000030",
+      "part": 5,
+      "stem": "The response to the spring catalog was ------- strong that Pellinor Outfitters ordered a second printing.",
+      "options": {
+        "A": "such",
+        "B": "too",
+        "C": "very",
+        "D": "so"
+      },
+      "answer": "D",
+      "type_tag": "P5-GRAM.MISC",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) so예요. 해석: 봄 카탈로그에 대한 반응이 아주 좋아서 Pellinor 아웃피터스는 2쇄를 주문했어요. 빈칸 뒤에 형용사 strong과 that절이 있어요. 'so + 형용사 + that절'은 '너무 ~해서 …하다'라는 결과 구문이에요. (A) such는 'such (a) + 형용사 + 명사 + that'처럼 뒤에 명사가 있어야 해요. (B) too는 'too ~ to do' 구문에 쓰고, (C) very는 that절을 이끌지 못해요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "such 뒤에는 명사가 와야 해요 (such a strong response that ~). 형용사만 있으면 쓸 수 없어요. so/such 혼동 함정이에요.",
+        "B": "too는 'too + 형용사 + to부정사'로 써요. that절과 짝을 이루지 않고, 뜻도 부정적(지나치게)이에요.",
+        "C": "very는 형용사를 강조할 뿐 결과의 that절과 짝을 이루지 못해요.",
+        "D": "정답: so + 형용사 + that절 (너무 ~해서 …하다)이에요."
+      },
+      "trap_code": {
+        "A": "SIMILAR_FORM",
+        "B": "COLLOCATION_MISMATCH",
+        "C": "COLLOCATION_MISMATCH",
+        "D": null
+      },
+      "key_point": "so + 형용사/부사 + that절, such (a) + 형용사 + 명사 + that절로 구분해요.",
+      "vocab": [
+        {
+          "word": "response",
+          "pos": "n.",
+          "meaning_ko": "반응",
+          "level": "기초"
+        },
+        {
+          "word": "catalog",
+          "pos": "n.",
+          "meaning_ko": "카탈로그, 상품 목록",
+          "level": "기초"
+        },
+        {
+          "word": "printing",
+          "pos": "n.",
+          "meaning_ko": "인쇄, (인쇄) 쇄",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 카탈로그 판촉 반응. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000031",
+      "part": 5,
+      "stem": "Please present your ------- at the front desk to receive a visitor badge.",
+      "options": {
+        "A": "permission",
+        "B": "advice",
+        "C": "identification",
+        "D": "attendance"
+      },
+      "answer": "C",
+      "type_tag": "P5-VOC.N",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) identification이에요. 해석: 방문객 출입증을 받으려면 안내 데스크에 신분증을 제시해 주세요. 동사 present(제시하다)의 목적어로, 방문객 출입증을 받기 위해 보여 주는 것이니 신분증(identification)이 자연스러워요. (A) permission(허가)과 (B) advice(조언)는 '제시하는' 물건이 아니고, (D) attendance(출석, 참석)도 보여 줄 수 있는 대상이 아니에요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "허가라는 뜻이에요. 출입과 관련 있어 보이지만 손에 들고 '제시하는' 대상이 아니에요. 관련 의미 함정이에요.",
+        "B": "조언이라는 뜻이에요. 문맥과 맞지 않아요.",
+        "C": "정답: 출입증을 받으려고 제시하는 신분증이에요.",
+        "D": "출석, 참석이라는 뜻이에요. present attendance는 의미가 통하지 않아요."
+      },
+      "trap_code": {
+        "A": "MEANING_NEAR_MISS",
+        "B": "MEANING_NEAR_MISS",
+        "C": null,
+        "D": "MEANING_NEAR_MISS"
+      },
+      "key_point": "present(제시하다)와 어울리는 명사는 identification, ticket, receipt처럼 보여 줄 수 있는 것이에요.",
+      "vocab": [
+        {
+          "word": "present",
+          "pos": "v.",
+          "meaning_ko": "제시하다",
+          "level": "기초"
+        },
+        {
+          "word": "identification",
+          "pos": "n.",
+          "meaning_ko": "신분증",
+          "level": "기초"
+        },
+        {
+          "word": "visitor badge",
+          "pos": "n.",
+          "meaning_ko": "방문객 출입증",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 사옥 방문객 출입 절차. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000032",
+      "part": 5,
+      "stem": "The contract includes a ------- that allows either party to terminate the agreement with 60 days' notice.",
+      "options": {
+        "A": "proposition",
+        "B": "provision",
+        "C": "precaution",
+        "D": "provider"
+      },
+      "answer": "B",
+      "type_tag": "P5-VOC.N",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "고급",
+      "explanation_ko": "정답은 (B) provision이에요. 해석: 이 계약서에는 어느 쪽이든 60일 전에 통보하면 계약을 해지할 수 있게 하는 조항이 들어 있어요. 계약서(contract) 안에 들어 있으면서 무언가를 허용하는(allows) 것은 '조항, 규정'인 provision이에요. (A) proposition(제의, 명제)은 형태가 비슷하지만 계약서 안의 조항을 뜻하지 않아요. (C) precaution(예방 조치), (D) provider(제공자)도 문맥에 맞지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "제의, 명제라는 뜻이에요. 철자가 비슷하고 '제안'과 관련 있어 보이지만 계약서의 조항을 가리키지 않아요. 형태 유사 함정이에요.",
+        "B": "정답: 계약서·법률 안의 '조항, 규정'이에요.",
+        "C": "예방 조치라는 뜻이에요. 해지 권한을 주는 계약 내용과 맞지 않아요.",
+        "D": "제공자(사람·회사)라는 뜻이에요. 계약서 안에 포함되는 내용이 될 수 없어요. provide에서 나온 같은 어근 함정이에요."
+      },
+      "trap_code": {
+        "A": "SIMILAR_FORM",
+        "B": null,
+        "C": "MEANING_NEAR_MISS",
+        "D": "SIMILAR_FORM"
+      },
+      "key_point": "계약서 맥락에서 provision은 '조항', terms는 '조건', clause는 '조항(절)'이에요.",
+      "vocab": [
+        {
+          "word": "provision",
+          "pos": "n.",
+          "meaning_ko": "(계약·법의) 조항, 규정",
+          "level": "고급"
+        },
+        {
+          "word": "terminate",
+          "pos": "v.",
+          "meaning_ko": "해지하다, 종료하다",
+          "level": "고급"
+        },
+        {
+          "word": "party",
+          "pos": "n.",
+          "meaning_ko": "(계약의) 당사자",
+          "level": "중급"
+        },
+        {
+          "word": "notice",
+          "pos": "n.",
+          "meaning_ko": "(사전) 통보",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 공급 계약 해지 조항. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000033",
+      "part": 5,
+      "stem": "Mr. Takahara-Brook asked his assistant to ------- a meeting with the new suppliers for Thursday morning.",
+      "options": {
+        "A": "arrange",
+        "B": "respond",
+        "C": "proceed",
+        "D": "participate"
+      },
+      "answer": "A",
+      "type_tag": "P5-VOC.V",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (A) arrange예요. 해석: Takahara-Brook 씨는 비서에게 목요일 오전으로 새 공급업체들과의 회의를 잡아 달라고 했어요. 빈칸 뒤에 목적어 a meeting이 바로 오니 타동사가 필요하고, '회의를 마련하다, 잡다'는 arrange a meeting이에요. (B) respond는 respond to, (C) proceed는 proceed with, (D) participate는 participate in처럼 전치사가 있어야 목적어를 받을 수 있어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: 목적어 a meeting을 바로 받는 타동사(회의를 잡다)예요.",
+        "B": "자동사라 respond to처럼 전치사가 필요해요. 의미도 '회의에 응답하다'는 어색해요.",
+        "C": "자동사라 proceed with처럼 전치사가 필요해요. proceed with a meeting(회의를 계속 진행하다)이라는 표현에 끌리게 하는 함정이지만, 바로 목적어를 받지 못해요.",
+        "D": "자동사라 participate in이 되어야 해요. 회의와 관련된 뜻이라 고르기 쉬운 함정이에요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "VERB_PATTERN",
+        "C": "VERB_PATTERN",
+        "D": "VERB_PATTERN"
+      },
+      "key_point": "빈칸 뒤에 목적어가 바로 오면 타동사를 골라요. respond/participate/proceed는 전치사(to/in/with)가 필요해요.",
+      "vocab": [
+        {
+          "word": "arrange",
+          "pos": "v.",
+          "meaning_ko": "(일정을) 잡다, 마련하다",
+          "level": "기초"
+        },
+        {
+          "word": "supplier",
+          "pos": "n.",
+          "meaning_ko": "공급업체",
+          "level": "중급"
+        },
+        {
+          "word": "participate in",
+          "pos": "phr.",
+          "meaning_ko": "~에 참여하다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 협력업체 회의 일정. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000034",
+      "part": 5,
+      "stem": "To reduce costs, Brackenridge Logistics has decided to ------- its two smaller warehouses into one large facility.",
+      "options": {
+        "A": "divide",
+        "B": "expand",
+        "C": "eliminate",
+        "D": "consolidate"
+      },
+      "answer": "D",
+      "type_tag": "P5-VOC.V",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "고급",
+      "explanation_ko": "정답은 (D) consolidate예요. 해석: 비용을 줄이기 위해 Brackenridge 물류는 작은 창고 두 곳을 하나의 큰 시설로 통합하기로 했어요. '두 개를 하나로(into one)' 합치는 것이니 consolidate(통합하다)가 맞아요. consolidate A into B는 'A를 B로 통합하다'예요. (A) divide는 '나누다'로 반대 뜻이고, (B) expand(확장하다)는 비용 절감과 '둘을 하나로'와 맞지 않아요. (C) eliminate(없애다)는 into one과 함께 쓸 수 없어요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'나누다'라는 뜻이에요. 둘을 하나로 만드는 것과 정반대예요. divide into와 형태만 비슷한 함정이에요.",
+        "B": "'확장하다'라는 뜻이에요. 비용 절감 목적, '둘을 하나로'라는 내용과 맞지 않아요.",
+        "C": "'없애다'라는 뜻이에요. 비용 절감과 관련 있어 보이지만 'into one large facility'와 이어지지 않아요.",
+        "D": "정답: consolidate A into B (A를 B로 통합하다)예요."
+      },
+      "trap_code": {
+        "A": "OPPOSITE_INFO",
+        "B": "MEANING_NEAR_MISS",
+        "C": "PARTIAL_INFO",
+        "D": null
+      },
+      "key_point": "consolidate A into B는 '여러 개를 하나로 통합하다'예요. 빈칸 뒤 into 같은 전치사와 목적어의 수(two → one)가 단서예요.",
+      "vocab": [
+        {
+          "word": "consolidate",
+          "pos": "v.",
+          "meaning_ko": "통합하다",
+          "level": "고급"
+        },
+        {
+          "word": "warehouse",
+          "pos": "n.",
+          "meaning_ko": "창고",
+          "level": "기초"
+        },
+        {
+          "word": "facility",
+          "pos": "n.",
+          "meaning_ko": "시설",
+          "level": "중급"
+        },
+        {
+          "word": "reduce costs",
+          "pos": "phr.",
+          "meaning_ko": "비용을 줄이다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 물류 창고 통폐합. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000035",
+      "part": 5,
+      "stem": "The marketing team was ------- that the new Lunavell skin cream would sell well in its first month.",
+      "options": {
+        "A": "convenient",
+        "B": "considerable",
+        "C": "confident",
+        "D": "constant"
+      },
+      "answer": "C",
+      "type_tag": "P5-VOC.ADJ",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (C) confident예요. 해석: 마케팅팀은 새 Lunavell 스킨크림이 출시 첫 달에 잘 팔릴 거라고 확신했어요. 주어가 사람(팀)이고 뒤에 that절이 오니 '~라고 확신하는'이라는 뜻의 confident가 맞아요. be confident that ~은 자주 쓰는 표현이에요. (A) convenient(편리한), (B) considerable(상당한), (D) constant(끊임없는)는 사람의 생각을 나타내지 않고 that절과도 어울리지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'편리한'이라는 뜻이에요. 사람 주어의 생각을 나타내지 않아요. 같은 con-으로 시작하는 형태 유사 함정이에요.",
+        "B": "'상당한'이라는 뜻이에요. 양·정도를 나타내 사람의 확신을 표현하지 못해요.",
+        "C": "정답: be confident that ~ (~라고 확신하다)이에요.",
+        "D": "'끊임없는'이라는 뜻이에요. that절과 이어지지 않아요."
+      },
+      "trap_code": {
+        "A": "SIMILAR_FORM",
+        "B": "SIMILAR_FORM",
+        "C": null,
+        "D": "SIMILAR_FORM"
+      },
+      "key_point": "be confident/sure/certain that ~은 '~라고 확신하다'예요. 사람 주어 + 형용사 + that절이면 감정·판단 형용사를 찾아요.",
+      "vocab": [
+        {
+          "word": "confident",
+          "pos": "adj.",
+          "meaning_ko": "확신하는",
+          "level": "기초"
+        },
+        {
+          "word": "sell well",
+          "pos": "phr.",
+          "meaning_ko": "잘 팔리다",
+          "level": "기초"
+        },
+        {
+          "word": "considerable",
+          "pos": "adj.",
+          "meaning_ko": "상당한",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 신제품 판매 전망. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000036",
+      "part": 5,
+      "stem": "Interns at Dorrance Analytics are ------- for the same health benefits as full-time employees.",
+      "options": {
+        "A": "capable",
+        "B": "eligible",
+        "C": "entitled",
+        "D": "suitable"
+      },
+      "answer": "B",
+      "type_tag": "P5-VOC.ADJ",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (B) eligible이에요. 해석: Dorrance 애널리틱스의 인턴도 정규직 직원과 같은 건강 보험 혜택을 받을 자격이 있어요. '혜택을 받을 자격이 있다'는 be eligible for ~예요. (C) entitled도 '자격이 있는'이라는 뜻이지만 be entitled to ~처럼 전치사 to와 써요. 뒤의 for가 결정적 단서예요. (A) capable은 be capable of로 '~할 능력이 있는', (D) suitable은 '적합한'이라 혜택과 어울리지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'~할 능력이 있는'이라는 뜻으로 be capable of와 써요. 전치사와 뜻 모두 맞지 않아요.",
+        "B": "정답: be eligible for + 혜택 (~을 받을 자격이 있다)이에요.",
+        "C": "뜻은 비슷하지만 be entitled to로 써요. for와 쓰지 않아요. 같은 뜻의 다른 짝 전치사를 노린 함정이에요.",
+        "D": "'적합한'이라는 뜻이에요. '인턴이 혜택에 적합하다'는 의미가 어색해요."
+      },
+      "trap_code": {
+        "A": "COLLOCATION_MISMATCH",
+        "B": null,
+        "C": "COLLOCATION_MISMATCH",
+        "D": "MEANING_NEAR_MISS"
+      },
+      "key_point": "뜻이 비슷한 형용사는 뒤 전치사로 구분해요: eligible for, entitled to, capable of.",
+      "vocab": [
+        {
+          "word": "eligible",
+          "pos": "adj.",
+          "meaning_ko": "자격이 있는",
+          "level": "중급"
+        },
+        {
+          "word": "entitled",
+          "pos": "adj.",
+          "meaning_ko": "권리·자격이 있는",
+          "level": "고급"
+        },
+        {
+          "word": "benefits",
+          "pos": "n.",
+          "meaning_ko": "(복리후생) 혜택",
+          "level": "중급"
+        },
+        {
+          "word": "full-time",
+          "pos": "adj.",
+          "meaning_ko": "정규직의",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 인턴 복리후생 안내. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000037",
+      "part": 5,
+      "stem": "Since it was installed in May, the new inventory software has ------- reduced the time needed to process incoming shipments.",
+      "options": {
+        "A": "eagerly",
+        "B": "closely",
+        "C": "newly",
+        "D": "dramatically"
+      },
+      "answer": "D",
+      "type_tag": "P5-VOC.ADV",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (D) dramatically예요. 해석: 5월에 설치된 이후 새 재고 관리 소프트웨어는 입고 물품 처리에 드는 시간을 크게 줄였어요. 동사 reduced를 꾸미면서 '얼마나' 줄였는지 정도를 나타내는 부사가 필요해요. dramatically(극적으로, 크게)가 자연스러워요. (A) eagerly(열심히, 간절히)는 사람의 의지·감정을 나타내서 소프트웨어 같은 사물 주어의 동작을 꾸미지 못해요. (B) closely(면밀히), (C) newly(새로)는 reduce와 어울리지 않아요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'열심히, 간절히'라는 뜻으로 사람의 의지·감정을 나타내요. 사물 주어(software)의 동작을 꾸밀 수 없어요. '적극적으로 줄였다'로 오해하게 하는 의미 함정이에요.",
+        "B": "'면밀히, 밀접하게'라는 뜻이에요. closely monitor처럼 쓰고 reduce와는 어울리지 않아요.",
+        "C": "'새로'라는 뜻이에요. new software에서 연상하게 하는 단어 반복 함정이에요.",
+        "D": "정답: 감소의 정도를 나타내는 부사(크게, 극적으로)예요."
+      },
+      "trap_code": {
+        "A": "MEANING_NEAR_MISS",
+        "B": "COLLOCATION_MISMATCH",
+        "C": "WORD_REPEAT_TRAP",
+        "D": null
+      },
+      "key_point": "increase/reduce/improve 같은 증감 동사는 정도 부사 dramatically, significantly, substantially와 잘 어울려요.",
+      "vocab": [
+        {
+          "word": "inventory",
+          "pos": "n.",
+          "meaning_ko": "재고",
+          "level": "중급"
+        },
+        {
+          "word": "install",
+          "pos": "v.",
+          "meaning_ko": "설치하다",
+          "level": "기초"
+        },
+        {
+          "word": "dramatically",
+          "pos": "adv.",
+          "meaning_ko": "극적으로, 크게",
+          "level": "중급"
+        },
+        {
+          "word": "incoming",
+          "pos": "adj.",
+          "meaning_ko": "들어오는",
+          "level": "중급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 재고 관리 시스템 도입 효과. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "updated_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000038",
+      "part": 5,
+      "stem": "All requests for time off must be submitted at least two weeks in -------.",
+      "options": {
+        "A": "advance",
+        "B": "forward",
+        "C": "ahead",
+        "D": "prior"
+      },
+      "answer": "A",
+      "type_tag": "P5-VOC.COLL",
+      "sub_tags": [],
+      "difficulty_expert": 3,
+      "target_track": [
+        "300-400"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (A) advance예요. 해석: 모든 휴가 신청은 최소 2주 전에 제출해야 해요. '미리, 사전에'는 in advance라는 고정 표현이에요. (B) forward, (C) ahead, (D) prior도 '앞으로, 먼저'와 관련된 뜻이지만 in 뒤에 쓰지 않아요. ahead는 '2주 앞서'를 뜻하려면 'two weeks ahead (of time)'처럼 in 없이 써야 해요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "정답: in advance (미리, 사전에)라는 고정 표현이에요.",
+        "B": "'앞으로'라는 뜻이지만 in forward라는 표현은 없어요.",
+        "C": "'앞서'라는 뜻이라 매력적이지만 in ahead로 쓰지 않아요. ahead of time처럼 써요. 뜻이 비슷한 단어로 유도하는 함정이에요.",
+        "D": "'이전의'라는 뜻이에요. prior to처럼 쓰고 in prior라는 표현은 없어요."
+      },
+      "trap_code": {
+        "A": null,
+        "B": "COLLOCATION_MISMATCH",
+        "C": "COLLOCATION_MISMATCH",
+        "D": "COLLOCATION_MISMATCH"
+      },
+      "key_point": "'미리'는 in advance 또는 ahead of time으로 써요. 전치사 in과 짝을 이루는 것은 advance뿐이에요.",
+      "vocab": [
+        {
+          "word": "in advance",
+          "pos": "phr.",
+          "meaning_ko": "미리, 사전에",
+          "level": "기초"
+        },
+        {
+          "word": "time off",
+          "pos": "n.",
+          "meaning_ko": "휴가",
+          "level": "기초"
+        },
+        {
+          "word": "request",
+          "pos": "n.",
+          "meaning_ko": "요청, 신청",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 휴가 신청 규정. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000039",
+      "part": 5,
+      "stem": "All contractors working at the Pellwood site must ------- with the safety regulations listed in the handbook.",
+      "options": {
+        "A": "observe",
+        "B": "follow",
+        "C": "comply",
+        "D": "adhere"
+      },
+      "answer": "C",
+      "type_tag": "P5-VOC.COLL",
+      "sub_tags": [],
+      "difficulty_expert": 4,
+      "target_track": [
+        "450-495"
+      ],
+      "vocab_level": "중급",
+      "explanation_ko": "정답은 (C) comply예요. 해석: Pellwood 현장에서 일하는 모든 도급업체는 안내서에 나온 안전 규정을 준수해야 해요. 네 보기 모두 '(규칙을) 지키다'라는 뜻이라 빈칸 뒤 전치사 with가 결정적 단서예요. comply with가 맞는 짝이에요. (A) observe와 (B) follow는 타동사라 with 없이 목적어를 바로 받아요. (D) adhere는 adhere to로 써요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "타동사라 observe the regulations처럼 전치사 없이 써요. with와 함께 쓸 수 없어요.",
+        "B": "타동사라 follow the regulations처럼 써요. with가 붙으면 틀려요.",
+        "C": "정답: comply with (~을 준수하다)예요.",
+        "D": "뜻은 같지만 adhere to로 써요. 전치사가 맞지 않아요. 같은 뜻 다른 전치사 함정이에요."
+      },
+      "trap_code": {
+        "A": "VERB_PATTERN",
+        "B": "VERB_PATTERN",
+        "C": null,
+        "D": "COLLOCATION_MISMATCH"
+      },
+      "key_point": "'규칙을 지키다'는 comply with, adhere to, conform to, abide by / observe, follow + 목적어로 전치사 짝을 함께 외워요.",
+      "vocab": [
+        {
+          "word": "contractor",
+          "pos": "n.",
+          "meaning_ko": "도급업체, 계약자",
+          "level": "중급"
+        },
+        {
+          "word": "comply with",
+          "pos": "phr.",
+          "meaning_ko": "~을 준수하다",
+          "level": "중급"
+        },
+        {
+          "word": "regulation",
+          "pos": "n.",
+          "meaning_ko": "규정",
+          "level": "중급"
+        },
+        {
+          "word": "adhere to",
+          "pos": "phr.",
+          "meaning_ko": "~을 고수하다, 지키다",
+          "level": "고급"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 건설 현장 안전 규정. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    },
+    {
+      "item_id": "RC-P5-000040",
+      "part": 5,
+      "stem": "The IT department will ------- the new laptops for all incoming employees before their first day.",
+      "options": {
+        "A": "turn down",
+        "B": "set up",
+        "C": "call off",
+        "D": "fill out"
+      },
+      "answer": "B",
+      "type_tag": "P5-VOC.PV",
+      "sub_tags": [],
+      "difficulty_expert": 2,
+      "target_track": [
+        "400-450"
+      ],
+      "vocab_level": "기초",
+      "explanation_ko": "정답은 (B) set up이에요. 해석: IT 부서는 신입 직원 모두를 위해 첫 출근 전에 새 노트북을 설치해 둘 거예요. 노트북을 쓸 수 있게 준비하는 것이니 set up(설치하다, 설정하다)이 맞아요. (A) turn down은 '거절하다, (소리를) 줄이다', (C) call off는 '취소하다', (D) fill out은 '(서류를) 작성하다'라서 노트북과 어울리지 않아요. 신입 직원이 첫날 서류를 작성한다는 연상으로 (D)를 고르면 함정에 걸려요.",
+      "evidence_quote": "",
+      "distractor_rationale": {
+        "A": "'거절하다, (소리·온도를) 낮추다'라는 뜻이에요. 노트북을 준비하는 문맥과 맞지 않아요.",
+        "B": "정답: '(장비를) 설치하다, 설정하다'라는 구동사예요.",
+        "C": "'취소하다'라는 뜻이에요. 행사·회의에 쓰고 노트북과는 어울리지 않아요.",
+        "D": "'(서류를) 작성하다'라는 뜻이에요. 신입 직원 → 서류 작성이라는 연상을 노린 함정이에요."
+      },
+      "trap_code": {
+        "A": "MEANING_NEAR_MISS",
+        "B": null,
+        "C": "MEANING_NEAR_MISS",
+        "D": "COLLOCATION_MISMATCH"
+      },
+      "key_point": "구동사는 목적어와의 짝으로 외워요: set up equipment(장비 설치), fill out a form(양식 작성), call off a meeting(회의 취소).",
+      "vocab": [
+        {
+          "word": "set up",
+          "pos": "phr. v.",
+          "meaning_ko": "설치하다, 설정하다",
+          "level": "기초"
+        },
+        {
+          "word": "incoming employee",
+          "pos": "n.",
+          "meaning_ko": "신입 직원",
+          "level": "중급"
+        },
+        {
+          "word": "fill out",
+          "pos": "phr. v.",
+          "meaning_ko": "(양식을) 작성하다",
+          "level": "기초"
+        }
+      ],
+      "author_id": "ai-writer-p5",
+      "source_note": "자체 창작. 착상: 신입 직원 장비 준비. 참고 자료 문장 복사 없음",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-reviewer",
+      "reviewer_2_id": "",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 블라인드 풀이 + 웹 구절 검색 1건 (일치 없음)"
+      }
+    }
+  ]
+}

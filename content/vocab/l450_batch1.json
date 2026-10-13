@@ -1,0 +1,494 @@
+{
+  "cards": [
+    {
+      "word_id": "VC-5-0001",
+      "lemma": "accordingly",
+      "pos": "adv",
+      "meaning_ko": "그에 맞게, 그에 따라",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Guests who need a late checkout should tell the front desk so that housekeeping can plan accordingly.",
+          "ko": "늦은 체크아웃이 필요한 투숙객은 객실 관리팀이 그에 맞게 계획을 세울 수 있도록 프런트에 알려 주십시오."
+        }
+      ],
+      "collocations": [
+        "plan accordingly",
+        "adjust accordingly",
+        "be priced accordingly"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "accordance"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "correspondingly"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(토익 Part 5·7 비즈니스 문서 맥락), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0002",
+      "lemma": "commensurate",
+      "pos": "adj",
+      "meaning_ko": "(~에) 상응하는, 걸맞은",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The bonus for the Ferrin Bay project will be commensurate with each team member's contribution.",
+          "ko": "페린 베이 프로젝트 보너스는 각 팀원의 기여도에 상응하는 수준이 될 것이다."
+        }
+      ],
+      "collocations": [
+        "commensurate with experience",
+        "be commensurate with",
+        "a salary commensurate with qualifications"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "commensurately"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "commemorate",
+          "note_ko": "commensurate: 상응하는 / commemorate: 기념하다"
+        }
+      ],
+      "paraphrases": [
+        "in line with",
+        "proportionate to"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-VOC.COLL",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(계약·인사 문서의 고난도 형식어), 공개 목록 대조 안 함; 레벨 근거: 450-①②; 배치고사 A폼 어휘 체크 495 구간 대리(proxy) 문항에 사용(495 카드 없음, 카드 레벨은 450); 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0003",
+      "lemma": "comply",
+      "pos": "v",
+      "meaning_ko": "(규정 등을) 준수하다, 따르다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "All suppliers must comply with the hygiene standards listed in Section 4 of the agreement.",
+          "ko": "모든 공급업체는 계약서 4절에 나와 있는 위생 기준을 준수해야 한다."
+        }
+      ],
+      "collocations": [
+        "comply with regulations",
+        "fail to comply with",
+        "fully comply with"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "compliance"
+        },
+        {
+          "pos": "adj",
+          "form": "compliant"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "abide by",
+        "adhere to",
+        "follow"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-VOC.COLL",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(토익 Part 5·7 비즈니스 문서 맥락), 공개 목록 대조 안 함; 레벨 근거: 450-①③; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Every new machine is tested for ------- with national safety codes.",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0004",
+      "lemma": "contingent",
+      "pos": "adj",
+      "meaning_ko": "조건부인, (~에) 달려 있는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The opening of the Marlow Street branch is contingent on the city issuing a building permit.",
+          "ko": "말로 가 지점의 개점은 시가 건축 허가를 내 주는지에 달려 있다."
+        }
+      ],
+      "collocations": [
+        "contingent on approval",
+        "contingent upon funding",
+        "be contingent on"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "contingency"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "dependent on",
+        "conditional on"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-VOC.COLL",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(계약·인사 문서의 고난도 형식어), 공개 목록 대조 안 함; 레벨 근거: 450-①②; 배치고사 A폼 어휘 체크 495 구간 대리(proxy) 문항에 사용(495 카드 없음, 카드 레벨은 450); 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0005",
+      "lemma": "discrepancy",
+      "pos": "n",
+      "meaning_ko": "불일치, 차이",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "An auditor at Pendrick Logistics found a discrepancy between the shipping log and the warehouse records.",
+          "ko": "펜드릭 물류의 감사관이 배송 일지와 창고 기록 사이의 불일치를 발견했다."
+        }
+      ],
+      "collocations": [
+        "a discrepancy between",
+        "a discrepancy in the figures",
+        "resolve a discrepancy",
+        "notice a discrepancy"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "discretion",
+          "note_ko": "discrepancy: 불일치 / discretion: 재량, 신중함"
+        }
+      ],
+      "paraphrases": [
+        "inconsistency",
+        "mismatch"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(토익 Part 5·7 비즈니스 문서 맥락), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0006",
+      "lemma": "expedite",
+      "pos": "v",
+      "meaning_ko": "신속히 처리하다, 앞당기다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "For an extra fee, Corlett Printing can expedite your order and deliver it within two days.",
+          "ko": "추가 요금을 내면 콜렛 인쇄는 주문을 신속히 처리해 이틀 안에 배송해 드릴 수 있다."
+        }
+      ],
+      "collocations": [
+        "expedite the process",
+        "expedite an order",
+        "expedite delivery"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "expeditious"
+        },
+        {
+          "pos": "adv",
+          "form": "expeditiously"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "speed up",
+        "fast-track"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(토익 Part 5·7 비즈니스 문서 맥락), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Okafor thanked the team for handling the request so -------.",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0007",
+      "lemma": "provision",
+      "pos": "n",
+      "meaning_ko": "(계약서 등의) 조항",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A provision in the lease allows the tenant to end the contract early with sixty days' notice.",
+          "ko": "임대차 계약서의 한 조항은 세입자가 60일 전에 통지하면 계약을 일찍 끝낼 수 있게 허용한다."
+        }
+      ],
+      "collocations": [
+        "a provision of the contract",
+        "under the provisions of",
+        "include a provision"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [],
+      "paraphrases": [
+        "clause"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(계약·인사 문서의 고난도 형식어), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 배치고사 A폼 어휘 체크 495 구간 대리(proxy) 문항에 사용(495 카드 없음, 카드 레벨은 450); 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0008",
+      "lemma": "rectify",
+      "pos": "v",
+      "meaning_ko": "바로잡다, 시정하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The manager of the Brightwell Hotel promised to rectify the booking mistake before the guests arrived.",
+          "ko": "브라이트웰 호텔 매니저는 투숙객이 도착하기 전에 예약 실수를 바로잡겠다고 약속했다."
+        }
+      ],
+      "collocations": [
+        "rectify the problem",
+        "rectify an error",
+        "rectify the situation"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "rectification"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "ratify",
+          "note_ko": "rectify: 바로잡다 / ratify: (공식) 승인하다"
+        }
+      ],
+      "paraphrases": [
+        "correct",
+        "put right"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(계약·인사 문서의 고난도 형식어), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 배치고사 A폼 어휘 체크 495 구간 대리(proxy) 문항에 사용(495 카드 없음, 카드 레벨은 450); 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0009",
+      "lemma": "stipulate",
+      "pos": "v",
+      "meaning_ko": "(계약 등에서) 규정하다, 명기하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Our contract with Quellmont Cleaning stipulates that the lobby windows must be washed twice a month.",
+          "ko": "퀠몬트 청소와 맺은 계약은 로비 창문을 한 달에 두 번 닦아야 한다고 규정한다."
+        }
+      ],
+      "collocations": [
+        "stipulate that",
+        "as stipulated in the contract",
+        "clearly stipulate"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "stipulation"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "stimulate",
+          "note_ko": "stipulate: 규정하다 / stimulate: 자극하다, 활성화하다"
+        }
+      ],
+      "paraphrases": [
+        "specify",
+        "set out"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(계약·인사 문서의 고난도 형식어), 공개 목록 대조 안 함; 레벨 근거: 450-①②; 배치고사 A폼 어휘 체크 495 구간 대리(proxy) 문항에 사용(495 카드 없음, 카드 레벨은 450); 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-5-0010",
+      "lemma": "tentative",
+      "pos": "adj",
+      "meaning_ko": "잠정적인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "We have set a tentative date of May 12 for the Dornvale product demonstration.",
+          "ko": "돈베일 제품 시연회의 잠정적인 날짜를 5월 12일로 정해 두었습니다."
+        }
+      ],
+      "collocations": [
+        "a tentative date",
+        "tentative plans",
+        "a tentative agreement"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "tentatively"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "temporary",
+          "note_ko": "tentative: 아직 확정 전인 / temporary: 일정 기간만인"
+        }
+      ],
+      "paraphrases": [
+        "provisional",
+        "not yet final"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P7-VOC.SYN"
+      ],
+      "level": "450",
+      "selection_note": "근거: 전문가 판단(토익 Part 5·7 비즈니스 문서 맥락), 공개 목록 대조 안 함; 레벨 근거: 450-②③; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-writer-vocab-5",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-5b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-5b): 예문·deriv_stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항·폼 5-gram 대조"
+      }
+    }
+  ]
+}

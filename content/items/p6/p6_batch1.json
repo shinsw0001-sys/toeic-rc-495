@@ -1,0 +1,1262 @@
+{
+  "sets": [
+    {
+      "set_id": "RC-P6-S-0001",
+      "part": 6,
+      "passage_type": "notice",
+      "passage_count": 1,
+      "business_context": "시설·행사",
+      "fictional_entities": [
+        "Brindlewood Tower",
+        "Quellmark Lift Services",
+        "Halvorsen Property Management",
+        "Pell Street"
+      ],
+      "passages": [
+        {
+          "title": "Notice to All Tenants of Brindlewood Tower",
+          "type": "notice",
+          "text": "Please be advised that the main elevators in Brindlewood Tower will be out of service from Monday, November 2, to Wednesday, November 4. During this period, technicians from Quellmark Lift Services will [1] new control panels in both elevators.\n\nTenants and visitors may use the freight elevator at the rear of the building while the work is in progress. [2] We recommend that you allow extra time to reach your office in the morning.\n\nWe understand that this work may cause some [3]. To make the process easier, staff members will be stationed in the lobby to direct visitors. [4], deliveries scheduled for these dates should be sent to the loading dock on Pell Street rather than to the front entrance.\n\nIf you have any questions, please contact the management office at extension 210.\n\nHalvorsen Property Management"
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P6-000001",
+          "part": 6,
+          "position_in_set": 1,
+          "stem": "[1]",
+          "options": {
+            "A": "install",
+            "B": "installed",
+            "C": "installing",
+            "D": "installation"
+          },
+          "answer": "A",
+          "type_tag": "P6-GRAM.V",
+          "sub_tags": [],
+          "difficulty_expert": 1,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (A) install이에요. 완성 문장은 \"During this period, technicians from Quellmark Lift Services will install new control panels in both elevators.\"(이 기간 동안 Quellmark Lift Services의 기술자들이 두 엘리베이터에 새 제어판을 설치할 거예요.)예요. 빈칸 앞에 조동사 will이 있어요. 조동사 뒤에는 동사원형이 와야 하므로 install이 들어가요. 빈칸 뒤 new control panels는 install의 목적어예요. installed(과거형·과거분사), installing(-ing형)은 will 바로 뒤에 올 수 없고, installation은 명사라 동사 자리에 들어갈 수 없어요.",
+          "evidence_quote": "During this period, technicians from Quellmark Lift Services will [1] new control panels in both elevators.",
+          "distractor_rationale": {
+            "A": "정답: 조동사 will 뒤에는 동사원형이 와요.",
+            "B": "과거형·과거분사예요. will 바로 뒤에는 쓸 수 없어요 (동사 형태 혼동).",
+            "C": "-ing형이에요. will be installing처럼 be가 있어야 가능해요 (동사 형태 혼동).",
+            "D": "명사예요. 목적어 new control panels를 받는 동사 자리에 명사는 올 수 없어요 (품사 혼동)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "TENSE_MISMATCH",
+            "C": "SIMILAR_FORM",
+            "D": "POS_CONFUSION"
+          },
+          "key_point": "조동사(will, can, must 등) 뒤에는 항상 동사원형이 와요.",
+          "vocab": [
+            {
+              "word": "install",
+              "pos": "v.",
+              "meaning_ko": "설치하다",
+              "level": "기초"
+            },
+            {
+              "word": "out of service",
+              "pos": "phr.",
+              "meaning_ko": "운행 중단된, 사용할 수 없는",
+              "level": "중급"
+            },
+            {
+              "word": "technician",
+              "pos": "n.",
+              "meaning_ko": "기술자",
+              "level": "중급"
+            },
+            {
+              "word": "control panel",
+              "pos": "n.",
+              "meaning_ko": "제어판",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 점검 공지(일반 시설 관리 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000002",
+          "part": 6,
+          "position_in_set": 2,
+          "stem": "[2]",
+          "options": {
+            "A": "The main elevators were last inspected two years ago.",
+            "B": "Repairs to the elevators were finished ahead of schedule.",
+            "C": "Please note that it can carry only six people at a time.",
+            "D": "The freight elevator will also be closed during this period."
+          },
+          "answer": "C",
+          "type_tag": "P6-INS.SENT",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (C)예요. \"Please note that it can carry only six people at a time.\"(이 엘리베이터는 한 번에 6명만 탈 수 있다는 점에 유의해 주세요.) 빈칸 앞 문장 \"Tenants and visitors may use the freight elevator at the rear of the building while the work is in progress.\"에서 화물 엘리베이터를 이용하라고 했고, 빈칸 뒤에서 \"We recommend that you allow extra time to reach your office in the morning.\"이라며 시간을 넉넉히 잡으라고 해요. (C)의 it은 화물 엘리베이터를 가리키고, '한 번에 6명만 탈 수 있다'는 내용이 '시간을 더 잡으라'는 권고의 이유가 돼요. (A)는 점검 이력이라 뒤의 권고와 이어지지 않고, (B)는 공사가 아직 시작 전이라는 내용과 맞지 않으며, (D)는 바로 앞 문장에서 공사 중 화물 엘리베이터를 이용하라고 한 안내와 정면으로 충돌해요.",
+          "evidence_quote": "Tenants and visitors may use the freight elevator at the rear of the building while the work is in progress. [2] We recommend that you allow extra time to reach your office in the morning.",
+          "distractor_rationale": {
+            "A": "엘리베이터 이야기라 주제는 비슷하지만, 앞의 화물 엘리베이터 안내와 뒤의 '시간 여유를 두라'는 권고를 이어 주지 못해요 (주제만 비슷한 함정).",
+            "B": "공사는 11월 2일부터 진행될 예정이라 '이미 일찍 끝났다'는 내용과 맞지 않아요 (시점 충돌).",
+            "C": "정답: it(화물 엘리베이터)의 수용 인원 제한이 바로 뒤 '시간을 더 잡으라'는 권고의 이유가 돼요.",
+            "D": "화물 엘리베이터도 닫힌다는 내용이라, 빈칸 앞에서 공사 중 화물 엘리베이터를 이용하라고 한 안내와 정면으로 충돌해요 (지문 내용과 충돌, freight elevator 단어 반복으로 끌어들이는 함정)."
+          },
+          "trap_code": {
+            "A": "MEANING_NEAR_MISS",
+            "B": "TENSE_MISMATCH",
+            "C": null,
+            "D": "OPPOSITE_INFO"
+          },
+          "key_point": "문장 삽입은 빈칸 앞뒤 문장을 둘 다 이어 주는 문장을 골라요. 대명사(it)가 앞 문장의 명사를 가리키는지 꼭 확인해요.",
+          "vocab": [
+            {
+              "word": "freight elevator",
+              "pos": "n.",
+              "meaning_ko": "화물 엘리베이터",
+              "level": "중급"
+            },
+            {
+              "word": "in progress",
+              "pos": "phr.",
+              "meaning_ko": "진행 중인",
+              "level": "중급"
+            },
+            {
+              "word": "allow extra time",
+              "pos": "phr.",
+              "meaning_ko": "시간을 넉넉히 잡다",
+              "level": "중급"
+            },
+            {
+              "word": "at a time",
+              "pos": "phr.",
+              "meaning_ko": "한 번에",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 점검 공지(일반 시설 관리 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 2,
+          "created_at": "2026-10-13",
+          "updated_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000003",
+          "part": 6,
+          "position_in_set": 3,
+          "stem": "[3]",
+          "options": {
+            "A": "attention",
+            "B": "inconvenience",
+            "C": "improvement",
+            "D": "experience"
+          },
+          "answer": "B",
+          "type_tag": "P6-VOC.WORD",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (B) inconvenience예요. \"We understand that this work may cause some inconvenience.\"(이번 작업으로 다소 불편을 드릴 수 있다는 점을 알고 있습니다.) 바로 뒤 문장 \"To make the process easier, staff members will be stationed in the lobby to direct visitors.\"에서 '이 과정을 더 수월하게 하기 위해' 직원을 배치한다고 했어요. 무언가가 불편하니까 쉽게 만들어 준다는 흐름이므로 '불편'이 맞아요. 앞 문단의 '시간을 넉넉히 잡으라'는 권고도 불편을 뒷받침해요. attention(주목), improvement(개선), experience(경험)는 뒤 문장의 '더 수월하게'와 이어지지 않아요.",
+          "evidence_quote": "To make the process easier, staff members will be stationed in the lobby to direct visitors.",
+          "distractor_rationale": {
+            "A": "attention은 '주목'이에요. cause some attention은 자연스럽지 않고 뒤의 '더 수월하게 하려고'와도 이어지지 않아요 (의미 혼동).",
+            "B": "정답: 뒤 문장에서 과정을 더 쉽게 만들어 준다고 했으므로 공사가 '불편'을 준다는 흐름이에요.",
+            "C": "improvement(개선)는 공사의 결과로 생각할 수 있지만, 바로 뒤에서 불편을 덜어 주는 조치가 나오므로 문맥과 맞지 않아요 (부분 정보 함정).",
+            "D": "experience(경험)는 '공사가 경험을 일으킨다'는 뜻이 되어 어색하고 뒤 문장과도 이어지지 않아요."
+          },
+          "trap_code": {
+            "A": "COLLOCATION_MISMATCH",
+            "B": null,
+            "C": "PARTIAL_INFO",
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "공지에서 'may cause some inconvenience'(불편을 드릴 수 있다) 뒤에는 보통 불편을 줄이는 조치가 이어져요. 빈칸 뒤 문장을 단서로 써요.",
+          "vocab": [
+            {
+              "word": "inconvenience",
+              "pos": "n.",
+              "meaning_ko": "불편",
+              "level": "중급"
+            },
+            {
+              "word": "station",
+              "pos": "v.",
+              "meaning_ko": "배치하다",
+              "level": "중급"
+            },
+            {
+              "word": "direct",
+              "pos": "v.",
+              "meaning_ko": "안내하다, 길을 알려 주다",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 점검 공지(일반 시설 관리 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000004",
+          "part": 6,
+          "position_in_set": 4,
+          "stem": "[4]",
+          "options": {
+            "A": "However",
+            "B": "As a result",
+            "C": "Otherwise",
+            "D": "In addition"
+          },
+          "answer": "D",
+          "type_tag": "P6-CTX.TRANS",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "300-400"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (D) In addition이에요. \"In addition, deliveries scheduled for these dates should be sent to the loading dock on Pell Street rather than to the front entrance.\"(또한 이 기간에 예정된 배송은 정문이 아닌 Pell Street의 하역장으로 보내야 해요.) 앞 문장 \"To make the process easier, staff members will be stationed in the lobby to direct visitors.\"는 공사 기간의 안내 조치 하나를 말하고, 빈칸 문장은 배송 관련 조치를 하나 더 알려 줘요. 같은 방향의 내용을 덧붙이므로 '또한'이 맞아요. However(그러나)는 반대 내용, As a result(그 결과)는 앞 문장이 원인일 때, Otherwise(그렇지 않으면)는 조건을 지키지 않았을 때를 말해요. 직원 배치 때문에 배송지가 바뀌는 것이 아니므로 As a result도 틀려요.",
+          "evidence_quote": "To make the process easier, staff members will be stationed in the lobby to direct visitors.",
+          "distractor_rationale": {
+            "A": "However는 앞 내용과 반대될 때 써요. 두 문장 모두 공사 기간 안내라 대조가 없어요 (연결어 의미 혼동).",
+            "B": "As a result는 앞 문장이 원인일 때 써요. 로비 직원 배치가 배송지 변경의 원인이 아니에요 (인과 오해).",
+            "C": "Otherwise는 '그렇지 않으면'이라는 조건 뜻이라 앞뒤 흐름과 맞지 않아요.",
+            "D": "정답: 앞의 안내 조치에 배송 관련 조치를 하나 더 덧붙이므로 '또한'이에요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "MEANING_NEAR_MISS",
+            "C": "MEANING_NEAR_MISS",
+            "D": null
+          },
+          "key_point": "접속부사는 빈칸 앞 문장과의 관계(추가·대조·결과·조건)를 먼저 정한 뒤 골라요. 같은 종류의 정보를 하나 더 말하면 In addition이에요.",
+          "vocab": [
+            {
+              "word": "loading dock",
+              "pos": "n.",
+              "meaning_ko": "하역장, 화물 적재장",
+              "level": "중급"
+            },
+            {
+              "word": "scheduled",
+              "pos": "adj.",
+              "meaning_ko": "예정된",
+              "level": "기초"
+            },
+            {
+              "word": "rather than",
+              "pos": "phr.",
+              "meaning_ko": "~ 대신에, ~보다는",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 건물 엘리베이터 점검 공지(일반 시설 관리 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P6-S-0002",
+      "part": 6,
+      "passage_type": "email",
+      "passage_count": 1,
+      "business_context": "주문·배송",
+      "fictional_entities": [
+        "Tessaline Home Goods",
+        "Rafael Montoya",
+        "Noor Haddad",
+        "Varo (dinner plate line)",
+        "Lindell collection",
+        "lumenpost.example.com",
+        "tessalinehome.example.com"
+      ],
+      "passages": [
+        {
+          "title": "Your order #58217",
+          "type": "email",
+          "text": "To: Rafael Montoya <rmontoya@lumenpost.example.com>\nFrom: Customer Care <care@tessalinehome.example.com>\nDate: March 5\nSubject: Your order #58217\n\nDear Mr. Montoya,\n\nThank you for your recent order of a set of six Varo dinner plates. Unfortunately, this item is temporarily out of stock at our warehouse. Our supplier has informed us that a new shipment [1] by the end of this month.\n\nWe can ship your plates as soon as they arrive. [2], we can send you a similar set from our Lindell collection right away at no extra cost. [3] Photos of both patterns are available on our website.\n\nPlease let us know which option you prefer by replying to this email. If we do not hear from you by March 12, we will hold your order until the original plates [4] back in stock. We apologize for the delay and appreciate your patience.\n\nSincerely,\n\nNoor Haddad\nCustomer Care Team, Tessaline Home Goods"
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P6-000005",
+          "part": 6,
+          "position_in_set": 1,
+          "stem": "[1]",
+          "options": {
+            "A": "arrived",
+            "B": "has arrived",
+            "C": "will arrive",
+            "D": "had arrived"
+          },
+          "answer": "C",
+          "type_tag": "P6-CTX.TENSE",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (C) will arrive예요. \"Our supplier has informed us that a new shipment will arrive by the end of this month.\"(공급업체가 새 물량이 이달 말까지 도착할 거라고 알려 왔어요.) 빈칸 문장만 보면 시제를 정하기 어려워요. 앞 문장 \"Unfortunately, this item is temporarily out of stock at our warehouse.\"에서 지금 재고가 없다고 했고, 다음 문단 \"We can ship your plates as soon as they arrive.\"에서 접시가 '도착하면' 보내겠다고 했어요. 즉 물량은 아직 도착하지 않았으므로 미래 시제가 맞아요. arrived, has arrived, had arrived는 모두 이미 도착했다는 뜻이라 '현재 품절' '도착하는 대로 발송'과 충돌해요.",
+          "evidence_quote": "We can ship your plates as soon as they arrive.",
+          "distractor_rationale": {
+            "A": "과거 시제예요. 이미 도착했다면 지금 품절일 이유가 없어요 (문맥 시제 불일치).",
+            "B": "현재완료예요. '이미 도착했다'는 뜻이라 뒤의 '도착하는 대로 발송'과 충돌해요 (문맥 시제 불일치).",
+            "C": "정답: 현재 품절이고 도착하면 발송하겠다고 했으니 도착은 미래의 일이에요.",
+            "D": "과거완료예요. 과거의 어느 시점보다 먼저 도착했다는 뜻이라 문맥과 맞지 않아요 (시제 혼동)."
+          },
+          "trap_code": {
+            "A": "TENSE_MISMATCH",
+            "B": "TENSE_MISMATCH",
+            "C": null,
+            "D": "TENSE_MISMATCH"
+          },
+          "key_point": "Part 6 시제 문제는 빈칸 문장 밖에서 '이미 일어난 일인지, 앞으로 일어날 일인지'를 알려 주는 단서를 찾아요.",
+          "vocab": [
+            {
+              "word": "out of stock",
+              "pos": "phr.",
+              "meaning_ko": "품절된, 재고가 없는",
+              "level": "기초"
+            },
+            {
+              "word": "supplier",
+              "pos": "n.",
+              "meaning_ko": "공급업체",
+              "level": "중급"
+            },
+            {
+              "word": "shipment",
+              "pos": "n.",
+              "meaning_ko": "배송 물량, 수송품",
+              "level": "중급"
+            },
+            {
+              "word": "temporarily",
+              "pos": "adv.",
+              "meaning_ko": "일시적으로",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 온라인 주문 상품 품절 안내와 대체 상품 제안(일반 주문·배송 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000006",
+          "part": 6,
+          "position_in_set": 2,
+          "stem": "[2]",
+          "options": {
+            "A": "Alternatively",
+            "B": "Therefore",
+            "C": "Similarly",
+            "D": "As a result"
+          },
+          "answer": "A",
+          "type_tag": "P6-CTX.TRANS",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A) Alternatively예요. \"Alternatively, we can send you a similar set from our Lindell collection right away at no extra cost.\"(아니면 Lindell 컬렉션의 비슷한 세트를 추가 비용 없이 바로 보내 드릴 수도 있어요.) 앞 문장 \"We can ship your plates as soon as they arrive.\"는 첫째 선택지(기다렸다가 받기)이고, 빈칸 문장은 둘째 선택지(대체 상품 바로 받기)예요. 다음 문단의 \"Please let us know which option you prefer\"에서 두 가지 중 하나를 고르라고 하므로, '그 대신, 아니면'을 뜻하는 Alternatively가 맞아요. Therefore·As a result는 앞 문장이 원인일 때, Similarly는 같은 종류의 내용을 나란히 말할 때 써요.",
+          "evidence_quote": "Please let us know which option you prefer by replying to this email.",
+          "distractor_rationale": {
+            "A": "정답: 두 가지 선택지를 제시하는 흐름이라 '아니면, 그 대신'이 맞아요.",
+            "B": "Therefore는 결과를 말해요. 원래 접시를 기다리는 것이 대체품을 보내는 이유가 되지 않아요 (인과 오해).",
+            "C": "Similarly는 '마찬가지로'예요. 두 문장은 비슷한 일이 아니라 서로 다른 선택지예요 (의미 혼동).",
+            "D": "As a result도 결과를 말해요. 앞 문장이 원인이 아니므로 맞지 않아요 (인과 오해)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "MEANING_NEAR_MISS",
+            "C": "MEANING_NEAR_MISS",
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "두 가지 방법 중 하나를 고르게 할 때 둘째 방법 앞에 Alternatively(아니면, 그 대신)를 써요. 뒤에 option, choice 같은 단어가 나오면 좋은 단서예요.",
+          "vocab": [
+            {
+              "word": "alternatively",
+              "pos": "adv.",
+              "meaning_ko": "그 대신에, 아니면",
+              "level": "중급"
+            },
+            {
+              "word": "at no extra cost",
+              "pos": "phr.",
+              "meaning_ko": "추가 비용 없이",
+              "level": "중급"
+            },
+            {
+              "word": "right away",
+              "pos": "phr.",
+              "meaning_ko": "즉시, 곧바로",
+              "level": "기초"
+            },
+            {
+              "word": "prefer",
+              "pos": "v.",
+              "meaning_ko": "선호하다",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 온라인 주문 상품 품절 안내와 대체 상품 제안(일반 주문·배송 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000007",
+          "part": 6,
+          "position_in_set": 3,
+          "stem": "[3]",
+          "options": {
+            "A": "Your payment has already been refunded to your credit card.",
+            "B": "We shipped the plates to your home address this morning.",
+            "C": "Our warehouse will be closed for inventory next week.",
+            "D": "These plates are the same size as the Varo set but come in a slightly darker blue."
+          },
+          "answer": "D",
+          "type_tag": "P6-INS.SENT",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. \"These plates are the same size as the Varo set but come in a slightly darker blue.\"(이 접시들은 Varo 세트와 크기가 같지만 색이 약간 더 짙은 파란색이에요.) 앞 문장 \"we can send you a similar set from our Lindell collection right away at no extra cost\"에서 Lindell 세트를 제안했고, 뒤 문장 \"Photos of both patterns are available on our website.\"에서 '두 무늬 모두'의 사진을 보라고 해요. (D)는 These plates로 Lindell 세트를 받아 Varo 세트와 비교하므로 앞뒤를 자연스럽게 이어 줘요. (A)는 환불 이야기라 주문을 유지하겠다는 내용과 충돌하고, (B)는 품절이라는 내용과, (C)는 '바로 보내 줄 수 있다'는 내용과 충돌해요.",
+          "evidence_quote": "[2], we can send you a similar set from our Lindell collection right away at no extra cost. [3] Photos of both patterns are available on our website.",
+          "distractor_rationale": {
+            "A": "이미 환불했다면 고객에게 선택을 묻거나 주문을 보류할 이유가 없어요 (지문 내용과 충돌).",
+            "B": "현재 품절이라고 했으므로 오늘 아침에 발송했다는 내용과 맞지 않아요 (지문 내용과 충돌).",
+            "C": "창고가 다음 주에 문을 닫으면 대체 상품을 '바로' 보낼 수 있다는 앞 문장과 맞지 않고, 뒤의 사진 안내와도 이어지지 않아요.",
+            "D": "정답: These plates가 Lindell 세트를 가리키고, 두 세트를 비교한 뒤 '두 무늬의 사진'으로 자연스럽게 이어져요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "OPPOSITE_INFO",
+            "C": "NOT_MENTIONED",
+            "D": null
+          },
+          "key_point": "삽입 문장 속 지시어(These, both)가 앞 문장의 무엇을 가리키는지, 뒤 문장으로 이어지는지 함께 확인해요.",
+          "vocab": [
+            {
+              "word": "collection",
+              "pos": "n.",
+              "meaning_ko": "(상품) 컬렉션, 제품군",
+              "level": "중급"
+            },
+            {
+              "word": "pattern",
+              "pos": "n.",
+              "meaning_ko": "무늬, 패턴",
+              "level": "기초"
+            },
+            {
+              "word": "refund",
+              "pos": "v.",
+              "meaning_ko": "환불하다",
+              "level": "중급"
+            },
+            {
+              "word": "inventory",
+              "pos": "n.",
+              "meaning_ko": "재고 조사, 재고",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 온라인 주문 상품 품절 안내와 대체 상품 제안(일반 주문·배송 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000008",
+          "part": 6,
+          "position_in_set": 4,
+          "stem": "[4]",
+          "options": {
+            "A": "will be",
+            "B": "are",
+            "C": "were",
+            "D": "being"
+          },
+          "answer": "B",
+          "type_tag": "P6-GRAM.TENSE",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B) are예요. \"we will hold your order until the original plates are back in stock\"(원래 주문한 접시가 다시 입고될 때까지 주문을 보류해 둘게요.) until, when, as soon as, before처럼 '시간'을 나타내는 접속사가 이끄는 부사절에서는 미래의 일이라도 현재 시제를 써요. 주절에 will hold가 있지만 until 절에는 will be가 아니라 are가 와요. 주어 the original plates가 복수라 is가 아닌 are예요. will be는 시간 부사절 규칙을 어긴 함정이고, were는 과거라 미래 상황과 맞지 않으며, being은 주어 뒤 동사 자리에 올 수 없어요.",
+          "evidence_quote": "If we do not hear from you by March 12, we will hold your order until the original plates [4] back in stock.",
+          "distractor_rationale": {
+            "A": "의미상 미래라서 고르기 쉽지만, 시간 부사절(until 절)에서는 미래를 현재 시제로 나타내요 (시제 함정).",
+            "B": "정답: 시간 부사절이므로 현재 시제, 주어가 복수이므로 are예요.",
+            "C": "과거 시제예요. 앞으로 입고될 상황과 맞지 않아요 (시제 불일치).",
+            "D": "being은 동사가 아니라서 until 절의 동사 자리에 올 수 없어요 (동사 형태 혼동)."
+          },
+          "trap_code": {
+            "A": "TENSE_MISMATCH",
+            "B": null,
+            "C": "TENSE_MISMATCH",
+            "D": "SIMILAR_FORM"
+          },
+          "key_point": "시간·조건 부사절(until, when, as soon as, if 등)에서는 미래의 일도 현재 시제로 써요.",
+          "vocab": [
+            {
+              "word": "hold",
+              "pos": "v.",
+              "meaning_ko": "보류하다, 잡아 두다",
+              "level": "중급"
+            },
+            {
+              "word": "back in stock",
+              "pos": "phr.",
+              "meaning_ko": "재입고된",
+              "level": "중급"
+            },
+            {
+              "word": "appreciate",
+              "pos": "v.",
+              "meaning_ko": "감사하다",
+              "level": "중급"
+            },
+            {
+              "word": "patience",
+              "pos": "n.",
+              "meaning_ko": "인내, 기다려 줌",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 온라인 주문 상품 품절 안내와 대체 상품 제안(일반 주문·배송 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P6-S-0003",
+      "part": 6,
+      "passage_type": "memo",
+      "passage_count": 1,
+      "business_context": "사내 공지",
+      "fictional_entities": [
+        "Tomasz Lindqvist",
+        "Tallyroot (inventory software)"
+      ],
+      "passages": [
+        {
+          "title": "New inventory software",
+          "type": "memo",
+          "text": "To: All warehouse supervisors\nFrom: Tomasz Lindqvist, Operations Manager\nDate: April 6\nSubject: New inventory software\n\nStarting in May, all of our distribution centers will switch to a new inventory tracking program called Tallyroot. The program will replace the spreadsheets that supervisors currently [1] to record incoming shipments.\n\nTo prepare for this change, every supervisor must attend a two-hour training session. Sessions will be held in Conference Room B on April 20, 21, and 22. [2] Please register for one session by April 15 through the staff portal.\n\nAfter completing the training, supervisors will be [3] for showing their team members how to use Tallyroot. [4], we ask that you schedule short practice sessions with your staff before the end of April.\n\nThank you for your cooperation."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P6-000009",
+          "part": 6,
+          "position_in_set": 1,
+          "stem": "[1]",
+          "options": {
+            "A": "uses",
+            "B": "use",
+            "C": "using",
+            "D": "to use"
+          },
+          "answer": "B",
+          "type_tag": "P6-GRAM.AGR",
+          "sub_tags": [],
+          "difficulty_expert": 2,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (B) use예요. \"The program will replace the spreadsheets that supervisors currently use to record incoming shipments.\"(이 프로그램은 현재 관리자들이 입고 물품을 기록하는 데 쓰는 스프레드시트를 대신할 거예요.) that supervisors currently ___는 앞의 the spreadsheets를 꾸미는 관계절이에요. 관계절 안에도 동사가 하나 필요하고, 그 주어는 supervisors(복수)예요. 복수 주어에 맞는 현재 시제 동사는 use예요. uses는 단수 주어용이라 수 일치가 틀리고, using과 to use는 동사가 아니라서 관계절의 동사 자리를 채울 수 없어요. 바로 앞 단어 currently가 아니라 그 앞의 주어 supervisors를 확인해야 해요.",
+          "evidence_quote": "The program will replace the spreadsheets that supervisors currently [1] to record incoming shipments.",
+          "distractor_rationale": {
+            "A": "3인칭 단수형이에요. 주어 supervisors가 복수라 수가 맞지 않아요 (수 일치 함정).",
+            "B": "정답: 관계절의 주어 supervisors가 복수이므로 동사원형과 같은 형태인 use예요.",
+            "C": "-ing형은 혼자서 동사 역할을 할 수 없어요 (동사 형태 혼동).",
+            "D": "to부정사는 동사 자리에 올 수 없어요. 뒤에 이미 to record가 있어 to use를 고르기 쉬운 함정이에요."
+          },
+          "trap_code": {
+            "A": "NUMBER_AGREEMENT",
+            "B": null,
+            "C": "SIMILAR_FORM",
+            "D": "WORD_REPEAT_TRAP"
+          },
+          "key_point": "관계절 안에도 주어와 동사가 있어요. 부사(currently 등)를 건너뛰고 관계절의 주어를 찾아 수를 맞춰요.",
+          "vocab": [
+            {
+              "word": "replace",
+              "pos": "v.",
+              "meaning_ko": "대체하다",
+              "level": "기초"
+            },
+            {
+              "word": "record",
+              "pos": "v.",
+              "meaning_ko": "기록하다",
+              "level": "기초"
+            },
+            {
+              "word": "incoming",
+              "pos": "adj.",
+              "meaning_ko": "들어오는",
+              "level": "중급"
+            },
+            {
+              "word": "distribution center",
+              "pos": "n.",
+              "meaning_ko": "물류 센터",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 사내 재고 관리 프로그램 교체와 교육 일정 안내(일반 사내 공지 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000010",
+          "part": 6,
+          "position_in_set": 2,
+          "stem": "[2]",
+          "options": {
+            "A": "The old spreadsheets will still be used until the end of the year.",
+            "B": "Conference Room B will be closed for repairs throughout April.",
+            "C": "Thank you for attending the session that was held last week.",
+            "D": "Each session has room for up to fifteen participants."
+          },
+          "answer": "D",
+          "type_tag": "P6-INS.SENT",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D)예요. \"Each session has room for up to fifteen participants.\"(각 교육 회차는 최대 15명까지 참가할 수 있어요.) 빈칸 앞 \"Sessions will be held in Conference Room B on April 20, 21, and 22.\"에서 교육 일정을 알리고, 빈칸 뒤 \"Please register for one session by April 15 through the staff portal.\"에서 미리 등록하라고 해요. 회차별 정원이 정해져 있다는 정보가 들어가면 '등록하라'는 요청으로 자연스럽게 이어져요. (A)는 5월부터 새 프로그램으로 바꾼다는 내용과, (B)는 그 회의실에서 4월에 교육을 한다는 내용과, (C)는 교육이 앞으로(4월 20~22일) 열린다는 내용과 충돌해요.",
+          "evidence_quote": "Sessions will be held in Conference Room B on April 20, 21, and 22. [2] Please register for one session by April 15 through the staff portal.",
+          "distractor_rationale": {
+            "A": "첫 문단에서 5월부터 새 프로그램으로 바꾼다고 했으므로 연말까지 기존 스프레드시트를 쓴다는 내용과 충돌해요.",
+            "B": "4월 20~22일에 Conference Room B에서 교육을 한다고 했으므로 4월 내내 닫는다는 내용과 충돌해요 (지문 단어 반복 함정).",
+            "C": "교육은 메모 날짜(4월 6일) 이후에 열리므로 '지난주 교육에 참석해 줘서 고맙다'는 시점이 맞지 않아요.",
+            "D": "정답: 정원 제한 정보가 바로 뒤의 '미리 등록하라'는 요청과 이어져요."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": "WORD_REPEAT_TRAP",
+            "C": "TENSE_MISMATCH",
+            "D": null
+          },
+          "key_point": "문장 삽입은 앞뒤 문장과 사실이 충돌하지 않는지 먼저 걸러 내고, 남은 보기가 뒤 문장의 요청·결론으로 이어지는지 확인해요.",
+          "vocab": [
+            {
+              "word": "participant",
+              "pos": "n.",
+              "meaning_ko": "참가자",
+              "level": "중급"
+            },
+            {
+              "word": "register",
+              "pos": "v.",
+              "meaning_ko": "등록하다",
+              "level": "기초"
+            },
+            {
+              "word": "portal",
+              "pos": "n.",
+              "meaning_ko": "(웹) 포털, 접속 창구",
+              "level": "중급"
+            },
+            {
+              "word": "throughout",
+              "pos": "prep.",
+              "meaning_ko": "~ 내내",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 사내 재고 관리 프로그램 교체와 교육 일정 안내(일반 사내 공지 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000011",
+          "part": 6,
+          "position_in_set": 3,
+          "stem": "[3]",
+          "options": {
+            "A": "responsible",
+            "B": "reliable",
+            "C": "accessible",
+            "D": "considerate"
+          },
+          "answer": "A",
+          "type_tag": "P6-VOC.WORD",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (A) responsible이에요. \"After completing the training, supervisors will be responsible for showing their team members how to use Tallyroot.\"(교육을 마친 후 관리자들은 팀원들에게 Tallyroot 사용법을 알려 줄 책임을 맡게 돼요.) be responsible for -ing는 '~할 책임이 있다, ~을 맡다'라는 뜻이에요. 다음 문장에서 관리자에게 직원들과 연습 시간을 잡으라고 요청하므로, 관리자가 팀원 교육을 맡는다는 흐름과 맞아요. reliable(믿을 만한), accessible(접근할 수 있는), considerate(배려심 있는)는 모두 형용사라 품사는 맞지만, for -ing와 함께 '~할 책임이 있다'는 뜻을 만들지 못해요.",
+          "evidence_quote": "After completing the training, supervisors will be [3] for showing their team members how to use Tallyroot.",
+          "distractor_rationale": {
+            "A": "정답: be responsible for -ing(~할 책임이 있다)가 문맥에 맞아요.",
+            "B": "reliable은 '믿을 만한'이에요. responsible과 모양이 비슷해 고르기 쉽지만 for -ing와 어울려 '맡다'는 뜻이 되지 않아요 (형태 유사 함정).",
+            "C": "accessible은 '이용할 수 있는'이에요. 사람이 무엇을 보여 주는 일에 대해 쓰지 않아요 (의미 혼동).",
+            "D": "considerate는 '배려하는'이에요. 업무를 맡는다는 뜻이 없어요 (의미 혼동)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "SIMILAR_FORM",
+            "C": "MEANING_NEAR_MISS",
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "be responsible for + 명사/동명사 = ~을 책임지다, ~을 맡다. 형용사 어휘 문제는 뒤에 오는 전치사와의 짝을 함께 봐요.",
+          "vocab": [
+            {
+              "word": "responsible",
+              "pos": "adj.",
+              "meaning_ko": "책임이 있는",
+              "level": "중급"
+            },
+            {
+              "word": "reliable",
+              "pos": "adj.",
+              "meaning_ko": "믿을 만한",
+              "level": "중급"
+            },
+            {
+              "word": "considerate",
+              "pos": "adj.",
+              "meaning_ko": "배려하는, 사려 깊은",
+              "level": "고급"
+            },
+            {
+              "word": "complete",
+              "pos": "v.",
+              "meaning_ko": "마치다, 완료하다",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 사내 재고 관리 프로그램 교체와 교육 일정 안내(일반 사내 공지 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000012",
+          "part": 6,
+          "position_in_set": 4,
+          "stem": "[4]",
+          "options": {
+            "A": "Even so",
+            "B": "By contrast",
+            "C": "To that end",
+            "D": "Instead"
+          },
+          "answer": "C",
+          "type_tag": "P6-CTX.TRANS",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "400-450"
+          ],
+          "vocab_level": "고급",
+          "explanation_ko": "정답은 (C) To that end예요. \"To that end, we ask that you schedule short practice sessions with your staff before the end of April.\"(이를 위해 4월 말 전에 직원들과 짧은 연습 시간을 잡아 주세요.) 앞 문장 \"After completing the training, supervisors will be responsible for showing their team members how to use Tallyroot.\"에서 목표(팀원에게 사용법 알려 주기)를 말했고, 빈칸 문장은 그 목표를 이루기 위한 방법(연습 시간 잡기)이에요. To that end는 '그 목적을 위해'라는 뜻이에요. Even so(그렇다 하더라도)와 By contrast(그에 반해)는 앞 내용과 맞서는 내용 앞에 쓰고, Instead(그 대신)는 앞의 일을 하지 않고 다른 일을 할 때 써요. 연습 시간은 팀원을 가르치는 일 자체이므로 '대신'이 아니에요.",
+          "evidence_quote": "After completing the training, supervisors will be [3] for showing their team members how to use Tallyroot.",
+          "distractor_rationale": {
+            "A": "Even so는 양보(그렇더라도)예요. 앞 문장과 맞서는 내용이 없어요 (연결어 의미 혼동).",
+            "B": "By contrast는 두 대상을 대조할 때 써요. 두 문장은 같은 목표를 향하고 있어요 (반대 관계 오해).",
+            "C": "정답: 앞 문장의 목표(팀원에게 사용법 알려 주기)를 이루기 위한 구체적 방법을 말하므로 '이를 위해'예요.",
+            "D": "Instead는 앞의 일을 하지 않고 대신 다른 일을 한다는 뜻이에요. 연습 시간은 팀원 교육을 대신하는 것이 아니라 그 방법이에요."
+          },
+          "trap_code": {
+            "A": "MEANING_NEAR_MISS",
+            "B": "OPPOSITE_INFO",
+            "C": null,
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "To that end(= For that purpose)는 앞 문장의 목표를 이루기 위한 방법을 말할 때 써요. 앞 문장이 목표, 뒤 문장이 실행 방법이면 정답 후보예요.",
+          "vocab": [
+            {
+              "word": "to that end",
+              "pos": "phr.",
+              "meaning_ko": "그 목적을 위해, 이를 위해",
+              "level": "고급"
+            },
+            {
+              "word": "even so",
+              "pos": "phr.",
+              "meaning_ko": "그렇다 하더라도",
+              "level": "중급"
+            },
+            {
+              "word": "by contrast",
+              "pos": "phr.",
+              "meaning_ko": "그에 반해",
+              "level": "중급"
+            },
+            {
+              "word": "cooperation",
+              "pos": "n.",
+              "meaning_ko": "협조",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 사내 재고 관리 프로그램 교체와 교육 일정 안내(일반 사내 공지 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "RC-P6-S-0004",
+      "part": 6,
+      "passage_type": "article",
+      "passage_count": 1,
+      "business_context": "기업 소식·사업 확장",
+      "fictional_entities": [
+        "Quillfeather Appliances",
+        "Halden City",
+        "Bexley Industrial Park",
+        "Aiko Sorensen",
+        "Halden Community College",
+        "Dunmore Road"
+      ],
+      "passages": [
+        {
+          "title": "Quillfeather Appliances to Build Second Plant",
+          "type": "article",
+          "text": "HALDEN CITY (May 18)—Quillfeather Appliances announced yesterday that it will open a second manufacturing plant in the Bexley Industrial Park next spring. The facility will produce the company's energy-efficient water heaters, a product line [1] sales have grown steadily over the past three years.\n\nAccording to company president Aiko Sorensen, the plant will create approximately 240 jobs. Most of the positions will be filled by local residents, and Quillfeather plans to work with Halden Community College to train new employees. [2]\n\nMs. Sorensen noted that the decision to expand was not made [3]. The company spent nearly a year comparing potential sites before choosing Bexley. \"The park offered the space we needed, as well as easy access to the highway,\" she said.\n\nConstruction is scheduled to begin in July. Until the new plant opens, all orders will continue to be filled at [4] existing factory on Dunmore Road."
+        }
+      ],
+      "items": [
+        {
+          "item_id": "RC-P6-000013",
+          "part": 6,
+          "position_in_set": 1,
+          "stem": "[1]",
+          "options": {
+            "A": "which",
+            "B": "that",
+            "C": "what",
+            "D": "whose"
+          },
+          "answer": "D",
+          "type_tag": "P6-GRAM.REL",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "중급",
+          "explanation_ko": "정답은 (D) whose예요. \"The facility will produce the company's energy-efficient water heaters, a product line whose sales have grown steadily over the past three years.\"(이 시설은 회사의 고효율 온수기를 생산할 예정인데, 이 제품군은 지난 3년간 판매가 꾸준히 늘었어요.) 빈칸 뒤 sales have grown은 주어(sales)와 동사(have grown)가 모두 갖춰진 완전한 절이에요. 앞의 a product line과 sales는 '제품군의 판매'라는 소유 관계라서 소유격 관계대명사 whose가 와야 해요. which와 that은 뒤에 주어나 목적어가 빠진 불완전한 절이 와야 하는데 여기서는 빠진 성분이 없어요. what은 선행사(a product line)가 있을 때 쓸 수 없어요.",
+          "evidence_quote": "The facility will produce the company's energy-efficient water heaters, a product line [1] sales have grown steadily over the past three years.",
+          "distractor_rationale": {
+            "A": "which 뒤에는 주어나 목적어가 빠진 절이 와야 해요. sales have grown은 빠진 성분이 없는 완전한 절이에요 (관계사 혼동).",
+            "B": "that도 which와 같은 이유로 맞지 않고, 콤마 뒤 설명하는 자리라 더 어색해요 (관계사 혼동).",
+            "C": "what은 선행사를 포함하므로 a product line 같은 선행사 뒤에 올 수 없어요 (관계사 혼동).",
+            "D": "정답: '제품군의 판매'라는 소유 관계이고 뒤가 완전한 절이므로 소유격 관계대명사 whose예요."
+          },
+          "trap_code": {
+            "A": "PREP_CONJ_CONFUSION",
+            "B": "PREP_CONJ_CONFUSION",
+            "C": "SIMILAR_FORM",
+            "D": null
+          },
+          "key_point": "관계사 뒤 절이 완전하고, 선행사와 뒤의 명사가 '~의' 관계라면 whose를 써요. which·that 뒤에는 성분이 하나 빠진 절이 와요.",
+          "vocab": [
+            {
+              "word": "manufacturing plant",
+              "pos": "n.",
+              "meaning_ko": "제조 공장",
+              "level": "중급"
+            },
+            {
+              "word": "energy-efficient",
+              "pos": "adj.",
+              "meaning_ko": "에너지 효율이 높은",
+              "level": "중급"
+            },
+            {
+              "word": "product line",
+              "pos": "n.",
+              "meaning_ko": "제품군",
+              "level": "중급"
+            },
+            {
+              "word": "steadily",
+              "pos": "adv.",
+              "meaning_ko": "꾸준히",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 가전 제조사의 신규 공장 설립 지역 뉴스(일반 사업 확장 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000014",
+          "part": 6,
+          "position_in_set": 2,
+          "stem": "[2]",
+          "options": {
+            "A": "The plant will be the first factory the company has ever operated.",
+            "B": "The college has agreed to offer evening courses in assembly and quality control starting in January.",
+            "C": "However, most of the new workers will transfer from the company's other locations.",
+            "D": "Those courses were canceled last year because of low enrollment."
+          },
+          "answer": "B",
+          "type_tag": "P6-INS.SENT",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "고급",
+          "explanation_ko": "정답은 (B)예요. \"The college has agreed to offer evening courses in assembly and quality control starting in January.\"(대학은 1월부터 조립과 품질 관리 야간 과정을 열기로 합의했어요.) 빈칸 앞 \"Most of the positions will be filled by local residents, and Quillfeather plans to work with Halden Community College to train new employees.\"에서 지역 대학과 함께 신입 직원을 교육한다고 했어요. (B)의 The college가 Halden Community College를 받고, 교육 방법을 구체적으로 설명해 줘요. (A)는 second plant·existing factory와, (C)는 '대부분 지역 주민을 채용한다'는 내용과 충돌해요. (D)의 Those courses는 앞에 가리킬 과정이 없고, 대학과 교육을 계획한다는 내용과도 어긋나요.",
+          "evidence_quote": "Most of the positions will be filled by local residents, and Quillfeather plans to work with Halden Community College to train new employees. [2]",
+          "distractor_rationale": {
+            "A": "첫 문장에서 second manufacturing plant라고 했고 마지막 문장에 existing factory가 있으므로 첫 공장이 아니에요 (지문 내용과 충돌).",
+            "B": "정답: The college가 Halden Community College를 가리키고, 신입 교육 계획을 구체화해요.",
+            "C": "However로 그럴듯하게 이어지지만, 대부분의 자리를 지역 주민으로 채운다는 앞 문장과 정면으로 충돌해요 (반대 정보 함정).",
+            "D": "Those courses가 가리킬 과정이 앞에 나오지 않았고, 대학과 협력해 교육한다는 계획과도 맞지 않아요 (지시 대상 없음)."
+          },
+          "trap_code": {
+            "A": "OPPOSITE_INFO",
+            "B": null,
+            "C": "OPPOSITE_INFO",
+            "D": "WRONG_REFERENT"
+          },
+          "key_point": "삽입 문장의 지시어(The college, Those courses)가 앞 문장에 실제로 나온 대상을 가리키는지 확인하고, 지문 전체 사실(second, existing)과 충돌하는 보기는 먼저 지워요.",
+          "vocab": [
+            {
+              "word": "assembly",
+              "pos": "n.",
+              "meaning_ko": "조립",
+              "level": "고급"
+            },
+            {
+              "word": "quality control",
+              "pos": "n.",
+              "meaning_ko": "품질 관리",
+              "level": "중급"
+            },
+            {
+              "word": "enrollment",
+              "pos": "n.",
+              "meaning_ko": "등록(자 수)",
+              "level": "고급"
+            },
+            {
+              "word": "resident",
+              "pos": "n.",
+              "meaning_ko": "주민",
+              "level": "중급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 가전 제조사의 신규 공장 설립 지역 뉴스(일반 사업 확장 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000015",
+          "part": 6,
+          "position_in_set": 3,
+          "stem": "[3]",
+          "options": {
+            "A": "steadily",
+            "B": "mutually",
+            "C": "hastily",
+            "D": "formerly"
+          },
+          "answer": "C",
+          "type_tag": "P6-VOC.WORD",
+          "sub_tags": [],
+          "difficulty_expert": 4,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "고급",
+          "explanation_ko": "정답은 (C) hastily예요. \"Ms. Sorensen noted that the decision to expand was not made hastily.\"(Sorensen 씨는 확장 결정이 서둘러 내려진 것이 아니라고 말했어요.) 바로 뒤 문장 \"The company spent nearly a year comparing potential sites before choosing Bexley.\"에서 거의 1년 동안 후보지를 비교했다고 해요. 오래 검토했다는 내용은 '서둘러 결정하지 않았다'를 뒷받침하므로 hastily(서둘러, 성급하게)가 맞아요. steadily는 첫 문단 grown steadily에서 본 단어를 반복한 함정이고, mutually(서로)는 mutual decision을 떠올리게 하는 함정이며, formerly(이전에)는 결정 방식을 설명하지 못해요.",
+          "evidence_quote": "The company spent nearly a year comparing potential sites before choosing Bexley.",
+          "distractor_rationale": {
+            "A": "첫 문단의 grown steadily에서 본 단어예요. '꾸준히 결정되지 않았다'는 뜻이 되어 어색하고 뒤 문장과 이어지지 않아요 (지문 단어 반복 함정).",
+            "B": "mutual decision(합의된 결정)을 떠올리게 하지만, 뒤 문장은 합의가 아니라 검토 기간을 말하고 있어요 (콜로케이션 착각).",
+            "C": "정답: 1년 가까이 후보지를 비교했다는 뒤 문장이 '서둘러 내린 결정이 아니다'를 뒷받침해요.",
+            "D": "formerly는 '이전에'예요. was not made formerly는 의미가 통하지 않아요 (의미 혼동)."
+          },
+          "trap_code": {
+            "A": "WORD_REPEAT_TRAP",
+            "B": "COLLOCATION_MISMATCH",
+            "C": null,
+            "D": "MEANING_NEAR_MISS"
+          },
+          "key_point": "부정문(not made ___) 속 어휘 문제는 뒤 문장이 그 부정을 어떻게 뒷받침하는지 보고 골라요. 오래 검토했다 → not hastily.",
+          "vocab": [
+            {
+              "word": "hastily",
+              "pos": "adv.",
+              "meaning_ko": "서둘러, 성급하게",
+              "level": "고급"
+            },
+            {
+              "word": "expand",
+              "pos": "v.",
+              "meaning_ko": "확장하다",
+              "level": "중급"
+            },
+            {
+              "word": "potential",
+              "pos": "adj.",
+              "meaning_ko": "잠재적인, 후보가 되는",
+              "level": "중급"
+            },
+            {
+              "word": "mutually",
+              "pos": "adv.",
+              "meaning_ko": "서로, 상호 간에",
+              "level": "고급"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 가전 제조사의 신규 공장 설립 지역 뉴스(일반 사업 확장 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        },
+        {
+          "item_id": "RC-P6-000016",
+          "part": 6,
+          "position_in_set": 4,
+          "stem": "[4]",
+          "options": {
+            "A": "its",
+            "B": "her",
+            "C": "our",
+            "D": "whose"
+          },
+          "answer": "A",
+          "type_tag": "P6-CTX.PRON",
+          "sub_tags": [],
+          "difficulty_expert": 3,
+          "target_track": [
+            "450-495"
+          ],
+          "vocab_level": "기초",
+          "explanation_ko": "정답은 (A) its예요. \"Until the new plant opens, all orders will continue to be filled at its existing factory on Dunmore Road.\"(새 공장이 문을 열 때까지 모든 주문은 Dunmore Road에 있는 기존 공장에서 계속 처리될 거예요.) 빈칸 문장에는 공장을 소유한 주체가 나오지 않아요. 기사 첫 문장 \"Quillfeather Appliances announced yesterday that it will open a second manufacturing plant in the Bexley Industrial Park next spring.\"에서 회사가 두 번째 공장을 연다고 했으므로, 기존 공장은 회사(Quillfeather Appliances)의 것이에요. 회사는 단수 it으로 받았으므로 소유격 its가 맞아요. her는 Sorensen 씨를, our는 바로 앞 인용문(we needed)의 화자를 떠올리게 하지만 이 문장은 기자가 쓴 문장이에요. whose는 관계사라 이 자리에 올 수 없어요.",
+          "evidence_quote": "Quillfeather Appliances announced yesterday that it will open a second manufacturing plant in the Bexley Industrial Park next spring.",
+          "distractor_rationale": {
+            "A": "정답: 기존 공장의 주인은 회사이고, 기사에서 회사를 it으로 받았으므로 its예요.",
+            "B": "her는 Ms. Sorensen을 가리켜요. 공장은 사장 개인이 아니라 회사의 것이에요 (지시 대상 혼동).",
+            "C": "바로 앞 인용문의 we needed에 끌린 함정이에요. 이 문장은 인용이 아니라 기자의 서술이라 our를 쓸 수 없어요 (지시 대상 혼동).",
+            "D": "whose는 관계대명사라 명사 앞 소유격 대명사 자리에 올 수 없어요 (품사 혼동)."
+          },
+          "trap_code": {
+            "A": null,
+            "B": "WRONG_REFERENT",
+            "C": "WRONG_REFERENT",
+            "D": "POS_CONFUSION"
+          },
+          "key_point": "대명사 문제는 빈칸 문장 밖에서 가리키는 대상을 찾아요. 기사에서 회사는 보통 단수 it/its로 받고, 인용문 속 we/our는 인용 밖 서술에 쓰지 않아요.",
+          "vocab": [
+            {
+              "word": "existing",
+              "pos": "adj.",
+              "meaning_ko": "기존의",
+              "level": "중급"
+            },
+            {
+              "word": "fill an order",
+              "pos": "phr.",
+              "meaning_ko": "주문을 처리하다",
+              "level": "중급"
+            },
+            {
+              "word": "construction",
+              "pos": "n.",
+              "meaning_ko": "공사, 건설",
+              "level": "기초"
+            }
+          ],
+          "author_id": "ai-writer-p6",
+          "source_note": "자체 창작. 착상: 가전 제조사의 신규 공장 설립 지역 뉴스(일반 사업 확장 주제). 참고 자료 문장 복사 없음",
+          "status": "cross_reviewed",
+          "version": 1,
+          "created_at": "2026-10-13",
+          "reviewer_1_id": "ai-qa-reviewer",
+          "reviewer_2_id": "",
+          "native_check_id": "",
+          "originality_check": {
+            "result": "통과",
+            "date": "2026-10-13",
+            "method": "AI 블라인드 풀이 + 웹 구절 검색 2건 (일치 없음), 지문 단위 검색"
+          }
+        }
+      ]
+    }
+  ]
+}

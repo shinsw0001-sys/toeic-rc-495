@@ -1,0 +1,350 @@
+{
+  "form_id": "PL-A",
+  "title": "배치고사 A폼",
+  "version": 1,
+  "status": "draft",
+  "created_at": "2026-10-13",
+  "spec": "docs/specs/placement-and-vocab.md v0.2",
+  "stage1": [
+    "RC-P5-000041",
+    "RC-P5-000042",
+    "RC-P5-000043",
+    "RC-P5-000044",
+    "RC-P5-000045",
+    "RC-P5-000046",
+    "RC-P5-000047",
+    "RC-P5-000048",
+    "RC-P6-000017",
+    "RC-P6-000018",
+    "RC-P6-000019",
+    "RC-P6-000020"
+  ],
+  "modules": {
+    "basic": [
+      "RC-P5-000049",
+      "RC-P5-000050",
+      "RC-P5-000051",
+      "RC-P5-000052",
+      "RC-P7-000023",
+      "RC-P7-000024",
+      "RC-P7-000025",
+      "RC-P7-000026",
+      "RC-P7-000027",
+      "RC-P7-000028",
+      "RC-P7-000029",
+      "RC-P7-000030",
+      "RC-P7-000031",
+      "RC-P7-000032"
+    ],
+    "mid": [
+      "RC-P5-000053",
+      "RC-P5-000054",
+      "RC-P5-000055",
+      "RC-P5-000056",
+      "RC-P7-000033",
+      "RC-P7-000034",
+      "RC-P7-000035",
+      "RC-P7-000036",
+      "RC-P7-000037",
+      "RC-P7-000038",
+      "RC-P7-000039",
+      "RC-P7-000040",
+      "RC-P7-000041",
+      "RC-P7-000042"
+    ],
+    "upper": [
+      "RC-P5-000057",
+      "RC-P5-000058",
+      "RC-P5-000059",
+      "RC-P5-000060",
+      "RC-P7-000043",
+      "RC-P7-000044",
+      "RC-P7-000045",
+      "RC-P7-000046",
+      "RC-P7-000047",
+      "RC-P7-000048",
+      "RC-P7-000049",
+      "RC-P7-000050",
+      "RC-P7-000051",
+      "RC-P7-000052"
+    ]
+  },
+  "routing": {
+    "basis": "stage1_correct",
+    "basic": [
+      0,
+      5
+    ],
+    "mid": [
+      6,
+      8
+    ],
+    "upper": [
+      9,
+      12
+    ]
+  },
+  "vocab_check_note": "어휘 체크 20문항 = 레벨 4개 × 5 (기초 1~5, 400 6~10, 450 11~15, 495 16~20). 495 카드가 아직 없어 495 구간(16~20)은 450 레벨 카드 중 더 어려운 단어(VC-5-0002·0004·0007·0008·0009)를 대리(proxy)로 썼다. 문항 level은 495, 카드 level은 450. 495 카드가 생기면 교체한다. 보기 E는 UI 고정 '모르겠어요'(오답 처리)라 파일에 넣지 않는다. 450·495 문항 카드는 draft 상태라 V1(published 카드만)을 아직 만족하지 않는다. 메모: docs/qa/vocab-check-A-notes.md",
+  "vocab_check": [
+    {
+      "seq": 1,
+      "word_id": "VC-B-0034",
+      "level": "기초",
+      "phrase": "a tight **deadline** for the project",
+      "options": {
+        "A": "예산",
+        "B": "마감일",
+        "C": "안건",
+        "D": "계약서"
+      },
+      "answer": "B"
+    },
+    {
+      "seq": 2,
+      "word_id": "VC-B-0078",
+      "level": "기초",
+      "phrase": "**hire** a part-time cashier",
+      "options": {
+        "A": "교육하다",
+        "B": "초대하다",
+        "C": "돕다",
+        "D": "고용하다"
+      },
+      "answer": "D"
+    },
+    {
+      "seq": 3,
+      "word_id": "VC-B-0114",
+      "level": "기초",
+      "phrase": "a **convenient** location for staff",
+      "options": {
+        "A": "편리한",
+        "B": "비싼",
+        "C": "인기 있는",
+        "D": "공공의"
+      },
+      "answer": "A"
+    },
+    {
+      "seq": 4,
+      "word_id": "VC-B-0144",
+      "level": "기초",
+      "phrase": "**carefully** review the contract",
+      "options": {
+        "A": "직접",
+        "B": "마침내",
+        "C": "주의 깊게",
+        "D": "최근에"
+      },
+      "answer": "C"
+    },
+    {
+      "seq": 5,
+      "word_id": "VC-B-0011",
+      "level": "기초",
+      "phrase": "ask for a **refund** by e-mail",
+      "options": {
+        "A": "환불",
+        "B": "할인",
+        "C": "지불",
+        "D": "예약"
+      },
+      "answer": "A"
+    },
+    {
+      "seq": 6,
+      "word_id": "VC-4-0179",
+      "level": "400",
+      "phrase": "**relocate** the main office",
+      "options": {
+        "A": "확장하다",
+        "B": "감독하다",
+        "C": "이전하다",
+        "D": "설립하다"
+      },
+      "answer": "C"
+    },
+    {
+      "seq": 7,
+      "word_id": "VC-4-0196",
+      "level": "400",
+      "phrase": "a **mandatory** orientation for interns",
+      "options": {
+        "A": "임시의",
+        "B": "의무적인",
+        "C": "종합적인",
+        "D": "분기별의"
+      },
+      "answer": "B"
+    },
+    {
+      "seq": 8,
+      "word_id": "VC-4-0154",
+      "level": "400",
+      "phrase": "purchase an extended **warranty**",
+      "options": {
+        "A": "회원권",
+        "B": "구독",
+        "C": "할부",
+        "D": "품질 보증"
+      },
+      "answer": "D"
+    },
+    {
+      "seq": 9,
+      "word_id": "VC-4-0223",
+      "level": "400",
+      "phrase": "**promptly** replace the damaged parts",
+      "options": {
+        "A": "신속하게",
+        "B": "따로",
+        "C": "이전에",
+        "D": "원래"
+      },
+      "answer": "A"
+    },
+    {
+      "seq": 10,
+      "word_id": "VC-4-0188",
+      "level": "400",
+      "phrase": "**secure** funding for the expansion",
+      "options": {
+        "A": "배포하다",
+        "B": "확보하다",
+        "C": "추정하다",
+        "D": "승인하다"
+      },
+      "answer": "B"
+    },
+    {
+      "seq": 11,
+      "word_id": "VC-5-0010",
+      "level": "450",
+      "phrase": "reach a **tentative** agreement",
+      "options": {
+        "A": "기밀의",
+        "B": "유효한",
+        "C": "혁신적인",
+        "D": "잠정적인"
+      },
+      "answer": "D"
+    },
+    {
+      "seq": 12,
+      "word_id": "VC-5-0005",
+      "level": "450",
+      "phrase": "a **discrepancy** in the sales figures",
+      "options": {
+        "A": "개요",
+        "B": "수요",
+        "C": "불일치",
+        "D": "절차"
+      },
+      "answer": "C"
+    },
+    {
+      "seq": 13,
+      "word_id": "VC-5-0003",
+      "level": "450",
+      "phrase": "**comply** with the new guidelines",
+      "options": {
+        "A": "준수하다",
+        "B": "협력하다",
+        "C": "상의하다",
+        "D": "협상하다"
+      },
+      "answer": "A"
+    },
+    {
+      "seq": 14,
+      "word_id": "VC-5-0006",
+      "level": "450",
+      "phrase": "**expedite** the approval process",
+      "options": {
+        "A": "개요를 설명하다",
+        "B": "신속히 처리하다",
+        "C": "감독하다",
+        "D": "제한하다"
+      },
+      "answer": "B"
+    },
+    {
+      "seq": 15,
+      "word_id": "VC-5-0001",
+      "level": "450",
+      "phrase": "adjust the budget **accordingly**",
+      "options": {
+        "A": "점차",
+        "B": "따로",
+        "C": "일시적으로",
+        "D": "그에 맞게"
+      },
+      "answer": "D"
+    },
+    {
+      "seq": 16,
+      "word_id": "VC-5-0004",
+      "level": "495",
+      "phrase": "**contingent** on board approval",
+      "options": {
+        "A": "자격이 있는",
+        "B": "필수적인",
+        "C": "조건부인",
+        "D": "잠재적인"
+      },
+      "answer": "C"
+    },
+    {
+      "seq": 17,
+      "word_id": "VC-5-0002",
+      "level": "495",
+      "phrase": "pay **commensurate** with experience",
+      "options": {
+        "A": "상응하는",
+        "B": "상당한",
+        "C": "경쟁력 있는",
+        "D": "광범위한"
+      },
+      "answer": "A"
+    },
+    {
+      "seq": 18,
+      "word_id": "VC-5-0008",
+      "level": "495",
+      "phrase": "**rectify** the billing error",
+      "options": {
+        "A": "확인하다",
+        "B": "예상하다",
+        "C": "전달하다",
+        "D": "바로잡다"
+      },
+      "answer": "D"
+    },
+    {
+      "seq": 19,
+      "word_id": "VC-5-0009",
+      "level": "495",
+      "phrase": "**stipulate** the payment terms",
+      "options": {
+        "A": "갱신하다",
+        "B": "규정하다",
+        "C": "수정하다",
+        "D": "협상하다"
+      },
+      "answer": "B"
+    },
+    {
+      "seq": 20,
+      "word_id": "VC-5-0007",
+      "level": "495",
+      "phrase": "a **provision** of the rental agreement",
+      "options": {
+        "A": "보증금",
+        "B": "우선 사항",
+        "C": "조항",
+        "D": "수령인"
+      },
+      "answer": "C"
+    }
+  ]
+}

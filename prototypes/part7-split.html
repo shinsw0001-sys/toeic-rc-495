@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Part 7 분할 풀이</title>
+<!--
+  S1-06 프로토타입 · UX/UI Designer · 2026-10-13
+  - Part 7 이중 지문 세트: 분할 풀이(F3) → 세트 채점 → 같은 화면 해설(F4) → 근거 하이라이트 → 오답 원인(F5) → 오류 신고(F9)
+  - 외부 의존성 없음. 문항은 프로토타입용 자체 작성 예시이며 검수 전이다(학습 서비스에 그대로 쓰지 않는다).
+  - 토큰 이름은 docs/design/core-flow.md 6장과 같다.
+-->
+<style>
+:root{
+  --color-bg:#F7F8FA; --color-surface:#FFFFFF; --color-surface-sunken:#EEF0F4; --color-border:#D5D9E0;
+  --color-text:#1B1F24; --color-text-muted:#5A6270;
+  --color-primary:#2F5BEA; --color-primary-weak:#E6ECFE; --color-on-primary:#FFFFFF;
+  --color-correct:#1E7F4F; --color-correct-weak:#E3F4EA;
+  --color-wrong:#C2362F; --color-wrong-weak:#FCE8E6;
+  --color-evidence:#FFF1B8; --color-evidence-edge:#B58900;
+  --color-trap:#7B33F0; --color-trap-weak:#F1E8FF;
+  --color-warning:#9A6700; --color-focus:#1A73E8;
+  --font-ui:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --reading-size:18px; --leading-reading:1.7;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:16px;--radius-pill:999px;
+  --shadow-2:0 8px 24px rgba(0,0,0,.18);
+  --touch-min:44px; --bar-height:56px;
+  --motion-base:200ms;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+    --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+    --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+    --color-correct:#5FD39A; --color-correct-weak:#15301F;
+    --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+    --color-evidence:#4A3F12; --color-evidence-edge:#E0B53A;
+    --color-trap:#C3A1FF; --color-trap-weak:#2A2040;
+    --color-warning:#E3B341; --color-focus:#8AB4F8;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+  --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+  --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+  --color-correct:#5FD39A; --color-correct-weak:#15301F;
+  --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+  --color-evidence:#4A3F12; --color-evidence-edge:#E0B53A;
+  --color-trap:#C3A1FF; --color-trap-weak:#2A2040;
+  --color-warning:#E3B341; --color-focus:#8AB4F8;
+  color-scheme:dark;
+}
+@media (prefers-reduced-motion:reduce){ :root{ --motion-base:0ms; } html{scroll-behavior:auto!important} }
+
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-ui);font-size:15px;line-height:1.4;
+  display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;border-radius:var(--radius-sm)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ── 상단 바 ── */
+.topbar{height:var(--bar-height);flex:none;display:flex;align-items:center;gap:var(--space-3);
+  padding:0 var(--space-4);background:var(--color-surface);border-bottom:1px solid var(--color-border)}
+.topbar .title{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.topbar .title small{color:var(--color-text-muted);font-weight:400;margin-left:var(--space-2)}
+.spacer{flex:1}
+.icon-btn{min-width:var(--touch-min);height:var(--touch-min);display:inline-flex;align-items:center;justify-content:center;
+  gap:4px;padding:0 var(--space-2);border:1px solid transparent;background:none;border-radius:var(--radius-md);cursor:pointer}
+.icon-btn:hover{background:var(--color-surface-sunken)}
+.icon-btn[aria-pressed="true"]{color:var(--color-primary)}
+.icon-btn:disabled{opacity:.4;cursor:not-allowed}
+.timer{font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;
+  border-radius:var(--radius-pill);background:var(--color-surface-sunken);white-space:nowrap}
+.timer.over{color:var(--color-warning)}
+.timer .goal{color:var(--color-text-muted);font-size:13px}
+.font-ctl{display:inline-flex;align-items:center;border:1px solid var(--color-border);border-radius:var(--radius-md)}
+.font-ctl .icon-btn{border-radius:0}
+.font-ctl .lvl{font-size:12px;color:var(--color-text-muted);min-width:2.5em;text-align:center}
+.menu-wrap{position:relative}
+.menu{position:absolute;right:0;top:calc(100% + 4px);background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-md);box-shadow:var(--shadow-2);padding:var(--space-1);min-width:180px;z-index:30}
+.menu button{display:block;width:100%;text-align:left;padding:10px 12px;border:none;background:none;border-radius:var(--radius-sm);cursor:pointer}
+.menu button:hover{background:var(--color-surface-sunken)}
+
+/* ── 분할 영역 ── */
+.split{flex:1;display:flex;min-height:0}
+.pane{min-height:0;overflow:auto;-webkit-overflow-scrolling:touch}
+.passage-pane{flex:0 0 var(--left,52%);background:var(--color-surface-sunken)}
+.divider{flex:none;width:10px;cursor:col-resize;background:var(--color-border);position:relative;border:none;padding:0}
+.divider::after{content:"";position:absolute;left:3px;top:50%;width:4px;height:36px;margin-top:-18px;border-radius:2px;background:var(--color-text-muted);opacity:.5}
+.q-pane{flex:1;background:var(--color-surface);display:flex;flex-direction:column;min-width:0}
+
+/* 지문 */
+.p-chips{position:sticky;top:0;z-index:10;display:flex;gap:var(--space-2);padding:var(--space-3) var(--space-5);
+  background:var(--color-surface-sunken);border-bottom:1px solid var(--color-border)}
+.chip{border:1px solid var(--color-border);background:var(--color-surface);border-radius:var(--radius-pill);
+  padding:6px 14px;min-height:36px;cursor:pointer;font-size:14px}
+.chip:hover{border-color:var(--color-primary)}
+.passage{padding:var(--space-5);max-width:72ch;font-size:var(--reading-size);line-height:var(--leading-reading)}
+.passage + .passage{border-top:2px dashed var(--color-border)}
+.p-label{font-size:13px;font-weight:600;color:var(--color-text-muted);margin:0 0 var(--space-3);font-family:var(--font-ui);letter-spacing:.02em}
+.meta{font-size:.85em;color:var(--color-text-muted);margin-bottom:var(--space-4);line-height:1.5}
+.meta div span{display:inline-block;min-width:4.5em}
+.para{display:flex;gap:var(--space-3);margin:0 0 var(--space-4)}
+.para .pn{flex:none;font-size:12px;color:var(--color-text-muted);padding-top:.45em;width:1.6em}
+.para p{margin:0}
+.s{border-radius:3px;transition:background var(--motion-base)}
+.s.ev{background:var(--color-evidence);box-shadow:-4px 0 0 0 var(--color-evidence-edge);padding:1px 2px}
+.s.ev::before{content:"근거";font-family:var(--font-ui);font-size:11px;font-weight:700;color:var(--color-surface);
+  background:var(--color-evidence-edge);border-radius:3px;padding:0 4px;margin-right:4px;vertical-align:2px}
+.s.ev.focus{outline:2px solid var(--color-evidence-edge);outline-offset:2px}
+.sign{margin-top:var(--space-3);font-size:.9em}
+
+/* 문항 패널 */
+.q-head{padding:var(--space-4) var(--space-5) var(--space-3);border-bottom:1px solid var(--color-border)}
+.q-head-row{display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap}
+.q-head h2{font-size:14px;margin:0;color:var(--color-text-muted);font-weight:600}
+.qnav{display:flex;gap:var(--space-2);flex-wrap:wrap}
+.qchip{width:var(--touch-min);height:var(--touch-min);border-radius:var(--radius-md);border:1.5px solid var(--color-border);
+  background:var(--color-surface);cursor:pointer;font-weight:600;position:relative;font-variant-numeric:tabular-nums}
+.qchip.answered{background:var(--color-primary-weak);border-color:var(--color-primary)}
+.qchip.current{box-shadow:0 0 0 2px var(--color-surface),0 0 0 4px var(--color-primary)}
+.qchip.flag::after{content:"";position:absolute;top:-5px;right:-5px;width:10px;height:10px;background:var(--color-warning);transform:rotate(45deg);border-radius:2px}
+.qchip.ok{background:var(--color-correct-weak);border-color:var(--color-correct);color:var(--color-correct)}
+.qchip.ng{background:var(--color-wrong-weak);border-color:var(--color-wrong);color:var(--color-wrong)}
+.legend{font-size:12px;color:var(--color-text-muted);margin-top:var(--space-2)}
+.score{margin-left:auto;font-weight:700;font-variant-numeric:tabular-nums}
+
+.q-body{flex:1;overflow:auto;padding:var(--space-5)}
+.link-tag{display:inline-block;font-size:12px;font-weight:600;color:var(--color-primary);background:var(--color-primary-weak);
+  border-radius:var(--radius-pill);padding:2px 10px;margin-bottom:var(--space-2)}
+.stem{font-size:var(--reading-size);line-height:1.55;margin:0 0 var(--space-4);font-weight:600}
+.opts{display:flex;flex-direction:column;gap:var(--space-2);margin:0;padding:0;border:none}
+.opt{display:flex;gap:var(--space-3);align-items:flex-start;min-height:48px;padding:var(--space-3) var(--space-4);
+  border:1.5px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface);cursor:pointer;
+  text-align:left;font-size:calc(var(--reading-size) - 1px);line-height:1.45;width:100%}
+.opt:hover:not(:disabled){border-color:var(--color-primary)}
+.opt .k{flex:none;font-weight:700;width:1.8em}
+.opt .mark{margin-left:auto;flex:none;font-size:13px;font-weight:700;white-space:nowrap}
+.opt[aria-checked="true"]{border-color:var(--color-primary);background:var(--color-primary-weak)}
+.opt:disabled{cursor:default}
+.opt.is-correct{border-color:var(--color-correct);background:var(--color-correct-weak)}
+.opt.is-correct .mark{color:var(--color-correct)}
+.opt.is-wrong{border-color:var(--color-wrong);background:var(--color-wrong-weak)}
+.opt.is-wrong .mark{color:var(--color-wrong)}
+.unsure{display:inline-flex;align-items:center;gap:var(--space-2);margin-top:var(--space-4);min-height:var(--touch-min);cursor:pointer;color:var(--color-text-muted)}
+.unsure input{width:20px;height:20px}
+
+.q-foot{flex:none;border-top:1px solid var(--color-border);padding:var(--space-3) var(--space-5) calc(var(--space-3) + env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;gap:var(--space-3);background:var(--color-surface)}
+.row{display:flex;gap:var(--space-2);align-items:center}
+.btn{min-height:var(--touch-min);padding:0 18px;border-radius:var(--radius-md);border:1.5px solid var(--color-border);
+  background:var(--color-surface);cursor:pointer;font-weight:600;display:inline-flex;align-items:center;gap:6px;justify-content:center}
+.btn:hover:not(:disabled){border-color:var(--color-primary)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.primary{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-on-primary)}
+.btn.primary:hover:not(:disabled){filter:brightness(1.08)}
+.btn.text{border-color:transparent;background:none;color:var(--color-primary);padding:0 8px}
+.grade-row{justify-content:flex-end;border-top:1px dashed var(--color-border);padding-top:var(--space-3)}
+.grade-row .hint{margin-right:auto;font-size:13px;color:var(--color-text-muted)}
+
+/* 해설 */
+.result-line{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-3);align-items:baseline;margin-bottom:var(--space-4);font-size:15px}
+.badge{font-weight:700;padding:2px 10px;border-radius:var(--radius-pill)}
+.badge.ok{color:var(--color-correct);background:var(--color-correct-weak)}
+.badge.ng{color:var(--color-wrong);background:var(--color-wrong-weak)}
+.time{color:var(--color-text-muted);font-size:13px;font-variant-numeric:tabular-nums}
+.time.slow{color:var(--color-warning)}
+.trap-box{border:1.5px solid var(--color-trap);background:var(--color-trap-weak);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-4)}
+.trap-box h3{margin:0 0 6px;font-size:13px;color:var(--color-text-muted)}
+.trap-chip{display:inline-block;font-size:13px;font-weight:700;color:var(--color-trap);border:1px solid var(--color-trap);border-radius:var(--radius-pill);padding:1px 10px;margin-bottom:6px}
+.sec{margin-bottom:var(--space-4)}
+.sec h3{font-size:13px;color:var(--color-text-muted);margin:0 0 6px}
+.sec p{margin:0;font-size:calc(var(--reading-size) - 2px);line-height:1.65}
+.ev-quote{border-left:4px solid var(--color-evidence-edge);background:var(--color-evidence);padding:6px 10px;margin:8px 0;border-radius:0 6px 6px 0;font-size:calc(var(--reading-size) - 3px)}
+details{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:0 var(--space-3);margin-bottom:var(--space-3)}
+summary{cursor:pointer;min-height:var(--touch-min);display:flex;align-items:center;font-weight:600;font-size:14px}
+details ul{margin:0 0 var(--space-3);padding-left:1.2em;font-size:calc(var(--reading-size) - 3px);line-height:1.6}
+.causes{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:6px}
+.cause{min-height:40px;padding:0 14px;border-radius:var(--radius-pill);border:1.5px solid var(--color-border);background:var(--color-surface);cursor:pointer;font-size:14px}
+.cause[aria-pressed="true"]{border-color:var(--color-primary);background:var(--color-primary-weak);font-weight:700}
+.cause[aria-pressed="true"]::before{content:"✓ "}
+.cause small{color:var(--color-text-muted);font-weight:400}
+.helpful{display:flex;gap:var(--space-2);align-items:center;flex-wrap:wrap;font-size:14px}
+.helpful .btn{min-height:40px}
+
+/* 모바일 전환 */
+.pane-toggle{display:none}
+@media (max-width:1023px){
+  .divider{display:none}
+  .passage-pane,.q-pane{flex:1 1 auto;width:100%}
+  .split[data-view="q"] .passage-pane{display:none}
+  .split[data-view="p"] .q-pane{display:none}
+  .pane-toggle{display:flex;flex:none;gap:var(--space-2);padding:var(--space-2) var(--space-4) calc(var(--space-2) + env(safe-area-inset-bottom));
+    background:var(--color-surface);border-top:1px solid var(--color-border)}
+  .pane-toggle button{flex:1;min-height:48px;border-radius:var(--radius-md);border:1.5px solid var(--color-border);background:var(--color-surface);font-weight:700;cursor:pointer}
+  .pane-toggle button[aria-pressed="true"]{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-on-primary)}
+  .split[data-view="p"] ~ .pane-toggle .back-hint{display:inline}
+  .topbar{gap:var(--space-1);padding:0 var(--space-2)}
+  .topbar .title small,.timer .goal,.hide-sm{display:none}
+  .passage{padding:var(--space-4)}
+  .p-chips{padding:var(--space-2) var(--space-4)}
+  .q-body{padding:var(--space-4)}
+  .q-head{padding:var(--space-3) var(--space-4)}
+  .q-foot{padding:var(--space-3) var(--space-4)}
+}
+
+/* 모달·토스트 */
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:30;padding:var(--space-4)}
+.backdrop[hidden]{display:none}
+.modal{background:var(--color-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-2);width:min(520px,100%);max-height:90dvh;overflow:auto;padding:var(--space-5)}
+.modal h2{margin:0 0 var(--space-2);font-size:18px}
+.modal .sub{color:var(--color-text-muted);font-size:14px;margin:0 0 var(--space-4)}
+.radio-list{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2);margin-bottom:var(--space-4);border:none;padding:0}
+.radio-list label{display:flex;gap:8px;align-items:center;min-height:var(--touch-min);border:1.5px solid var(--color-border);border-radius:var(--radius-md);padding:0 12px;cursor:pointer}
+.radio-list label:has(input:checked){border-color:var(--color-primary);background:var(--color-primary-weak)}
+textarea{width:100%;min-height:90px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);padding:10px;font:inherit;background:var(--color-surface);color:var(--color-text);resize:vertical}
+.attach{font-size:13px;color:var(--color-text-muted);background:var(--color-surface-sunken);border-radius:var(--radius-md);padding:10px 12px;margin:var(--space-3) 0;line-height:1.6}
+.attach code{font-size:12px}
+.modal .row{justify-content:flex-end;margin-top:var(--space-4)}
+@media (max-width:767px){ .backdrop{align-items:flex-end;padding:0} .modal{border-radius:var(--radius-lg) var(--radius-lg) 0 0} .radio-list{grid-template-columns:1fr} }
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--color-text);color:var(--color-bg);padding:12px 18px;border-radius:var(--radius-md);z-index:40;box-shadow:var(--shadow-2);max-width:calc(100% - 32px);font-size:14px}
+.toast[hidden]{display:none}
+.proto-note{font-size:12px;color:var(--color-text-muted);padding:var(--space-3) var(--space-5) var(--space-5)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn" type="button" aria-label="나가기 (진행 상황은 저장돼요)" onclick="toast('프로토타입: 대시보드로 돌아갑니다. 진행 상황은 저장돼요.')">←</button>
+  <div class="title">세트 2/4 · Part 7 이중 지문<small>오늘 학습 · 300→400 트랙</small></div>
+  <div class="spacer"></div>
+  <span class="timer" id="timer" role="timer" aria-label="세트 경과 시간">⏱ <span id="tval">0:00</span><span class="goal">/ 권장 6:15</span></span>
+  <button class="icon-btn hide-sm" type="button" id="timerToggle" aria-pressed="false" aria-label="타이머 숨기기">숨김</button>
+  <div class="font-ctl" role="group" aria-label="글자 크기">
+    <button class="icon-btn" type="button" id="fontDown" aria-label="글자 작게">가-</button>
+    <span class="lvl" id="fontLvl" aria-live="polite">크게</span>
+    <button class="icon-btn" type="button" id="fontUp" aria-label="글자 크게">가+</button>
+  </div>
+  <button class="icon-btn" type="button" id="bookmark" aria-pressed="false" aria-label="이 세트 북마크">☆</button>
+  <div class="menu-wrap">
+    <button class="icon-btn" type="button" id="moreBtn" aria-haspopup="menu" aria-expanded="false" aria-label="더보기">⋯</button>
+    <div class="menu" id="moreMenu" role="menu" hidden>
+      <button role="menuitem" type="button" id="menuReport">오류 신고</button>
+      <button role="menuitem" type="button" id="menuTheme">화면 밝기 전환 (라이트/다크)</button>
+    </div>
+  </div>
+</header>
+
+<main class="split" id="split" data-view="p">
+  <!-- 지문 패널 -->
+  <section class="pane passage-pane" id="passagePane" aria-label="지문" tabindex="-1">
+    <nav class="p-chips" aria-label="지문 바로 가기">
+      <button class="chip" type="button" data-jump="p1">지문 1 · 이메일</button>
+      <button class="chip" type="button" data-jump="p2">지문 2 · 이메일 (답장)</button>
+    </nav>
+
+    <article class="passage" id="p1" lang="en">
+      <h3 class="p-label" lang="ko">지문 1 · 이메일</h3>
+      <div class="meta">
+        <div><span>To:</span> Dana Whitfield &lt;dwhitfield@corvanlegal.com&gt;</div>
+        <div><span>From:</span> Customer Service, Pellman Office Supply</div>
+        <div><span>Date:</span> March 4</div>
+        <div><span>Subject:</span> Order #58213</div>
+      </div>
+      <p style="margin:0 0 12px">Dear Ms. Whitfield,</p>
+      <div class="para"><span class="pn" aria-hidden="true">¶1</span><p>
+        <span class="s" id="s1">Thank you for your recent order of printer paper, toner cartridges, and desk organizers.</span>
+        <span class="s" id="s2">Unfortunately, the toner cartridges you requested are temporarily out of stock at our main warehouse.</span>
+        <span class="s" id="s3">We expect a new shipment to arrive on March 11, and we will send the cartridges as soon as it is processed.</span>
+        <span class="s" id="s4">The rest of your order will be shipped today as planned.</span></p></div>
+      <div class="para"><span class="pn" aria-hidden="true">¶2</span><p>
+        <span class="s" id="s5">To apologize for the inconvenience, we have waived the delivery fee for the second shipment.</span>
+        <span class="s" id="s6">If you would prefer to cancel the cartridges and receive a full refund for that item, simply reply to this e-mail by March 8.</span></p></div>
+      <div class="sign">Sincerely,<br>Marcus Hale<br>Customer Service Team</div>
+    </article>
+
+    <article class="passage" id="p2" lang="en">
+      <h3 class="p-label" lang="ko">지문 2 · 이메일 (답장)</h3>
+      <div class="meta">
+        <div><span>To:</span> Marcus Hale</div>
+        <div><span>From:</span> Dana Whitfield</div>
+        <div><span>Date:</span> March 6</div>
+        <div><span>Subject:</span> RE: Order #58213</div>
+      </div>
+      <p style="margin:0 0 12px">Dear Mr. Hale,</p>
+      <div class="para"><span class="pn" aria-hidden="true">¶1</span><p>
+        <span class="s" id="t1">Thank you for letting me know about the delay.</span>
+        <span class="s" id="t2">Our office has a client presentation on March 10, and we will need to print a <u>large</u> number of handouts the day before.</span>
+        <span class="s" id="t3">Since the cartridges would not reach us in time, I have decided to purchase them from a store near our office.</span>
+        <span class="s" id="t4">Please cancel that part of my order.</span></p></div>
+      <div class="para"><span class="pn" aria-hidden="true">¶2</span><p>
+        <span class="s" id="t5">Also, the desk organizers arrived yesterday, but two of them were missing their drawer handles.</span>
+        <span class="s" id="t6">Could you send replacement handles, or should I return the organizers?</span></p></div>
+      <div class="sign">Dana Whitfield<br>Office Manager, Corvan Legal Group</div>
+    </article>
+    <p class="proto-note" lang="ko">프로토타입용 자체 작성 예시 문항입니다(검수 전). ETS·경쟁사 문항이 아닙니다.</p>
+  </section>
+
+  <button class="divider" id="divider" type="button" aria-label="지문·문항 너비 조절 (좌우 화살표)" title="드래그 또는 ←/→ · 더블클릭하면 기본값"></button>
+
+  <!-- 문항 패널 -->
+  <section class="pane q-pane" id="qPane" aria-label="문항">
+    <div class="q-head">
+      <div class="q-head-row">
+        <h2 id="qHeadTitle">문항</h2>
+        <div class="qnav" id="qnav" role="tablist" aria-label="문항 번호"></div>
+        <span class="score" id="score" hidden></span>
+      </div>
+      <div class="legend" id="legend">■ 답함 · ◆ 표시함 · 채점 전까지 답을 바꿀 수 있어요</div>
+    </div>
+    <div class="q-body" id="qBody" tabindex="-1"></div>
+    <div class="q-foot" id="qFoot">
+      <div class="row" id="navRow">
+        <button class="btn" type="button" id="prevBtn">← 이전</button>
+        <button class="btn" type="button" id="nextBtn">다음 →</button>
+        <span class="spacer"></span>
+        <button class="btn text" type="button" id="flagBtn" aria-pressed="false">◇ 표시</button>
+      </div>
+      <div class="row grade-row" id="gradeRow">
+        <span class="hint" id="gradeHint">5문항 중 0개 답함</span>
+        <button class="btn primary" type="button" id="gradeBtn">✓ 세트 채점하기</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="pane-toggle" id="paneToggle" role="group" aria-label="지문과 문항 전환">
+  <button type="button" data-view="p" aria-pressed="true">▤ 지문</button>
+  <button type="button" data-view="q" aria-pressed="false" id="toggleQ">문항 1/5</button>
+</div>
+
+<!-- 채점 확인 -->
+<div class="backdrop" id="confirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cfTitle">
+    <h2 id="cfTitle">안 푼 문항이 있어요</h2>
+    <p class="sub" id="cfText"></p>
+    <div class="row">
+      <button class="btn" type="button" id="cfBack">돌아가서 풀기</button>
+      <button class="btn primary" type="button" id="cfGo">그래도 채점하기</button>
+    </div>
+  </div>
+</div>
+
+<!-- 오류 신고 (F9) -->
+<div class="backdrop" id="reportModal" hidden>
+  <form class="modal" role="dialog" aria-modal="true" aria-labelledby="rpTitle" id="reportForm">
+    <h2 id="rpTitle">오류 신고</h2>
+    <p class="sub">1영업일 안에 접수 알림을 보내고, 처리 결과도 알려 드려요.</p>
+    <fieldset class="radio-list">
+      <legend class="sr-only">오류 유형</legend>
+      <label><input type="radio" name="rtype" value="answer" required> 정답 이상</label>
+      <label><input type="radio" name="rtype" value="expl"> 해설 이상</label>
+      <label><input type="radio" name="rtype" value="typo"> 오탈자</label>
+      <label><input type="radio" name="rtype" value="etc"> 기타</label>
+    </fieldset>
+    <label for="rpText" style="font-size:14px;font-weight:600">내용 (선택)</label>
+    <textarea id="rpText" maxlength="500" placeholder="어떤 부분이 이상한지 적어 주세요."></textarea>
+    <div class="attach" id="rpAttach"></div>
+    <div class="row">
+      <button class="btn" type="button" id="rpCancel">취소</button>
+      <button class="btn primary" type="submit">신고 보내기</button>
+    </div>
+  </form>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function(){
+"use strict";
+/* ── 데이터 (content-standard 2·6장 필드 형태를 흉내 냄) ── */
+var ITEMS = [
+  { id:"P7-D-0042-1", tag:"P7-MAIN.PURPOSE", stem:"What is the purpose of the first e-mail?",
+    opts:["To confirm a change in delivery fees","To report that part of an order will be delayed","To promote a new line of office products","To request payment for an overdue invoice"],
+    ans:1, ev:["s2","s3"], median:65,
+    expl:"첫 이메일은 토너 카트리지가 재고가 없어 3월 11일 이후에 따로 보낸다고 알리는 글이에요. 주문 일부가 늦어진다는 것이 핵심이에요.",
+    key:"목적 문항은 첫 문단의 'Unfortunately, ~' 같은 전환 신호 뒤를 본다.",
+    traps:{0:["지문 단어 반복 함정","delivery fee가 지문에 나오지만, 배송비 면제는 사과의 표시일 뿐 이메일을 쓴 이유가 아니에요."],
+           2:["외부 지식 함정","새 상품 홍보는 지문에 없어요."],
+           3:["외부 지식 함정","결제 요청은 지문에 없어요."]},
+    vocab:["temporarily out of stock 일시 품절","as planned 예정대로"] },
+  { id:"P7-D-0042-2", tag:"P7-DET.FACT", stem:"What is offered to Ms. Whitfield?",
+    opts:["A discount on her next order","Free delivery of the remaining items","Express shipping for the cartridges","A sample of a new paper product"],
+    ans:1, ev:["s5"], median:55,
+    expl:"두 번째 배송(늦게 보내는 카트리지)의 배송비를 면제했다고 했어요. 'waived the delivery fee'를 'Free delivery'로 바꿔 말한 보기가 정답이에요.",
+    key:"세부 정보 문항의 정답은 지문 표현을 다른 말로 바꿔 쓴다(패러프레이즈).",
+    traps:{0:["범위 과장 함정","할인은 언급되지 않았어요. '보상'이라는 느낌만 맞아요."],
+           2:["부분 일치 함정","카트리지 배송은 맞지만 '빠른 배송'은 지문에 없어요."],
+           3:["외부 지식 함정","샘플 제공은 지문에 없어요."]},
+    vocab:["waive (요금을) 면제하다","inconvenience 불편"] },
+  { id:"P7-D-0042-3", tag:"P7-VOC.SYN", stem:"In the second e-mail, the word \"large\" in paragraph 1, line 2, is closest in meaning to",
+    opts:["wide","heavy","considerable","spacious"],
+    ans:2, ev:["t2"], median:40,
+    expl:"'a large number of handouts'는 '많은 수의 유인물'이라는 뜻이에요. 수량이 많다는 의미이므로 considerable(상당한)이 맞아요.",
+    key:"동의어 문항은 단어 뜻이 아니라 문장 속 쓰임(여기서는 수량)으로 고른다.",
+    traps:{0:["대표 뜻 함정","wide는 '폭이 넓은'이라 수량에 쓰지 않아요."],
+           1:["대표 뜻 함정","heavy는 무게예요."],
+           3:["대표 뜻 함정","spacious는 공간이 넓다는 뜻이에요."]},
+    vocab:["handout 유인물","considerable 상당한"] },
+  { id:"P7-D-0042-4", tag:"P7-LINK.2P", link:true, stem:"Why will Ms. Whitfield buy the cartridges from another store?",
+    opts:["The store offers lower prices.","She needs them before the new shipment arrives.","Her order was sent to the wrong address.","Pellman Office Supply no longer sells them."],
+    ans:1, ev:["t2","s3"], median:65,
+    expl:"지문 2에서 3월 10일 발표 전날(3월 9일)에 인쇄해야 한다고 했고, 지문 1에서 새 물량은 3월 11일에 들어온다고 했어요. 두 날짜를 이어야 풀리는 연계 문항이에요.",
+    key:"이중 지문 '왜' 문항은 한 지문의 날짜와 다른 지문의 날짜를 맞춰 본다.",
+    traps:{0:["외부 지식 함정","지문 어디에도 가격 비교가 없어요. 'store'라는 단어만 보고 그럴듯한 이유를 고른 경우예요."],
+           2:["외부 지식 함정","배송지 오류는 언급되지 않았어요."],
+           3:["범위 과장 함정","'일시' 품절(temporarily)이지 판매 중단이 아니에요."]},
+    vocab:["in time 제때","purchase 구매하다"] },
+  { id:"P7-D-0042-5", tag:"P7-DET.FACT", stem:"What problem does Ms. Whitfield report?",
+    opts:["Some products were incomplete.","The paper was the wrong size.","She was charged twice for her order.","The desk organizers arrived late."],
+    ans:0, ev:["t5"], median:55,
+    expl:"정리함 두 개에 서랍 손잡이가 빠져 있었다고 했어요. 부품이 빠진 것을 'incomplete(완전하지 않은)'로 바꿔 말했어요.",
+    key:"문제 보고 문항은 'but', 'however' 뒤에 정답이 있는 경우가 많다.",
+    traps:{1:["외부 지식 함정","종이 크기는 언급되지 않았어요."],
+           2:["외부 지식 함정","이중 결제는 지문에 없어요."],
+           3:["지문 단어 반복 함정","정리함이 'arrived'한 것은 맞지만 늦게 왔다는 말은 없어요(어제 도착)."]},
+    vocab:["drawer handle 서랍 손잡이","replacement 교체품"] }
+];
+var KEYS = ["A","B","C","D"];
+var CAUSES = [["trap","함정"],["time","시간"],["vocab","어휘"],["gram","문법 개념"],["guess","찍었어요"]];
+
+/* ── 상태 ── */
+var state = {
+  cur:0, answers:[null,null,null,null,null], flags:[false,false,false,false,false], unsure:[false,false,false,false,false],
+  times:[0,0,0,0,0], graded:false, causes:{}, helpful:{}, evIdx:0
+};
+var elapsed = 0, timerHidden = false;
+
+/* 저장 (try/catch 필수) */
+function store(k,v){ try{ localStorage.setItem("toeic-proto-"+k, JSON.stringify(v)); }catch(e){} }
+function load(k,d){ try{ var v = localStorage.getItem("toeic-proto-"+k); return v==null?d:JSON.parse(v); }catch(e){ return d; } }
+
+var $ = function(id){ return document.getElementById(id); };
+var split = $("split"), qBody = $("qBody");
+var isNarrow = function(){ return window.matchMedia("(max-width:1023px)").matches; };
+
+/* ── 글자 크기 4단계 ── */
+var SIZES = [16,18,20,23], SIZE_LABEL = ["보통","크게","더 크게","아주 크게"];
+var fontIdx = load("font",1);
+function applyFont(){
+  if(fontIdx<0) fontIdx=0; if(fontIdx>3) fontIdx=3;
+  document.documentElement.style.setProperty("--reading-size", SIZES[fontIdx]+"px");
+  $("fontLvl").textContent = SIZE_LABEL[fontIdx];
+  $("fontDown").disabled = fontIdx===0; $("fontUp").disabled = fontIdx===3;
+  store("font",fontIdx);
+}
+$("fontDown").onclick=function(){fontIdx--;applyFont();};
+$("fontUp").onclick=function(){fontIdx++;applyFont();};
+applyFont();
+
+/* ── 테마 ── */
+var theme = load("theme",null);
+if(theme) document.documentElement.setAttribute("data-theme",theme);
+$("menuTheme").onclick=function(){
+  var dark = document.documentElement.getAttribute("data-theme")==="dark" ||
+    (!document.documentElement.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme:dark)").matches);
+  theme = dark?"light":"dark"; document.documentElement.setAttribute("data-theme",theme); store("theme",theme); closeMenu();
+};
+
+/* ── 타이머 (세트 경과 + 문항별 기록) ── */
+function fmt(s){ return Math.floor(s/60)+":"+String(s%60).padStart(2,"0"); }
+setInterval(function(){
+  if(state.graded || document.hidden || !$("reportModal").hidden) return;  // 신고 중·탭 이탈 시 일시정지
+  elapsed++; state.times[state.cur]++;
+  $("tval").textContent = timerHidden ? "–:––" : fmt(elapsed);
+  $("timer").classList.toggle("over", elapsed>375 && !timerHidden);
+  if(elapsed===376) $("timer").setAttribute("aria-label","세트 경과 시간, 권장 시간 초과");
+},1000);
+$("timerToggle").onclick=function(){
+  timerHidden=!timerHidden; this.setAttribute("aria-pressed",timerHidden); this.textContent=timerHidden?"보기":"숨김";
+  $("tval").textContent = timerHidden ? "–:––" : fmt(elapsed);
+};
+
+/* ── 북마크·메뉴 ── */
+$("bookmark").onclick=function(){ var on=this.getAttribute("aria-pressed")!=="true"; this.setAttribute("aria-pressed",on); this.textContent=on?"★":"☆"; toast(on?"북마크에 담았어요.":"북마크를 뺐어요."); };
+function closeMenu(){ $("moreMenu").hidden=true; $("moreBtn").setAttribute("aria-expanded","false"); }
+$("moreBtn").onclick=function(e){ e.stopPropagation(); var open=$("moreMenu").hidden; $("moreMenu").hidden=!open; this.setAttribute("aria-expanded",open); if(open) $("menuReport").focus(); };
+document.addEventListener("click",function(e){ if(!e.target.closest(".menu-wrap")) closeMenu(); });
+
+/* ── 지문 칩 점프 ── */
+document.querySelectorAll("[data-jump]").forEach(function(b){
+  b.onclick=function(){ var t=$(b.dataset.jump); $("passagePane").scrollTo({top:t.offsetTop-56,behavior:"smooth"}); };
+});
+
+/* ── 분할 비율 드래그 ── */
+var left = load("split",52);
+function setLeft(v){ left=Math.max(35,Math.min(65,v)); split.style.setProperty("--left",left+"%"); store("split",left); }
+setLeft(left);
+(function(){
+  var d=$("divider"), drag=false;
+  d.addEventListener("pointerdown",function(e){ drag=true; d.setPointerCapture(e.pointerId); });
+  d.addEventListener("pointermove",function(e){ if(!drag) return; var r=split.getBoundingClientRect(); setLeft((e.clientX-r.left)/r.width*100); });
+  d.addEventListener("pointerup",function(){ drag=false; });
+  d.addEventListener("dblclick",function(){ setLeft(52); });
+  d.addEventListener("keydown",function(e){ if(e.key==="ArrowLeft"){setLeft(left-3);e.preventDefault();} if(e.key==="ArrowRight"){setLeft(left+3);e.preventDefault();} });
+})();
+
+/* ── 모바일 지문/문항 전환 (각 패널 스크롤은 display 전환만 하므로 유지) ── */
+function setView(v){
+  split.dataset.view=v;
+  document.querySelectorAll("#paneToggle button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.view===v); });
+}
+document.querySelectorAll("#paneToggle button").forEach(function(b){ b.onclick=function(){ setView(b.dataset.view); }; });
+
+/* ── 문항 번호 칩 ── */
+function renderNav(){
+  var nav=$("qnav"); nav.innerHTML="";
+  ITEMS.forEach(function(it,i){
+    var b=document.createElement("button"); b.type="button"; b.className="qchip"; b.textContent=i+1; b.setAttribute("role","tab");
+    var st;
+    if(state.graded){ var ok=state.answers[i]===it.ans; b.classList.add(ok?"ok":"ng"); st=ok?"정답":"오답"; b.textContent=(i+1)+(ok?"✓":"✗"); }
+    else { if(state.answers[i]!=null) b.classList.add("answered"); if(state.flags[i]) b.classList.add("flag");
+      st=(state.answers[i]!=null?"답함":"안 답함")+(state.flags[i]?", 표시함":""); }
+    if(i===state.cur){ b.classList.add("current"); b.setAttribute("aria-selected","true"); } else b.setAttribute("aria-selected","false");
+    b.setAttribute("aria-label",(i+1)+"번 문항, "+st);
+    b.onclick=function(){ go(i); };
+    nav.appendChild(b);
+  });
+  var n=state.answers.filter(function(a){return a!=null;}).length;
+  if($("gradeHint")) $("gradeHint").textContent="5문항 중 "+n+"개 답함";
+  $("toggleQ").textContent=(state.graded?"해설 ":"문항 ")+(state.cur+1)+"/5";
+}
+
+/* ── 문항 화면 ── */
+function renderQuestion(){
+  var it=ITEMS[state.cur], i=state.cur;
+  var h='';
+  if(it.link) h+='<span class="link-tag">지문 1·2 연계</span>';
+  h+='<p class="stem" lang="en">'+(i+1)+'. '+esc(it.stem)+'</p>';
+  h+='<div class="opts" role="radiogroup" aria-label="보기">';
+  it.opts.forEach(function(o,k){
+    var sel=state.answers[i]===k;
+    h+='<button type="button" class="opt" role="radio" aria-checked="'+sel+'" data-k="'+k+'" tabindex="'+(sel||(state.answers[i]==null&&k===0)?0:-1)+'"><span class="k">('+KEYS[k]+')</span><span lang="en">'+esc(o)+'</span></button>';
+  });
+  h+='</div>';
+  h+='<label class="unsure"><input type="checkbox" id="unsure" '+(state.unsure[i]?"checked":"")+'> 확신 없음 <small>(채점 후 복습에 반영돼요)</small></label>';
+  qBody.innerHTML=h;
+  qBody.querySelectorAll(".opt").forEach(function(b){ b.onclick=function(){ choose(+b.dataset.k); }; });
+  $("unsure").onchange=function(){ state.unsure[i]=this.checked; };
+  $("flagBtn").setAttribute("aria-pressed",state.flags[i]); $("flagBtn").textContent=state.flags[i]?"◆ 표시함":"◇ 표시";
+}
+function choose(k){
+  state.answers[state.cur]=k; renderQuestion(); renderNav();
+  var b=qBody.querySelector('.opt[data-k="'+k+'"]'); if(b) b.focus();
+}
+$("flagBtn").onclick=function(){ state.flags[state.cur]=!state.flags[state.cur]; renderQuestion(); renderNav(); };
+
+/* ── 해설 화면 (F4·F5) ── */
+function guessCauses(i){
+  var it=ITEMS[i], a=state.answers[i], c=[];
+  if(a==null) return ["guess"];
+  if(it.traps[a]) c.push("trap");
+  if(state.times[i] > it.median*1.5) c.push("time");
+  if(it.tag.indexOf("VOC")>-1 && c.indexOf("trap")<0) c.unshift("vocab");
+  if(state.unsure[i]) c.push("guess");
+  return c.slice(0,2);
+}
+function renderExplain(){
+  var i=state.cur, it=ITEMS[i], a=state.answers[i], ok=a===it.ans;
+  var t=state.times[i], slow=t>it.median*1.5;
+  var h='<div class="result-line"><span class="badge '+(ok?'ok':'ng')+'">'+(ok?'✓ 정답':'✗ 오답')+'</span>';
+  h+='<span>'+(i+1)+'번 · 내 답 '+(a==null?'미응답':'('+KEYS[a]+')')+' · 정답 ('+KEYS[it.ans]+')</span>';
+  h+='<span class="time'+(slow?' slow':'')+'">풀이 '+fmt(t)+' (Part 7 중앙값 '+fmt(it.median)+')'+(slow?' · 오래 걸림':'')+'</span></div>';
+  h+='<p class="stem" lang="en" style="font-size:calc(var(--reading-size) - 2px)">'+esc(it.stem)+'</p>';
+
+  if(!ok && a!=null && it.traps[a]){
+    h+='<div class="trap-box" role="note"><h3>내가 고른 ('+KEYS[a]+')의 함정</h3><span class="trap-chip">'+it.traps[a][0]+'</span><p style="margin:0">'+it.traps[a][1]+'</p></div>';
+  }
+  if(ok && state.unsure[i]) h+='<div class="trap-box" role="note" style="border-color:var(--color-warning);background:transparent"><p style="margin:0">확신 없이 맞혔어요. 같은 유형을 복습 세트에 한 번 더 넣을게요.</p></div>';
+
+  h+='<div class="sec"><h3>정답 근거</h3><p>'+it.expl+'</p>';
+  it.ev.forEach(function(id){ h+='<div class="ev-quote" lang="en">'+esc($(id).textContent.trim())+'</div>'; });
+  h+='<button class="btn" type="button" id="evBtn" style="margin-top:4px">▶ 근거 보기'+(it.ev.length>1?' ('+it.ev.length+'곳)':'')+'</button></div>';
+  h+='<div class="sec"><h3>핵심 규칙</h3><p>'+it.key+'</p></div>';
+
+  var others=[]; it.opts.forEach(function(o,k){ if(k!==it.ans && k!==a && it.traps[k]) others.push('<li><b>('+KEYS[k]+')</b> ['+it.traps[k][0]+'] '+it.traps[k][1]+'</li>'); });
+  if(others.length) h+='<details><summary>다른 보기 이유 ('+others.length+')</summary><ul>'+others.join("")+'</ul></details>';
+  h+='<details><summary>어휘 '+it.vocab.length+'개</summary><ul>'+it.vocab.map(function(v){return '<li>'+v+'</li>';}).join("")+'</ul></details>';
+
+  if(!ok){
+    if(!state.causes[i]) state.causes[i]=guessCauses(i);
+    h+='<div class="sec"><h3>왜 틀렸나요? <small style="font-weight:400">시스템 추정이 선택돼 있어요. 눌러서 바꿀 수 있어요.</small></h3><div class="causes" role="group" aria-label="오답 원인">';
+    CAUSES.forEach(function(c){ var on=state.causes[i].indexOf(c[0])>-1; h+='<button type="button" class="cause" data-c="'+c[0]+'" aria-pressed="'+on+'">'+c[1]+'</button>'; });
+    h+='</div></div>';
+  }
+  var hv=state.helpful[i];
+  h+='<div class="sec helpful"><span>해설이 도움이 됐나요?</span>'+
+     '<button type="button" class="btn" data-h="y" aria-pressed="'+(hv==="y")+'">👍 네</button>'+
+     '<button type="button" class="btn" data-h="n" aria-pressed="'+(hv==="n")+'">👎 아니요</button>'+
+     '<button type="button" class="btn text" id="inlineReport">오류 신고</button></div>';
+  qBody.innerHTML=h;
+
+  state.evIdx=0;
+  $("evBtn").onclick=function(){ showEvidence(it); };
+  $("inlineReport").onclick=openReport;
+  qBody.querySelectorAll(".cause").forEach(function(b){ b.onclick=function(){
+    var arr=state.causes[i], c=b.dataset.c, p=arr.indexOf(c);
+    if(c==="guess"){ state.causes[i]= p>-1?[]:["guess"]; }
+    else { var g=arr.indexOf("guess"); if(g>-1) arr.splice(g,1); p>-1?arr.splice(arr.indexOf(c),1):arr.push(c); }
+    renderExplain(); qBody.querySelector('.cause[data-c="'+c+'"]').focus();
+  };});
+  qBody.querySelectorAll("[data-h]").forEach(function(b){ b.onclick=function(){ state.helpful[i]=b.dataset.h; toast("의견을 저장했어요 ("+it.id+" v1)."); renderExplain(); }; });
+  // 다른 보기 이유 정리: 채점 후 보기 표시도 함께
+}
+
+function clearEvidence(){ document.querySelectorAll(".s.ev").forEach(function(s){ s.classList.remove("ev","focus"); s.removeAttribute("tabindex"); }); }
+function showEvidence(it){
+  clearEvidence();
+  it.ev.forEach(function(id){ $(id).classList.add("ev"); });
+  var target=$(it.ev[state.evIdx % it.ev.length]); state.evIdx++;
+  target.classList.add("focus"); target.setAttribute("tabindex","-1");
+  if(isNarrow()){ setView("p"); toast("근거 문장을 표시했어요. 아래 '해설'을 눌러 돌아가요."); }
+  var pane=$("passagePane");
+  var top=target.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop - 90;
+  pane.scrollTo({top:top,behavior:"smooth"});
+  setTimeout(function(){ target.focus({preventScroll:true}); },250);
+  if(it.ev.length>1) $("evBtn").textContent="▶ 다음 근거 ("+((state.evIdx % it.ev.length)+1)+"/"+it.ev.length+")";
+}
+
+/* ── 이동 ── */
+function go(i){
+  if(i<0||i>4) return;
+  state.cur=i; renderNav();
+  if(state.graded){ clearEvidence(); renderExplain(); } else renderQuestion();
+  $("prevBtn").disabled=i===0; $("nextBtn").disabled=i===4;
+  qBody.scrollTop=0;
+}
+$("prevBtn").onclick=function(){ go(state.cur-1); };
+$("nextBtn").onclick=function(){ go(state.cur+1); };
+
+/* ── 채점 ── */
+function grade(){
+  state.graded=true;
+  var n=ITEMS.filter(function(it,i){return state.answers[i]===it.ans;}).length;
+  $("score").hidden=false; $("score").textContent=n+"/5 정답 · "+fmt(elapsed);
+  $("qHeadTitle").textContent="채점 결과"; $("legend").textContent="✓ 정답 · ✗ 오답 · 번호를 누르면 해설로 이동해요";
+  $("flagBtn").hidden=true;
+  var gr=$("gradeRow"); gr.innerHTML='<span class="hint">세트 시간 '+fmt(elapsed)+' / 권장 6:15</span><button class="btn primary" type="button" id="nextSet">다음 세트 →</button>';
+  $("nextSet").onclick=function(){ toast("프로토타입: 다음 세트(3/4)로 이동합니다."); };
+  var first=ITEMS.findIndex(function(it,i){return state.answers[i]!==it.ans;});
+  go(first<0?0:first);
+  if(isNarrow()) setView("q");
+  toast(n+"/5 정답. "+(first<0?"모두 맞혔어요!":"틀린 문항부터 해설을 보여 드려요."));
+  qBody.focus();
+}
+$("gradeBtn").onclick=function(){
+  var miss=[]; state.answers.forEach(function(a,i){ if(a==null) miss.push(i+1); });
+  if(miss.length){ $("cfText").textContent=miss.join(", ")+"번 문항을 안 풀었어요. 채점하면 답을 바꿀 수 없어요."; openModal("confirmModal","cfBack"); }
+  else grade();
+};
+$("cfBack").onclick=function(){ closeModal("confirmModal"); var m=state.answers.findIndex(function(a){return a==null;}); go(m); if(isNarrow()) setView("q"); };
+$("cfGo").onclick=function(){ closeModal("confirmModal"); grade(); };
+
+/* ── 오류 신고 (F9) ── */
+var lastFocus=null;
+function openModal(id,focusId){ lastFocus=document.activeElement; $(id).hidden=false; $(focusId).focus(); }
+function closeModal(id){ $(id).hidden=true; if(lastFocus) lastFocus.focus(); }
+function openReport(){
+  closeMenu();
+  var it=ITEMS[state.cur], a=state.answers[state.cur];
+  $("rpAttach").innerHTML='자동으로 함께 보내요<br>문항 <code>'+it.id+'</code> · 버전 <code>v1</code> · 유형 <code>'+it.tag+'</code><br>내가 고른 답: '+(a==null?'없음':'('+KEYS[a]+')')+' · 브라우저: '+esc(navigator.userAgent.split(") ")[0].slice(0,60))+')';
+  openModal("reportModal","rpText");
+  var first=document.querySelector('#reportForm input[name="rtype"]'); if(first) first.focus();
+}
+$("menuReport").onclick=openReport;
+$("rpCancel").onclick=function(){ closeModal("reportModal"); };
+$("reportForm").onsubmit=function(e){ e.preventDefault(); closeModal("reportModal"); this.reset(); toast("신고가 접수됐어요. 처리 결과를 알려 드릴게요."); };
+document.querySelectorAll(".backdrop").forEach(function(b){ b.addEventListener("click",function(e){ if(e.target===b) closeModal(b.id); }); });
+
+/* ── 키보드 ── */
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape"){ if(!$("reportModal").hidden) closeModal("reportModal"); else if(!$("confirmModal").hidden) closeModal("confirmModal"); else closeMenu(); return; }
+  if(!$("reportModal").hidden||!$("confirmModal").hidden) return;
+  var tg=e.target.tagName; if(tg==="TEXTAREA"||tg==="INPUT") return;
+  if(e.target.id==="divider") return;
+  if(!state.graded){
+    var map={"1":0,"2":1,"3":2,"4":3,"a":0,"b":1,"c":2,"d":3};
+    var k=map[e.key.toLowerCase()]; if(k!=null && !e.ctrlKey && !e.metaKey){ choose(k); e.preventDefault(); return; }
+    if((e.ctrlKey||e.metaKey) && e.key==="Enter"){ $("gradeBtn").click(); return; }
+  }
+  if(e.target.classList && e.target.classList.contains("opt") && (e.key==="ArrowDown"||e.key==="ArrowUp")){
+    var c=+e.target.dataset.k + (e.key==="ArrowDown"?1:-1); if(c>=0&&c<4){ choose(c); } e.preventDefault(); return;
+  }
+  if(e.key==="ArrowRight"){ go(state.cur+1); } else if(e.key==="ArrowLeft"){ go(state.cur-1); }
+  else if(e.key==="["){ $("passagePane").scrollTo({top:0,behavior:"smooth"}); } else if(e.key==="]"){ $("p2").scrollIntoView({behavior:"smooth"}); }
+});
+
+/* ── 토스트 ── */
+var tt; function toast(m){ var t=$("toast"); t.textContent=m; t.hidden=false; clearTimeout(tt); tt=setTimeout(function(){t.hidden=true;},3200); }
+window.toast=toast;
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+
+/* 초기화: 넓은 화면은 분할, 좁은 화면은 문항부터 */
+setView(isNarrow()?"q":"p");
+go(0);
+})();
+</script>
+</body>
+</html>

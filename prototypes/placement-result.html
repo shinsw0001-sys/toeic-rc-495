@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>배치고사 결과와 필수 범위</title>
+<!--
+  S1-13 프로토타입 · UX/UI Designer · 2026-10-13
+  - 배치고사 결과(PL6) → 목표·일정(GS1) → 필수 학습 범위(GS2) → 단어 카드·문맥 퀴즈(V2·V3)
+  - 데이터는 명세 docs/specs/placement-and-vocab.md 2.5 "P1 김민지" 예시(가상)다. 실제 사용자·실제 점수가 아니다.
+  - 단어 카드 예문·퀴즈는 프로토타입용 자체 작성 예시이며 검수 전이다(학습 서비스에 그대로 쓰지 않는다).
+  - 외부 의존성 없음. 토큰 이름은 docs/design/core-flow.md 6장 + placement-vocab-flow.md 4장과 같다.
+-->
+<style>
+:root{
+  --color-bg:#F7F8FA; --color-surface:#FFFFFF; --color-surface-sunken:#EEF0F4; --color-border:#D5D9E0;
+  --color-text:#1B1F24; --color-text-muted:#5A6270;
+  --color-primary:#2F5BEA; --color-primary-weak:#E6ECFE; --color-on-primary:#FFFFFF;
+  --color-correct:#1E7F4F; --color-correct-weak:#E3F4EA;
+  --color-wrong:#C2362F; --color-wrong-weak:#FCE8E6;
+  --color-warning:#9A6700; --color-warning-weak:#FFF4D6; --color-focus:#1A73E8;
+  --color-weak:#C2362F; --color-weak-bg:#FCE8E6;
+  --color-mid:#5A6270;
+  --color-strong:#1E7F4F; --color-strong-bg:#E3F4EA;
+  --color-beta:#6B4FD8; --color-beta-weak:#EEEAFE;
+  --color-range:rgba(47,91,234,.25);
+  --font-ui:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;
+  --radius-sm:6px;--radius-md:10px;--radius-lg:16px;--radius-pill:999px;
+  --shadow-1:0 1px 2px rgba(0,0,0,.06); --shadow-2:0 8px 24px rgba(0,0,0,.18);
+  --touch-min:44px; --bar-height:56px; --motion-base:200ms;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+    --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+    --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+    --color-correct:#5FD39A; --color-correct-weak:#15301F;
+    --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+    --color-warning:#E3B341; --color-warning-weak:#33280C; --color-focus:#8AB4F8;
+    --color-weak:#FF8A80; --color-weak-bg:#3A1A18; --color-mid:#A3AAB5;
+    --color-strong:#5FD39A; --color-strong-bg:#15301F;
+    --color-beta:#B9A6FF; --color-beta-weak:#262040;
+    --color-range:rgba(122,155,255,.30);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --color-bg:#111418; --color-surface:#1A1E24; --color-surface-sunken:#0D1014; --color-border:#2E343D;
+  --color-text:#E8EAED; --color-text-muted:#A3AAB5;
+  --color-primary:#7A9BFF; --color-primary-weak:#1E2A4D; --color-on-primary:#0B1020;
+  --color-correct:#5FD39A; --color-correct-weak:#15301F;
+  --color-wrong:#FF8A80; --color-wrong-weak:#3A1A18;
+  --color-warning:#E3B341; --color-warning-weak:#33280C; --color-focus:#8AB4F8;
+  --color-weak:#FF8A80; --color-weak-bg:#3A1A18; --color-mid:#A3AAB5;
+  --color-strong:#5FD39A; --color-strong-bg:#15301F;
+  --color-beta:#B9A6FF; --color-beta-weak:#262040;
+  --color-range:rgba(122,155,255,.30);
+  color-scheme:dark;
+}
+@media (prefers-reduced-motion:reduce){ :root{ --motion-base:0ms } html{scroll-behavior:auto!important} }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-ui);font-size:15px;line-height:1.5;
+  -webkit-text-size-adjust:100%}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--color-focus);outline-offset:2px;border-radius:var(--radius-sm)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--color-text-muted)}
+h1,h2,h3{margin:0;line-height:1.3}
+
+/* ── 상단 바 ── */
+.topbar{position:sticky;top:0;z-index:10;height:var(--bar-height);display:flex;align-items:center;gap:var(--space-3);
+  padding:0 var(--space-4);background:var(--color-surface);border-bottom:1px solid var(--color-border)}
+.topbar .logo{font-weight:800;letter-spacing:-.02em}
+.topbar nav{display:flex;gap:var(--space-1);margin-left:var(--space-4);overflow-x:auto;scrollbar-width:none}
+.topbar nav a{white-space:nowrap;text-decoration:none;color:var(--color-text-muted);padding:8px 10px;border-radius:var(--radius-md);font-size:14px}
+.topbar nav a:hover{background:var(--color-surface-sunken);color:var(--color-text)}
+.topbar nav a b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--color-surface-sunken);
+  font-size:12px;margin-right:6px;color:var(--color-text)}
+.spacer{flex:1}
+.icon-btn{min-width:var(--touch-min);height:var(--touch-min);display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:0 var(--space-3);border:1px solid var(--color-border);background:var(--color-surface);border-radius:var(--radius-md);cursor:pointer;font-size:14px;white-space:nowrap}
+.icon-btn:hover{background:var(--color-surface-sunken)}
+
+.sample-banner{max-width:1120px;margin:var(--space-4) auto 0;padding:10px var(--space-4);border:1px dashed var(--color-border);
+  border-radius:var(--radius-md);font-size:13px;color:var(--color-text-muted);display:flex;gap:8px;align-items:flex-start}
+main{max-width:1120px;margin:0 auto;padding:var(--space-4) var(--space-4) 120px}
+section.step{scroll-margin-top:calc(var(--bar-height) + 12px);margin-top:var(--space-6)}
+.step-head{display:flex;align-items:baseline;gap:var(--space-3);margin-bottom:var(--space-3);flex-wrap:wrap}
+.step-head .idx{font-size:12px;font-weight:700;color:var(--color-primary);background:var(--color-primary-weak);border-radius:var(--radius-pill);padding:2px 10px}
+.step-head h2{font-size:22px}
+.step-head p{margin:0;color:var(--color-text-muted);font-size:14px;flex-basis:100%}
+
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-5);box-shadow:var(--shadow-1)}
+.card h3{font-size:15px;color:var(--color-text-muted);font-weight:600;margin-bottom:var(--space-3);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.grid{display:grid;gap:var(--space-4)}
+.g-result{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+.g-2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+
+.chip{display:inline-flex;align-items:center;gap:4px;border-radius:var(--radius-pill);padding:2px 10px;font-size:12px;font-weight:600;
+  border:1px solid var(--color-border);background:var(--color-surface);white-space:nowrap}
+.chip.beta{background:var(--color-beta-weak);color:var(--color-beta);border-color:transparent}
+.chip.primary{background:var(--color-primary-weak);color:var(--color-primary);border-color:transparent}
+
+/* ── 버튼 ── */
+.btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 var(--space-5);border-radius:var(--radius-md);
+  border:1.5px solid var(--color-border);background:var(--color-surface);cursor:pointer;font-weight:600;text-decoration:none;color:var(--color-text)}
+.btn:hover{border-color:var(--color-primary)}
+.btn.primary{background:var(--color-primary);border-color:var(--color-primary);color:var(--color-on-primary)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.text{border-color:transparent;background:none;color:var(--color-primary);padding:0 var(--space-2);min-height:var(--touch-min)}
+.btn.small{min-height:36px;font-size:13px;padding:0 var(--space-3)}
+
+/* ── RC 범위 ── */
+.rc-big{display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap}
+.rc-big .range{font-size:34px;font-weight:800;letter-spacing:-.02em}
+.rc-big .mid{font-size:16px;color:var(--color-text-muted)}
+.rangebar{position:relative;height:64px;margin:var(--space-5) 0 var(--space-2)}
+.rangebar .axis{position:absolute;left:0;right:0;top:22px;height:8px;border-radius:4px;background:var(--color-surface-sunken);border:1px solid var(--color-border)}
+.rangebar .band{position:absolute;top:14px;height:24px;border-radius:6px;background:var(--color-range);border:2px solid var(--color-primary)}
+.rangebar .dot{position:absolute;top:17px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--color-primary);border:3px solid var(--color-surface)}
+.rangebar .goal{position:absolute;top:4px;height:44px;border-left:2px dashed var(--color-text-muted)}
+.rangebar .goal span{position:absolute;top:-2px;left:6px;font-size:12px;color:var(--color-text-muted);white-space:nowrap}
+.rangebar .tick{position:absolute;top:46px;font-size:11px;color:var(--color-text-muted);transform:translateX(-50%)}
+.rangebar .lab{position:absolute;top:46px;font-size:12px;font-weight:700;transform:translateX(-50%)}
+.evid{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-4);font-size:14px;color:var(--color-text-muted);margin-top:var(--space-3)}
+.evid b{color:var(--color-text)}
+
+/* ── 신뢰도 ── */
+.meter{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:var(--space-2) 0 6px}
+.meter span{height:14px;border-radius:4px;background:var(--color-surface-sunken);border:1px solid var(--color-border);position:relative}
+.meter span.on{background:var(--color-primary);border-color:var(--color-primary)}
+.meter span.lock{background:repeating-linear-gradient(135deg,var(--color-surface-sunken) 0 4px,var(--color-border) 4px 6px)}
+.meter-labels{display:grid;grid-template-columns:repeat(3,1fr);font-size:12px;color:var(--color-text-muted);text-align:center}
+.meter-labels .cur{color:var(--color-text);font-weight:700}
+.conf-val{font-size:22px;font-weight:800;margin-top:var(--space-3)}
+.reason-list{margin:var(--space-2) 0 0;padding:0;list-style:none;font-size:14px}
+.reason-list li{display:flex;gap:8px;padding:3px 0}
+.reason-list li::before{content:"·";color:var(--color-text-muted)}
+.note{font-size:13px;color:var(--color-text-muted);margin-top:var(--space-3);padding-top:var(--space-3);border-top:1px solid var(--color-border)}
+
+.track{display:flex;align-items:center;gap:var(--space-4);flex-wrap:wrap}
+.track .t{font-size:20px;font-weight:800}
+.track .path{font-size:14px;color:var(--color-text-muted)}
+
+/* ── 강약점 맵 ── */
+.legend{display:flex;flex-wrap:wrap;gap:var(--space-3);font-size:12px;color:var(--color-text-muted);font-weight:400}
+.smap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-2)}
+.tile{text-align:left;border:1.5px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3);background:var(--color-surface);cursor:pointer;min-height:78px;
+  display:flex;flex-direction:column;gap:4px}
+.tile:hover{border-color:var(--color-primary)}
+.tile[aria-pressed="true"]{box-shadow:0 0 0 2px var(--color-surface),0 0 0 4px var(--color-primary)}
+.tile .nm{font-weight:700;font-size:14px}
+.tile .st{font-size:13px;display:flex;flex-wrap:wrap;gap:2px 6px;align-items:center}
+.tile .st i{font-style:normal;font-weight:800}
+.tile.weak{background:var(--color-weak-bg);border-color:var(--color-weak)}
+.tile.weak .st{color:var(--color-weak)}
+.tile.strong{background:var(--color-strong-bg);border-color:var(--color-strong)}
+.tile.strong .st{color:var(--color-strong)}
+.tile.mid .st{color:var(--color-mid)}
+.tile.hold{border-style:dashed;background:transparent}
+.tile.hold .st{color:var(--color-text-muted)}
+.tile-detail{margin-top:var(--space-3);font-size:14px;background:var(--color-surface-sunken);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);min-height:44px}
+
+/* ── 어휘 레벨 ── */
+.vsteps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:var(--space-2) 0 var(--space-3)}
+.vstep{border:1.5px solid var(--color-border);border-radius:var(--radius-md);padding:8px 4px;text-align:center;font-size:13px;min-width:0}
+.vstep b{display:block;font-size:14px}
+.vstep.pass{background:var(--color-strong-bg);border-color:var(--color-strong)}
+.vstep.start{border-color:var(--color-primary);box-shadow:0 0 0 2px var(--color-primary-weak)}
+.vconc{font-weight:800;font-size:18px}
+
+.cta-row{display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap;margin-top:var(--space-4)}
+
+/* ── 목표 입력 ── */
+.form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-5)}
+.field label,.field .lbl{display:block;font-weight:700;margin-bottom:6px}
+.field .help{font-size:13px;color:var(--color-text-muted);margin-top:6px}
+.stepper{display:inline-flex;align-items:stretch;border:1.5px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;background:var(--color-surface)}
+.stepper button{width:48px;border:none;background:var(--color-surface-sunken);cursor:pointer;font-size:20px}
+.stepper button:hover{background:var(--color-primary-weak)}
+.stepper input{width:96px;border:none;text-align:center;font-size:22px;font-weight:800;background:transparent;padding:8px 0}
+.stepper input:focus{outline:none}
+.stepper:focus-within{outline:2px solid var(--color-focus);outline-offset:2px}
+.field.err .stepper{border-color:var(--color-wrong)}
+.errmsg{color:var(--color-wrong);font-size:13px;margin-top:6px;display:none}
+.field.err .errmsg{display:flex;gap:4px}
+.seg{display:inline-flex;border:1.5px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden}
+.seg button{min-height:44px;min-width:72px;padding:0 14px;border:none;background:var(--color-surface);cursor:pointer;border-right:1px solid var(--color-border)}
+.seg button:last-child{border-right:none}
+.seg button[aria-pressed="true"]{background:var(--color-primary);color:var(--color-on-primary);font-weight:700}
+.seg button:disabled{color:var(--color-text-muted);cursor:not-allowed;background:var(--color-surface-sunken)}
+details.calc{margin-top:var(--space-3);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:0 var(--space-3)}
+details summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-size:14px;color:var(--color-primary);font-weight:600}
+.calc-row{display:flex;gap:var(--space-2);align-items:center;flex-wrap:wrap;padding-bottom:var(--space-3);font-size:14px}
+.calc-row input{width:88px;min-height:40px;border:1.5px solid var(--color-border);border-radius:var(--radius-sm);padding:0 8px;background:var(--color-surface);text-align:right}
+.preview{background:var(--color-surface-sunken);border-radius:var(--radius-md);padding:var(--space-4);font-size:14px}
+.preview .big{font-size:18px;font-weight:800}
+.banner{display:flex;gap:10px;align-items:flex-start;border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);font-size:14px;margin-top:var(--space-3)}
+.banner.warn{background:var(--color-warning-weak);border:1px solid var(--color-warning);color:var(--color-text)}
+.banner.warn .ic{color:var(--color-warning);font-weight:800}
+.banner.info{background:var(--color-primary-weak);border:1px solid transparent}
+.banner .ic{flex:none}
+.banner .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+[hidden]{display:none!important}
+
+/* ── 범위 ── */
+.scope-sum{display:flex;justify-content:space-between;gap:var(--space-3);flex-wrap:wrap;align-items:baseline}
+.scope-sum .who{font-size:16px;font-weight:700}
+.capbar{display:flex;height:22px;border-radius:6px;overflow:hidden;background:var(--color-surface-sunken);border:1px solid var(--color-border);margin:var(--space-3) 0 6px}
+.capbar .must{background:var(--color-primary)}
+.capbar .rec{background:repeating-linear-gradient(135deg,var(--color-range) 0 6px,transparent 6px 10px),var(--color-primary-weak);border-left:2px solid var(--color-surface)}
+.cap-legend{display:flex;gap:var(--space-4);flex-wrap:wrap;font-size:13px;color:var(--color-text-muted)}
+.cap-legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+.cap-msg{font-size:14px;margin-top:var(--space-2)}
+.tier{margin-top:var(--space-5)}
+.tier-h{display:flex;align-items:center;gap:var(--space-3);padding:var(--space-2) 0;border-bottom:2px solid var(--color-border);flex-wrap:wrap}
+.tier-h h3{font-size:18px;color:var(--color-text);margin:0;display:flex;align-items:center;gap:8px}
+.tier-h .desc{font-size:13px;color:var(--color-text-muted)}
+.tier-h .mark{width:14px;height:14px;border-radius:3px;display:inline-block}
+.tier.must .mark{background:var(--color-primary)}
+.tier.rec .mark{background:var(--color-primary-weak);border:2px solid var(--color-primary)}
+.tier.later .mark{border:2px dashed var(--color-text-muted)}
+.tier-toggle{background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;gap:8px;min-height:44px;text-align:left}
+.tier-toggle .caret{transition:transform var(--motion-base)}
+.tier-toggle[aria-expanded="true"] .caret{transform:rotate(90deg)}
+.units{list-style:none;margin:0;padding:0}
+.unit{border-bottom:1px solid var(--color-border)}
+.unit-main{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:var(--space-3);align-items:start;padding:var(--space-3) 0}
+.unit .no{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:var(--color-surface-sunken)}
+.tier.must .unit .no{background:var(--color-primary);color:var(--color-on-primary)}
+.unit .nm{font-weight:700}
+.unit .tag{font-size:11px;color:var(--color-text-muted);font-family:ui-monospace,Menlo,Consolas,monospace;margin-left:6px;font-weight:400}
+.unit .why{font-size:14px;color:var(--color-text-muted);margin-top:2px}
+.rchips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.rchip{font-size:12px;border-radius:var(--radius-pill);padding:1px 8px;border:1px solid var(--color-border);background:var(--color-surface)}
+.rchip.w3{border-color:var(--color-weak);color:var(--color-weak)}
+.rchip.w1{border-color:var(--color-strong);color:var(--color-strong)}
+.rchip.hi{font-weight:700}
+.unit-side{text-align:right;font-size:13px;display:flex;flex-direction:column;align-items:flex-end;gap:4px;min-width:96px}
+.unit-side .amt{font-weight:700;font-size:14px}
+.wk{font-size:12px;border-radius:var(--radius-pill);padding:1px 8px;background:var(--color-primary-weak);color:var(--color-primary);font-weight:600;white-space:nowrap}
+.wk.spare{background:var(--color-surface-sunken);color:var(--color-text-muted)}
+.flag{font-size:12px;color:var(--color-warning);font-weight:700}
+.flag.add{color:var(--color-primary)}
+.more{background:none;border:none;color:var(--color-primary);cursor:pointer;font-size:13px;padding:0;min-height:32px}
+.unit-x{margin:0 0 var(--space-3) 44px;background:var(--color-surface-sunken);border-radius:var(--radius-md);padding:var(--space-3) var(--space-4);font-size:14px}
+.fcw{display:flex;gap:var(--space-2);flex-wrap:wrap;margin:6px 0}
+.fcw span{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:2px 8px}
+.later-note{font-size:13px;color:var(--color-text-muted);margin:var(--space-2) 0}
+.confirm{margin:0 0 var(--space-3) 44px}
+.stickybar{position:sticky;bottom:0;z-index:5;margin-top:var(--space-5);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
+  padding:var(--space-3) var(--space-4);display:flex;gap:var(--space-3);align-items:center;justify-content:flex-end;box-shadow:var(--shadow-2);flex-wrap:wrap;
+  padding-bottom:calc(var(--space-3) + env(safe-area-inset-bottom))}
+.stickybar .sum{margin-right:auto;font-size:14px;color:var(--color-text-muted)}
+
+/* ── 단어 카드 ── */
+.wordcard{max-width:560px}
+.wc-meta{display:flex;gap:6px;flex-wrap:wrap}
+.lemma{font-size:40px;font-weight:800;letter-spacing:-.01em;margin:var(--space-4) 0 var(--space-2);text-align:center}
+.ex{font-size:18px;line-height:1.65;text-align:center;margin:0 0 var(--space-3)}
+.ex b{background:var(--color-primary-weak);border-radius:4px;padding:0 3px}
+.wc-back{border-top:1px solid var(--color-border);padding-top:var(--space-3);margin-top:var(--space-3);font-size:14px}
+.wc-back dl{display:grid;grid-template-columns:96px minmax(0,1fr);gap:8px var(--space-3);margin:0}
+.wc-back dt{color:var(--color-text-muted);font-weight:600}
+.wc-back dd{margin:0}
+.deriv{display:flex;flex-wrap:wrap;gap:6px}
+.deriv span{border:1px solid var(--color-border);border-radius:var(--radius-sm);padding:1px 8px;background:var(--color-surface-sunken)}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-2);margin-top:var(--space-4)}
+.rate button{min-height:52px;border:1.5px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface);cursor:pointer;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.2}
+.rate button small{font-weight:400;color:var(--color-text-muted);font-size:11px}
+.rate button:hover{border-color:var(--color-primary)}
+.rate button[aria-pressed="true"]{background:var(--color-primary-weak);border-color:var(--color-primary)}
+.quiz-q{font-size:18px;line-height:1.6;margin:var(--space-2) 0 var(--space-3)}
+.quiz-q u{text-underline-offset:4px;text-decoration-thickness:2px}
+.opts{display:flex;flex-direction:column;gap:var(--space-2)}
+.opt{display:flex;gap:var(--space-3);align-items:center;min-height:48px;padding:var(--space-2) var(--space-4);border:1.5px solid var(--color-border);border-radius:var(--radius-md);
+  background:var(--color-surface);cursor:pointer;text-align:left;width:100%}
+.opt:hover:not(:disabled){border-color:var(--color-primary)}
+.opt .k{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--color-border);font-size:13px;font-weight:700}
+.opt.ok{background:var(--color-correct-weak);border-color:var(--color-correct)}
+.opt.ng{background:var(--color-wrong-weak);border-color:var(--color-wrong)}
+.opt .res{margin-left:auto;font-size:13px;font-weight:700}
+.opt.ok .res{color:var(--color-correct)}
+.opt.ng .res{color:var(--color-wrong)}
+.opt:disabled{cursor:default}
+.qfb{margin-top:var(--space-3);font-size:14px;padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);background:var(--color-surface-sunken)}
+.qlabel{font-size:12px;font-weight:700;color:var(--color-primary)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--color-text);color:var(--color-bg);padding:12px 18px;border-radius:var(--radius-md);
+  box-shadow:var(--shadow-2);font-size:14px;z-index:40;max-width:calc(100% - 32px)}
+
+/* ── 반응형 ── */
+@media (max-width:1023px){
+  .g-result,.g-2,.form{grid-template-columns:minmax(0,1fr)}
+  .smap{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){
+  .topbar nav{display:none}
+  main{padding:var(--space-3) var(--space-4) 120px}
+  .card{padding:var(--space-4)}
+  .rc-big .range{font-size:28px}
+  .step-head h2{font-size:19px}
+  .unit-main{grid-template-columns:28px minmax(0,1fr)}
+  .unit-side{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap;min-width:0;text-align:left}
+  .unit-x,.confirm{margin-left:0}
+  .stickybar{margin-left:calc(-1 * var(--space-4));margin-right:calc(-1 * var(--space-4));border-radius:0;border-left:none;border-right:none}
+  .stickybar .btn.primary{flex:1}
+  .stickybar .sum{flex-basis:100%}
+  .wc-back dl{grid-template-columns:minmax(0,1fr)}
+  .wc-back dt{margin-top:6px}
+  .lemma{font-size:34px}
+  .sample-banner{margin:var(--space-3) var(--space-4) 0}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <span class="logo">RC<span style="color:var(--color-primary)">.</span>트랙</span>
+  <nav aria-label="프로토타입 단계">
+    <a href="#result"><b>1</b>배치 결과</a>
+    <a href="#goal"><b>2</b>목표·일정</a>
+    <a href="#scope"><b>3</b>필수 학습 범위</a>
+    <a href="#vocab"><b>4</b>오늘의 단어</a>
+  </nav>
+  <span class="spacer"></span>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label="화면 테마 바꾸기">◐ <span id="themeLbl">시스템</span></button>
+</header>
+
+<p class="sample-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>예시 데이터</b> · 명세 2.5의 가상 사용자 "P1" (현재 RC 약 320, 목표 400, 6주, 하루 25분). 실제 사용자·실제 점수가 아니며, 단어 예문은 검수 전 샘플이에요.</span></p>
+
+<main>
+<!-- ───────── 1. 배치 결과 ───────── -->
+<section class="step" id="result" aria-labelledby="h-result">
+  <div class="step-head">
+    <span class="idx">PL6</span><h2 id="h-result">배치고사 결과</h2>
+    <p>점수 하나가 아니라 범위·근거·신뢰도로 보여 드려요.</p>
+  </div>
+
+  <div class="grid g-result">
+    <div class="card">
+      <h3>지금 내 RC <span class="chip beta">베타</span></h3>
+      <div class="rc-big">
+        <span class="range num">RC 270~370</span>
+        <span class="mid num">중앙 320</span>
+      </div>
+      <div class="rangebar" role="img" aria-label="예측 RC 270점에서 370점, 중앙값 320점. 트랙 목표 400점.">
+        <div class="axis"></div>
+        <div class="goal" style="left:calc(400/495*100%)"><span>목표 400</span></div>
+        <div class="band" style="left:calc(270/495*100%);width:calc(100/495*100%)"></div>
+        <div class="dot" style="left:calc(320/495*100%)"></div>
+        <span class="tick" style="left:0;transform:none">0</span>
+        <span class="lab num" style="left:calc(270/495*100%)">270</span>
+        <span class="lab num" style="left:calc(370/495*100%)">370</span>
+        <span class="tick" style="left:100%;transform:translateX(-100%)">495</span>
+      </div>
+      <div class="evid">
+        <span>근거 <b class="num">26문항</b> (1단계 12 + 2단계 14)</span>
+        <span>정답 <b class="num">13 / 26</b></span>
+        <span>10초 안에 답한 문항 <b class="num">2개</b></span>
+        <span>시간 안에 못 푼 문항 <b class="num">0개</b></span>
+      </div>
+      <p class="note">이 범위는 학습 참고용이에요. 실제 TOEIC 점수와 맞춰 본 데이터가 아직 없어서(베타) 범위를 넓게 잡았어요. 환급·보장 조건으로 쓰지 않아요.</p>
+    </div>
+
+    <div class="card" aria-labelledby="h-conf">
+      <h3 id="h-conf">신뢰도</h3>
+      <div class="meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="lock"></span></div>
+      <div class="meter-labels" aria-hidden="true"><span>낮음</span><span class="cur">보통</span><span>🔒 높음</span></div>
+      <p class="sr-only">신뢰도 보통. 3단계 중 2단계. 높음은 모의고사 후에만 표시됩니다.</p>
+      <div class="conf-val">보통 <span class="muted num" style="font-size:15px;font-weight:600">· 범위 ±50</span></div>
+      <ul class="reason-list">
+        <li>26문항 모두 응답했어요</li>
+        <li>빨리 푼 문항이 2개로 적어요</li>
+        <li>2단계 정답률 57% — 난이도 배정이 맞았어요</li>
+      </ul>
+      <p class="note"><b style="color:var(--color-text)">"높음"은 모의고사 후에 열려요.</b> 배치고사만으로는 근거가 부족해요. 모의고사(100문항)를 보면 범위가 ±25까지 좁아져요.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:var(--space-4)">
+    <div class="track">
+      <span class="muted" style="font-weight:600">추천 트랙</span>
+      <span class="t">300→400</span>
+      <span class="path">경로: 1단계 12문항 중 5개 정답 → 기초 모듈 14문항</span>
+    </div>
+  </div>
+
+  <div class="grid g-result" style="margin-top:var(--space-4)">
+    <div class="card">
+      <h3>유형별 강약점 <span class="muted" style="font-weight:400">(대분류)</span>
+        <span class="legend" aria-hidden="true"><span>▼ 약점</span><span>● 보통</span><span>▲ 강점</span><span>? 판단 보류</span></span>
+      </h3>
+      <div class="smap" id="smap" role="group" aria-label="유형별 강약점 맵. 칸을 누르면 근거가 보여요."></div>
+      <div class="tile-detail" id="tileDetail" aria-live="polite">칸을 누르면 배치고사에서 이 유형을 몇 문항 풀고 몇 개 맞혔는지 보여요.</div>
+    </div>
+    <div class="card">
+      <h3>어휘 레벨 <span class="chip">간이 추정</span></h3>
+      <div class="vsteps" role="list" aria-label="어휘 체크 레벨별 결과">
+        <div class="vstep pass" role="listitem"><b>기초</b>✓ 통과<br><span class="num">5개 중 5</span></div>
+        <div class="vstep start" role="listitem"><b>400</b>✗ 미통과<br><span class="num">5개 중 2</span></div>
+        <div class="vstep" role="listitem"><b>450</b><span class="muted">미통과</span><br><span class="num">5개 중 1</span></div>
+        <div class="vstep" role="listitem"><b>495</b><span class="muted">미통과</span><br><span class="num">5개 중 0</span></div>
+      </div>
+      <div class="vconc">▶ 400 레벨부터 시작</div>
+      <p class="note">레벨마다 5개 중 4개 이상이면 통과예요. 표본이 작아서 단어를 처음 볼 때 "알아요"로 한 번 더 걸러요. 어휘 체크는 RC 점수에 들어가지 않아요.</p>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a class="btn primary" href="#goal">목표 정하고 필수 범위 보기 →</a>
+    <details class="calc" style="margin:0;border:none;padding:0">
+      <summary>이 결과는 어떻게 계산되나요?</summary>
+      <p class="muted" style="font-size:14px;max-width:60ch">26문항의 난이도와 정답 여부로 RC 범위를 계산해요. 근거가 60문항보다 적으면 범위를 최소 ±50으로 넓혀요. 유형 칸은 "이 범위의 사람이 보통 맞히는 수"보다 적게 맞혔으면 약점, 많이 맞혔으면 강점이에요. 근거가 2문항 미만이면 판단하지 않아요.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ───────── 2. 목표·일정 ───────── -->
+<section class="step" id="goal" aria-labelledby="h-goal">
+  <div class="step-head">
+    <span class="idx">GS1</span><h2 id="h-goal">목표·일정</h2>
+    <p>목표 RC와 기간을 정하면, 그 기간에 할 수 있는 양 안에서 범위를 골라 드려요.</p>
+  </div>
+  <div class="card">
+    <div class="form">
+      <div>
+        <div class="field" id="fTarget">
+          <label for="target">① 목표 RC 점수</label>
+          <div class="stepper">
+            <button type="button" id="tMinus" aria-label="5점 내리기">−</button>
+            <input id="target" class="num" inputmode="numeric" value="400" aria-describedby="tHelp tErr" autocomplete="off">
+            <button type="button" id="tPlus" aria-label="5점 올리기">+</button>
+          </div>
+          <div class="errmsg" id="tErr" role="alert"><span aria-hidden="true">✗</span><span id="tErrTxt">5점 단위로 입력해 주세요.</span></div>
+          <div class="help" id="tHelp">트랙 목표(400)로 미리 채웠어요. 5점 단위.</div>
+          <details class="calc">
+            <summary>총점 목표로 계산하기</summary>
+            <div class="calc-row">
+              <label for="tot">총점 목표</label><input id="tot" class="num" inputmode="numeric" placeholder="700">
+              <span>−</span>
+              <label for="lc">최근 LC</label><input id="lc" class="num" inputmode="numeric" placeholder="330">
+              <span>=</span><b id="calcOut" class="num">RC —</b>
+              <button type="button" class="btn small" id="useCalc" disabled>이 값 쓰기</button>
+            </div>
+            <p class="help" style="margin-top:0;padding-bottom:12px">LC를 모르면: 한국 평균은 LC가 RC보다 약 70점 높아요(참고용). 값을 대신 넣지는 않아요.</p>
+          </details>
+        </div>
+        <div class="field" style="margin-top:var(--space-5)">
+          <span class="lbl" id="lWeeks">② 시험까지</span>
+          <div class="seg" role="group" aria-labelledby="lWeeks">
+            <button type="button" data-weeks="6" aria-pressed="true">6주</button>
+            <button type="button" data-weeks="4" aria-pressed="false">4주</button>
+          </div>
+          <div class="help">프로토타입은 6주(12월 정기시험 가정)와 4주 두 경우만 보여 줘요.</div>
+        </div>
+        <div class="field" style="margin-top:var(--space-5)">
+          <span class="lbl" id="lDaily">③ 평일 하루 학습 시간</span>
+          <div class="seg" role="group" aria-labelledby="lDaily">
+            <button type="button" disabled aria-pressed="false">15분</button>
+            <button type="button" aria-pressed="true">25분</button>
+            <button type="button" disabled aria-pressed="false">40분</button>
+          </div>
+          <div class="help">어휘 5분이 포함된 시간이에요. (프로토타입은 25분만)</div>
+        </div>
+      </div>
+      <div>
+        <div class="preview" aria-live="polite">
+          <div class="muted">미리보기</div>
+          <div class="big num" id="pvLine">320 → 400 · 6주 · 하루 25분</div>
+          <div id="pvGain" class="num" style="margin-top:4px">필요 상승폭 +80 (중앙 320 기준) · 주당 약 13점</div>
+          <div class="num muted" id="pvSess" style="margin-top:4px">총 30세션 · 어휘 매일 5분 + 문항 20분</div>
+        </div>
+        <div class="banner warn" id="challenge" hidden role="status">
+          <span class="ic" aria-hidden="true">⚠</span>
+          <div><b>도전적인 목표예요.</b> 주당 15점보다 많이 올려야 해요. 베타 데이터로 확인된 기준이 아니라 참고용이에요. 저장은 그대로 할 수 있어요.
+            <div class="acts"><button type="button" class="btn small" data-weeks-to="6">다음 시험일(6주 뒤)로</button><button type="button" class="btn small" id="keepGoal">이 목표 그대로</button></div>
+          </div>
+        </div>
+        <div class="banner info" id="notExample" hidden role="status">
+          <span class="ic" aria-hidden="true">ⓘ</span>
+          <div>프로토타입은 <b>목표 400</b> 계산 예시만 보여 줘요. 실제 서비스에서는 목표가 바뀌면 "목표에 필요한 정도"가 다시 계산되어 범위가 달라져요.</div>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="#scope">필수 학습 범위 보기 →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 3. 필수 학습 범위 ───────── -->
+<section class="step" id="scope" aria-labelledby="h-scope">
+  <div class="step-head">
+    <span class="idx">GS2</span><h2 id="h-scope">필수 학습 범위</h2>
+    <p>꼭 할 것, 시간 되면 할 것, 이번 목표에선 안 해도 되는 것을 이유와 함께 보여 드려요. "+몇 점" 같은 약속은 하지 않아요.</p>
+  </div>
+  <div class="card">
+    <div class="scope-sum">
+      <span class="who num" id="scWho">현재 RC 270~370 (중앙 320) → 목표 400 · 6주 · 하루 25분</span>
+      <a class="btn text" href="#goal">목표·일정 바꾸기</a>
+    </div>
+    <div class="num" style="margin-top:var(--space-3);font-weight:700" id="capTitle">6주 동안 새로 배울 시간 375분</div>
+    <div class="capbar" id="capbar" role="img" aria-label=""></div>
+    <div class="cap-legend num" id="capLegend"></div>
+    <div class="cap-msg" id="capMsg"></div>
+    <div class="banner info" id="demoteBanner" hidden role="status"><span class="ic" aria-hidden="true">↓</span><div id="demoteTxt"></div></div>
+    <details class="calc">
+      <summary>새로 배울 시간은 어떻게 계산하나요?</summary>
+      <p class="num" id="capCalc" style="font-size:14px;margin-top:0"></p>
+    </details>
+
+    <div id="tiers"></div>
+
+    <div class="stickybar">
+      <span class="sum num" id="planSum"></span>
+      <button class="btn" type="button" id="weekView">주차별로 보기</button>
+      <button class="btn primary" type="button" id="makePlan">이 범위로 6주 플랜 만들기 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 4. 오늘의 단어 ───────── -->
+<section class="step" id="vocab" aria-labelledby="h-vocab">
+  <div class="step-head">
+    <span class="idx">V2·V3</span><h2 id="h-vocab">오늘의 단어 (샘플)</h2>
+    <p>대시보드의 "오늘 학습 시작"은 어휘 5분부터 시작해요: 복습 퀴즈 → 새 단어 카드 → 문맥 퀴즈.</p>
+  </div>
+  <div class="grid g-2">
+    <div class="card wordcard" aria-labelledby="wcTitle">
+      <h3 id="wcTitle">새 단어 <span class="num">4 / 12</span> · 남은 약 3분</h3>
+      <div class="wc-meta">
+        <span class="chip">v. 동사</span><span class="chip primary">400 레벨</span><span class="chip">출처: 레벨 단어 · 필수 범위 "어휘 400"</span>
+      </div>
+      <div class="lemma" lang="en">postpone</div>
+      <p class="ex" lang="en">Harlow Logistics <b>postponed</b> the quarterly meeting until the CFO returns from Singapore.</p>
+      <div style="text-align:center"><button class="btn text" type="button" id="flipBtn" aria-expanded="false" aria-controls="wcBack">뜻 보기 ▾</button></div>
+      <div class="wc-back" id="wcBack" hidden>
+        <dl>
+          <dt>뜻</dt><dd><b>(일정을) 연기하다, 미루다</b></dd>
+          <dt>예문 번역</dt><dd>Harlow 물류는 재무 이사가 싱가포르에서 돌아올 때까지 분기 회의를 연기했다.</dd>
+          <dt>콜로케이션</dt><dd lang="en">postpone A until B · postpone a decision · be postponed indefinitely</dd>
+          <dt>파생어</dt><dd><div class="deriv" lang="en"><span>postpone (v.)</span><span>postponement (n.)</span></div><span class="muted" style="font-size:12px">Part 5 품사 자리와 연결돼요</span></dd>
+          <dt>혼동어</dt><dd><b lang="en">delay</b>: 의도와 상관없이 늦어짐 ↔ <b lang="en">postpone</b>: 일정을 정해서 뒤로 옮김</dd>
+          <dt>바꿔 말하기</dt><dd lang="en">put off · push back <span class="muted" lang="ko">(Part 7 동의어 문항)</span></dd>
+          <dt>출제 유형</dt><dd>Part 5 어휘 · Part 7 동의어</dd>
+        </dl>
+        <p style="margin:var(--space-3) 0 0"><a href="#vocab" class="btn text" style="padding:0">이 단어가 나온 문제 보기 (2)</a> · <button type="button" class="more">⋯ 오류 신고</button></p>
+      </div>
+      <div class="rate" role="group" aria-label="이 단어를 아나요?">
+        <button type="button" data-rate="know">✓ 알아요<small>확인 퀴즈 1개</small></button>
+        <button type="button" data-rate="unsure">? 헷갈려요<small>뜻 보고 퀴즈</small></button>
+        <button type="button" data-rate="dont">✗ 몰라요<small>뜻 보고 퀴즈</small></button>
+      </div>
+      <div id="knowQuiz" hidden style="margin-top:var(--space-4)">
+        <div class="qlabel">확인 퀴즈 · 문맥 뜻 고르기</div>
+        <p class="quiz-q" lang="en">The product launch has been <u>postponed</u> because of a supplier issue.</p>
+        <div class="opts" id="q1"></div>
+        <div class="qfb" id="q1fb" hidden aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="card" aria-labelledby="dqTitle">
+      <h3 id="dqTitle">문맥 퀴즈 <span class="chip primary">Part 5 품사 자리 연습</span></h3>
+      <div class="qlabel">파생어 빈칸 · 다음 카드 "reimburse"</div>
+      <p class="quiz-q" lang="en">Employees must submit original receipts to receive ------- for travel expenses.</p>
+      <div class="opts" id="q2"></div>
+      <div class="qfb" id="q2fb" hidden aria-live="polite"></div>
+      <p class="note">파생어 빈칸은 필수 범위의 "품사 자리" 단위와 연결돼요. 품사 자리가 필수인 사람에게 이 퀴즈 비중이 올라가요.</p>
+      <div class="note" style="display:flex;gap:var(--space-4);flex-wrap:wrap">
+        <span>오늘 복습 <b class="num">9</b></span><span>새 단어 <b class="num">12</b></span><span>400 레벨 <b class="num">0 / 450</b></span>
+        <a href="#vocab" class="btn text" style="padding:0;min-height:auto">내 단어장 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function(){
+  "use strict";
+  // ── 테마 ──
+  var root=document.documentElement, themes=["system","light","dark"], labels={system:"시스템",light:"라이트",dark:"다크"}, ti=0;
+  try{ var saved=localStorage.getItem("plr-theme"); if(saved && themes.indexOf(saved)>=0) ti=themes.indexOf(saved); }catch(e){}
+  function applyTheme(){ var t=themes[ti]; if(t==="system") root.removeAttribute("data-theme"); else root.setAttribute("data-theme",t);
+    document.getElementById("themeLbl").textContent=labels[t]; try{localStorage.setItem("plr-theme",t);}catch(e){} }
+  document.getElementById("themeBtn").addEventListener("click",function(){ ti=(ti+1)%3; applyTheme(); });
+  applyTheme();
+
+  var toastT; function toast(msg){ var t=document.getElementById("toast"); t.textContent=msg; t.hidden=false; clearTimeout(toastT); toastT=setTimeout(function(){t.hidden=true},2600); }
+
+  // ── 강약점 맵 (명세 2.5 P1 예시, 근거 수는 명세 1.5 기초 모듈 기준) ──
+  var tiles=[
+    {n:"품사 자리",s:"weak",e:2,d:"2문항 중 0개 정답 · 이 범위의 사람은 보통 1.2개 맞혀요 → 약점"},
+    {n:"동사 (시제·수동태 등)",s:"weak",e:3,d:"3문항 중 1개 정답 · 보통 2.0개 → 약점"},
+    {n:"Part 5 어휘",s:"weak",e:3,d:"3문항 중 1개 정답 · 보통 1.9개 → 약점"},
+    {n:"연결어",s:"mid",e:3,d:"3문항 중 2개 정답 · 보통 2.1개 → 보통"},
+    {n:"Part 6 문맥",s:"mid",e:4,d:"4문항 중 2개 정답 · 보통 2.3개 → 보통"},
+    {n:"Part 7 세부 정보",s:"mid",e:6,d:"6문항 중 3개 정답 · 보통 3.2개 → 보통"},
+    {n:"Part 7 주제·목적",s:"strong",e:4,d:"4문항 중 4개 정답 · 보통 2.9개 → 강점"},
+    {n:"기타 문법",s:"hold",e:1,d:"근거가 1문항뿐이라 약점·강점을 판단하지 않았어요. 학습하면서 채워요."}
+  ];
+  var stTxt={weak:["▼","약점"],mid:["●","보통"],strong:["▲","강점"],hold:["?","판단 보류"]};
+  var smap=document.getElementById("smap"), det=document.getElementById("tileDetail");
+  tiles.forEach(function(t){
+    var b=document.createElement("button"); b.type="button"; b.className="tile "+t.s; b.setAttribute("aria-pressed","false");
+    b.innerHTML='<span class="nm">'+t.n+'</span><span class="st"><i aria-hidden="true">'+stTxt[t.s][0]+'</i>'+stTxt[t.s][1]+'<span class="num">· 근거 '+t.e+'문항</span></span>';
+    b.addEventListener("click",function(){
+      smap.querySelectorAll(".tile").forEach(function(x){x.setAttribute("aria-pressed","false")});
+      b.setAttribute("aria-pressed","true"); det.innerHTML="<b>"+t.n+"</b> — "+t.d;
+    });
+    smap.appendChild(b);
+  });
+
+  // ── 범위 데이터 (명세 2.5 표) ──
+  var U=[
+    {id:"V",nm:"어휘 400 레벨",tag:"F11",F:3,C:3,W:3,tier:"must",amt:0,daily:true,wk6:"1~6주",wk4:"1~4주",why:"어휘 체크 400 레벨 5개 중 2개 · 매일 새 단어 12개 + 복습"},
+    {id:1,nm:"품사 자리: 명사·동사",tag:"P5-POS.N/V",F:3,C:3,W:3,tier:"must",amt:30,wk6:"1주",wk4:"1주",why:"약점(배치고사 품사 2문항 중 0개) · 목표 400에서 맞혀야 하는 기본 유형"},
+    {id:2,nm:"품사 자리: 형용사·부사",tag:"P5-POS.ADJ/ADV",F:3,C:3,W:3,tier:"must",amt:30,wk6:"1주",wk4:"1주",why:"약점 · 빈칸 앞뒤 단어만 보고 자리를 고르는 유형"},
+    {id:3,nm:"시제",tag:"P5-VERB.TENSE",F:3,C:3,W:3,tier:"must",amt:30,wk6:"1주",wk4:"1주",why:"약점(동사 3문항 중 1개) · 자주 나오는 기본 문법"},
+    {id:5,nm:"수 일치",tag:"P5-VERB.AGR",F:2,C:3,W:3,tier:"must",amt:30,wk6:"2주",wk4:"2주",why:"동사 약점 · 목표 400에서 맞혀야 하는 유형"},
+    {id:6,nm:"능동·수동",tag:"P5-VERB.VOICE",F:2,C:3,W:3,tier:"must",amt:30,wk6:"2주",wk4:"2주",why:"동사 약점 · 목표 400에서 맞혀야 하는 유형"},
+    {id:7,nm:"전치사 vs 접속사",tag:"P5-CONN.PREPvsCONJ",F:3,C:3,W:2,tier:"must",amt:30,wk6:"2주",wk4:"2주",why:"자주 나오고 목표 400에 필요 · 연결어는 지금 보통"},
+    {id:8,nm:"Part 7 세부 사항·수치",tag:"P7-DET.FACT/NUM",F:3,C:3,W:2,tier:"must",amt:45,wk6:"3주",wk4:"3주",why:"Part 7에서 가장 자주 묻는 형태 · 지금은 보통"},
+    {id:9,nm:"to부정사·동명사·분사",tag:"P5-VERB.NONFIN",F:2,C:2,W:3,tier:"must",amt:30,wk6:"3주",wk4:"3주",why:"동사 약점 · 목표 400에서 일부 맞혀야 해요"},
+    {id:10,nm:"Part 6 문맥 시제·접속부사",tag:"P6-CTX.TENSE/TRANS",F:2,C:3,W:2,tier:"must",amt:30,wk6:"3주",wk4:"3주",why:"앞뒤 문장을 봐야 풀리는 Part 6 기본 유형"},
+    {id:11,nm:"관계사",tag:"P5-CONN.REL",F:2,C:2,W:2,tier:"rec",amt:30,why:"가끔 나오고 목표 400에서 일부 필요"},
+    {id:12,nm:"Part 7 추론",tag:"P7-INF",F:2,C:2,W:2,tier:"rec",amt:45,why:"가끔 나오고 목표 400에서 일부 필요 · 배치고사 근거 적음"},
+    {id:13,nm:"비교·최상급",tag:"P5-GRAM.COMP",F:2,C:2,W:2,tier:"rec",amt:30,why:"가끔 나와요 · 기타 문법은 아직 판단 보류"},
+    {id:14,nm:"Part 7 NOT·TRUE",tag:"P7-TF",F:2,C:2,W:2,tier:"rec",amt:45,why:"가끔 나와요 · 보기 4개를 지문과 하나씩 맞춰 보는 유형"},
+    {id:15,nm:"Part 7 주제·목적",tag:"P7-MAIN",F:2,C:3,W:1,tier:"rec",keep:true,amt:45,why:"강점(4문항 중 4개) · 새로 배우기보다 복습으로 유지"},
+    {id:16,nm:"Part 6 문장 삽입",tag:"P6-INS.SENT",F:2,C:1,W:2,tier:"later",amt:30,why:"목표 400에서는 대부분 틀려도 되는 고난도 유형"},
+    {id:17,nm:"Part 7 이중·삼중 연계",tag:"P7-LINK",F:2,C:1,W:2,tier:"later",amt:45,why:"여러 지문을 이어야 하는 고난도 · 400→450 트랙에서 필수가 돼요"},
+    {id:18,nm:"문자·채팅 의도 파악",tag:"P7-INTENT.CHAT",F:1,C:2,W:2,tier:"later",amt:45,why:"드물게 나와요 · 목표 400에서는 일부만 필요"},
+    {id:19,nm:"도치·가정법",tag:"P5-GRAM.INV · P5-VERB.MOOD",F:1,C:1,W:2,tier:"later",amt:30,why:"드물고 어려워요 · 다음 트랙에서"}
+  ];
+  var Ftx={3:"자주 나와요",2:"가끔 나와요",1:"드물어요"}, Ctx={3:"목표 400에 필요",2:"목표에 일부 필요",1:"목표 400엔 덜 중요"}, Wtx={3:"약점",2:"보통·아직 모름",1:"강점"};
+  var state={weeks:6,added:[],open:{},laterOpen:false,pendingAdd:null};
+
+  function capFor(w){ // 명세 2.5: 세션×20분(RC) − 모의고사 100 − 복습 25%
+    var sess=w*5, rc=sess*20; return {sess:sess,total:sess*25,vocab:sess*5,rc:rc,cap:Math.round((rc-100)*0.75)};
+  }
+  function P(u){return u.F*u.C*u.W}
+
+  function compute(addedList){
+    var c=capFor(state.weeks).cap;
+    var res={}; U.forEach(function(u){res[u.id]={tier:u.tier,inPlan:false,demoted:false,added:false}});
+    var musts=U.filter(function(u){return u.tier==="must"&&!u.daily});
+    var sum=musts.reduce(function(a,u){return a+u.amt},0);
+    // 용량 규칙: P가 낮은 필수부터 권장으로 (동점이면 뒤 번호부터)
+    var order=musts.slice().sort(function(a,b){return P(a)-P(b)||b.id-a.id});
+    var demoted=[];
+    for(var i=0;i<order.length&&sum>c;i++){ demoted.push(order[i]); sum-=order[i].amt; res[order[i].id].tier="rec"; res[order[i].id].demoted=true; }
+    musts.forEach(function(u){ if(!res[u.id].demoted) res[u.id].inPlan=true; });
+    var used=sum, mustMin=sum;
+    // 사용자가 넣은 단위 먼저, 그다음 권장(P순, 동점은 번호순)
+    addedList.forEach(function(id){ var u=U.filter(function(x){return x.id===id})[0]; res[id].tier="rec"; res[id].added=true;
+      if(used+u.amt<=c){res[id].inPlan=true; used+=u.amt;} });
+    var recs=U.filter(function(u){return u.tier==="rec"}).sort(function(a,b){return P(b)-P(a)||a.id-b.id});
+    recs.forEach(function(u){ if(used+u.amt<=c){res[u.id].inPlan=true; used+=u.amt;} });
+    return {res:res,cap:c,mustMin:mustMin,recMin:used-mustMin,used:used,demoted:demoted};
+  }
+
+  function weekLabel(u,r){
+    if(u.daily) return state.weeks===6?u.wk6:u.wk4;
+    if(!r.inPlan) return null;
+    if(u.tier==="must"&&!r.demoted) return state.weeks===6?u.wk6:u.wk4;
+    return state.weeks===6?"4주":"4주";
+  }
+
+  function unitHTML(u,r,tierKey){
+    var wk=weekLabel(u,r), open=!!state.open[u.id];
+    var chips='<span class="rchip'+(u.F===3?' hi':'')+'">'+Ftx[u.F]+'</span><span class="rchip'+(u.C===3?' hi':'')+'">'+Ctx[u.C]+'</span><span class="rchip w'+u.W+'">'+(u.W===3?'▼ ':u.W===1?'▲ ':'')+Wtx[u.W]+'</span>';
+    var side='<span class="amt num">'+(u.daily?'매일 5분':u.amt+'분')+'</span>';
+    if(tierKey!=="later") side+= wk?'<span class="wk num">'+wk+'</span>':'<span class="wk spare">시간 남으면</span>';
+    if(r.demoted) side+='<span class="flag">↓ 필수에서 옮김</span>';
+    if(r.added) side+='<span class="flag add">＋ 직접 넣음</span>';
+    if(u.keep) side+='<span class="flag" style="color:var(--color-text-muted)">유지 · 복습만</span>';
+    var no=u.daily?'⟳':(u.id);
+    var h='<li class="unit"><div class="unit-main"><span class="no num" aria-hidden="true">'+no+'</span><div><div class="nm">'+u.nm+'<span class="tag">'+u.tag+'</span></div>'+
+      '<div class="why">'+u.why+'</div><div class="rchips">'+chips+'</div>'+
+      '<button type="button" class="more" data-open="'+u.id+'" aria-expanded="'+open+'">'+(open?'접기 ▴':'왜 이 순서인가요? ▾')+'</button>';
+    if(tierKey==="later") h+=' <button type="button" class="btn small" data-add="'+u.id+'" style="margin-left:8px">플랜에 넣기</button>';
+    h+='</div><div class="unit-side">'+side+'</div></div>';
+    if(open){
+      h+='<div class="unit-x"><div class="fcw num"><span>빈도 '+u.F+'</span><span>목표 기여 '+u.C+'</span><span>내 약점 '+u.W+'</span><span><b>우선순위 '+u.F+'×'+u.C+'×'+u.W+' = '+P(u)+'</b></span></div>'+
+        '필수 12 이상 · 권장 6~9 · 나중에 4 이하. 세 값은 각각 1~3이고, 빈도는 공식 파트 문항 수와 콘텐츠팀 추정을 합친 내부 값이라 퍼센트로 보여 드리지 않아요. 문항을 30개 풀 때마다 다시 계산해요.</div>';
+    }
+    if(state.pendingAdd&&state.pendingAdd.id===u.id){
+      h+='<div class="confirm banner warn" role="alert"><span class="ic" aria-hidden="true">⚠</span><div>'+state.pendingAdd.msg+
+        '<div class="acts"><button type="button" class="btn small primary" data-confirm="'+u.id+'">넣기</button><button type="button" class="btn small" data-cancel="1">취소</button></div></div></div>';
+    }
+    return h+'</li>';
+  }
+
+  function render(){
+    var R=compute(state.added), c=capFor(state.weeks);
+    // 요약
+    var tgt=document.getElementById("target").value;
+    document.getElementById("scWho").textContent="현재 RC 270~370 (중앙 320) → 목표 "+tgt+" · "+state.weeks+"주 · 하루 25분";
+    document.getElementById("capTitle").textContent=state.weeks+"주 동안 새로 배울 시간 "+R.cap+"분";
+    var rest=Math.max(0,R.cap-R.used);
+    var bar=document.getElementById("capbar");
+    bar.innerHTML='<span class="must" style="width:'+(R.mustMin/R.cap*100)+'%"></span><span class="rec" style="width:'+(R.recMin/R.cap*100)+'%"></span>';
+    bar.setAttribute("aria-label","새로 배울 시간 "+R.cap+"분 중 필수 "+R.mustMin+"분, 권장 "+R.recMin+"분, 남는 시간 "+rest+"분");
+    document.getElementById("capLegend").innerHTML='<span><i style="background:var(--color-primary)"></i>필수 '+R.mustMin+'분</span><span><i style="background:var(--color-primary-weak);border:1px solid var(--color-primary)"></i>권장 '+R.recMin+'분</span><span><i style="background:var(--color-surface-sunken);border:1px solid var(--color-border)"></i>남음 '+rest+'분</span><span>어휘는 매일 5분 · 별도</span>';
+    var mustN=U.filter(function(u){return u.tier==="must"&&!u.daily&&!R.res[u.id].demoted}).length;
+    var recAll=U.filter(function(u){return R.res[u.id].tier==="rec"});
+    var recIn=recAll.filter(function(u){return R.res[u.id].inPlan}).length;
+    document.getElementById("capMsg").textContent="필수 "+mustN+"개(+ 어휘 매일)는 모두 기간 안에 들어가요. "+(recIn?"권장 "+recAll.length+"개 중 "+recIn+"개도 들어가요.":"권장 "+recAll.length+"개는 시간이 남으면 해요.");
+    var db=document.getElementById("demoteBanner");
+    if(R.demoted.length){ db.hidden=false; document.getElementById("demoteTxt").innerHTML="<b>기간이 짧아 필수 범위 중 "+R.demoted.length+"개를 권장으로 옮겼어요.</b> 우선순위가 가장 낮은 필수부터 옮겼어요: "+R.demoted.map(function(u){return u.nm}).join(", "); }
+    else db.hidden=true;
+    document.getElementById("capCalc").textContent=c.sess+"세션 × 25분 = "+c.total+"분 → 어휘 "+c.vocab+"분 빼면 RC "+c.rc+"분 → 모의고사 100분(풀이 75 + 리뷰 25) 빼면 "+(c.rc-100)+"분 → 복습 몫 25% 빼면 약 "+R.cap+"분";
+
+    // 묶음
+    var groups={must:[],rec:[],later:[]};
+    U.forEach(function(u){ var t=R.res[u.id].tier; groups[t].push(u); });
+    groups.rec.sort(function(a,b){ var ra=R.res[a.id], rb=R.res[b.id]; return (rb.inPlan-ra.inPlan)|| (rb.demoted-ra.demoted) || a.id-b.id; });
+    var html="";
+    html+='<div class="tier must"><div class="tier-h"><h3><span class="mark" aria-hidden="true"></span>필수 <span class="num">'+groups.must.length+'</span></h3><span class="desc">목표 400에 직접 걸리고, 지금 약하거나 아직 모르는 범위</span></div><ul class="units">'+groups.must.map(function(u){return unitHTML(u,R.res[u.id],"must")}).join("")+'</ul></div>';
+    html+='<div class="tier rec"><div class="tier-h"><h3><span class="mark" aria-hidden="true"></span>권장 <span class="num">'+groups.rec.length+'</span></h3><span class="desc">시간이 되면 점수에 보탬 · 필수 다음에 남은 시간 안에서</span></div><ul class="units">'+groups.rec.map(function(u){return unitHTML(u,R.res[u.id],"rec")}).join("")+'</ul></div>';
+    html+='<div class="tier later"><div class="tier-h"><button type="button" class="tier-toggle" id="laterBtn" aria-expanded="'+state.laterOpen+'" aria-controls="laterList"><span class="caret" aria-hidden="true">▸</span><h3><span class="mark" aria-hidden="true"></span>나중에 <span class="num">'+groups.later.length+'</span></h3></button><span class="desc">이번 목표에선 효율이 낮아요 · 플랜에 넣지 않아요</span></div>'+
+      '<div id="laterList"'+(state.laterOpen?'':' hidden')+'><p class="later-note">안 해도 된다는 뜻은 아니에요. 목표 400을 넘긴 뒤나 다음 트랙에서 다뤄요. 원하면 직접 넣을 수 있어요.</p><ul class="units">'+groups.later.map(function(u){return unitHTML(u,R.res[u.id],"later")}).join("")+'</ul></div></div>';
+    document.getElementById("tiers").innerHTML=html;
+    var inPlan=U.filter(function(u){return R.res[u.id].inPlan&&!u.daily}).length;
+    document.getElementById("planSum").textContent="플랜에 들어가는 단위 "+inPlan+"개 + 어휘 매일 · "+R.used+" / "+R.cap+"분";
+    document.getElementById("makePlan").textContent="이 범위로 "+state.weeks+"주 플랜 만들기 →";
+  }
+
+  document.getElementById("tiers").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b) return;
+    if(b.id==="laterBtn"){ state.laterOpen=!state.laterOpen; render(); document.getElementById("laterBtn").focus(); return; }
+    if(b.dataset.open){ var k=b.dataset.open; state.open[k]=!state.open[k]; render(); var nb=document.querySelector('[data-open="'+k+'"]'); if(nb) nb.focus(); return; }
+    if(b.dataset.add){
+      var id=+b.dataset.add, before=compute(state.added), after=compute(state.added.concat([id]));
+      var pushed=U.filter(function(u){return before.res[u.id].inPlan&&!after.res[u.id].inPlan});
+      var u=U.filter(function(x){return x.id===id})[0];
+      if(!after.res[id].inPlan){ state.pendingAdd={id:id,msg:"<b>"+u.nm+"</b>("+u.amt+"분)은 남은 시간에 들어가지 않아요. 넣어도 '시간 남으면'으로 표시돼요."}; }
+      else if(pushed.length){ state.pendingAdd={id:id,msg:"이걸 넣으면 "+pushed.map(function(p){return "<b>"+p.nm+"</b>("+p.amt+"분)"}).join(", ")+"이(가) '시간 남으면'으로 밀려요."}; }
+      else { state.added.push(id); toast(u.nm+"을(를) 권장 끝에 넣었어요"); }
+      render(); return;
+    }
+    if(b.dataset.confirm){ var cid=+b.dataset.confirm; state.added.push(cid); state.pendingAdd=null; render(); toast("플랜에 넣었어요 · 권장 끝"); return; }
+    if(b.dataset.cancel){ state.pendingAdd=null; render(); return; }
+  });
+
+  // ── 목표·일정 ──
+  var tIn=document.getElementById("target"), fT=document.getElementById("fTarget");
+  function setWeeks(w){ state.weeks=w; state.added=[]; state.pendingAdd=null;
+    document.querySelectorAll("[data-weeks]").forEach(function(b){b.setAttribute("aria-pressed",String(+b.dataset.weeks===w))}); updateGoal(); render(); }
+  document.querySelectorAll("[data-weeks]").forEach(function(b){ b.addEventListener("click",function(){ setWeeks(+b.dataset.weeks); }); });
+  document.querySelector("[data-weeks-to]").addEventListener("click",function(){ setWeeks(6); toast("6주 뒤 시험일로 바꿨어요"); });
+  document.getElementById("keepGoal").addEventListener("click",function(){ toast("목표를 그대로 저장했어요 · 참고 기준"); });
+  function valid(v){ return /^\d+$/.test(v) && +v>=5 && +v<=495 && +v%5===0; }
+  function updateGoal(){
+    var v=tIn.value.trim(), ok=valid(v);
+    fT.classList.toggle("err",!ok); tIn.setAttribute("aria-invalid",String(!ok));
+    if(!ok){ document.getElementById("tErrTxt").textContent=(/^\d+$/.test(v)&&(+v<5||+v>495))?"5~495 사이로 입력해 주세요.":"5점 단위 숫자로 입력해 주세요."; return; }
+    var t=+v, gain=t-320, per=gain/state.weeks;
+    document.getElementById("pvLine").textContent="320 → "+t+" · "+state.weeks+"주 · 하루 25분";
+    document.getElementById("pvGain").textContent= gain>0 ? "필요 상승폭 +"+gain+" (중앙 320 기준) · 주당 약 "+Math.round(per)+"점" : "이미 목표 근처예요 · 목표를 올리거나 유지 플랜으로 시작할 수 있어요";
+    document.getElementById("pvSess").textContent="총 "+(state.weeks*5)+"세션 · 어휘 매일 5분 + 문항 20분";
+    document.getElementById("challenge").hidden=!(per>15);
+    document.querySelector("[data-weeks-to]").hidden=(state.weeks===6);
+    document.getElementById("notExample").hidden=(t===400);
+    document.getElementById("scWho").textContent="현재 RC 270~370 (중앙 320) → 목표 "+t+" · "+state.weeks+"주 · 하루 25분";
+  }
+  tIn.addEventListener("input",updateGoal);
+  function step(d){ var v=+tIn.value; if(isNaN(v)) v=400; v=Math.round(v/5)*5+d; v=Math.min(495,Math.max(5,v)); tIn.value=v; updateGoal(); }
+  document.getElementById("tMinus").addEventListener("click",function(){step(-5)});
+  document.getElementById("tPlus").addEventListener("click",function(){step(5)});
+  var tot=document.getElementById("tot"), lc=document.getElementById("lc"), out=document.getElementById("calcOut"), use=document.getElementById("useCalc");
+  function calc(){ var a=+tot.value, b=+lc.value;
+    if(tot.value&&lc.value&&!isNaN(a)&&!isNaN(b)){ var r=a-b; out.textContent="RC "+r; use.disabled=!valid(String(r)); if(!valid(String(r))) out.textContent="RC "+r+" (5~495, 5점 단위가 아니에요)"; }
+    else { out.textContent="RC —"; use.disabled=true; } }
+  tot.addEventListener("input",calc); lc.addEventListener("input",calc);
+  use.addEventListener("click",function(){ tIn.value=(+tot.value)-(+lc.value); updateGoal(); toast("목표 RC를 "+tIn.value+"으로 바꿨어요"); });
+
+  document.getElementById("makePlan").addEventListener("click",function(){ toast("프로토타입: 주차별 플랜(S3) 화면으로 이동해요"); });
+  document.getElementById("weekView").addEventListener("click",function(){ toast("프로토타입: 1~"+state.weeks+"주 타임라인 보기로 바뀌어요"); });
+
+  // ── 단어 카드 ──
+  var flip=document.getElementById("flipBtn"), back=document.getElementById("wcBack");
+  function showBack(on){ back.hidden=!on; flip.setAttribute("aria-expanded",String(on)); flip.textContent=on?"뜻 접기 ▴":"뜻 보기 ▾"; }
+  flip.addEventListener("click",function(){ showBack(back.hidden); });
+  function buildQuiz(boxId,fbId,opts,ans,fbOk,fbNg,onDone){
+    var box=document.getElementById(boxId), fb=document.getElementById(fbId); box.innerHTML=""; fb.hidden=true;
+    opts.forEach(function(o,i){
+      var b=document.createElement("button"); b.type="button"; b.className="opt";
+      b.innerHTML='<span class="k">'+"ABCD"[i]+'</span><span'+(o.en?' lang="en"':'')+'>'+o.t+'</span><span class="res"></span>';
+      b.addEventListener("click",function(){
+        var all=box.querySelectorAll(".opt"); all.forEach(function(x){x.disabled=true});
+        all[ans].classList.add("ok"); all[ans].querySelector(".res").textContent="✓ 정답";
+        if(i!==ans){ b.classList.add("ng"); b.querySelector(".res").textContent="✗ 내 답"; }
+        fb.hidden=false; fb.innerHTML=(i===ans?fbOk:fbNg); if(onDone) onDone(i===ans);
+      });
+      box.appendChild(b);
+    });
+  }
+  document.querySelectorAll("[data-rate]").forEach(function(b){
+    b.addEventListener("click",function(){
+      document.querySelectorAll("[data-rate]").forEach(function(x){x.setAttribute("aria-pressed","false")}); b.setAttribute("aria-pressed","true");
+      var r=b.dataset.rate, kq=document.getElementById("knowQuiz");
+      if(r==="know"){ showBack(false); }else{ showBack(true); }
+      kq.hidden=false;
+      buildQuiz("q1","q1fb",[{t:"취소되다"},{t:"연기되다"},{t:"발표되다"},{t:"승인되다"}],1,
+        r==="know"?"<b>✓ 정답 · 아는 단어로 표시했어요.</b> 14일 뒤 한 번만 확인해요.":"<b>✓ 정답.</b> 1일 → 3일 → 7일 → 14일 간격으로 복습해요.",
+        r==="know"?"<b>✗ 오답 · 새 단어로 학습해요.</b> 뜻을 확인하고 내일 다시 나와요.":"<b>✗ 오답.</b> 내일 다시 나와요. 'cancel(취소)'과 달리 일정을 뒤로 옮기는 거예요.",
+        function(ok){ if(r==="know"&&!ok) showBack(true); });
+    });
+  });
+  buildQuiz("q2","q2fb",[{t:"reimburse",en:1},{t:"reimbursement",en:1},{t:"reimbursable",en:1},{t:"reimbursed",en:1}],1,
+    "<b>✓ 정답.</b> 동사 receive 뒤 목적어 자리 → 명사 reimbursement(상환, 환급).",
+    "<b>✗ 오답.</b> 동사 receive 뒤 목적어 자리라 명사가 와야 해요 → reimbursement(상환, 환급). 이 단어는 내일 다시 나와요.");
+
+  render(); updateGoal();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,6934 @@
+{
+  "cards": [
+    {
+      "word_id": "VC-4-0116",
+      "lemma": "maintenance",
+      "pos": "n",
+      "meaning_ko": "유지 보수, 정비",
+      "meaning_ko_sub": "(상태) 유지",
+      "examples": [
+        {
+          "en": "The east elevator will be closed for routine maintenance on Thursday morning.",
+          "ko": "동쪽 엘리베이터는 목요일 오전에 정기 정비로 운행이 중단됩니다."
+        },
+        {
+          "en": "Kesley Property Group handles all maintenance requests within 48 hours.",
+          "ko": "케슬리 부동산 그룹은 모든 정비 요청을 48시간 이내에 처리합니다."
+        }
+      ],
+      "collocations": [
+        "routine maintenance",
+        "maintenance work",
+        "maintenance request",
+        "be closed for maintenance"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "maintain"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "upkeep",
+        "repair work"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Building staff ------- the elevators every month to keep them safe.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0117",
+      "lemma": "membership",
+      "pos": "n",
+      "meaning_ko": "회원 자격, 회원권",
+      "meaning_ko_sub": "(전체) 회원 수",
+      "examples": [
+        {
+          "en": "Your annual membership includes free admission to all special exhibits at the Oakridge Museum.",
+          "ko": "연간 회원권에는 오크리지 박물관의 모든 특별 전시 무료 입장이 포함됩니다."
+        }
+      ],
+      "collocations": [
+        "renew a membership",
+        "membership fee",
+        "annual membership",
+        "membership card"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "member"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "subscription"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0118",
+      "lemma": "merchandise",
+      "pos": "n",
+      "meaning_ko": "상품, 물품",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "All merchandise purchased during the clearance sale is final and cannot be returned.",
+          "ko": "재고 정리 세일 기간에 구매한 모든 상품은 최종 판매로 반품할 수 없습니다."
+        }
+      ],
+      "collocations": [
+        "display merchandise",
+        "damaged merchandise",
+        "return merchandise",
+        "a wide range of merchandise"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "merchandise"
+        },
+        {
+          "pos": "n",
+          "form": "merchandising"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "merchant",
+          "note_ko": "merchant는 '상인, 판매자'(사람), merchandise는 '상품'(물건, 불가산)"
+        }
+      ],
+      "paraphrases": [
+        "goods",
+        "products",
+        "items"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0119",
+      "lemma": "occupancy",
+      "pos": "n",
+      "meaning_ko": "(건물·객실의) 사용, 입주",
+      "meaning_ko_sub": "(호텔 등의) 객실 점유율",
+      "examples": [
+        {
+          "en": "The new office tower is expected to be ready for occupancy by early spring.",
+          "ko": "새 사무 타워는 초봄까지 입주할 수 있도록 준비될 예정입니다."
+        },
+        {
+          "en": "Hotel occupancy in Lindale rose sharply during the music festival.",
+          "ko": "린데일의 호텔 객실 점유율이 음악 축제 기간에 급격히 올랐습니다."
+        }
+      ],
+      "collocations": [
+        "ready for occupancy",
+        "occupancy rate",
+        "maximum occupancy",
+        "high occupancy"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "occupy"
+        },
+        {
+          "pos": "n",
+          "form": "occupant"
+        },
+        {
+          "pos": "adj",
+          "form": "occupied"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The marketing team will ------- the entire third floor after the move.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0120",
+      "lemma": "opening",
+      "pos": "n",
+      "meaning_ko": "(일자리) 공석, 빈자리",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Marlow Engineering currently has two openings in its design department.",
+          "ko": "말로 엔지니어링은 현재 설계 부서에 두 자리의 공석이 있습니다."
+        }
+      ],
+      "collocations": [
+        "job opening",
+        "fill an opening",
+        "an opening for a sales manager"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "open"
+        },
+        {
+          "pos": "adj",
+          "form": "open"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "vacancy",
+        "position"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The position will remain ------- until a qualified candidate is found.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0121",
+      "lemma": "overview",
+      "pos": "n",
+      "meaning_ko": "개요, 개관",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Ms. Okafor will give new employees a brief overview of the company's history.",
+          "ko": "오카포 씨가 신입 직원들에게 회사 연혁에 대한 간단한 개요를 설명할 것입니다."
+        }
+      ],
+      "collocations": [
+        "give an overview of",
+        "a brief overview",
+        "a general overview",
+        "provide an overview"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "oversight",
+          "note_ko": "oversight는 '감독' 또는 '간과, 실수'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "summary",
+        "outline"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0122",
+      "lemma": "patron",
+      "pos": "n",
+      "meaning_ko": "(상점·식당·시설의) 고객, 이용객",
+      "meaning_ko_sub": "후원자",
+      "examples": [
+        {
+          "en": "Library patrons may borrow up to ten books at a time.",
+          "ko": "도서관 이용객은 한 번에 최대 열 권까지 책을 빌릴 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "library patrons",
+        "loyal patrons",
+        "restaurant patrons",
+        "patrons of the theater"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "patronize"
+        },
+        {
+          "pos": "n",
+          "form": "patronage"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "patent",
+          "note_ko": "patent는 '특허'로 철자가 비슷하지만 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "customer",
+        "visitor",
+        "guest"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Many office workers ------- the café on the ground floor.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0123",
+      "lemma": "performance",
+      "pos": "n",
+      "meaning_ko": "실적, 성과",
+      "meaning_ko_sub": "(기계의) 성능",
+      "examples": [
+        {
+          "en": "Employees will receive a performance review at the end of each quarter.",
+          "ko": "직원들은 매 분기 말에 실적 평가를 받습니다."
+        },
+        {
+          "en": "The upgraded software has greatly improved the performance of our servers.",
+          "ko": "업그레이드된 소프트웨어 덕분에 서버 성능이 크게 향상되었습니다."
+        }
+      ],
+      "collocations": [
+        "performance review",
+        "job performance",
+        "sales performance",
+        "improve performance"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "perform"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "performer",
+          "note_ko": "performer는 '공연자, 수행하는 사람', performance는 '성과·공연'"
+        }
+      ],
+      "paraphrases": [
+        "results",
+        "achievement"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new engine will ------- well even in very cold weather.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0124",
+      "lemma": "permit",
+      "pos": "n",
+      "meaning_ko": "허가증",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Contractors must obtain a building permit before work on the site can begin.",
+          "ko": "시공업체는 현장 작업을 시작하기 전에 건축 허가증을 받아야 합니다."
+        }
+      ],
+      "collocations": [
+        "parking permit",
+        "building permit",
+        "obtain a permit",
+        "apply for a permit"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "permit"
+        },
+        {
+          "pos": "n",
+          "form": "permission"
+        },
+        {
+          "pos": "adj",
+          "form": "permissible"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "license",
+        "authorization"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Photography is not allowed without written ------- from the museum.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0125",
+      "lemma": "precaution",
+      "pos": "n",
+      "meaning_ko": "예방 조치, 사전 대책",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "As a safety precaution, all visitors must wear a hard hat in the construction area.",
+          "ko": "안전 예방 조치로 모든 방문객은 공사 구역에서 안전모를 써야 합니다."
+        }
+      ],
+      "collocations": [
+        "safety precaution",
+        "take precautions",
+        "as a precaution",
+        "necessary precautions"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "precautionary"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "caution",
+          "note_ko": "caution은 '주의, 조심'(태도), precaution은 미리 취하는 '조치'"
+        }
+      ],
+      "paraphrases": [
+        "safeguard",
+        "preventive measure"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The road was closed as a ------- measure during the storm.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0126",
+      "lemma": "preference",
+      "pos": "n",
+      "meaning_ko": "선호, 선호하는 것",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please indicate your seating preference when you register for the banquet.",
+          "ko": "연회 등록 시 원하시는 좌석을 표시해 주십시오."
+        }
+      ],
+      "collocations": [
+        "indicate a preference",
+        "customer preferences",
+        "have a preference for",
+        "dietary preferences"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "prefer"
+        },
+        {
+          "pos": "adj",
+          "form": "preferable"
+        },
+        {
+          "pos": "adj",
+          "form": "preferred"
+        },
+        {
+          "pos": "adv",
+          "form": "preferably"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "reference",
+          "note_ko": "reference는 '추천서, 참고'로 형태만 비슷함"
+        }
+      ],
+      "paraphrases": [
+        "choice",
+        "option"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Payments should ------- be made by bank transfer.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0127",
+      "lemma": "priority",
+      "pos": "n",
+      "meaning_ko": "우선 사항, 우선순위",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "At Brenton Airlines, passenger safety is always our top priority.",
+          "ko": "브렌튼 항공에서는 승객 안전이 언제나 최우선 사항입니다."
+        },
+        {
+          "en": "Members receive priority access to tickets for all concerts.",
+          "ko": "회원은 모든 공연 티켓을 우선 구매할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "top priority",
+        "give priority to",
+        "priority access",
+        "high priority"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "prioritize"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "prior",
+          "note_ko": "prior(형)는 '이전의', priority(명)는 '우선순위'"
+        }
+      ],
+      "paraphrases": [
+        "first concern",
+        "precedence"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Managers must learn to ------- tasks when deadlines overlap.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0128",
+      "lemma": "procedure",
+      "pos": "n",
+      "meaning_ko": "절차, 순서",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Employees should follow the standard procedure when reporting a lost security badge.",
+          "ko": "직원들은 보안 출입증 분실을 신고할 때 표준 절차를 따라야 합니다."
+        }
+      ],
+      "collocations": [
+        "follow a procedure",
+        "safety procedures",
+        "standard procedure",
+        "a procedure for"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "procedural"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "process",
+          "note_ko": "process는 일이 진행되는 '과정' 전체, procedure는 정해진 '절차·방법'"
+        }
+      ],
+      "paraphrases": [
+        "steps",
+        "protocol"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The handbook explains several ------- changes to the hiring process.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0129",
+      "lemma": "productivity",
+      "pos": "n",
+      "meaning_ko": "생산성",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Moving to an open office layout helped increase productivity at the Westfield plant.",
+          "ko": "개방형 사무실 배치로 바꾼 것이 웨스트필드 공장의 생산성을 높이는 데 도움이 되었습니다."
+        }
+      ],
+      "collocations": [
+        "increase productivity",
+        "boost productivity",
+        "employee productivity",
+        "a drop in productivity"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "produce"
+        },
+        {
+          "pos": "adj",
+          "form": "productive"
+        },
+        {
+          "pos": "adv",
+          "form": "productively"
+        },
+        {
+          "pos": "n",
+          "form": "production"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "efficiency"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new tools have made our assembly team far more -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0130",
+      "lemma": "promotion",
+      "pos": "n",
+      "meaning_ko": "승진",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Mr. Tanaka received a promotion to regional manager last month.",
+          "ko": "다나카 씨는 지난달 지역 관리자로 승진했습니다."
+        }
+      ],
+      "collocations": [
+        "receive a promotion",
+        "be eligible for promotion",
+        "a promotion to manager"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "promote"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "motion",
+          "note_ko": "motion은 '움직임, 동의(안)'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "advancement"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The board decided to ------- Mr. Tanaka to regional manager.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0131",
+      "lemma": "questionnaire",
+      "pos": "n",
+      "meaning_ko": "설문지",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Participants are asked to complete a short questionnaire at the end of the seminar.",
+          "ko": "참가자들은 세미나가 끝날 때 짧은 설문지를 작성해 달라는 요청을 받습니다."
+        }
+      ],
+      "collocations": [
+        "complete a questionnaire",
+        "fill out a questionnaire",
+        "return the questionnaire",
+        "an online questionnaire"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "question"
+        },
+        {
+          "pos": "v",
+          "form": "question"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "survey",
+          "note_ko": "survey는 '조사' 활동 전체, questionnaire는 그 조사에 쓰는 '설문지' 자체"
+        }
+      ],
+      "paraphrases": [
+        "feedback form"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Reporters will ------- the mayor about the new budget at the press conference.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0132",
+      "lemma": "recipient",
+      "pos": "n",
+      "meaning_ko": "받는 사람, 수령인",
+      "meaning_ko_sub": "수상자",
+      "examples": [
+        {
+          "en": "This year's recipient of the Innovation Award is Dr. Leah Moreno of Vantor Labs.",
+          "ko": "올해 혁신상 수상자는 반토르 연구소의 레아 모레노 박사입니다."
+        },
+        {
+          "en": "The package could not be delivered because the recipient's address was incomplete.",
+          "ko": "수령인 주소가 불완전해서 소포를 배달할 수 없었습니다."
+        }
+      ],
+      "collocations": [
+        "award recipient",
+        "intended recipient",
+        "recipients of the newsletter",
+        "the recipient's signature"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "receive"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "receipt",
+          "note_ko": "receipt는 '영수증, 수령', recipient는 받는 '사람'"
+        }
+      ],
+      "paraphrases": [
+        "receiver"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All employees will ------- a copy of the updated handbook by e-mail.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0133",
+      "lemma": "reference",
+      "pos": "n",
+      "meaning_ko": "추천서, 신원 보증인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Applicants should include the names of two professional references.",
+          "ko": "지원자는 업무 관련 추천인 두 명의 이름을 포함해야 합니다."
+        }
+      ],
+      "collocations": [
+        "letter of reference",
+        "provide references",
+        "a reference from a former employer"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "refer"
+        },
+        {
+          "pos": "n",
+          "form": "referral"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "preference",
+          "note_ko": "preference는 '선호', reference는 '추천인·참고'"
+        }
+      ],
+      "paraphrases": [
+        "recommendation"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Our clients often ------- their friends to our design studio.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0134",
+      "lemma": "refreshments",
+      "pos": "n",
+      "meaning_ko": "다과, 간단한 음식과 음료",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Light refreshments will be served in the lobby after the presentation.",
+          "ko": "발표 후 로비에서 가벼운 다과가 제공됩니다."
+        }
+      ],
+      "collocations": [
+        "light refreshments",
+        "serve refreshments",
+        "refreshments will be provided",
+        "complimentary refreshments"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [],
+      "paraphrases": [
+        "snacks and drinks",
+        "food and beverages"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0135",
+      "lemma": "registration",
+      "pos": "n",
+      "meaning_ko": "등록, 신청",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Registration for the summer coding workshop closes on June 15.",
+          "ko": "여름 코딩 워크숍 등록은 6월 15일에 마감됩니다."
+        }
+      ],
+      "collocations": [
+        "registration fee",
+        "registration form",
+        "online registration",
+        "early registration"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "register"
+        },
+        {
+          "pos": "adj",
+          "form": "registered"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "registry",
+          "note_ko": "registry는 '등기소, 등록부'로 장소·명부를 뜻함"
+        }
+      ],
+      "paraphrases": [
+        "enrollment",
+        "sign-up"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Participants must ------- for the workshop by Friday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0136",
+      "lemma": "regulation",
+      "pos": "n",
+      "meaning_ko": "규정, 규칙",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "All food vendors at the fair must comply with local health regulations.",
+          "ko": "박람회의 모든 식품 판매업체는 지역 보건 규정을 준수해야 합니다."
+        }
+      ],
+      "collocations": [
+        "safety regulations",
+        "comply with regulations",
+        "under new regulations",
+        "strict regulations"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "regulate"
+        },
+        {
+          "pos": "adj",
+          "form": "regulatory"
+        },
+        {
+          "pos": "n",
+          "form": "regulator"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "regular",
+          "note_ko": "regular(형)는 '정기적인', regulation(명)은 '규정'"
+        }
+      ],
+      "paraphrases": [
+        "rule",
+        "policy",
+        "requirement"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Agencies that ------- air travel have approved the new aircraft.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0137",
+      "lemma": "reminder",
+      "pos": "n",
+      "meaning_ko": "상기시키는 것, 알림 (메시지)",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "This is a reminder that the parking lot will be repaved this weekend.",
+          "ko": "이번 주말에 주차장 재포장 공사가 있다는 것을 다시 알려 드립니다."
+        }
+      ],
+      "collocations": [
+        "send a reminder",
+        "a friendly reminder",
+        "reminder notice",
+        "a reminder that"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "remind"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "remainder",
+          "note_ko": "remainder는 '나머지', reminder는 '알림'. 철자 a 하나 차이"
+        }
+      ],
+      "paraphrases": [
+        "notice",
+        "notification"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please ------- your team that the office will close early on Friday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0138",
+      "lemma": "renovation",
+      "pos": "n",
+      "meaning_ko": "개보수, 보수 공사",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The hotel's restaurant will remain closed until renovations are completed in October.",
+          "ko": "호텔 식당은 10월에 개보수가 끝날 때까지 계속 문을 닫습니다."
+        }
+      ],
+      "collocations": [
+        "undergo renovations",
+        "renovation project",
+        "be closed for renovation",
+        "extensive renovations"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "renovate"
+        },
+        {
+          "pos": "adj",
+          "form": "renovated"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "innovation",
+          "note_ko": "innovation은 '혁신', renovation은 건물 '개보수'"
+        }
+      ],
+      "paraphrases": [
+        "remodeling",
+        "refurbishment",
+        "upgrade"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The city plans to ------- the old train station next year.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0139",
+      "lemma": "representative",
+      "pos": "n",
+      "meaning_ko": "담당 직원, 대리인",
+      "meaning_ko_sub": "대표자",
+      "examples": [
+        {
+          "en": "A customer service representative will contact you within one business day.",
+          "ko": "고객 서비스 담당 직원이 영업일 기준 하루 이내에 연락드릴 것입니다."
+        }
+      ],
+      "collocations": [
+        "sales representative",
+        "customer service representative",
+        "a representative from",
+        "company representative"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "represent"
+        },
+        {
+          "pos": "adj",
+          "form": "representative"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "representation",
+          "note_ko": "representation은 '대표(하는 것), 표현'(추상), representative는 '사람'"
+        }
+      ],
+      "paraphrases": [
+        "agent",
+        "associate",
+        "staff member"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Ford will ------- the company at the trade fair in Berlin.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0140",
+      "lemma": "requirement",
+      "pos": "n",
+      "meaning_ko": "필요 조건, 요건",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A valid driver's license is a requirement for this delivery position.",
+          "ko": "유효한 운전면허증은 이 배송직의 필수 요건입니다."
+        }
+      ],
+      "collocations": [
+        "meet the requirements",
+        "minimum requirements",
+        "job requirements",
+        "a requirement for"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "require"
+        },
+        {
+          "pos": "adj",
+          "form": "required"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "request",
+          "note_ko": "request는 '요청', requirement는 '필수 조건'"
+        }
+      ],
+      "paraphrases": [
+        "qualification",
+        "condition",
+        "prerequisite"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "All visitors are ------- to wear a safety helmet in the warehouse.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0142",
+      "lemma": "resident",
+      "pos": "n",
+      "meaning_ko": "주민, 거주자",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Local residents are invited to share their opinions on the new park design.",
+          "ko": "지역 주민들은 새 공원 설계에 대한 의견을 공유하도록 초대받았습니다."
+        }
+      ],
+      "collocations": [
+        "local residents",
+        "residents of",
+        "long-term resident",
+        "resident parking"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "reside"
+        },
+        {
+          "pos": "n",
+          "form": "residence"
+        },
+        {
+          "pos": "adj",
+          "form": "residential"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "inhabitant",
+        "occupant"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new apartments are located in a quiet ------- area near the river.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0143",
+      "lemma": "retailer",
+      "pos": "n",
+      "meaning_ko": "소매업체, 소매상",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Halvorsen Outdoor Gear is sold through more than 200 retailers nationwide.",
+          "ko": "할보르센 아웃도어 기어는 전국 200곳이 넘는 소매업체를 통해 판매됩니다."
+        }
+      ],
+      "collocations": [
+        "online retailer",
+        "major retailers",
+        "electronics retailer",
+        "independent retailers"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "retail"
+        },
+        {
+          "pos": "v",
+          "form": "retail"
+        },
+        {
+          "pos": "adj",
+          "form": "retail"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "wholesaler",
+          "note_ko": "wholesaler는 '도매업체', retailer는 소비자에게 파는 '소매업체'"
+        }
+      ],
+      "paraphrases": [
+        "store",
+        "seller",
+        "dealer"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Ruiz has worked in ------- for over ten years, mostly in clothing stores.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0144",
+      "lemma": "satisfaction",
+      "pos": "n",
+      "meaning_ko": "만족(도)",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "According to the survey, customer satisfaction rose by 12 percent after the store was remodeled.",
+          "ko": "설문에 따르면 매장 리모델링 후 고객 만족도가 12퍼센트 올랐습니다."
+        }
+      ],
+      "collocations": [
+        "customer satisfaction",
+        "satisfaction survey",
+        "to the satisfaction of",
+        "job satisfaction"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "satisfy"
+        },
+        {
+          "pos": "adj",
+          "form": "satisfied"
+        },
+        {
+          "pos": "adj",
+          "form": "satisfactory"
+        },
+        {
+          "pos": "adv",
+          "form": "satisfactorily"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "contentment"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customers who are not completely ------- may return items within 30 days.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0145",
+      "lemma": "shift",
+      "pos": "n",
+      "meaning_ko": "교대 근무 (시간)",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Warehouse staff working the night shift receive an additional hourly allowance.",
+          "ko": "야간 교대 근무를 하는 창고 직원은 시간당 추가 수당을 받습니다."
+        }
+      ],
+      "collocations": [
+        "night shift",
+        "work a shift",
+        "cover a shift",
+        "the morning shift"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [],
+      "paraphrases": [
+        "work period"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0146",
+      "lemma": "subscription",
+      "pos": "n",
+      "meaning_ko": "구독, (정기) 가입",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Readers can renew their subscription online at any time.",
+          "ko": "독자들은 언제든지 온라인으로 구독을 갱신할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "renew a subscription",
+        "cancel a subscription",
+        "subscription fee",
+        "annual subscription"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "subscribe"
+        },
+        {
+          "pos": "n",
+          "form": "subscriber"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "membership"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Readers who ------- to the magazine this month will get the first issue free.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0147",
+      "lemma": "supervisor",
+      "pos": "n",
+      "meaning_ko": "관리자, 상사",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please submit your vacation request to your immediate supervisor.",
+          "ko": "휴가 신청서는 직속 상사에게 제출해 주십시오."
+        }
+      ],
+      "collocations": [
+        "immediate supervisor",
+        "shift supervisor",
+        "report to a supervisor",
+        "a supervisor's approval"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "supervise"
+        },
+        {
+          "pos": "n",
+          "form": "supervision"
+        },
+        {
+          "pos": "adj",
+          "form": "supervisory"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "manager",
+        "boss"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Kent will ------- the new interns during their first month.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0149",
+      "lemma": "technician",
+      "pos": "n",
+      "meaning_ko": "기술자, 기사",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A technician will visit your home on Monday to install the new internet router.",
+          "ko": "기술자가 월요일에 댁에 방문해 새 인터넷 공유기를 설치할 것입니다."
+        }
+      ],
+      "collocations": [
+        "repair technician",
+        "lab technician",
+        "send a technician",
+        "certified technician"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "technical"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "technique",
+          "note_ko": "technique는 '기법, 기술(방법)', technician은 '사람'"
+        }
+      ],
+      "paraphrases": [
+        "repair person",
+        "specialist"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please call our ------- support team if the software fails to load.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0150",
+      "lemma": "tenant",
+      "pos": "n",
+      "meaning_ko": "세입자, 입주자",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Tenants will be notified at least one week before the water supply is shut off.",
+          "ko": "입주자들은 단수 최소 일주일 전에 통보를 받습니다."
+        }
+      ],
+      "collocations": [
+        "building tenants",
+        "a new tenant",
+        "tenants' association",
+        "notify tenants"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "tenancy"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "landlord",
+          "note_ko": "landlord는 세를 놓는 '임대인', tenant는 세 든 '임차인'"
+        }
+      ],
+      "paraphrases": [
+        "occupant",
+        "renter"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0151",
+      "lemma": "variety",
+      "pos": "n",
+      "meaning_ko": "여러 가지, 다양성",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Kimura Kitchen offers a wide variety of vegetarian dishes at reasonable prices.",
+          "ko": "키무라 키친은 다양한 채식 요리를 합리적인 가격에 제공합니다."
+        }
+      ],
+      "collocations": [
+        "a wide variety of",
+        "a variety of options",
+        "for a variety of reasons",
+        "variety of products"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "vary"
+        },
+        {
+          "pos": "adj",
+          "form": "various"
+        },
+        {
+          "pos": "adj",
+          "form": "varied"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "range",
+        "selection",
+        "assortment"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Prices ------- depending on the size of the room.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0152",
+      "lemma": "vendor",
+      "pos": "n",
+      "meaning_ko": "판매업체, 납품업체",
+      "meaning_ko_sub": "노점상",
+      "examples": [
+        {
+          "en": "The finance team reviews invoices from all approved vendors every Friday.",
+          "ko": "재무팀은 매주 금요일 승인된 모든 납품업체의 송장을 검토합니다."
+        }
+      ],
+      "collocations": [
+        "approved vendors",
+        "street vendor",
+        "food vendors",
+        "select a vendor"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "venue",
+          "note_ko": "venue는 '장소', vendor는 '판매업체'"
+        }
+      ],
+      "paraphrases": [
+        "supplier",
+        "seller"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0153",
+      "lemma": "voucher",
+      "pos": "n",
+      "meaning_ko": "상품권, 교환권",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Guests who experienced delays will receive a meal voucher worth $15.",
+          "ko": "지연을 겪은 투숙객은 15달러 상당의 식사 교환권을 받게 됩니다."
+        }
+      ],
+      "collocations": [
+        "gift voucher",
+        "meal voucher",
+        "redeem a voucher",
+        "a voucher for"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "receipt",
+          "note_ko": "receipt는 구매 '영수증', voucher는 사용할 수 있는 '쿠폰·교환권'"
+        }
+      ],
+      "paraphrases": [
+        "coupon",
+        "gift certificate"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0154",
+      "lemma": "warranty",
+      "pos": "n",
+      "meaning_ko": "(품질) 보증, 보증서",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The coffee maker comes with a two-year warranty that covers parts and labor.",
+          "ko": "이 커피 메이커에는 부품과 인건비를 보장하는 2년 보증이 제공됩니다."
+        }
+      ],
+      "collocations": [
+        "under warranty",
+        "extend the warranty",
+        "warranty period",
+        "a two-year warranty"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "guarantee",
+          "note_ko": "guarantee는 더 넓은 '보장', warranty는 주로 제품 '품질 보증'"
+        }
+      ],
+      "paraphrases": [],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0155",
+      "lemma": "workforce",
+      "pos": "n",
+      "meaning_ko": "(전체) 인력, 노동력",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Delmont Manufacturing expanded its workforce by 15 percent this year.",
+          "ko": "델몬트 제조는 올해 인력을 15퍼센트 늘렸습니다."
+        }
+      ],
+      "collocations": [
+        "expand the workforce",
+        "skilled workforce",
+        "reduce the workforce",
+        "a diverse workforce"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "workload",
+          "note_ko": "workload는 '업무량', workforce는 '인력'"
+        }
+      ],
+      "paraphrases": [
+        "staff",
+        "personnel",
+        "employees"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0156",
+      "lemma": "maintain",
+      "pos": "v",
+      "meaning_ko": "유지하다, 관리하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Brennan Hotels maintains high standards of cleanliness in all of its properties.",
+          "ko": "브레넌 호텔은 모든 지점에서 높은 청결 기준을 유지합니다."
+        }
+      ],
+      "collocations": [
+        "maintain a high standard",
+        "maintain equipment",
+        "maintain records",
+        "well-maintained"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "maintenance"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "remain",
+          "note_ko": "remain은 자동사 '(상태로) 남다', maintain은 타동사 '~을 유지하다'"
+        }
+      ],
+      "paraphrases": [
+        "keep",
+        "preserve"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The fitness center will be closed on Tuesday for routine -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0157",
+      "lemma": "manufacture",
+      "pos": "v",
+      "meaning_ko": "제조하다, 생산하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The company manufactures solar panels at its facility in Arizona.",
+          "ko": "그 회사는 애리조나 시설에서 태양광 패널을 제조합니다."
+        }
+      ],
+      "collocations": [
+        "manufacture products",
+        "be manufactured in",
+        "manufacture parts",
+        "locally manufactured"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "manufacturer"
+        },
+        {
+          "pos": "n",
+          "form": "manufacturing"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "produce",
+        "make"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Brightline plans to ------- electric scooters at its new plant.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0158",
+      "lemma": "merge",
+      "pos": "v",
+      "meaning_ko": "합병하다, 합치다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Orlin Bank will merge with Coastal Trust to form one of the region's largest lenders.",
+          "ko": "올린 은행은 코스털 트러스트와 합병하여 지역 최대 대출 기관 중 하나가 될 것입니다."
+        }
+      ],
+      "collocations": [
+        "merge with",
+        "merge two departments",
+        "plan to merge",
+        "merge into"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "merger"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "emerge",
+          "note_ko": "emerge는 '나타나다, 부상하다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "combine",
+        "join",
+        "consolidate"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the two banks was announced on Monday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0159",
+      "lemma": "modify",
+      "pos": "v",
+      "meaning_ko": "수정하다, 변경하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "We can modify the floor plan to include an extra meeting room.",
+          "ko": "추가 회의실을 넣도록 평면도를 수정할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "modify a design",
+        "modify an order",
+        "slightly modified",
+        "modify the schedule"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "modification"
+        },
+        {
+          "pos": "adj",
+          "form": "modified"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "moderate",
+          "note_ko": "moderate는 '적당한; 진행하다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "change",
+        "alter",
+        "adjust",
+        "revise"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The client requested one small ------- to the logo design.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0160",
+      "lemma": "monitor",
+      "pos": "v",
+      "meaning_ko": "감시하다, 점검하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Supervisors closely monitor the temperature of the storage rooms.",
+          "ko": "관리자들은 보관실 온도를 면밀히 점검합니다."
+        }
+      ],
+      "collocations": [
+        "closely monitor",
+        "monitor progress",
+        "monitor performance",
+        "be monitored by"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "mentor",
+          "note_ko": "mentor는 '멘토, 지도하다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "track",
+        "observe",
+        "check"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0161",
+      "lemma": "negotiate",
+      "pos": "v",
+      "meaning_ko": "협상하다, 교섭하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Ms. Haddad negotiated a lower price with the catering company.",
+          "ko": "하다드 씨는 출장 연회 업체와 더 낮은 가격으로 협상했습니다."
+        }
+      ],
+      "collocations": [
+        "negotiate a contract",
+        "negotiate with",
+        "negotiate terms",
+        "negotiate a lower price"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "negotiation"
+        },
+        {
+          "pos": "n",
+          "form": "negotiator"
+        },
+        {
+          "pos": "adj",
+          "form": "negotiable"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "navigate",
+          "note_ko": "navigate는 '길을 찾다, 다루다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "bargain",
+        "work out"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The price is ------- for orders of more than 500 units.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0162",
+      "lemma": "nominate",
+      "pos": "v",
+      "meaning_ko": "(후보로) 지명하다, 추천하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Staff members may nominate a colleague for the Employee of the Year award.",
+          "ko": "직원들은 올해의 직원상 후보로 동료를 추천할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "nominate A for B",
+        "be nominated for an award",
+        "nominate a candidate",
+        "nominate A as B"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "nomination"
+        },
+        {
+          "pos": "n",
+          "form": "nominee"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "dominate",
+          "note_ko": "dominate는 '지배하다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "recommend",
+        "propose",
+        "put forward"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The committee will ------- three candidates for the board.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0163",
+      "lemma": "notify",
+      "pos": "v",
+      "meaning_ko": "(공식적으로) 알리다, 통지하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please notify the front desk if you plan to check out early.",
+          "ko": "일찍 체크아웃하실 계획이면 프런트에 알려 주십시오."
+        },
+        {
+          "en": "Winners will be notified by e-mail by March 30.",
+          "ko": "당첨자에게는 3월 30일까지 이메일로 통지됩니다."
+        }
+      ],
+      "collocations": [
+        "notify A of B",
+        "notify A that",
+        "be notified by e-mail",
+        "notify customers"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "notification"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "announce",
+          "note_ko": "announce는 'announce that ~'(사람 목적어 바로 X), notify는 'notify + 사람 + of/that'"
+        }
+      ],
+      "paraphrases": [
+        "inform",
+        "tell",
+        "let ~ know"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "You will receive a ------- once your order has shipped.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0164",
+      "lemma": "obtain",
+      "pos": "v",
+      "meaning_ko": "얻다, 입수하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Visitors can obtain a parking pass at the security office.",
+          "ko": "방문객은 보안 사무실에서 주차권을 받을 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "obtain permission",
+        "obtain approval",
+        "obtain a copy",
+        "obtain information"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "obtainable"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "contain",
+          "note_ko": "contain은 '포함하다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "get",
+        "acquire",
+        "receive"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Free tickets are ------- at the front desk of the community center.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0165",
+      "lemma": "occupy",
+      "pos": "v",
+      "meaning_ko": "(공간을) 차지하다, 사용하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The law firm occupies the entire fifth floor of the building.",
+          "ko": "그 법률 사무소는 건물 5층 전체를 사용합니다."
+        }
+      ],
+      "collocations": [
+        "occupy a space",
+        "be occupied",
+        "occupy the top floor",
+        "currently occupied"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "occupancy"
+        },
+        {
+          "pos": "n",
+          "form": "occupant"
+        },
+        {
+          "pos": "adj",
+          "form": "occupied"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "occupation",
+          "note_ko": "occupation은 주로 '직업', occupancy는 공간 '사용·점유'"
+        }
+      ],
+      "paraphrases": [
+        "use",
+        "fill",
+        "take up"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The hotel's ------- rate reached 95 percent during the festival.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0166",
+      "lemma": "operate",
+      "pos": "v",
+      "meaning_ko": "(기계를) 작동하다, 운영하다",
+      "meaning_ko_sub": "영업하다",
+      "examples": [
+        {
+          "en": "Only trained staff are allowed to operate the forklift.",
+          "ko": "교육받은 직원만 지게차를 운전할 수 있습니다."
+        },
+        {
+          "en": "The ferry operates daily from April through October.",
+          "ko": "그 여객선은 4월부터 10월까지 매일 운항합니다."
+        }
+      ],
+      "collocations": [
+        "operate machinery",
+        "operate a business",
+        "operate daily",
+        "operate equipment"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "operation"
+        },
+        {
+          "pos": "adj",
+          "form": "operational"
+        },
+        {
+          "pos": "n",
+          "form": "operator"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "cooperate",
+          "note_ko": "cooperate는 '협력하다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "run",
+        "use"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new factory is expected to be fully ------- by June.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0167",
+      "lemma": "outline",
+      "pos": "v",
+      "meaning_ko": "개요를 설명하다, 요약하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The attached document outlines the new expense reporting process.",
+          "ko": "첨부 문서에 새 경비 보고 절차가 요약되어 있습니다."
+        }
+      ],
+      "collocations": [
+        "outline a plan",
+        "outline the steps",
+        "as outlined in",
+        "briefly outline"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "outline"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "underline",
+          "note_ko": "underline은 '밑줄 긋다, 강조하다'"
+        }
+      ],
+      "paraphrases": [
+        "describe",
+        "summarize",
+        "explain"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0168",
+      "lemma": "oversee",
+      "pos": "v",
+      "meaning_ko": "감독하다, 총괄하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Mr. Delgado will oversee the construction of the new distribution center.",
+          "ko": "델가도 씨가 새 물류 센터 건설을 총괄할 것입니다."
+        }
+      ],
+      "collocations": [
+        "oversee a project",
+        "oversee operations",
+        "oversee the staff",
+        "be overseen by"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "overseer"
+        },
+        {
+          "pos": "n",
+          "form": "oversight"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "overlook",
+          "note_ko": "overlook은 '간과하다; 내려다보다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "supervise",
+        "manage",
+        "be in charge of"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Ohara will ------- the opening of our new branch in Lisbon.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0169",
+      "lemma": "postpone",
+      "pos": "v",
+      "meaning_ko": "연기하다, 미루다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The outdoor concert has been postponed until next Saturday due to heavy rain.",
+          "ko": "야외 콘서트가 폭우로 다음 주 토요일로 연기되었습니다."
+        }
+      ],
+      "collocations": [
+        "postpone a meeting",
+        "be postponed until",
+        "postpone A to B",
+        "postpone the launch"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "postponement"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "cancel",
+          "note_ko": "cancel은 아예 '취소', postpone은 날짜를 '미루기'"
+        }
+      ],
+      "paraphrases": [
+        "delay",
+        "put off",
+        "reschedule"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the board meeting was announced by e-mail.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0170",
+      "lemma": "proceed",
+      "pos": "v",
+      "meaning_ko": "진행하다, 계속하다",
+      "meaning_ko_sub": "(~로) 가다, 이동하다",
+      "examples": [
+        {
+          "en": "Once your payment is confirmed, you may proceed to the next step.",
+          "ko": "결제가 확인되면 다음 단계로 진행하셔도 됩니다."
+        },
+        {
+          "en": "Passengers should proceed to Gate 12 for boarding.",
+          "ko": "승객 여러분은 탑승을 위해 12번 게이트로 이동해 주십시오."
+        }
+      ],
+      "collocations": [
+        "proceed with",
+        "proceed to",
+        "proceed as planned",
+        "proceed carefully"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "precede",
+          "note_ko": "precede는 '~에 앞서다', proceed는 '진행하다'"
+        }
+      ],
+      "paraphrases": [
+        "continue",
+        "go ahead",
+        "move on"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0171",
+      "lemma": "process",
+      "pos": "v",
+      "meaning_ko": "처리하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Refund requests are usually processed within five business days.",
+          "ko": "환불 요청은 보통 영업일 기준 5일 이내에 처리됩니다."
+        }
+      ],
+      "collocations": [
+        "process an order",
+        "process a request",
+        "process a payment",
+        "be processed within"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "process"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "proceed",
+          "note_ko": "proceed는 자동사 '진행하다', process는 타동사 '~을 처리하다'"
+        }
+      ],
+      "paraphrases": [
+        "handle",
+        "deal with"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0172",
+      "lemma": "prohibit",
+      "pos": "v",
+      "meaning_ko": "금지하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Flash photography is prohibited inside the gallery to protect the older paintings.",
+          "ko": "오래된 그림을 보호하기 위해 갤러리 내부에서 플래시 촬영이 금지되어 있습니다."
+        }
+      ],
+      "collocations": [
+        "prohibit A from doing",
+        "be strictly prohibited",
+        "prohibit smoking",
+        "prohibited items"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "prohibition"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "prevent",
+          "note_ko": "둘 다 'A from -ing'를 쓰지만 prevent는 '막다', prohibit는 규정으로 '금지하다'"
+        }
+      ],
+      "paraphrases": [
+        "ban",
+        "forbid",
+        "not allow"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The building has a strict ------- on smoking in all indoor areas.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0173",
+      "lemma": "promote",
+      "pos": "v",
+      "meaning_ko": "승진시키다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Ms. Varga was promoted to senior editor after five years at the magazine.",
+          "ko": "바르가 씨는 잡지사에서 5년 근무 후 수석 편집자로 승진했습니다."
+        }
+      ],
+      "collocations": [
+        "be promoted to",
+        "promote A to B",
+        "be promoted from within"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "promotion"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "prompt",
+          "note_ko": "prompt는 '즉각적인; 촉발하다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "advance"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Varga is hoping for a ------- after the successful product launch.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0174",
+      "lemma": "publish",
+      "pos": "v",
+      "meaning_ko": "출판하다, 발행하다",
+      "meaning_ko_sub": "(정보를) 공개하다, 게시하다",
+      "examples": [
+        {
+          "en": "Lumen Press will publish Ms. Abara's first cookbook in November.",
+          "ko": "루멘 출판사는 11월에 아바라 씨의 첫 요리책을 출간합니다."
+        }
+      ],
+      "collocations": [
+        "publish a report",
+        "publish an article",
+        "be published in",
+        "recently published"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "publication"
+        },
+        {
+          "pos": "n",
+          "form": "publisher"
+        },
+        {
+          "pos": "n",
+          "form": "publishing"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "publicize",
+          "note_ko": "publicize는 '홍보하다, 널리 알리다', publish는 '출판·발행하다'"
+        }
+      ],
+      "paraphrases": [
+        "release",
+        "issue",
+        "print"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the annual report has been delayed until May.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0176",
+      "lemma": "qualify",
+      "pos": "v",
+      "meaning_ko": "자격을 얻다, 자격이 있다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Orders over $50 qualify for free shipping to any address in the country.",
+          "ko": "50달러가 넘는 주문은 국내 어느 주소로든 무료 배송 대상입니다."
+        }
+      ],
+      "collocations": [
+        "qualify for",
+        "qualify as",
+        "qualify to do",
+        "fail to qualify"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "qualification"
+        },
+        {
+          "pos": "adj",
+          "form": "qualified"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "quantify",
+          "note_ko": "quantify는 '수량화하다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "be eligible for",
+        "be entitled to"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Only ------- applicants will be invited to an interview.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0177",
+      "lemma": "recruit",
+      "pos": "v",
+      "meaning_ko": "(신입을) 모집하다, 채용하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The hospital is recruiting experienced nurses for its new pediatric wing.",
+          "ko": "그 병원은 새 소아 병동에서 일할 경력 간호사를 모집하고 있습니다."
+        }
+      ],
+      "collocations": [
+        "recruit new staff",
+        "recruit volunteers",
+        "recruit from",
+        "actively recruit"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "recruitment"
+        },
+        {
+          "pos": "n",
+          "form": "recruiter"
+        },
+        {
+          "pos": "n",
+          "form": "recruit"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "hire",
+        "employ",
+        "take on"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The hospital plans to ------- more nurses next year.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0178",
+      "lemma": "reimburse",
+      "pos": "v",
+      "meaning_ko": "(비용을) 상환하다, 환급하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Employees will be reimbursed for travel expenses within two weeks.",
+          "ko": "직원들은 출장 경비를 2주 이내에 환급받게 됩니다."
+        }
+      ],
+      "collocations": [
+        "reimburse A for B",
+        "be reimbursed for",
+        "reimburse expenses",
+        "fully reimburse"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "reimbursement"
+        },
+        {
+          "pos": "adj",
+          "form": "reimbursable"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "refund",
+          "note_ko": "refund는 주로 고객에게 '구매 대금 환불', reimburse는 쓴 비용을 '보전·상환'"
+        }
+      ],
+      "paraphrases": [
+        "pay back",
+        "compensate",
+        "repay"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please submit your receipts to receive ------- for travel costs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0179",
+      "lemma": "relocate",
+      "pos": "v",
+      "meaning_ko": "이전하다, 이동시키다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Tavira Software will relocate its headquarters to Denver next spring.",
+          "ko": "타비라 소프트웨어는 내년 봄 본사를 덴버로 이전할 것입니다."
+        }
+      ],
+      "collocations": [
+        "relocate to",
+        "relocate the office",
+        "be relocated",
+        "relocate employees"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "relocation"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "allocate",
+          "note_ko": "allocate는 '할당하다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "move",
+        "transfer"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of our main office will take place in July.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0181",
+      "lemma": "renew",
+      "pos": "v",
+      "meaning_ko": "갱신하다, 연장하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Members who renew before December 1 will receive a free tote bag.",
+          "ko": "12월 1일 전에 갱신하는 회원은 무료 에코백을 받게 됩니다."
+        }
+      ],
+      "collocations": [
+        "renew a contract",
+        "renew a subscription",
+        "renew a license",
+        "be renewed annually"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "renewal"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "renovate",
+          "note_ko": "renovate는 건물을 '개보수하다', renew는 계약 등을 '갱신하다'"
+        }
+      ],
+      "paraphrases": [
+        "extend",
+        "continue"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Your contract is up for ------- next January.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0182",
+      "lemma": "reschedule",
+      "pos": "v",
+      "meaning_ko": "일정을 다시 잡다, 변경하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "If you are unable to attend, please call us to reschedule your appointment.",
+          "ko": "참석하실 수 없으면 전화로 예약 일정을 변경해 주십시오."
+        }
+      ],
+      "collocations": [
+        "reschedule an appointment",
+        "reschedule for",
+        "be rescheduled to",
+        "reschedule a meeting"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "postpone",
+          "note_ko": "postpone은 '뒤로 미루다'만, reschedule은 앞당기는 것을 포함한 '일정 변경'"
+        }
+      ],
+      "paraphrases": [
+        "move",
+        "change the date of"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0183",
+      "lemma": "restrict",
+      "pos": "v",
+      "meaning_ko": "제한하다, 한정하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Access to the server room is restricted to IT staff.",
+          "ko": "서버실 출입은 IT 직원으로 제한됩니다."
+        }
+      ],
+      "collocations": [
+        "restrict access",
+        "be restricted to",
+        "restrict the use of",
+        "strictly restricted"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "restriction"
+        },
+        {
+          "pos": "adj",
+          "form": "restricted"
+        },
+        {
+          "pos": "adj",
+          "form": "restrictive"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "district",
+          "note_ko": "district는 '구역, 지구'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "limit",
+        "confine"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "There is a ------- on the number of free samples per customer.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0184",
+      "lemma": "resume",
+      "pos": "v",
+      "meaning_ko": "재개하다, 다시 시작하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Train service between the two stations will resume on Monday.",
+          "ko": "두 역 사이 열차 운행은 월요일에 재개됩니다."
+        }
+      ],
+      "collocations": [
+        "resume operations",
+        "resume service",
+        "resume normal hours",
+        "resume work"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "resumption"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "résumé",
+          "note_ko": "명사 résumé(이력서)는 철자는 같지만 발음·의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "restart",
+        "continue"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of normal train service is expected by Monday.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0185",
+      "lemma": "retain",
+      "pos": "v",
+      "meaning_ko": "보유하다, 유지하다",
+      "meaning_ko_sub": "(고객·직원을) 계속 붙잡아 두다",
+      "examples": [
+        {
+          "en": "Please retain your receipt as proof of purchase.",
+          "ko": "구매 증빙으로 영수증을 보관해 주십시오."
+        },
+        {
+          "en": "The firm offers flexible hours to retain experienced employees.",
+          "ko": "그 회사는 경력 직원을 붙잡아 두려고 유연 근무를 제공합니다."
+        }
+      ],
+      "collocations": [
+        "retain a receipt",
+        "retain customers",
+        "retain staff",
+        "retain a copy"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "retention"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "obtain",
+          "note_ko": "obtain은 '얻다', retain은 이미 가진 것을 '유지·보관하다'"
+        }
+      ],
+      "paraphrases": [
+        "keep",
+        "hold on to"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customer ------- improved after we launched the loyalty program.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0186",
+      "lemma": "retire",
+      "pos": "v",
+      "meaning_ko": "은퇴하다, 퇴직하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "After 30 years with the company, Mr. Lindqvist will retire at the end of June.",
+          "ko": "회사에서 30년간 근무한 린드크비스트 씨는 6월 말에 퇴직합니다."
+        }
+      ],
+      "collocations": [
+        "retire from",
+        "plan to retire",
+        "retire early",
+        "retiring director"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "retirement"
+        },
+        {
+          "pos": "n",
+          "form": "retiree"
+        },
+        {
+          "pos": "adj",
+          "form": "retired"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "resign",
+          "note_ko": "resign은 다른 이유로 '사직하다', retire는 나이·경력으로 '은퇴하다'"
+        }
+      ],
+      "paraphrases": [
+        "step down",
+        "leave the workforce"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "A party will be held to celebrate Ms. Lee's ------- after 25 years of service.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0187",
+      "lemma": "revise",
+      "pos": "v",
+      "meaning_ko": "수정하다, 개정하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The manager asked Mr. Cho to revise the budget proposal before Friday.",
+          "ko": "관리자는 조 씨에게 금요일 전까지 예산안을 수정해 달라고 했습니다."
+        }
+      ],
+      "collocations": [
+        "revise a draft",
+        "revised edition",
+        "revise the schedule",
+        "revise upward"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "revision"
+        },
+        {
+          "pos": "adj",
+          "form": "revised"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "review",
+          "note_ko": "review는 '검토하다', revise는 검토 후 실제로 '고치다'"
+        }
+      ],
+      "paraphrases": [
+        "modify",
+        "amend",
+        "update"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please refer to the ------- schedule posted on the staff bulletin board.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0188",
+      "lemma": "secure",
+      "pos": "v",
+      "meaning_ko": "확보하다, 얻어 내다",
+      "meaning_ko_sub": "고정하다, 안전하게 하다",
+      "examples": [
+        {
+          "en": "Arden Construction secured a contract to renovate the city's main train station.",
+          "ko": "아든 건설은 시 중앙 기차역 개보수 계약을 따냈습니다."
+        }
+      ],
+      "collocations": [
+        "secure a contract",
+        "secure funding",
+        "secure a loan",
+        "secure a seat"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "secure"
+        },
+        {
+          "pos": "n",
+          "form": "security"
+        },
+        {
+          "pos": "adv",
+          "form": "securely"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "sure",
+          "note_ko": "sure는 '확신하는', secure는 '확보하다; 안전한'"
+        }
+      ],
+      "paraphrases": [
+        "obtain",
+        "win",
+        "get"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please make sure the boxes are ------- fastened before shipping.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0189",
+      "lemma": "specify",
+      "pos": "v",
+      "meaning_ko": "명시하다, 구체적으로 말하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please specify the size and color of the item on the order form.",
+          "ko": "주문서에 상품의 크기와 색상을 명시해 주십시오."
+        }
+      ],
+      "collocations": [
+        "specify a date",
+        "unless otherwise specified",
+        "as specified in",
+        "clearly specify"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "specification"
+        },
+        {
+          "pos": "adj",
+          "form": "specific"
+        },
+        {
+          "pos": "adv",
+          "form": "specifically"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "specialize",
+          "note_ko": "specialize는 '전문으로 하다'(in), specify는 '명시하다'"
+        }
+      ],
+      "paraphrases": [
+        "state",
+        "indicate",
+        "detail"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The training session is designed ------- for new managers.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0190",
+      "lemma": "sponsor",
+      "pos": "v",
+      "meaning_ko": "후원하다, 협찬하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The charity run is sponsored by several local businesses, including Gale Sporting Goods.",
+          "ko": "그 자선 달리기 대회는 게일 스포츠용품을 비롯한 여러 지역 업체가 후원합니다."
+        }
+      ],
+      "collocations": [
+        "sponsor an event",
+        "be sponsored by",
+        "corporate sponsor",
+        "sponsor a program"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "sponsor"
+        },
+        {
+          "pos": "n",
+          "form": "sponsorship"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "donor",
+          "note_ko": "donor는 '기부자', sponsor는 행사·프로그램을 '후원·협찬하는 측'"
+        }
+      ],
+      "paraphrases": [
+        "fund",
+        "support",
+        "back"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The festival is seeking corporate ------- to cover its costs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0191",
+      "lemma": "transfer",
+      "pos": "v",
+      "meaning_ko": "옮기다, 전근시키다",
+      "meaning_ko_sub": "(돈을) 이체하다, (전화를) 돌려 주다",
+      "examples": [
+        {
+          "en": "Ms. Novak will transfer to the Singapore office in August.",
+          "ko": "노박 씨는 8월에 싱가포르 사무소로 전근합니다."
+        },
+        {
+          "en": "I'll transfer your call to the billing department.",
+          "ko": "고객님의 전화를 청구 부서로 돌려 드리겠습니다."
+        }
+      ],
+      "collocations": [
+        "transfer to",
+        "transfer funds",
+        "transfer a call",
+        "be transferred to"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "transfer"
+        },
+        {
+          "pos": "adj",
+          "form": "transferable"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "transform",
+          "note_ko": "transform은 '변형시키다'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "move",
+        "relocate",
+        "reassign"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The concert tickets are not ------- to another person.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0192",
+      "lemma": "utilize",
+      "pos": "v",
+      "meaning_ko": "활용하다, 이용하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The team utilized customer feedback to improve the mobile app.",
+          "ko": "팀은 모바일 앱 개선에 고객 의견을 활용했습니다."
+        }
+      ],
+      "collocations": [
+        "utilize resources",
+        "fully utilize",
+        "utilize space",
+        "be utilized for"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "utilization"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "utility",
+          "note_ko": "utility(명)는 '공공요금(전기·수도), 유용성'"
+        }
+      ],
+      "paraphrases": [
+        "use",
+        "make use of",
+        "employ"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Better ------- of office space could reduce our rental costs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0193",
+      "lemma": "vacate",
+      "pos": "v",
+      "meaning_ko": "(장소를) 비우다, 떠나다",
+      "meaning_ko_sub": "(자리를) 내놓다",
+      "examples": [
+        {
+          "en": "Tenants must vacate the apartment by noon on the last day of the lease.",
+          "ko": "세입자는 임대 마지막 날 정오까지 아파트를 비워야 합니다."
+        }
+      ],
+      "collocations": [
+        "vacate the premises",
+        "vacate a room",
+        "vacate a position",
+        "be asked to vacate"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "vacant"
+        },
+        {
+          "pos": "n",
+          "form": "vacancy"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "vacation",
+          "note_ko": "vacation은 '휴가', vacate는 '비우다'"
+        }
+      ],
+      "paraphrases": [
+        "leave",
+        "move out of"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "There are currently no ------- rooms at the Bayside Hotel.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0194",
+      "lemma": "verify",
+      "pos": "v",
+      "meaning_ko": "확인하다, 검증하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please verify your e-mail address by clicking the link below.",
+          "ko": "아래 링크를 클릭해 이메일 주소를 확인해 주십시오."
+        }
+      ],
+      "collocations": [
+        "verify information",
+        "verify an address",
+        "verify that",
+        "verify one's identity"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "verification"
+        },
+        {
+          "pos": "adj",
+          "form": "verifiable"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "vary",
+          "note_ko": "vary는 '다양하다, 달라지다'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "confirm",
+        "check",
+        "validate"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please bring a photo ID for identity -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0195",
+      "lemma": "withdraw",
+      "pos": "v",
+      "meaning_ko": "(돈을) 인출하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Customers can withdraw up to $800 per day from our ATMs.",
+          "ko": "고객은 저희 ATM에서 하루 최대 800달러까지 인출할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "withdraw money",
+        "withdraw cash from",
+        "withdraw funds"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "withdrawal"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "deposit",
+          "note_ko": "deposit은 '입금하다', withdraw는 '인출하다'(반대 의미)"
+        }
+      ],
+      "paraphrases": [
+        "take out"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "A ------- of more than $1,000 requires photo identification.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0196",
+      "lemma": "mandatory",
+      "pos": "adj",
+      "meaning_ko": "의무적인, 필수의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Attendance at the safety training session is mandatory for all warehouse staff.",
+          "ko": "모든 창고 직원은 안전 교육에 의무적으로 참석해야 합니다."
+        }
+      ],
+      "collocations": [
+        "mandatory training",
+        "mandatory for all employees",
+        "it is mandatory to",
+        "mandatory meeting"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "mandate"
+        },
+        {
+          "pos": "n",
+          "form": "mandate"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "optional",
+          "note_ko": "optional은 '선택적인'(반대 의미)"
+        }
+      ],
+      "paraphrases": [
+        "required",
+        "compulsory",
+        "obligatory"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new law will ------- safety training for all forklift operators.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0197",
+      "lemma": "multiple",
+      "pos": "adj",
+      "meaning_ko": "여러, 다수의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The app allows users to manage multiple accounts from a single screen.",
+          "ko": "그 앱은 사용자가 한 화면에서 여러 계정을 관리할 수 있게 해 줍니다."
+        }
+      ],
+      "collocations": [
+        "multiple locations",
+        "multiple copies",
+        "multiple times",
+        "multiple options"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "multiply",
+          "note_ko": "multiply는 동사 '곱하다, 크게 늘다'"
+        }
+      ],
+      "paraphrases": [
+        "several",
+        "many",
+        "numerous"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0198",
+      "lemma": "numerous",
+      "pos": "adj",
+      "meaning_ko": "많은, 다수의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Mr. Ostrowski has received numerous awards for his architectural designs.",
+          "ko": "오스트로프스키 씨는 건축 설계로 많은 상을 받았습니다."
+        }
+      ],
+      "collocations": [
+        "numerous awards",
+        "numerous occasions",
+        "numerous complaints",
+        "on numerous occasions"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "number"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "numerical",
+          "note_ko": "numerical은 '숫자의, 수치상의'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "many",
+        "a large number of",
+        "countless"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "A large ------- of customers have asked for a vegetarian menu.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0199",
+      "lemma": "operational",
+      "pos": "adj",
+      "meaning_ko": "가동 중인, 운영할 준비가 된",
+      "meaning_ko_sub": "운영상의",
+      "examples": [
+        {
+          "en": "The new assembly line will be fully operational by the end of March.",
+          "ko": "새 조립 라인은 3월 말까지 완전히 가동될 것입니다."
+        }
+      ],
+      "collocations": [
+        "fully operational",
+        "become operational",
+        "operational costs",
+        "operational efficiency"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "operate"
+        },
+        {
+          "pos": "n",
+          "form": "operation"
+        },
+        {
+          "pos": "adv",
+          "form": "operationally"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "operative",
+          "note_ko": "operative는 '효력 있는; (현장) 작업원'으로 쓰임이 다름"
+        }
+      ],
+      "paraphrases": [
+        "running",
+        "functioning",
+        "in operation"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Kim was trained to ------- the new packaging machine.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0200",
+      "lemma": "optional",
+      "pos": "adj",
+      "meaning_ko": "선택적인, 선택 가능한",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A guided tour of the factory is optional and costs an extra $10.",
+          "ko": "공장 가이드 투어는 선택 사항이며 10달러가 추가됩니다."
+        }
+      ],
+      "collocations": [
+        "optional tour",
+        "optional features",
+        "be optional for",
+        "optional extra"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "option"
+        },
+        {
+          "pos": "adv",
+          "form": "optionally"
+        },
+        {
+          "pos": "v",
+          "form": "opt"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "optimal",
+          "note_ko": "optimal은 '최적의'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "voluntary",
+        "not required"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Employees may ------- out of the company newsletter at any time.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0201",
+      "lemma": "outstanding",
+      "pos": "adj",
+      "meaning_ko": "뛰어난, 탁월한",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The award recognizes outstanding contributions to the local community.",
+          "ko": "그 상은 지역 사회에 대한 뛰어난 공헌을 기립니다."
+        }
+      ],
+      "collocations": [
+        "outstanding service",
+        "outstanding performance",
+        "outstanding achievement",
+        "an outstanding employee"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "outstandingly"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "understanding",
+          "note_ko": "understanding은 '이해(심)'로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "excellent",
+        "exceptional"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The hotel staff were ------- helpful during our stay.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0202",
+      "lemma": "overdue",
+      "pos": "adj",
+      "meaning_ko": "(지불·반납) 기한이 지난, 연체된",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A late fee will be charged on any overdue invoices.",
+          "ko": "기한이 지난 청구서에는 연체료가 부과됩니다."
+        }
+      ],
+      "collocations": [
+        "overdue payment",
+        "overdue books",
+        "be long overdue",
+        "overdue invoice"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "due",
+          "note_ko": "due는 '~하기로 예정된, 기한인', overdue는 그 기한을 '넘긴'"
+        }
+      ],
+      "paraphrases": [
+        "late",
+        "past due",
+        "unpaid"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0203",
+      "lemma": "portable",
+      "pos": "adj",
+      "meaning_ko": "휴대용의, 들고 다닐 수 있는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "This portable speaker is lightweight and fits easily into a backpack.",
+          "ko": "이 휴대용 스피커는 가볍고 배낭에 쉽게 들어갑니다."
+        }
+      ],
+      "collocations": [
+        "portable device",
+        "portable charger",
+        "highly portable",
+        "portable equipment"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "portability"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "potable",
+          "note_ko": "potable은 '마실 수 있는(물)'. 철자 r 하나 차이"
+        }
+      ],
+      "paraphrases": [
+        "lightweight",
+        "mobile",
+        "handheld"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The laptop's light weight and ------- make it popular with travelers.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0204",
+      "lemma": "potential",
+      "pos": "adj",
+      "meaning_ko": "잠재적인, 가능성 있는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The sales team will meet with several potential clients next week.",
+          "ko": "영업팀은 다음 주에 몇몇 잠재 고객을 만날 것입니다."
+        }
+      ],
+      "collocations": [
+        "potential clients",
+        "potential buyers",
+        "potential risks",
+        "potential benefits"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "potential"
+        },
+        {
+          "pos": "adv",
+          "form": "potentially"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "potent",
+          "note_ko": "potent는 '강력한, 효능 있는'으로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "prospective",
+        "possible",
+        "future"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new policy could ------- save the company thousands of dollars.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0206",
+      "lemma": "punctual",
+      "pos": "adj",
+      "meaning_ko": "시간을 지키는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The airline is known for its punctual departures.",
+          "ko": "그 항공사는 정시 출발로 잘 알려져 있습니다."
+        }
+      ],
+      "collocations": [
+        "be punctual",
+        "punctual delivery",
+        "punctual departures",
+        "punctual payment"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "punctuality"
+        },
+        {
+          "pos": "adv",
+          "form": "punctually"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "punctuation",
+          "note_ko": "punctuation은 '구두점'으로 무관"
+        }
+      ],
+      "paraphrases": [
+        "on time",
+        "prompt"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Hall is known for her ------- and attention to detail.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0207",
+      "lemma": "qualified",
+      "pos": "adj",
+      "meaning_ko": "자격을 갖춘, 적임의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "We are looking for a qualified accountant with at least three years of experience.",
+          "ko": "최소 3년 경력의 자격을 갖춘 회계사를 찾고 있습니다."
+        }
+      ],
+      "collocations": [
+        "highly qualified",
+        "qualified candidates",
+        "be qualified for",
+        "qualified to do"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "qualify"
+        },
+        {
+          "pos": "n",
+          "form": "qualification"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "quality",
+          "note_ko": "quality(명)는 '품질', qualified(형)는 '자격 있는'"
+        }
+      ],
+      "paraphrases": [
+        "eligible",
+        "certified"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "A teaching ------- is required for this position.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0208",
+      "lemma": "quarterly",
+      "pos": "adj",
+      "meaning_ko": "분기별의, 분기마다의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The quarterly report shows a steady increase in online orders.",
+          "ko": "분기 보고서에는 온라인 주문의 꾸준한 증가가 나타나 있습니다."
+        }
+      ],
+      "collocations": [
+        "quarterly report",
+        "quarterly earnings",
+        "quarterly meeting",
+        "on a quarterly basis"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "quarter"
+        },
+        {
+          "pos": "adv",
+          "form": "quarterly"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "every three months"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Sales rose by 8 percent in the third ------- of the year.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0209",
+      "lemma": "reasonable",
+      "pos": "adj",
+      "meaning_ko": "(가격이) 적당한, 합리적인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The hotel offers comfortable rooms at reasonable rates.",
+          "ko": "그 호텔은 적당한 요금에 편안한 객실을 제공합니다."
+        }
+      ],
+      "collocations": [
+        "reasonable price",
+        "at a reasonable cost",
+        "reasonable request",
+        "within a reasonable time"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "reasonably"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "reasoning",
+          "note_ko": "reasoning은 '추론'(명사)"
+        }
+      ],
+      "paraphrases": [
+        "affordable",
+        "fair",
+        "inexpensive"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The rooms at the Seaview Inn are ------- priced.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0210",
+      "lemma": "refundable",
+      "pos": "adj",
+      "meaning_ko": "환불 가능한",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The registration fee is fully refundable until two weeks before the event.",
+          "ko": "등록비는 행사 2주 전까지 전액 환불 가능합니다."
+        }
+      ],
+      "collocations": [
+        "fully refundable",
+        "non-refundable deposit",
+        "refundable ticket",
+        "refundable within 30 days"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "refund"
+        },
+        {
+          "pos": "n",
+          "form": "refund"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "returnable",
+          "note_ko": "returnable은 물건을 '반품 가능한', refundable은 돈을 '환불받을 수 있는'"
+        }
+      ],
+      "paraphrases": [
+        "can be refunded"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Customers who return items within 30 days will receive a full -------.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0211",
+      "lemma": "reliable",
+      "pos": "adj",
+      "meaning_ko": "믿을 만한, 신뢰할 수 있는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Customers choose Barlow Couriers for its fast and reliable service.",
+          "ko": "고객들은 빠르고 믿을 만한 서비스 때문에 발로 택배를 선택합니다."
+        }
+      ],
+      "collocations": [
+        "reliable service",
+        "reliable source",
+        "highly reliable",
+        "reliable supplier"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "rely"
+        },
+        {
+          "pos": "n",
+          "form": "reliability"
+        },
+        {
+          "pos": "adv",
+          "form": "reliably"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "dependable",
+        "trustworthy"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Many small businesses ------- on our delivery service every day.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0212",
+      "lemma": "renowned",
+      "pos": "adj",
+      "meaning_ko": "유명한, 명성 있는",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The restaurant is renowned for its fresh seafood dishes.",
+          "ko": "그 식당은 신선한 해산물 요리로 유명합니다."
+        }
+      ],
+      "collocations": [
+        "be renowned for",
+        "world-renowned",
+        "internationally renowned",
+        "renowned chef"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "renown"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "renewed",
+          "note_ko": "renewed는 '갱신된, 새로워진'으로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "famous",
+        "well-known",
+        "celebrated"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The architect earned international ------- for her museum designs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0214",
+      "lemma": "routine",
+      "pos": "adj",
+      "meaning_ko": "일상적인, 정기적인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The power outage was caused by a problem found during a routine inspection.",
+          "ko": "정전은 정기 점검 중에 발견된 문제로 인해 발생했습니다."
+        }
+      ],
+      "collocations": [
+        "routine inspection",
+        "routine maintenance",
+        "routine tasks",
+        "a routine check"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "routine"
+        },
+        {
+          "pos": "adv",
+          "form": "routinely"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "route",
+          "note_ko": "route는 '경로, 노선'으로 형태만 비슷"
+        }
+      ],
+      "paraphrases": [
+        "regular",
+        "standard",
+        "scheduled"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The machines are ------- checked for safety problems.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0215",
+      "lemma": "spacious",
+      "pos": "adj",
+      "meaning_ko": "넓은, 널찍한",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Each suite features a spacious living area with a view of the harbor.",
+          "ko": "각 스위트룸에는 항구가 보이는 널찍한 거실이 있습니다."
+        }
+      ],
+      "collocations": [
+        "spacious office",
+        "spacious room",
+        "spacious interior",
+        "bright and spacious"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "space"
+        },
+        {
+          "pos": "n",
+          "form": "spaciousness"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "special",
+          "note_ko": "special은 '특별한', spacious는 '공간이 넓은'"
+        }
+      ],
+      "paraphrases": [
+        "roomy",
+        "large",
+        "big"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The new office has much more storage ------- than the old one.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0216",
+      "lemma": "substantial",
+      "pos": "adj",
+      "meaning_ko": "상당한, (양이) 많은",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The new contract will bring a substantial increase in revenue for Corvin Media.",
+          "ko": "새 계약은 코르빈 미디어에 상당한 매출 증가를 가져올 것입니다."
+        }
+      ],
+      "collocations": [
+        "substantial increase",
+        "substantial amount",
+        "substantial discount",
+        "substantial savings"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "substantially"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "substitute",
+          "note_ko": "substitute는 '대신하다; 대체물'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "considerable",
+        "significant",
+        "large"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Costs have increased ------- since we moved to the new warehouse.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0217",
+      "lemma": "temporary",
+      "pos": "adj",
+      "meaning_ko": "임시의, 일시적인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "A temporary office has been set up in the lobby during the renovation.",
+          "ko": "개보수 기간 동안 로비에 임시 사무실이 마련되었습니다."
+        }
+      ],
+      "collocations": [
+        "temporary position",
+        "temporary closure",
+        "on a temporary basis",
+        "temporary staff"
+      ],
+      "derivatives": [
+        {
+          "pos": "adv",
+          "form": "temporarily"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "contemporary",
+          "note_ko": "contemporary는 '현대의, 동시대의'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "short-term",
+        "interim"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The museum is ------- closed for repairs.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0218",
+      "lemma": "upcoming",
+      "pos": "adj",
+      "meaning_ko": "다가오는, 곧 있을",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Please review the agenda before the upcoming board meeting.",
+          "ko": "곧 있을 이사회 전에 안건을 검토해 주십시오."
+        }
+      ],
+      "collocations": [
+        "upcoming event",
+        "upcoming conference",
+        "upcoming release",
+        "the upcoming season"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "oncoming",
+          "note_ko": "oncoming은 '다가오는(차량 등이 마주 오는)', upcoming은 일정이 '곧 있을'"
+        }
+      ],
+      "paraphrases": [
+        "forthcoming",
+        "coming",
+        "next"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0219",
+      "lemma": "vacant",
+      "pos": "adj",
+      "meaning_ko": "비어 있는, 공석인",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "There are three vacant units on the second floor of the building.",
+          "ko": "건물 2층에 비어 있는 호실이 세 개 있습니다."
+        }
+      ],
+      "collocations": [
+        "vacant position",
+        "vacant lot",
+        "remain vacant",
+        "vacant office space"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "vacancy"
+        },
+        {
+          "pos": "v",
+          "form": "vacate"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "vacation",
+          "note_ko": "vacation은 '휴가'로 무관"
+        }
+      ],
+      "paraphrases": [
+        "empty",
+        "unoccupied",
+        "available"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "We have a ------- for a part-time receptionist.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0220",
+      "lemma": "valid",
+      "pos": "adj",
+      "meaning_ko": "유효한",
+      "meaning_ko_sub": "타당한",
+      "examples": [
+        {
+          "en": "This coupon is valid until December 31 at all participating stores.",
+          "ko": "이 쿠폰은 12월 31일까지 모든 참여 매장에서 유효합니다."
+        }
+      ],
+      "collocations": [
+        "valid until",
+        "valid for",
+        "a valid ID",
+        "valid passport"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "validate"
+        },
+        {
+          "pos": "n",
+          "form": "validity"
+        },
+        {
+          "pos": "n",
+          "form": "validation"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "valuable",
+          "note_ko": "valuable은 '귀중한', valid는 '유효한'"
+        }
+      ],
+      "paraphrases": [
+        "effective",
+        "good",
+        "usable"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P6-VOC.WORD",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please check the ------- of your passport before booking the trip.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0221",
+      "lemma": "originally",
+      "pos": "adv",
+      "meaning_ko": "원래, 처음에",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The seminar was originally scheduled for Tuesday but has been moved to Thursday.",
+          "ko": "세미나는 원래 화요일로 예정되었으나 목요일로 옮겨졌습니다."
+        }
+      ],
+      "collocations": [
+        "originally scheduled",
+        "originally planned",
+        "originally built",
+        "originally from"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "original"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "initially",
+        "at first"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please keep the ------- receipt in case you need to return the item.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0222",
+      "lemma": "previously",
+      "pos": "adv",
+      "meaning_ko": "이전에, 앞서",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Ms. Kowalski previously worked as a marketing director at Fenwick Foods.",
+          "ko": "코왈스키 씨는 이전에 펜윅 푸드에서 마케팅 이사로 일했습니다."
+        }
+      ],
+      "collocations": [
+        "as previously announced",
+        "previously mentioned",
+        "previously worked",
+        "than previously expected"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "previous"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "preferably",
+          "note_ko": "preferably는 '가급적이면', previously는 '이전에'"
+        }
+      ],
+      "paraphrases": [
+        "formerly",
+        "before",
+        "earlier"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- owner of the building was a textile company.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0223",
+      "lemma": "promptly",
+      "pos": "adv",
+      "meaning_ko": "즉시, 신속하게",
+      "meaning_ko_sub": "정각에",
+      "examples": [
+        {
+          "en": "Our support team responds promptly to all customer inquiries.",
+          "ko": "저희 지원팀은 모든 고객 문의에 신속하게 답변합니다."
+        },
+        {
+          "en": "The workshop will begin promptly at 9 A.M.",
+          "ko": "워크숍은 오전 9시 정각에 시작합니다."
+        }
+      ],
+      "collocations": [
+        "respond promptly",
+        "promptly at 9 A.M.",
+        "promptly notify",
+        "be handled promptly"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "prompt"
+        },
+        {
+          "pos": "n",
+          "form": "promptness"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "properly",
+          "note_ko": "properly는 '제대로, 적절히'로 의미가 다름"
+        }
+      ],
+      "paraphrases": [
+        "quickly",
+        "immediately",
+        "without delay"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Thank you for your ------- reply to our inquiry.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0224",
+      "lemma": "relatively",
+      "pos": "adv",
+      "meaning_ko": "비교적, 상대적으로",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The new model is relatively inexpensive compared to its competitors.",
+          "ko": "새 모델은 경쟁 제품에 비해 비교적 저렴합니다."
+        }
+      ],
+      "collocations": [
+        "relatively small",
+        "relatively low cost",
+        "relatively new",
+        "relatively easy"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "relative"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "relevantly",
+          "note_ko": "relevantly는 '관련되게'. relatively(비교적)와 철자 혼동 주의"
+        }
+      ],
+      "paraphrases": [
+        "comparatively",
+        "fairly"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The cost of shipping is small ------- to the price of the furniture.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0225",
+      "lemma": "separately",
+      "pos": "adv",
+      "meaning_ko": "따로, 별도로",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Shipping charges are billed separately from the cost of the items.",
+          "ko": "배송비는 상품 가격과 별도로 청구됩니다."
+        }
+      ],
+      "collocations": [
+        "be sold separately",
+        "be billed separately",
+        "separately from",
+        "packed separately"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "separate"
+        },
+        {
+          "pos": "v",
+          "form": "separate"
+        },
+        {
+          "pos": "n",
+          "form": "separation"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "individually",
+          "note_ko": "individually는 '개별적으로(하나씩)', separately는 '따로(분리해서)'"
+        }
+      ],
+      "paraphrases": [
+        "independently"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Please place glass bottles in a ------- bin.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0226",
+      "lemma": "shortly",
+      "pos": "adv",
+      "meaning_ko": "곧, 얼마 안 있어",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The train to Bayport will be departing shortly from Platform 4.",
+          "ko": "베이포트행 열차가 곧 4번 승강장에서 출발합니다."
+        }
+      ],
+      "collocations": [
+        "shortly after",
+        "shortly before",
+        "will arrive shortly",
+        "begin shortly"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "briefly",
+          "note_ko": "briefly는 '간단히, 잠시', shortly는 '곧'(시간상 머지않아)"
+        }
+      ],
+      "paraphrases": [
+        "soon",
+        "in a moment"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0227",
+      "lemma": "steadily",
+      "pos": "adv",
+      "meaning_ko": "꾸준히, 지속적으로",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Membership at the fitness center has grown steadily over the past two years.",
+          "ko": "피트니스 센터 회원 수는 지난 2년간 꾸준히 늘었습니다."
+        }
+      ],
+      "collocations": [
+        "grow steadily",
+        "increase steadily",
+        "steadily improve",
+        "rise steadily"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "steady"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "readily",
+          "note_ko": "readily는 '손쉽게, 기꺼이', steadily는 '꾸준히'"
+        }
+      ],
+      "paraphrases": [
+        "consistently",
+        "gradually",
+        "continuously"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The company has shown ------- growth over the past five years.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0228",
+      "lemma": "temporarily",
+      "pos": "adv",
+      "meaning_ko": "일시적으로, 임시로",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The north entrance will be temporarily closed while the sidewalk is repaired.",
+          "ko": "보도 보수 동안 북쪽 출입구가 일시적으로 폐쇄됩니다."
+        }
+      ],
+      "collocations": [
+        "temporarily closed",
+        "temporarily unavailable",
+        "temporarily suspended",
+        "temporarily out of service"
+      ],
+      "derivatives": [
+        {
+          "pos": "adj",
+          "form": "temporary"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "temporally",
+          "note_ko": "temporally는 '시간적으로', temporarily는 '일시적으로'"
+        }
+      ],
+      "paraphrases": [
+        "for a short time",
+        "for now"
+      ],
+      "type_tags": [
+        "P5-VOC.ADV",
+        "P5-POS.ADV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The shop hired ------- staff for the holiday season.",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0229",
+      "lemma": "on behalf of",
+      "pos": "phr",
+      "meaning_ko": "~을 대신하여, ~을 대표하여",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "On behalf of everyone at Linden Hotels, I would like to welcome you to our new location.",
+          "ko": "린든 호텔의 모든 직원을 대표하여 저희 새 지점에 오신 것을 환영합니다."
+        }
+      ],
+      "collocations": [
+        "on behalf of the company",
+        "on one's behalf",
+        "act on behalf of",
+        "speak on behalf of"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "in favor of",
+          "note_ko": "in favor of는 '~에 찬성하여', on behalf of는 '~을 대표하여'"
+        }
+      ],
+      "paraphrases": [
+        "representing",
+        "in place of"
+      ],
+      "type_tags": [
+        "P5-VOC.COLL",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행 미등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0230",
+      "lemma": "run out of",
+      "pos": "phr",
+      "meaning_ko": "~이 다 떨어지다, 바닥나다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "We ran out of brochures on the first day of the trade show.",
+          "ko": "무역 박람회 첫날 안내 책자가 다 떨어졌습니다."
+        }
+      ],
+      "collocations": [
+        "run out of stock",
+        "run out of time",
+        "run out of supplies",
+        "be running out of"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "run into",
+          "note_ko": "run into는 '(문제에) 부딪히다; 우연히 만나다'"
+        }
+      ],
+      "paraphrases": [
+        "use up",
+        "be out of"
+      ],
+      "type_tags": [
+        "P5-VOC.COLL",
+        "P5-VOC.PV",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "선정 근거: 전문가 판단(토익 공지·이메일·광고 맥락 고빈도, 300→400 핵심어) / 자체 문항 은행(vocab) 등장. 공개·상업 단어장 목록·예문 복사 없음",
+      "author_id": "ai-writer-vocab-4b",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-400",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수, 예문 자체 작성 확인"
+      }
+    },
+    {
+      "word_id": "VC-4-0231",
+      "lemma": "personnel",
+      "pos": "n",
+      "meaning_ko": "(전체) 직원, 인원",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Under the new policy, maintenance personnel at Quarrin Tower must wear an ID badge during every shift.",
+          "ko": "새 방침에 따라 쿼린 타워의 시설 관리 직원은 근무 중에 항상 신분증 배지를 착용해야 합니다."
+        },
+        {
+          "en": "The Velbrook Clinic plans to hire additional medical personnel for its weekend hours.",
+          "ko": "벨브룩 클리닉은 주말 진료를 위해 의료 인력을 추가로 채용할 계획입니다."
+        }
+      ],
+      "collocations": [
+        "authorized personnel",
+        "personnel department",
+        "medical personnel",
+        "sales personnel"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "personal",
+          "note_ko": "personal은 개인의(형), personnel은 직원·인원(명)"
+        }
+      ],
+      "paraphrases": [
+        "staff",
+        "employees"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0232",
+      "lemma": "premises",
+      "pos": "n",
+      "meaning_ko": "(건물이 딸린) 부지, 구내",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Drivers must switch off their engines while waiting on the Dorvane warehouse premises.",
+          "ko": "운전자는 도르베인 창고 구내에서 대기하는 동안 엔진을 꺼야 합니다."
+        },
+        {
+          "en": "Contractors will be escorted by a security guard whenever they are on the premises.",
+          "ko": "협력업체 직원은 구내에 있는 동안 항상 경비원과 동행하게 됩니다."
+        }
+      ],
+      "collocations": [
+        "on the premises",
+        "off the premises",
+        "company premises",
+        "leave the premises"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "premise",
+          "note_ko": "단수 premise는 전제, premises(복수)는 건물·부지"
+        }
+      ],
+      "paraphrases": [
+        "grounds",
+        "property"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0233",
+      "lemma": "revenue",
+      "pos": "n",
+      "meaning_ko": "수익, 매출",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Online sales now account for nearly half of Pellman Books' total revenue.",
+          "ko": "온라인 판매가 이제 펠먼 북스 총매출의 거의 절반을 차지합니다."
+        },
+        {
+          "en": "The new parking fees are expected to generate additional revenue for the city.",
+          "ko": "새 주차 요금은 시에 추가 수익을 가져다줄 것으로 예상됩니다."
+        }
+      ],
+      "collocations": [
+        "generate revenue",
+        "annual revenue",
+        "revenue growth",
+        "a source of revenue"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "profit",
+          "note_ko": "profit은 비용을 뺀 이익, revenue는 비용을 빼기 전 총수입"
+        }
+      ],
+      "paraphrases": [
+        "income"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0234",
+      "lemma": "venue",
+      "pos": "n",
+      "meaning_ko": "(행사) 장소",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The Corlith Pavilion has been chosen as the venue for this year's awards ceremony.",
+          "ko": "콜리스 파빌리온이 올해 시상식 장소로 선정되었습니다."
+        }
+      ],
+      "collocations": [
+        "a venue for",
+        "event venue",
+        "change the venue",
+        "wedding venue"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "avenue",
+          "note_ko": "avenue는 거리·대로, venue는 행사가 열리는 장소"
+        }
+      ],
+      "paraphrases": [
+        "location",
+        "site"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0235",
+      "lemma": "payroll",
+      "pos": "n",
+      "meaning_ko": "급여 지급 (업무), 급여 대장",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Questions about missing overtime pay can be directed to Ms. Haldane in the payroll office.",
+          "ko": "누락된 초과 근무 수당에 관한 문의는 급여 담당 부서의 홀데인 씨에게 하시면 됩니다."
+        },
+        {
+          "en": "Brinley Motors added 40 workers to its payroll after opening a second plant.",
+          "ko": "브린리 모터스는 두 번째 공장을 연 뒤 급여 대장에 직원 40명을 추가했습니다."
+        }
+      ],
+      "collocations": [
+        "payroll department",
+        "on the payroll",
+        "payroll system",
+        "process payroll"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "payment",
+          "note_ko": "payment는 지불(금) 일반, payroll은 직원 급여 지급 업무·명단"
+        }
+      ],
+      "paraphrases": [],
+      "type_tags": [
+        "P5-VOC.N"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0236",
+      "lemma": "outlet",
+      "pos": "n",
+      "meaning_ko": "(판매) 매장, 직판점",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Tamsford Coffee now has twelve retail outlets across the state.",
+          "ko": "탬스퍼드 커피는 이제 주 전역에 소매 매장 12곳을 두고 있습니다."
+        },
+        {
+          "en": "The shoe company sells last season's styles at lower prices through its factory outlet.",
+          "ko": "그 신발 회사는 지난 시즌 제품을 공장 직판점에서 더 낮은 가격에 판매합니다."
+        }
+      ],
+      "collocations": [
+        "retail outlet",
+        "factory outlet",
+        "outlet store",
+        "fast-food outlet"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "outlook",
+          "note_ko": "outlook은 전망, outlet은 매장"
+        }
+      ],
+      "paraphrases": [
+        "store",
+        "shop"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0237",
+      "lemma": "undergo",
+      "pos": "v",
+      "meaning_ko": "(변화·검사 등을) 겪다, 받다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The hotel lobby will undergo major renovations beginning next month.",
+          "ko": "호텔 로비는 다음 달부터 대규모 개보수 공사를 받게 됩니다."
+        },
+        {
+          "en": "All new machines undergo a safety inspection before they are shipped to customers.",
+          "ko": "모든 신규 기계는 고객에게 배송되기 전에 안전 검사를 받습니다."
+        }
+      ],
+      "collocations": [
+        "undergo renovations",
+        "undergo training",
+        "undergo an inspection",
+        "undergo changes"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [],
+      "paraphrases": [
+        "go through",
+        "experience"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0238",
+      "lemma": "compensation",
+      "pos": "n",
+      "meaning_ko": "보상(금), 보수",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Customers whose trips were canceled by Orvella Travel will receive full compensation within thirty days.",
+          "ko": "오벨라 트래블이 여행을 취소한 고객은 30일 이내에 전액 보상을 받게 됩니다."
+        },
+        {
+          "en": "The job offers competitive compensation and four weeks of paid vacation.",
+          "ko": "그 일자리는 경쟁력 있는 보수와 4주 유급 휴가를 제공합니다."
+        }
+      ],
+      "collocations": [
+        "receive compensation",
+        "compensation package",
+        "compensation for",
+        "financial compensation"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "compensate"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "payment",
+        "pay"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The company will ------- customers for any damage caused during delivery.",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0239",
+      "lemma": "incentive",
+      "pos": "n",
+      "meaning_ko": "장려책, 인센티브",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Quenley Insurance offers a cash incentive to employees who refer new clients.",
+          "ko": "퀜리 보험은 신규 고객을 소개하는 직원에게 현금 인센티브를 제공합니다."
+        }
+      ],
+      "collocations": [
+        "an incentive to do",
+        "offer an incentive",
+        "tax incentive",
+        "financial incentive"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "incentivize"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "motivation"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The city hopes the new program will ------- residents to recycle more.",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0240",
+      "lemma": "fare",
+      "pos": "n",
+      "meaning_ko": "(교통) 요금, 운임",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Bus fares in Dunmarsh will rise by 25 cents starting in January.",
+          "ko": "던마시의 버스 요금이 1월부터 25센트 오릅니다."
+        },
+        {
+          "en": "Seniors and students can travel at a reduced fare on weekday mornings.",
+          "ko": "노인과 학생은 평일 오전에 할인 요금으로 이용할 수 있습니다."
+        }
+      ],
+      "collocations": [
+        "pay the fare",
+        "reduced fare",
+        "round-trip fare",
+        "taxi fare"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [
+        {
+          "word": "fee",
+          "note_ko": "fee는 서비스 이용료·수수료, fare는 교통 요금"
+        },
+        {
+          "word": "fair",
+          "note_ko": "fair는 박람회·공정한, fare는 요금(발음 같음)"
+        }
+      ],
+      "paraphrases": [
+        "ticket price"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0241",
+      "lemma": "prospective",
+      "pos": "adj",
+      "meaning_ko": "장래의, 예비의",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Prospective tenants may tour the apartment on Saturday afternoons.",
+          "ko": "입주 예정자는 토요일 오후에 아파트를 둘러볼 수 있습니다."
+        },
+        {
+          "en": "The career fair gives students a chance to meet prospective employers.",
+          "ko": "취업 박람회는 학생들에게 장래의 고용주를 만날 기회를 줍니다."
+        }
+      ],
+      "collocations": [
+        "prospective clients",
+        "prospective employees",
+        "prospective buyers",
+        "prospective students"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "prospect"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "perspective",
+          "note_ko": "perspective는 관점, prospective는 장래의·예비의"
+        }
+      ],
+      "paraphrases": [
+        "potential",
+        "future"
+      ],
+      "type_tags": [
+        "P5-VOC.ADJ",
+        "P5-POS.ADJ",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "Ms. Oh considers Ravelton Foods a strong ------- for a long-term contract.",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0242",
+      "lemma": "decline",
+      "pos": "n",
+      "meaning_ko": "감소, 하락",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The report shows a steady decline in orders from paper catalogs since 2020.",
+          "ko": "보고서는 2020년 이후 종이 카탈로그 주문이 꾸준히 감소했음을 보여 줍니다."
+        },
+        {
+          "en": "Sales of printed maps have been in decline for several years.",
+          "ko": "종이 지도 판매는 몇 년째 감소하고 있습니다."
+        }
+      ],
+      "collocations": [
+        "a decline in",
+        "a sharp decline",
+        "be in decline",
+        "a steady decline"
+      ],
+      "derivatives": [
+        {
+          "pos": "v",
+          "form": "decline"
+        }
+      ],
+      "confusables": [],
+      "paraphrases": [
+        "decrease",
+        "drop"
+      ],
+      "type_tags": [
+        "P5-VOC.N",
+        "P5-POS.N",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 1,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0243",
+      "lemma": "extend an invitation",
+      "pos": "phr",
+      "meaning_ko": "(정식으로) 초대하다, 초청하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "The museum has extended an invitation to all volunteers to attend the opening reception.",
+          "ko": "박물관은 모든 자원봉사자를 개관 축하연에 초대했습니다."
+        },
+        {
+          "en": "Dr. Moreau was extended an invitation to give the keynote address at the Halvern Design Summit.",
+          "ko": "모로 박사는 할번 디자인 서밋에서 기조연설을 해 달라는 초청을 받았습니다."
+        }
+      ],
+      "collocations": [
+        "extend an invitation to",
+        "be extended an invitation",
+        "formally extend an invitation",
+        "extend an invitation to speak"
+      ],
+      "derivatives": [],
+      "no_word_family": true,
+      "confusables": [],
+      "paraphrases": [
+        "invite",
+        "send an invitation"
+      ],
+      "type_tags": [
+        "P5-VOC.COLL",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    },
+    {
+      "word_id": "VC-4-0244",
+      "lemma": "inspect",
+      "pos": "v",
+      "meaning_ko": "점검하다, 검사하다",
+      "meaning_ko_sub": "",
+      "examples": [
+        {
+          "en": "Technicians inspect every elevator in the building twice a year.",
+          "ko": "기술자들이 건물 내 모든 엘리베이터를 1년에 두 번 점검합니다."
+        },
+        {
+          "en": "Before signing the lease, Mr. Ito asked to inspect the kitchen appliances for any defects.",
+          "ko": "임대 계약서에 서명하기 전에 이토 씨는 주방 가전에 결함이 있는지 점검해 보겠다고 요청했습니다."
+        }
+      ],
+      "collocations": [
+        "inspect equipment",
+        "inspect a site",
+        "be inspected for",
+        "carefully inspect"
+      ],
+      "derivatives": [
+        {
+          "pos": "n",
+          "form": "inspection"
+        },
+        {
+          "pos": "n",
+          "form": "inspector"
+        }
+      ],
+      "confusables": [
+        {
+          "word": "respect",
+          "note_ko": "respect는 존중하다, inspect는 점검하다"
+        }
+      ],
+      "paraphrases": [
+        "examine",
+        "check"
+      ],
+      "type_tags": [
+        "P5-VOC.V",
+        "P5-POS.V",
+        "P7-VOC.SYN"
+      ],
+      "level": "400",
+      "selection_note": "근거: 전문가 판단(토익 공지·이메일·광고 핵심어, 작성 단계 누락어 보충); 레벨 근거: 400-①④; 복사 없음: 상업 단어장·사전 뜻풀이·예문",
+      "author_id": "ai-qa-vocab-400",
+      "status": "cross_reviewed",
+      "version": 2,
+      "created_at": "2026-10-13",
+      "deriv_stem": "The ------- of the new factory is scheduled for Friday morning.",
+      "reviewer_1_id": "ai-qa-vocab-4b",
+      "native_check_id": "",
+      "originality_check": {
+        "result": "통과",
+        "date": "2026-10-13",
+        "method": "AI 교차 검수(ai-qa-vocab-4b): 예문·stem 따옴표 웹 검색 일치 없음, 실존 가능 고유명사 교체, 카드·문항 5-gram 대조"
+      }
+    }
+  ]
+}
